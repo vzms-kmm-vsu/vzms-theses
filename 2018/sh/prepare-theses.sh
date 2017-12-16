@@ -3,7 +3,7 @@
 cp $1 $1.bak
 
 iconv -f WINDOWS-1251 -t UTF-8 $1.bak |\
-grep -A 10000 -x '\\widowpenalty=10000' |\
+grep -A 10000 'widowpenalty' |\
 tail -n +2 |\
 grep  --invert-match -x '\\end{document}' |\
 grep  --invert-match -x '\\end{document} '>\
