@@ -1,0 +1,124 @@
+\begin{center}{ \bf  PALEY PROBLEM FOR PLURISUBHARMONIC FUNCTIONS}\\
+{\it B.N. Khabibullin, R.A. Baladai} \\
+(Ufa; {\it khabib-bulat@mail.ru} )
+\end{center}
+\addcontentsline{toc}{section}{Khabibullin B.N., Baladai R.A.\dotfill}
+
+For function $u\colon {\mathbb C}^n\to [-\infty,+\infty)$ we introduce the notation  $u^+:=\max\{0, u\}$,
+$M(r;u):=\max \bigl\{u(z)\colon |z|=r\bigr\}$,
+\begin{equation*}
+ T(r;u):=\frac{1}{|S^{2n-1}|}
+\int_{S^{2n-1}} u^+ (rz)\, {\,\mathrm d} s(z),
+\end{equation*}
+where $S^{2n-1}$ is the unit sphere in  $\mathbb C^n$ with the area $|S^{2n-1}|$, ${\rm d}s$ is the area element on $S^{2n-1}$, i.\,e. $T(r,u)$ is the Nevalinna characteristic of $u$.
+Denote by ${\rm psh\,}_{\lambda}(\mathbb C^n)$ the class of  all pluri\-sub\-ha\-r\-m\-o\-nic functions $u\not\equiv -\infty$ on $\mathbb C^n$ of finite  lower order
+\begin{equation*}
+ \lambda:=\liminf_{r\to +\infty}\frac{\log T(r;u)}{\log r}<+\infty .
+\end{equation*}
+
+\noindent
+{\bf Paley Problem} (in 1932 for $n=1$ and entire functions; here for $n\geq 1$). {\it Let $\lambda \geq 0$, $n\in {\mathbb N}$.  Find the value the Paley constant
+\begin{equation*}
+\mathcal  P(n,\lambda):=\sup\left\{ \liminf_{r\to +\infty} \frac{M (r;u)}{T(r;u)}\, \colon \quad {u\in {\rm psh\,}_{\lambda}(\mathbb C^n)}\right\} .
+\end{equation*}
+}
+Previous results (see our survey [1]):
+
+\noindent
+{\bf 1.} N.\,V.~Govorov, V.\,P.~Petrenko, 1967--68; M.\,R.~Ess\'en, 1975,
+	\begin{equation*}
+	\mathcal  P(1, \lambda)=\begin{cases}
+	\dfrac{\pi \lambda}{\sin \pi \lambda} &\quad \text{for $0\leq \lambda <\dfrac{1}{2}$,}\\
+	\pi \lambda &\quad \text{for $\lambda \geq \dfrac{1}{2}$.}
+	\end{cases}
+	\end{equation*}
+
+\noindent
+ {\bf 2.} Meromorphic (in ${\mathbb C}$) and subharmonic (in ${\mathbb R}^m$) versions of the Paley Problem have been studied (B.~Dahlberg, M.\,L.~Sodin,  A.\,A.~Kondratyuk, W.~Hayman and many others).
+
+\noindent
+{\bf 3.} B.\,N.~Khabibullin, 1999 (see [1]--[3]),
+\begin{equation*}
+\mathcal  P(n,\lambda)=\mathcal  P(1,\lambda) \prod_{k=1}^{n-1} \left(1+\frac{\lambda}{2k}\right) \quad
+\forall \lambda \in [0,1], n >1,
+\eqno{(1)}
+\end{equation*}
+and  for all $\lambda > 1, n>1$
+\begin{equation*}
+\prod_{k=1}^{n-1} \left(1+\frac{\lambda}{2k}\right)\leq
+\frac{\mathcal  P(n,\lambda)}{\mathcal  P(1,\lambda) }\leq e^{n-1} \prod_{k=1}^{n-1} \left(1+\frac{\lambda}{2k}\right).
+\eqno{(2)}
+\end{equation*}
+ In 2002, [1],  B.\,N.~Khabibullin formulated
+
+\noindent
+{\bf Conjecture.}  {\it The equality\/  {\rm (1)} is also true for all $\lambda >1, n>1$.}
+
+\noindent
+{\bf 4.} B.\,N.~Khabibullin and R.\,A.~Baladai, 2010, [4]--[5]. This
+Con\-j\-e\-c\-t\-u\-re is given in three equivalent elementary integral forms. Let us discuss one of these forms.
+
+ Let ${\mathbb R}^+:=[0,+\infty)$, $\alpha >1/2$.
+Denote by ${\rm incr}^+({\mathbb R}^+)$ the class of all nonnegative increasing functions $h\colon {\mathbb R}^+\to {\mathbb R}^+$.
+We set
+\begin{multline*}
+C_{{\rm Kh}}(n,\alpha):=\sup\left\{ \int_0^{\infty}\frac{h(t)}{t}\, \frac{{\,\mathrm d} t}{1+t^{2\alpha}}\colon
+ \int_0^t \frac{h(x)}{x}\,(t-x)^{n-1} {\,\mathrm d} x
+\right.
+\\
+\left.\leq t^{\alpha+n-1} \quad
+\text{for all $t\in {\mathbb R}^+$, $h\in {\rm incr}^+({\mathbb R}^+)$}\right\}.
+\end{multline*}
+Designation $C_{\rm Kh}$ was introduced by R.\,A.~Sharipov and A.~B\"er\-d\-\"e\-l\-l\-ima later.
+The results of  B.\,N.~Khabibullin and R.\,A.~Baladai  mean that
+$\boxed{\mathcal  P(n,\lambda)=2\lambda \, C_{{\rm Kh}}(n,2\lambda)}$.
+So, if
+\begin{equation*}
+C_{{\rm Kh}}(n,\alpha)> \frac{\pi}{2} \prod_{k=1}^{n-1}\left(1+\frac{\alpha}{k}\right)\, ,
+\eqno{(3)}
+\end{equation*}
+then our  Conjecture is false for such $n$ and $\lambda=2\alpha$.
+
+\noindent
+{\bf 5.} In 2010, [6]--[7], R.\,A.~Sharipov proved  (3) for $n=2$ and $\alpha =2$. He uses explicit spline functions. This shows that our  Conjecture is false for $n=2,\lambda=4$.
+
+\noindent
+{\bf 6.} In 2015--2017, [8]--[10], A.~B\"erd\"ellima proved (3) for all $n \geq 2$ for each  $\alpha > 1/2$. A.~B\"erd\"ellima substantially develops the counterexam\-p\-le of R.\,A.~Sharipov.
+
+Thus, our Conjecture is false for all $n\geq 2$ for each  $\lambda >1$. We consider some upper estimates for
+$C_{{\rm Kh}}(n,\alpha)$. This reduces the upper bound in (2).
+
+Supported by RFBR grant No. 16-01-00024.
+
+%%\textbf{Ёлектронную версию тезисов необходимо выслать  по
+%%электронному адресу vzms@mail.ru.}
+
+%%%%  ќ‘ќ–ћЋ≈Ќ»≈ —ѕ»— ј Ћ»“≈–ј“”–џ %%%
+\smallskip \centerline{\bf Ћитература}\nopagebreak
+
+1. {\it Khabibullin B.\,N.\/} The representation of a meromorphic fun\-c\-t\-i\-on as the quotient of entire functions and Paley problem in $\mathbb C^n$: survey of some results // Mathematical Physics, Analysis, and Geometry (Ukraine), 9:2 (2002), 146-167.
+
+2. {\it Khabibullin B.\,N.\/} Paley problem for plurisubharmonic fun\-c\-t\-i\-ons of finite lower order // Sb. Math., 190:2 (1999), 145--157; Eng. transl. 309Ц321.
+
+3. {\it Khabibullin B.\,N.\/} The Paley problem for functions that are meromorphic in $\mathbb C^n$ // Dokl. Math., 51:3 (1995), 385Ц387.
+
+4. {\it Khabibullin B.\,N.\/} A conjecture on some estimates for integr\-als // e-print arXiv:1005.3913 in http://arXiv.org.
+
+5. {\it Baladai R.\,A., Khabibullin B.\,N.\/} Three equivalent hypotheses on estimation of integrals // Ufimsk. Mat. Zh., 2:3 (2010), 31-38.
+%%http://www.mathnet.ru/links/be4dde287f647557bbfa448a573cf888/ufa60.pdf
+
+6. {\it Sharipov R.\,A.\/} A note on Khabibullin's conjecture for integral inequalities // e-print arXiv:1008.0376 in http://arXiv.org.
+
+7. {\it Sharipov R.\,A.\/} A counterexample to Khabibullin's conjecture for integral inequalities // Ufimsk. Mat. Zh., 2:4 (2010), 99Ц107.
+%%http://www.mathnet.ru/links/4b2ec066afffa8e864f9714b4ed6d7a3/ufa76.pdf
+
+8. {\it B\"erd\"ellima A.\/} About a Conjecture Regarding Plurisubharm\-o\-n\-ic Functions // Ufa Math. Journal, 7:4 (2015), 154-165.
+
+
+9. {\it B\"erd\"ellima A.\/} A note on a conjecture of Khabibullin //
+Zapiski Nauchnykh Seminarov POMI, 2017 (to appear).
+
+10. {\it B\"erd\"ellima A.\/} On a conjecture of Khabibullin about a pair of integral inequalities //Ufa Math. Journal, 2017 (to appear).
+
+
+

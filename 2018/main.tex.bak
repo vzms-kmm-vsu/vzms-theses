@@ -1,0 +1,258 @@
+\documentclass[12pt,openbib]{article}
+
+\usepackage{amsmath}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsfonts}
+\usepackage{amsfonts,amssymb}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{euscript}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage[dvips]{graphicx}
+\usepackage{geometry}
+
+\geometry{verbose,a4paper,tmargin=2.2cm,bmargin=3.2cm,lmargin=2.4cm,rmargin=2.4cm}
+
+%\topmargin -1.0cm \setlength{\textheight}{23,7cm}
+%\setlength{\textwidth}{15cm} \hoffset=-10mm \voffset=-0mm
+
+\newtheorem{theor}{Теорема}
+\newcommand{\ImUn}{\mathfrak{i}}
+\newtheorem{teo}{\bf Теорема}
+\newtheorem{rem}{\bf Замечание}
+%\newtheorem{proposition}{Предложение}
+\newtheorem{col}{\bf Следствие}
+%\newtheorem{theorem}{Теорема}
+
+
+\DeclareMathOperator{\diag}{diag}\DeclareMathOperator{\re}{Re}\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator*{\M}{M}
+
+
+
+
+\newcommand{\WpX}[2]{W_{#1,\omega}^{1}(\mathbb{R},#2)}
+\newcommand{\WpR}[1]{W_{#1,\omega}^{1}(\mathbb{R})}
+\newcommand\Lpw[2]{L_{\omega}^{#1}(\mathbb{R},#2)}
+\newcommand{\Fw}[1]{\mathcal{F}_{\omega}(\mathbb{R},#1)}
+\newcommand{\Cw}[1]{C_{\omega}(\mathbb{R},#1)}
+\def\LU{{\mathcal{L}_{\mathcal{U}}}}
+\renewcommand{\U}[2]{\mathcal{U}(#1,#2)}
+\newcommand{\z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Bf}{\boldsymbol}
+\newcommand{\bR}{{\mathbb R}}
+\newcommand{\bC}{{\mathbb C}}
+\newcommand\dom{\operatorname{dom}}
+\newcommand{\arr}{\rightarrow}
+\newcommand{\bd}{\partial}
+\newcommand{\img}{\mathrm{Im}\ }
+\newcommand{\Ker}{\mathrm{Ker}\ }
+\newcommand{\Lin}{\mathrm{Lin}\ }
+\newcommand{\Doms}{{\cal D}\left({\Omega}_{s}\right)}
+\newcommand{\Dpoms}{{\cal D}_+\left({\Omega}_{s}\right)}
+\newcommand{\Dpsoms}{{\cal D}'_+\left({\Omega}_{s}\right)}
+\newcommand{\il}{\int\limits}
+\newcommand{\lb}{\linebreak}
+\newcommand{\eqdef}{\stackrel{\rm def}{=}}
+\newcommand{\Dp}{{\cal D}_+}
+\newcommand{\Dxsas}{D_{x'}^{\alpha'}}
+\newcommand{\DB}{D_{x'}^{\alpha'}B_{x_n}^{\alpha_n}}
+\newcommand{\PDB}{P\left(D_{x'},B_{x_n}\right)}
+\newcommand{\nequiv}{\not\equiv}
+\newcommand{\po}{P_1}
+\newcommand{\Dps}{{\cal D}'_+}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\Dsoms}{{\cal D}'\left({\Omega}_{s}\right)}
+\newcommand{\oms}{{\Omega_s}}
+\newcommand{\omsb}{\left(\Omega_s\right)}
+
+
+\def\Z{{\mathbb{Z}}}
+\def\T{{\mathbb{T}}}
+
+\def\a{\alpha}
+\def\Nat{\mathfrak{N}}
+\def\C{\mathbb{C}}
+\def\PP{\mathcal{P}}
+\def\P{\mathfrak{H}}
+\def\N{\mathfrak{N}}
+\def\J{\mathfrak{J}}
+\def\K{\mathcal{K}}
+\def\NN{\mathcal{N}}
+\def\M{\mathfrak{M}}
+\def\Im{\mathop{\rm Im}}
+\def\Ker{\mathop{\rm Ker}}
+\def\Hol{\mathop{\rm Hol}}
+\def\Ind{\mathop{\rm Ind}}
+\def\al{\mathfrak A}
+\def\dim{\mathop{\rm dim}}
+\def\E{{\cal E}}
+\def\cW{{\cal W}}
+\def\cA{{\cal A}}
+\def\cD{{\cal D}}
+\def\R{{\Bbb R}}
+
+\newcommand{\adto}{{\stackrel{\mathcal P^\alpha}{\longrightarrow}}}
+\newcommand{\dto}{{\stackrel{\mathcal P}{\longrightarrow}}}
+\newcommand{\dPPto}{{\stackrel{\mathcal P \mathcal P}{\longrightarrow}}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\fg}{{\mathfrak{g}}}
+\newcommand{\dd}{\operatorname{d}}
+
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{corollary}{Следствие}
+\newtheorem{lemma}{Лемма}
+\newtheorem{proposition}{Предложение}
+\newtheorem{definition}{Определение}
+\newtheorem{remark}{Замечание}
+\newtheorem{fact}{Утверждение}
+\newtheorem{example}{Пример}
+\newtheorem{lem}{Лемма}
+\newtheorem{defintion}{Определение}
+\newtheorem{Th}{Теорема}
+\newtheorem{ths}{Теорема}
+\newtheorem{state}{Утверждение}
+\newtheorem{ass}{Утверждение}
+\newtheorem{cor}{Следствие}
+\newtheorem{thm}{Теорема}
+\newtheorem{opr}{Определение}
+\newtheorem{Thm}{Теорема}
+\newtheorem{rk}[thm]{Замечание}
+\newtheorem{agree}[thm]{Соглашение}
+
+
+\makeatletter
+\renewcommand{\@makecaption}[2]{%
+{\begin{center}#1. #2\end{center}}%
+} \makeatother
+
+
+
+
+\def\cz{{\Bbb C}}
+\def\rz{{\Bbb R}}
+\def\gz{{\Bbb Z}}
+\def\nz{{\Bbb N}}
+\def\Exp{{\Bbb E}}
+\def\Pro{{\Bbb P}}
+
+
+\begin{document}
+
+
+\input{Data/title}
+
+\setcounter{page}{2}
+
+\input{Data/begin}
+
+\input{Data/Akulenko}
+
+\input{Data/Atanov}
+
+\input{Data/Bilchenko_GG_NG_1}
+
+%\input{Data/Bilchenko_GG_NG_2}
+
+\input{Data/vasilyev}
+
+\input{Data/vakhito}
+
+\input{Data/Vorushilov}
+
+\input{Data/Grishanina}
+
+%\input{Data/Grunwald_L_A}
+
+\input{Data/Zverkina}
+
+\input{Data/Zubova}
+
+\input{Data/Zukin}
+
+\input{Data/IkonnikovaEV}
+
+\input{Data/kaverina}
+
+\input{Data/kalitvin}
+
+\input{Data/KOBCEV}
+
+\input{Data/Kopev}
+
+\input{Data/korchagin}
+
+\input{Data/KukushkinMV}
+
+\input{Data/LukKorpPanin}
+
+\input{Data/Makarova}
+
+\setcounter{equation}{0}
+
+\input{Data/Malutina}
+
+\setcounter{equation}{0}
+
+\input{Data/Muhamediev}
+
+\input{Data/Nikolaienko}
+
+\input{Data/Pepa}
+
+\input{Data/Podoprikhin}
+
+\input{Data/Pchelova}
+
+\input{Data/SAMSONOV}
+
+\input{Data/Semenov}
+
+\input{Data/Scoromnik}
+
+\input{Data/Sokolova}
+
+\input{Data/Solodskih}
+
+\input{Data/Stenuhin}
+
+\input{Data/Subbotin}
+
+\input{Data/Uskov}
+
+\setcounter{equation}{0}
+
+\input{Data/fedoseev}
+
+\input{Data/Fomenko}
+
+\input{Data/Khatskevich}
+
+\setcounter{equation}{0}
+
+\input{Data/Chernova}
+
+\input{Data/ShamolinMV}
+
+\input{Data/Shananin}
+
+\input{Data/Shelkovoi}
+
+\input{Data/Shemetova_V_V}
+
+\setcounter{equation}{0}
+
+\input{Data/Khabibulin}
+
+\setcounter{equation}{0}
+\newpage
+
+{\normalsize \tableofcontents }
+
+\end{document}

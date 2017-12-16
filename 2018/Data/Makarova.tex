@@ -1,0 +1,110 @@
+\begin{center}{ \bf  Некоторые подходы к непараметрической идентификации диффузионных моделей}\\
+{\it И.А. Макарова } \\
+(Томск; {\it irina\_ makarova\_mmf@mail.ru} )
+\end{center}
+\addcontentsline{toc}{section}{Макарова И.А.\dotfill}
+
+
+Пусть на вероятностном пространстве с фильтрацией $(\Omega, F, (F)_{t\ge 0}, P)$ задано стохастическое дифференциальное уравнение следующего вида
+ \begin{equation}\label{sec:In.1}
+d y_{t}=S(y_{t})\,d t +d w_{t}\,,
+ \end{equation}
+где $(w_{t})_{t\ge 0}$ стандартный винеровский процесс, начальное значение $y_{0}$ - некоторая заданная константа, а $S(\cdot)$ - неизвестная функция, называемая коэффициентом сноса. Напомним,что уравнение \eqref{sec:In.1} определяет диффузионный случайный процесс Ито.
+Диффузионные процессы широко используются в прикладных задачах биомедицины, экономики, финансовой математики и особенно в физике в задачах обработки сигналов при их предаче по зашумленным каналам связи.
+Задача состоит в том, чтобы оценить функцию $S(x)$, $x\in[a,b]$, по наблюдениям процесса
+$(y_{t})_{0\le t\le T}$.
+
+В данной работе рассматриваются некоторые подходы к оцениванию неизвестной функции $S(x)$, $a<x<b$ в смысле среднеквадратической точности:
+\begin{equation}\label{sec:In.2}
+R({S}_{T},S)=E_{S}\|{S}_{T}-S\|^2\,,
+\quad
+\|S\|^2=\int^b_{a}\,S^2(x)d x\,,
+\end{equation}
+где ${S}_{T}$ - оценка
+$S$ по наблюдениям $(y_{t})_{0\le t\le T}$ (т.е. измеримая функция относительно $\sigma$ - алгебры, порожденной процессом $(y_{t})_{0\le t\le T}$) . Здесь $E_{S}$ обозначим как математическое ожидание относительно распределения случайного процесса
+ $(y_{t})_{0\le t\le T}$ при истинной функции $S$.
+
+ Основной целью является построение адаптивной процедуры выбора модели на основе улучшенных взвешенных оценок МНК для оценивания функции сноса $S$ в \eqref{sec:In.1}. Применение улучшенных оценок в регрессионных моделях стало возможно благодаря работам $[3]$. Такой подход позволяет повысить среднеквадратическую точность статистической идентификации модели \eqref{sec:In.1} по сравнению с оценками по методу наименьших квадратов, предложенных в работе $[1]$. Такой подход позволяет повысить среднеквадратическую точность статистической идентификации модели \eqref{sec:In.1} по сравнению с оценками по методу наименьших квадратов, предложенных в работе $[2]$. В этой статье предложен новый метод построения адаптивных оценок, основанных на использовании усеченных последовательных процедур. Такой метод позволяет свести исходящую задачу к задачи оценивания в дискретной регрессионной модели. А также  дает возможность получения точных неасиптотических оракульных неравенств для среднеквадратических рисков оценок МНК и доказательства их асимптотических свойств.
+ Как и в работе $[2]$ предположим, что на множестве $\Gamma\subseteq\Omega$
+задана непараметрическая регрессионная модель
+\begin{equation}\label{sec:In.3}
+Y_{l}=S(x_{l})+\zeta_{l}\,,\quad  1\le l\le n\,,
+\end{equation}
+где $\zeta_{l}\,=\,\sigma_{l}\,\xi_{l}\,+\,\delta_{l}$. Расчетные точки
+$(x_{l})_{1\le l\le n}$
+определим далее. Функция $S(\cdot)$ неизвестна и оценивается по наблюдениям $Y_1,\ldots,Y_n$.
+
+Качество любой оценки  ${S}$ будет измеряться эмпирической квадратической ошибкой
+$$
+\|{S}-S\|^2_n=({S}-S,{S}-S)_{n}
+=\frac{b-a}{n}\sum^n_{l=1}({S}(x_{l})-S(x_{l}))^2\,.
+$$
+Зафиксируем ортогональный базис $(\phi_{j})_{1\le j\le n}$
+\begin{equation}\label{sec:In.6}
+(\phi_i\,,\,\phi_{j})_{n}=
+\frac{b-a}{n} \sum^n_{l=1}\,\phi_i(x_{l})\phi_{j}(x_{l})= {\bf Kr}_{ij}\,,
+\end{equation}
+где ${\bf Kr}_{ij}$ - постоянная Кронекера.
+Используя этот базис, применим дискретное преобразование к
+\eqref{sec:In.3} и получим коэффициенты Фурье:
+$$
+{\hat \theta}_{j,n}=\frac{b-a}{n}\sum^n_{l=1}\,Y_{l}\phi_{j}(x_{l})\,,
+\quad
+\theta_{j,n}=\frac{b-a}{n}\sum^n_{l=1}S(x_{l})\,\phi_{j}(x_{l})\,.
+$$
+
+Для такой модели предложена взвешенная оценка МНК следующего вида:
+\begin{equation}\label{sec:In.7}
+\hat {{S}}_{\lambda}(x_{l})\,=\,\sum^n_{j=1}\,\lambda(j)\,{\hat \theta}_{j,n}\,\phi_{j}(x_{l})\,
+_{\Gamma}\,,\quad 1\le l\le n\,,
+\end{equation}
+где $\lambda=(\lambda(1),\ldots,\lambda(n))'$
+принадлежит некоторому конечному множеству $\Lambda\subset [0,1]^n$.
+
+Далее предположим, что первые $d \leq  n$ координат вектора $\lambda$ равны 1, т.е. $\lambda(j)=1$ для всех $1 \leq j \leq d$.
+
+Определим новый класс оценок для $S$ в \eqref{sec:In.3}:
+\begin{equation}\label{sec:In.8}
+ {{S}}^*_{\lambda}(x_{l})\,=\,\sum^n_{j=1}\,\lambda(j)\,{\theta}^*_{j,n}\,\phi_{j}(x_{l})\,
+_{\Gamma}\,,\quad 1\le l\le n\,,
+\end{equation}
+где
+\begin{equation}\label{sec:In.9}
+{\theta}^*_{j,n}\,=\,\left( 1-\frac{c(d)}{||\widetilde{\theta}_{n}||}
+1_{\Gamma} \right)\hat {\theta}_{j,n}
+\end{equation}
+и
+\begin{equation}\label{sec:In.10}
+c(d)\,=\,\frac{(d-1){\sigma}^2_*L(b-a)^{\frac{1}{2}}}{n(s^*+({\frac {d \sigma_*}{n} })^{\frac{1}{2}})}.
+\end{equation}
+
+Тогда для каждого $a \leq x \leq b$  положим
+\begin{equation}\label{sec:In.11}
+{{S}}^*_{\lambda}(x)\,=\,{{S}}^*_{\lambda}(x_{l}) 1_{a \leq x \leq  x_{l}}
++{{S}}^*_{\lambda}(x_{l}) 1_{x_{l-1} \leq x \leq  x_{l}}.
+\end{equation}
+
+Обозначим разность рисков оценок \eqref{sec:In.11} и \eqref{sec:In.8}, как
+ \begin{equation}\label{sec:In.12}
+\Delta_n (S)\,:=\,E_S {{||{S}}^*_{\lambda}-S||}^2 _n -E_S {||\hat {{S}}_{\lambda}-S||}^2 _n.
+\end{equation}
+
+\textbf{Теорема~1.}
+Оценка \eqref{sec:In.11} превосходит по среднеквадратической точности оценку \eqref{sec:In.8}, т.е.
+\begin{equation}
+\sup \Delta_n (S) \leq -c^2 (d).
+\end{equation}
+
+
+%%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Galtchouk L., Pergamenshchikov S.} Nonparametric sequential estimation of the drift in diffusion processes // Mathematical Methods of Statistics. 2004. V. 13. No. 1. P. 25-49.
+
+2. {\it Galtchouk L., Pergamenshchikov S.} Asymptotic efficient sequential kernel estimates of the drift coefficient in ergodic diffusion processes // Statistical Inference for Stochastic Process. 2006. V.9. No. 1. P. 1-16.
+
+3. {\it Pchelintsev E.} Improved estimation in a non-Gaussian parametric regression //
+Statistical Inference for Stochastic Processes. 2013. V. 16. No. 1. P. 15-28.
+
+4. {\it Kutoyants Yu.}Statistical inference for ergodic diffusion processes. Sprinter-Verlag, London.2004.
+

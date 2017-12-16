@@ -1,0 +1,66 @@
+\documentclass[a5paper,12pt,openbib]{report}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsfonts}
+\usepackage{amsfonts,amssymb}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{euscript}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage[dvips]{graphicx}
+\usepackage{geometry}
+\usepackage{wrapfig}
+
+\geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
+
+\righthyphenmin=2
+
+
+\begin{document}
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+
+
+\begin{center}{ \bf Неподвижные точки отображений упорядоченных множеств}\\
+{\it Д.\,А. Подоприхин } \\
+(Москва; {\it podoprikhindmitry@gmail.com})
+\end{center}
+\addcontentsline{toc}{section}{Подоприхин Д.А.}
+
+
+Доклад посвящен вопросам существования неподвижных точек и точек совпадения  отображений упорядоченных множеств и состоит из двух частей.
+В первой части будут рассмотрены вопросы, касающиеся существования общих неподвижных точек семейства многозначных отображений. В частности, будут изложены
+достаточные условия, гарантирующие существование наименьшего элемента во множестве
+общих неподвижных точек, а также представлен конструктивный метод итерационного поиска общей неподвижной точки конечного семейства отображений.
+Будет показана связь полученных результатов с недавними результатами, представленными в работах [1, 2].
+
+
+Вторая часть доклада посвящена вопросам сохранения свойства отображения иметь неподвижные точки при упорядоченной гомотопии. Для отображений банаховых пространств известны результаты об инвариантности свойства отображения иметь неподвижную точку при гомотопии (см. [3]). В докладе
+данная проблема будет рассмотрена для случая отображений упорядоченных множеств,
+где отображения связаны упорядоченной гомотопией. Понятие упорядоченной гомотопии между изотонными отображениями упорядоченных множеств было введено Уолкером
+(Walker) в 1983 году в [4]. Также в докладе будут рассмотрены теоремы, полученные в соавторстве с Т.\,Н. Фоменко, о сохранении парой отображений упорядоченных множеств свойства иметь точку совпадения при упорядоченных гомотопиях.
+
+Все изложенные в докладе результаты представлены в работах [5, 6].
+
+
+
+%%%%  ���������� ������ ���������� %%%
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Подоприхин Д.\,А., Фоменко Т.\,Н.} О совпадениях семейств отображений упорядоченных множеств // Доклады Академии наук, 2016. Т. 471. No. 1. С. 16-18.
+
+2. {\it Fomenko T.\,N., Podoprikhin D.\,A.} Common fixed points and coincidences of mapping families on partially ordered sets // Topology and its Applications, 2017.
+
+3. {\it Frigon M.} On continuation methods for contractive and nonexpansive mappings // Recent Advances on Metric Fixed Point Theory, 1996. Т. 48. С. 19-30.
+
+4. {\it  Walker J.\,W.} Isotone relations and the fixed point property for posets // Discrete Mathematics, 1984. Т. 48. No. 2-3. С. 275-288.
+
+5. {\it Podoprikhin D.\,A.} Fixed Points of Mappings on Ordered Sets // Lobachevskii Journal of Mathematics, 2017, Т. 38, No. 6, С. 1069–1074.
+
+6. {\it Подоприхин Д.\,А., Фоменко Т.\,Н.} Сохранение свойства неподвижной точки и свойства совпадения при гомотопии отображений упорядоченных множеств // Доклады академии наук, 2017, Т. 477, No. 4, С. 1–4
+
+\end{document} 

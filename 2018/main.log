@@ -1,0 +1,1014 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.12.8)  11 DEC 2017 18:10
+entering extended mode
+**F:/!Р’Р—РњРЁ/РЎР±РѕСЂРЅРёРє/2018/main.tex
+(F:/!Р’Р—РњРЁ/РЎР±РѕСЂРЅРёРє/2018/main.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(D:\Distrib\Full_TeX\texmf\tex\latex\base\report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(D:\Distrib\Full_TeX\texmf\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\base\inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\cyrillic\cp1251.def
+File: cp1251.def 1999/11/16 v1.0d Input encoding file
+))
+(D:\Distrib\Full_TeX\texmf\tex\generic\babel\babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Distrib\Full_TeX\texmf\tex\latex\00miktex\bblopts.cfg
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+(D:\Distrib\Full_TeX\texmf\tex\generic\babel\english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(D:\Distrib\Full_TeX\texmf\tex\generic\babel\babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count100
+\U@D=\dimen112
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(D:\Distrib\Full_TeX\texmf\tex\generic\babel\russianb.ldf
+Language: russianb 2008/03/21 v1.1r Russian support from the babel system
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\cyrillic\t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+)
+Package babel Info: Making " an active character on input line 199.
+))
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsfonts\euscript.sty
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\tools\enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:\Distrib\Full_TeX\texmf\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(D:\Distrib\Full_TeX\texmf\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
+))
+(D:\Distrib\Full_TeX\texmf\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(D:\Distrib\Full_TeX\texmf\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(D:\Distrib\Full_TeX\texmf\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(D:\Distrib\Full_TeX\texmf\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(D:\Distrib\Full_TeX\texmf\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen115
+\Gm@wd@mp=\dimen116
+\Gm@odd@mp=\dimen117
+\Gm@even@mp=\dimen118
+\Gm@layoutwidth=\dimen119
+\Gm@layoutheight=\dimen120
+\Gm@layouthoffset=\dimen121
+\Gm@layoutvoffset=\dimen122
+\Gm@dimlist=\toks23
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\geometry\geometry.cfg))
+(D:\Distrib\Full_TeX\texmf\tex\latex\wrapfig\wrapfig.sty
+\wrapoverhang=\dimen123
+\WF@size=\dimen124
+\c@WF@wrappedlines=\count105
+\WF@box=\box28
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
+\c@theor=\count106
+\c@teo=\count107
+\c@rem=\count108
+\c@col=\count109
+\c@theorem=\count110
+\c@corollary=\count111
+\c@lemma=\count112
+\c@proposition=\count113
+\c@definition=\count114
+\c@remark=\count115
+\c@fact=\count116
+\c@example=\count117
+\c@lem=\count118
+\c@defintion=\count119
+\c@Th=\count120
+\c@ths=\count121
+\c@state=\count122
+\c@ass=\count123
+\c@cor=\count124
+\c@thm=\count125
+\c@opr=\count126
+\c@Thm=\count127
+
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\main.aux
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\cyrillic\t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+
+(D:\Distrib\Full_TeX\texmf\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count128
+\scratchdimen=\dimen125
+\scratchbox=\box29
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen126
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks26
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a5paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(49.79231pt, 321.51616pt, 49.79231pt)
+* v-part:(T,H,B)=(49.79231pt, 487.96461pt, 59.75095pt)
+* \paperwidth=421.10078pt
+* \paperheight=597.50787pt
+* \textwidth=321.51616pt
+* \textheight=487.96461pt
+* \oddsidemargin=-22.47768pt
+* \evensidemargin=-22.47768pt
+* \topmargin=-59.47768pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/title.tex [1
+
+{D:/Distrib/Full_TeX/texmf/pdftex/config/pdftex.map}] [2]) (F:\!Р’Р—РњРЁ\РЎР±Рѕ
+СЂРЅРёРє\2018\Data/begin.tex
+Overfull \hbox (13.09645pt too wide) in paragraph at lines 9--11
+[]\T2A/cmr/bx/n/12 Материалы ра-бо-ты меж-ду-на-род-ной кон-фе-рен-ции <<Во-
+ []
+
+
+Overfull \hbox (0.77309pt too wide) in paragraph at lines 9--11
+\T2A/cmr/bx/n/12 ро-неж-ская зим-няя ма-те-ма-ти-че-ская шко-ла С.Г. Крей-
+ []
+
+
+Overfull \hbox (0.3859pt too wide) in paragraph at lines 25--29
+\T2A/cmr/m/n/12 род-ной кон-фе-рен-ции <<Во-ро-неж-ская зим-няя ма-те-ма-ти-че-
+ская
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+ (D:\Distrib\Full_TeX\texmf\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 35.
+ [3])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Akulenko.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 3.
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (0.38991pt too wide) in paragraph at lines 7--8
+[][]\T2A/cmr/m/n/12 Рассматривается за-да-ча ква-зи-оп-ти-маль-но-го тор-мо-же-
+ния
+ []
+
+
+Overfull \hbox (5.88829pt too wide) detected at line 18
+[]
+ []
+
+[4]
+Overfull \hbox (25.2059pt too wide) detected at line 64
+[]
+ []
+
+[5] [6]
+Overfull \hbox (7.88231pt too wide) detected at line 144
+[]
+ []
+
+[7]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Atanov.tex [8] [9] [10]
+
+Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
+ on input line 72.
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Bilchenko_GG_NG_1.tex [11] [12]
+[13] [14]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/vasilyev.tex [15]
+Overfull \hbox (0.2132pt too wide) in paragraph at lines 30--31
+[][]\T2A/cmr/bx/n/12 Определение 2. \T2A/cmr/m/it/12 Дис-крет-ный псев-до-диф-ф
+е-рен-ци-аль-ный
+ []
+
+[16]
+
+LaTeX Warning: Command \ae invalid in math mode on input line 56.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 56.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 56.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 56.
+
+
+Overfull \hbox (9.18935pt too wide) detected at line 61
+[] \OMS/cmsy/m/n/12  \U/msb/m/n/12 ~[] [] \OML/cmm/m/it/12 ;    [] \OT1/cmr/m
+/n/12 + \OML/cmm/m/it/12 i \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 ~\OT1/cmr/m/n/12 
+[]\OML/cmm/m/it/12 :
+ []
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 63.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 63.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 67.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 67.
+
+
+Overfull \hbox (36.68182pt too wide) detected at line 70
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) = [](\OML/cmm/m/it/12 \
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 X[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr
+/m/n/12 )\OML/cmm/m/it/12 P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )[](\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )[]
+(\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )) + [](\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) 
+[] \OML/cmm/m/it/12 c[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 )[]
+\OML/cmm/m/it/12 ;
+ []
+
+[17]
+Overfull \hbox (35.54396pt too wide) detected at line 73
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P[][]\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 \OT1
+/cmr/m/n/12 ) \OMS/cmsy/m/n/12  [] [] \OML/cmm/m/it/12 ;
+ []
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 74.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 74.
+
+
+Overfull \hbox (2.89952pt too wide) in paragraph at lines 86--88
+\T2A/cmr/m/n/12 a half-space. In: Current Trends in Analysis and its Applicatio
+ns.
+ []
+
+
+Overfull \hbox (25.25742pt too wide) in paragraph at lines 89--90
+\T2A/cmr/m/n/12 V.1. Theoretical Technique. C. Constanda, Dalla Riva, M., Lambe
+rti,
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/vakhito.tex [18] [19] [20])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Vorushilov.tex [21])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Grishanina.tex [22]
+Overfull \hbox (6.36029pt too wide) detected at line 43
+\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; r\OT1/cmr/m/n/12 ) 
+= [][] \OML/cmm/m/it/12 F[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; s\OT1/cmr/m/
+n/12 ) []\OML/cmm/m/it/12 ;  \OT1/cmr/m/n/12 0 \OML/cmm/m/it/12 < r \OMS/cmsy/m
+/n/12  \OML/cmm/m/it/12 r[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/
+12 ) \OMS/cmsy/m/n/12  []\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M
+; @G\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
+ []
+
+
+Overfull \hbox (5.77606pt too wide) in paragraph at lines 64--67
+[][]\T2A/cmr/m/n/12 Cформулируем несколь-ко вспо-мо-га-тель-ных утвер-жде-ний,
+ []
+
+
+Overfull \hbox (1.69673pt too wide) in paragraph at lines 64--67
+\T2A/cmr/m/n/12 необ-хо-ди-мых для до-ка-за-тель-ства этой тео-ре-мы. Пусть фун
+к-
+ []
+
+[23] [24] [25] [26]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Zverkina.tex
+Overfull \hbox (8.87326pt too wide) in paragraph at lines 8--14
+[][]\T2A/cmr/m/n/12 Как из-вест-но, со-вре-мен-ная ма-те-ма-ти-ка по-стро-е-на 
+по прин-
+ []
+
+[27] [28] [29]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Zubova.tex
+Overfull \hbox (8.15164pt too wide) in paragraph at lines 9--11
+[][]\T2A/cmr/m/n/12 Рассматривается в ба-на-хо-вом про-стран-стве $\OML/cmm/m/i
+t/12 E \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  x \OMS/cmsy/m/n/12 2
+ []
+
+[30]
+Overfull \hbox (18.00647pt too wide) in paragraph at lines 50--54
+\T2A/cmr/m/n/12 for an equation with a Fredholm operator multiplying the deriva
+tive
+ []
+
+
+Overfull \hbox (2.30473pt too wide) in paragraph at lines 55--60
+\T2A/cmr/m/n/12 Problem for Two Descriptive Equations with Fredholm Operator
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Zukin.tex [31]
+Overfull \hbox (4.70248pt too wide) detected at line 12
+\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 ([0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1]; \
+OML/cmm/m/it/12 E\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 z\OT1/c
+mr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \OML/cmm/m/it
+/12 C[]\OT1/cmr/m/n/12 ([0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1]; \OML/cmm/m/it/
+12 E\OT1/cmr/m/n/12 ) : \OML/cmm/m/it/12 xz[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 ((0\OML/cmm/m/it/12 ; \
+OT1/cmr/m/n/12 1]; \OML/cmm/m/it/12 E\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g\OML/cm
+m/m/it/12 :
+ []
+
+
+Overfull \hbox (7.30095pt too wide) in paragraph at lines 21--23
+[]\T2A/cmr/m/it/12 разрешима от-но-си-тель-но эле-мен-тов $\OML/cmm/m/it/12  []
+$\T2A/cmr/m/it/12 , $\OML/cmm/m/it/12  []$\T2A/cmr/m/it/12 ,..., $\OML/cmm/m/it
+/12  []$ \T2A/cmr/m/it/12 про-стран-
+ []
+
+[32]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/IkonnikovaEV.tex [33]
+LaTeX Font Info:    Try loading font information for U+euf on input line 18.
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [34] [35]
+Overfull \hbox (1.59494pt too wide) in paragraph at lines 79--80
+\T2A/cmr/m/it/12 пусть все по-сле-до-ва-тель-ные глав-ные ми-но-ры со-от-вет-ст
+ву-
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/kaverina.tex [36]
+Overfull \hbox (1.04126pt too wide) in paragraph at lines 9--10
+[][]\T2A/cmr/m/n/12 В ра-бо-те изу-ча-ет-ся во-прос су-ще-ство-ва-ния пе-ри-о-д
+и-че-ских
+ []
+
+[37]
+Overfull \hbox (18.36261pt too wide) in paragraph at lines 57--60
+[][]$\OT1/cmr/m/n/12 6[]$\T2A/cmr/m/n/12 . Диф-фе-рен-ци-аль-ное урав-не-ние (1
+) асимп-то-ти-че-ски устой-
+ []
+
+
+Overfull \hbox (2.96506pt too wide) in paragraph at lines 61--64
+\T2A/cmr/m/it/12 периодической функ-ции $\OML/cmm/m/it/12 h\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \T2A/cmr/m/it/12 пе-ри-о-ди-че-ски воз-му-щен
+-ное диф-
+ []
+
+[38]
+Overfull \hbox (2.55327pt too wide) in paragraph at lines 99--100
+[][]\T2A/cmr/m/n/12 3. \T2A/cmr/m/it/12 Зу-бов В.И. \T2A/cmr/m/n/12 Тео-рия ко-
+ле-ба-ний. М.: Выс-шая шко-ла, 1979.
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/kalitvin.tex [39]
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 56.
+
+[40]
+Overfull \hbox (6.8826pt too wide) detected at line 80
+[]
+ []
+
+
+Overfull \hbox (3.49274pt too wide) in paragraph at lines 119--122
+\T2A/cmr/m/n/12 геб-ра-и-че-ских урав-не-ний. На-при-мер, при ис-поль-зо-ва-нии
+ фор-
+ []
+
+[41]
+Overfull \hbox (9.03508pt too wide) in paragraph at lines 145--147
+\T2A/cmr/m/n/12 голь-ма ис-поль-зу-ют пол-ную непре-рыв-ность ин-те-граль-ных о
+пе-
+ []
+
+[42]
+Overfull \hbox (0.46236pt too wide) in paragraph at lines 188--193
+\T2A/cmr/m/n/12 ле $[][] [][] \OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 t[]; s[]; ; []\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (\OML/cmm
+/m/it/12 []; \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]d  \OT1/cmr/m/n/12 =  [] 
+[] \OML/cmm/m/it/12 []k[]x\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]; s[]\OT1/cmr/m
+/n/12 )+$ 
+ []
+
+
+Overfull \hbox (3.32095pt too wide) detected at line 204
+\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 []k[]x[] \OT1/cm
+r/m/n/12 + \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]; s[]\OT1/cmr
+/m/n/12 )(\OML/cmm/m/it/12 p \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; [] ; P\OT1/c
+mr/m/n/12 ; \OML/cmm/m/it/12 q \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; [] ; Q\OT1
+/cmr/m/n/12 )\OML/cmm/m/it/12 ;
+ []
+
+[43]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/KOBCEV.tex [44]
+Overfull \hbox (3.65047pt too wide) in paragraph at lines 11--13
+[]\T2A/cmr/m/n/12 является вполне ин-те-гри-ру-е-мой по Ли-увил-лю за-да-чей. К
+ласс
+ []
+
+
+Overfull \hbox (4.4626pt too wide) in paragraph at lines 24--26
+\T2A/cmr/m/n/12 сло-е-ния Ли-увил-ля мож-но опи-сы-вать изо-энер-ге-ти-че-ски-м
+и ин-
+ []
+
+[45]
+Overfull \hbox (25.68877pt too wide) in paragraph at lines 40--42
+\T2A/cmr/m/n/12 то-но-вы си-сте-мы. Гео-мет-рия, то-по-ло-гия, клас-си-фи-ка-ци
+я. Ижевск:
+ []
+
+
+Overfull \hbox (2.32747pt too wide) in paragraph at lines 43--44
+[][]\T2A/cmr/m/n/12 4. \T2A/cmr/m/it/12 Хар-ла-мов М.П. \T2A/cmr/m/n/12 То-по-л
+о-ги-че-ский ана-лиз и бу-ле-вы функ-
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Kopev.tex [46]
+Overfull \hbox (5.61655pt too wide) in paragraph at lines 10--11
+[][]\T2A/cmr/m/n/12 Сначала рас-смот-рим пу-чок пря-мых вто-ро-го ро-да. Из фик
+-
+ []
+
+[47] [48]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/korchagin.tex [49]
+Overfull \hbox (15.98357pt too wide) in paragraph at lines 8--9
+[][]\T2A/cmr/m/n/12 В ра-бо-те [1] бы-ла вве-де-на то-по-ло-ги-че-ская слож-нос
+ть $\OML/cmm/m/it/12 TC\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 )$
+ []
+
+
+Overfull \hbox (7.55376pt too wide) in paragraph at lines 10--11
+\T2A/cmr/m/n/12 слож-но-сти и ее зна-че-ни-ях на важ-ней-ших при-ме-рах $\OML/c
+mm/m/it/12 C[]$\T2A/cmr/m/n/12 -алгебр,
+ []
+
+
+Overfull \hbox (8.19987pt too wide) in paragraph at lines 16--17
+[][]\T2A/cmr/m/n/12 До сих пор оста-ет-ся от-кры-тым во-прос зна-че-ния $\OML/c
+mm/m/it/12 TC\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 O[]\OT1/cmr/m/n/12 )$
+ []
+
+[50])
+Overfull \hbox (30.28622pt too wide) in paragraph at lines 29--210
+[][]\T2A/cmr/m/n/12 2. \T2A/cmr/m/it/12 Manuilov V. \T2A/cmr/m/n/12 A Noncommut
+ative Version of Farber`s Topological
+ []
+
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/KukushkinMV.tex
+Overfull \hbox (30.24603pt too wide) in paragraph at lines 12--13
+[][]\T2A/cmr/m/n/12 В дан-ной ра-бо-те до-ка-за-на тео-ре-ма су-ще-ство-ва-ния 
+и единствен-
+ []
+
+
+Overfull \hbox (17.84552pt too wide) in paragraph at lines 12--13
+\T2A/cmr/m/n/12 ности ре-ше-ния кра-е-вой за-да-чи для диф-фе-рен-ци-аль-но-го 
+уравне-
+ []
+
+
+Overfull \hbox (16.77168pt too wide) in paragraph at lines 15--18
+\T2A/cmr/m/n/12 об-ласть $\OML/cmm/m/it/12 n$ \T2A/cmr/m/n/12 --- мер-но-го ев-
+кли-до-ва про-стран-ства, $\OML/cmm/m/it/12 P$ \T2A/cmr/m/n/12 --- фиксирован-
+ []
+
+[51]) [52] (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/LukKorpPanin.tex [53]
+Overfull \hbox (3.81425pt too wide) in paragraph at lines 38--39
+\T2A/cmr/m/n/12 ше-нии и раз-ру-ше-нии ре-ше-ния од-но-мер-но-го урав-не-ния ио
+нно-
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 42--43
+\T2A/cmr/m/it/12 Yushkov E. V. \T2A/cmr/m/n/12 Blow-up phenomena in the model o
+f a
+ []
+
+[54]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Makarova.tex [55] [56] [57]
+Underfull \hbox (badness 2856) in paragraph at lines 102--103
+[][]\T2A/cmr/m/n/12 1. \T2A/cmr/m/it/12 Galtchouk L., Pergamenshchikov S. \T2A/
+cmr/m/n/12 Nonparametric
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 104--105
+\T2A/cmr/m/n/12 diffusion processes // Statistical Inference for Stochastic
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Malutina.tex [58] [59] [60])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Muhamediev.tex
+Underfull \hbox (badness 2035) in paragraph at lines 8--11
+[][]\T2A/cmr/m/n/12 Статья по-свя-ще-на ис-сле-до-ва-нию по-ло-жи-тель-ных $\OM
+L/cmm/m/it/12 !$\T2A/cmr/m/n/12 -
+ []
+
+[61]
+Underfull \hbox (badness 1406) in paragraph at lines 40--48
+[][]\T2A/cmr/bx/n/12 Теорема 1. \T2A/cmr/m/it/12 Пусть функ-ции $\OML/cmm/m/it/
+12 c\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$\T2A/cmr/m/it/12 , $\O
+ML/cmm/m/it/12 a\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$\T2A/cmr/m
+/it/12 , $\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 
+)$\T2A/cmr/m/it/12 , $\OML/cmm/m/it/12 k[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\O
+T1/cmr/m/n/12 )$\T2A/cmr/m/it/12 ,
+ []
+
+[62] [63]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Nikolaienko.tex [64] [65]
+[66]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Pepa.tex [67] [68]
+Underfull \hbox (badness 1132) in paragraph at lines 88--89
+\T2A/cmr/m/n/12 proof of Andreev's theorem, Computational methods and
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 92--228
+[][]\T2A/cmr/m/n/12 4. \T2A/cmr/m/it/12 W. Thurston  \T2A/cmr/m/n/12 Geometry a
+nd topology
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--228
+\T2A/cmr/m/n/12 of 3-manifolds, Princeton lecture notes, 1976,
+ []
+
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Podoprikhin.tex [69] [70])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Pchelova.tex [71] [72] [73] [74]
+Underfull \hbox (badness 1931) in paragraph at lines 194--198
+[][]\T2A/cmr/m/n/12 Предложенные ис-сле-до-ва-ния поз-во-ля-ют зна-чи-тель-но
+ []
+
+[75]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/SAMSONOV.tex [76] [77])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Semenov.tex [78] [79])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Scoromnik.tex [80] [81]
+
+Package amsmath Warning: Foreign command \atop;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 65.
+
+
+Overfull \hbox (6.01694pt too wide) detected at line 86
+\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 P[]\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OT1/
+cmr/bx/n/12 x\OT1/cmr/m/n/12 ) = 2[] [] H[][][][][][]\OT1/cmr/bx/n/12 t[]\OML/c
+mm/m/it/12 f\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 t\OT1/cmr/m/n/12 )\OT1/cmr/bx/n/1
+2 dt\OML/cmm/m/it/12 :
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 90--95
+[][]\T2A/cmr/m/n/12 На ос-но-ва-нии (2) фор-му-лы об-ра-ще-ния [5, (5.5.23),
+ []
+
+[82]
+Underfull \hbox (badness 1675) in paragraph at lines 163--166
+[][]\T2A/cmr/m/n/12 2. \T2A/cmr/m/it/12 Бейт-мен Г.,Эрдейи А. \T2A/cmr/m/n/12 В
+ыс-шие транс-цен-дент-ные
+ []
+
+[83]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Sokolova.tex [84] [85] [86])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Solodskih.tex
+Overfull \hbox (21.08273pt too wide) detected at line 15
+\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 Q[]\OT1/cmr/m/n/12 ) =[] 
+\OML/cmm/m/it/12 []; []; []  [] [] \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 []; [
+]\OT1/cmr/m/n/12 ]\OML/cmm/m/it/12 ; [][];  [] [] []; [] i \OT1/cmr/m/n/12 
+= 1\OML/cmm/m/it/12 ; [] ; m [];
+ []
+
+[87]
+Overfull \hbox (3.39589pt too wide) detected at line 28
+\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 Q[]\OT1/cmr/m/n/12 ) = (\
+OML/cmm/m/it/12 h\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ) \OMS/cm
+sy/m/n/12   \OT1/cmr/m/n/12 1)[][] \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 F[]\OML/cmm
+/m/it/12 = \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 h\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 Q[]\OT1/cmr/m/n/12 ))\OML/cmm/m/it/12 :
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+[][]\T2A/cmr/bx/n/12 Следствие. \T2A/cmr/m/it/12 Мно-го-об-ра-зие $\OT1/cmr/bx/
+n/12 Q[]$ \T2A/cmr/m/it/12 го-мео-морф-но лин-зе
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+ []
+
+[88]
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 63--66
+ [] 
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Stenuhin.tex [89] [90] [91])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Subbotin.tex [92]
+Underfull \hbox (badness 1436) in paragraph at lines 19--21
+[][]\T2A/cmr/m/n/12 Вводится по-ня-тие спектрально-обратимых ди-на-ми-че-
+ []
+
+[93]
+Underfull \hbox (badness 6961) in paragraph at lines 38--40
+[][]\T2A/cmr/bx/n/12 Теорема 2. \T2A/cmr/m/it/12 Каж-дая ве-ще-ствен-ная спектр
+ально-
+ []
+
+[94]
+Underfull \hbox (badness 5302) in paragraph at lines 52--54
+\OT1/cmss/m/n/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; x[]; :::; x[]\OT1/cmr/
+m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 ::: \OMS/cmsy/m/n/12  \OT1/cmss/m
+/n/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; x[]\OT1/cmr/m/n/12 )\OT1/cmss/m/n
+/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )$\T2A/cmr/m/n/12 , г
+де по-сле-до-ва-тель-
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 52--54
+\T2A/cmr/m/n/12 ность $\OMS/cmsy/m/n/12 h\OT1/cmss/m/n/12 U\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmss/m/n/12 U\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 x[]; x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; :::; \OT1
+/cmss/m/n/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; x[]; :::; x[]\OT1/cmr/m/n/
+12 )\OMS/cmsy/m/n/12 i$ \T2A/cmr/m/n/12 диф-фе-рен-ци-ру-е-
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Uskov.tex [95]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[][]\T2A/cmr/m/n/12 Приложением по-став-лен-ной за-да-чи мо-жет быть
+ []
+
+
+Overfull \hbox (8.29738pt too wide) detected at line 21
+\OML/cmm/m/it/12 "[][] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 "[]
+ \OT1/cmr/m/n/12 + [] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 c"[]
+ \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 c[] \OT1/cmr/m/n/12 + (\OML/cmm/m/it/12 [
+] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 c[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 u\OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 x; t; "\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 '\OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
+ []
+
+[96] [97]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/fedoseev.tex [98] [99]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Fomenko.tex
+Underfull \hbox (badness 3078) in paragraph at lines 7--8
+[][]\T2A/cmr/m/n/12 Доклад по-свя-щен про-бле-мам су-ще-ство-ва-ния об-щих
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 9--10
+[][]\T2A/cmr/m/n/12 Классическими ре-зуль-та-та-ми о су-ще-ство-ва-нии непо-
+ []
+
+[101] [102]
+Underfull \hbox (badness 4205) in paragraph at lines 41--42
+[][]\T2A/cmr/m/n/12 2. \T2A/cmr/m/it/12 Smithson R.E. \T2A/cmr/m/n/12 Fixed poi
+nts of order preserving
+ []
+
+[103]
+Underfull \hbox (badness 1910) in paragraph at lines 43--44
+[][]\T2A/cmr/m/n/12 3. \T2A/cmr/m/it/12 Arutyunov A.V., Zhukovskiy E.S., Zhukov
+skiy S.E.
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 45--46
+[][]\T2A/cmr/m/n/12 4. \T2A/cmr/m/it/12 Arutyunov A.V., Zhukovskiy E.S., Zhukov
+skiy S.E.
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 45--46
+\T2A/cmr/m/n/12 Coincidence points principle for set-valued mappings in
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 45--46
+\T2A/cmr/m/n/12 partially ordered spaces. Topology and its Applications,
+ []
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Khatskevich.tex [104] [105])
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Chernova.tex [106] [107]
+
+LaTeX Warning: Command \ae invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 39.
+
+) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/ShamolinMV.tex [108] [109]
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
+[]\T2A/cmr/m/n/12 на дву-мер-ном ци-лин-дре --- ка-са-тель-ном рас-сло-е-нии
+ []
+
+[110] [111]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Shananin.tex [112] [113]
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 33.
+
+
+(D:\Distrib\Full_TeX\texmf\tex\latex\cyrillic\t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Shelkovoi.tex [114] [115] [116]
+Overfull \hbox (0.86906pt too wide) in paragraph at lines 66--66
+[] 
+ []
+
+[117] [118]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Shemetova_V_V.tex [119]
+[120] [121]) (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\Data/Khabibulin.tex [122]
+[123] [124]
+Underfull \hbox (badness 2951) in paragraph at lines 107--109
+[][]\T2A/cmr/m/n/12 5. \T2A/cmr/m/it/12 Baladai R.A., Khabibullin B.N. \T2A/cmr
+/m/n/12 Three equivalent
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 110--111
+[][]\T2A/cmr/m/n/12 6. \T2A/cmr/m/it/12 Sharipov R.A. \T2A/cmr/m/n/12 A note on
+ Khabibullin's conjecture
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 110--111
+\T2A/cmr/m/n/12 for integral inequalities // e-print arXiv:1008.0376 in
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 112--114
+[][]\T2A/cmr/m/n/12 7. \T2A/cmr/m/it/12 Sharipov R.A. \T2A/cmr/m/n/12 A counter
+example to Khabibullin's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+[][]\T2A/cmr/m/n/12 8. \T2A/cmr/m/it/12 Berdellima A. \T2A/cmr/m/n/12 About a
+ Conjecture Regarding
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 115--116
+\T2A/cmr/m/n/12 Plurisubharm-o-n-ic Functions // Ufa Math. Journal, 7:4
+ []
+
+) [125] (F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\main.toc [126
+
+])
+\tf@toc=\write3
+ [127]
+(F:\!Р’Р—РњРЁ\РЎР±РѕСЂРЅРёРє\2018\main.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 48 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 3939 strings out of 493921
+ 51720 string characters out of 3150556
+ 117535 words of memory out of 3000000
+ 6990 multiletter control sequences out of 15000+200000
+ 30165 words of font info for 85 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 27i,17n,24p,1411b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Distrib/Full_TeX/texmf/fonts/enc/dvips/cm-super/cm-super-t2
+a.enc}<D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:
+/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Distrib/F
+ull_TeX/texmf/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/Distrib/Full_TeX/tex
+mf/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Distrib/Full_TeX/texmf/fonts/t
+ype1/public/amsfonts/cmextra/cmex8.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:
+/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Distrib/Fu
+ll_TeX/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Distrib/Full_TeX/texm
+f/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Distrib/Full_TeX/texmf/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cms
+s12.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
+:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Distrib/F
+ull_TeX/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Distrib/Full_TeX/tex
+mf/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Distrib/Full_TeX/texmf/fonts/ty
+pe1/public/amsfonts/cm/cmti8.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/
+amsfonts/euler/eufm10.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfont
+s/symbols/msam10.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/cm-super/sfbi1200
+.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/cm-super/sfbx1000.pfb><D:/Di
+strib/Full_TeX/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><D:/Distrib/Full_
+TeX/texmf/fonts/type1/public/cm-super/sfbx2074.pfb><D:/Distrib/Full_TeX/texmf/f
+onts/type1/public/cm-super/sfbx2488.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/
+public/cm-super/sfrm0700.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/cm-s
+uper/sfrm0800.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/cm-super/sfrm10
+00.pfb><D:/Distrib/Full_TeX/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><D:/
+Distrib/Full_TeX/texmf/fonts/type1/public/cm-super/sfti1200.pfb><D:/Distrib/Ful
+l_TeX/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (128 pages, 867508 bytes).
+PDF statistics:
+ 550 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

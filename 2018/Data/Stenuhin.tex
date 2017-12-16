@@ -1,0 +1,68 @@
+\begin{center}{ \bf  О РЕШЕНИЯХ ЗАДАЧИ КАПИЛЛЯРНОСТИ}\\
+{\it Л.В. Стенюхин } \\
+(Воронеж; {\it stenyuhin@mail.ru} )
+\end{center}
+\addcontentsline{toc}{section}{Стенюхин Л.В.\dotfill}
+
+
+Рассмотрим основной энергетический функционал задачи
+$$E(u)=\int\limits_{\Omega}\sqrt{EG-F^2}\,dx+\frac{1}{\sigma}\int\limits_{\Omega}\Upsilon\rho u\,dx+\lambda\int\limits_{\Omega} u\,dx. \eqno (1)$$
+Его первое слагаемое является функционалом площади.\\ Пусть $u_0$ --
+экстремаль (1). Близкие к $u_0$ поверхности будем задавать в
+системе координат нормального расслоения к $u_0.$ Это приведет к
+одному скалярному уравнению для близкой поверхности:
+$$\left(\frac{\delta S}{\delta u}(u_0+\eta \bar{n}),\bar{n}\right)=0,$$
+или
+$$\frac{\delta S}{\delta\eta}(\eta)=0, \eqno(2)$$
+где $\frac{\delta S}{\delta u}$ -- функциональная производная
+функционала площади, $\bar{n}$ -- нормаль к поверхности $u_0.$ Из
+уравнения (2) определяется нормальная координата $\eta=\eta
+(x,y).$
+
+\textbf{Теорема~1.} {\it Функционал площади близких к $u_0$
+	поверхностей $S(\eta)$ и его оператор Эйлера $\frac{\delta
+		S}{\delta\eta}(\eta)$ имеет следующую аналитическую структуру
+	$$S(\eta)=\int\limits_{\Omega}\sqrt {EG-F^2}\,dxdy, \eqno(3)$$
+	$$\frac{\delta S}{\delta u}(\eta)=E^3(EG-F^2)^{-\frac{3}{2}}(A\eta_{xx}-2B\eta_{xy}+C\eta_{yy}+G). \eqno(4)$$
+	Здесь $E,G,F$ -- коэффициенты первой квадратичной формы поверхности,
+	$$A=\sum\limits_{p=1}^{6}a_{ijk}\eta_x^i\eta_x^j\eta^k+1,\ B=\sum\limits_{p=1}^{6}b_{ijk}\eta_x^i\eta_y^j\eta^k,$$$$
+	C=\sum\limits_{p=1}^{6}c_{ijk}\eta_y^i\eta_y^j\eta^k+1,\ G=\sum\limits_{p=2}^{7}g_{ijk}\eta_x^i\eta_y^j\eta^k+g\eta,$$
+	где $i, j, k$ -- целые неотрицательные числа, $p=i+j+k.$ Все
+	коэффициенты $a_{ijk}, b_{ijk}, c_{ijk}, g_{ijk}, g$ -- являются
+	аналитическими функциями и находятся по формулам, подобным следующей
+	$$g=(\bar{n},\bar{n}_{xx}+\bar{n}_{yy})+\frac{4}{E}\left[(\bar{n},u_{xx})^2+(\bar{n},u_{yy})^2\right]. \eqno(5)$$}
+
+Линейная часть оператора $A\eta_{xx}-2B\eta_{xy}+C\eta_{yy}+G$ равна
+$$\Delta\eta+g\eta, \eqno(6)$$ где $\Delta$ -- лапласиан.
+
+Линейная часть первой вариации равна
+$$L\eta=E^3(EG-F^2)^{-\frac{3}{2}}(\Delta\eta+g\eta)+(\frac{\Upsilon\rho}{\sigma}+\lambda)\eta,$$
+где $g$ определена равенством (5).
+Соотношение $\frac{\Upsilon\rho}{\sigma}$ определяет число Бонда, $B=\frac{\Upsilon\rho}{\sigma}.$ Поэтому линеаризованная задача имеет вид
+$$
+\left\{\begin{array}l
+\Delta\eta+(g+E^{-3}(EG-F^2)^{\frac{3}{2}}(B+\lambda))\eta-0,\\
+\eta\biggm|_{\partial\Omega}=0.
+\end{array}\right.\eqno{(7)}
+$$
+
+Линейный оператор (7) действует из $W^2_2(\Omega)$ в $L_2(\Omega)$ и самосопряжён в $\mathring{W}^2_2(\Omega)$ относительно скалярного произведения в $L_2(\Omega).$
+
+Пусть поверхность капли $u(x,y)=(u_1(x,y),u_2(x,y),\\u_3(x,y))$ задана в конформных координатах, $E=G, F=0.$ Тогда функция $u(x,y)$ удовлетворяет условиям $u_x^2=u_y^2,\\ u_xu_y=0.$ В этом случае функционал энергии имеет вид
+$$E(u)=\int\limits_{\Omega}\frac{E+G}{2}\,dx+\int\limits_{\Omega}Bu\,dx+\lambda\int\limits_{\Omega} u\,dx. \eqno (8)$$
+Первая вариация функционала равна
+$$\frac{\delta E}{\delta u}(\eta)=\Delta\eta+(B+\lambda)\eta.$$
+Получаем задачу
+$$
+\left\{\begin{array}l
+\Delta\eta+(B+\lambda)\eta-0,\\
+\eta\biggm|_{\partial\Omega}=0.
+\end{array}\right.\eqno{(9)}
+$$
+
+\textbf{Теорема~2.} {\it Собственные значения оператора $\Delta+B+\lambda$ задачи (9) являются $\tilde{\lambda}_n=\lambda_n+B+\lambda,$ где $\lambda_n$ -- собственные значения оператора $\Delta$ с нулевым граничным условием.}
+
+%%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Стенюхин Л.В.} Бифуркационный анализ задачи капиллярности с круговой симметрией // Вестник \\ Южно-Уральского государственного университета. Серия: Математическое моделирование и программирование. Том 7, №3, 2014. С. 77 – 83.

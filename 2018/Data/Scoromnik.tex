@@ -1,0 +1,179 @@
+\begin{center}{ \bf  ДВУМЕРНОЕ ИНТЕГРАЛЬНОЕ ПРЕОБРАЗОВАНИЕ С
+ФУНКЦИЕЙ ЛЕЖАНДРА ПЕРВОГО РОДА В ЯДРЕ В ПРОСТРАНСТВЕ СУММИРУЕМЫХ ФУНКЦИЙ}\\
+{\it О.В. Скоромник } \\
+(г.Новополоцк; {\it skoromnik@gmail.com} )
+\end{center}
+\addcontentsline{toc}{section}{Скоромник О.В.\dotfill}
+
+
+Расматривается двумерное интегральное преобразование
+$$
+(\mathrm{\bf P}^{\gamma}_{\delta}f\bigr)({\bf x})\equiv
+\frac{1}{\Gamma(\alpha)}\int\limits_{\bf 0}^{\bf x}\left({\bf
+x}^{2}-{\bf t}^{2}\right)^{\frac{-\gamma}{2}}P_{\delta}^{\gamma}
+\left( \frac{\bf x}{\bf t} \right) f({\bf{t}})d{\bf t}\,\, ({\bf
+x}>{\bf 0}),
+ \eqno(1)
+ $$
+где ${\bf x}=(x_{1},x_{2})$ $\in{R}^{2}$, ${\bf t}=(t_{1},
+t_{2})\in{R}^{2}$; $\int\limits_{\bf 0}^{\bf
+x}:=\int\limits_{0}^{x_{1}}\int\limits_{0}^{x_{2}}$;  ${ \bf x\cdot
+t}=\sum \limits_{k=1}^{2}x_{k}\,t_{k}$;
+$\gamma=(\gamma_{1},\gamma_{2})$, $0<Re(\gamma_{j})<1$, $(j=1,2)$;
+$\delta=(\delta_{1},\delta_{2})$ $\in{R}^{2}$; $({\bf x})^{\alpha} =
+x_{1}^{\alpha_{1}}\cdot x_{2}^{\alpha_{2}}$,
+$\alpha=(\alpha_{1},\alpha_{2})\in {R}_{+}^{2}$;
+$\Gamma(\alpha)=\Gamma(\alpha_{1})\cdot\Gamma(\alpha_{2})$;
+$|k|=k_{1}+k_{2}$; $D^{k}= \frac{\partial^{|k|}}{(\partial
+x_{1})^{\alpha_{1}}
+ (\partial x_{2})^{\alpha_{2}}}$; $d{\bf
+ t}=dt_{1}dt_{2}$; $f({\bf{t}})=f(t_{1},t_{2})$;
+ $\bf x\geq t$
+означает $x_{1}\geq t_{1},x_{2}\geq t_{2}$.
+$P_{\delta}^{\gamma}({\bf x})$
+$=\prod\limits_{j=1}^{2}P_{\delta_{j}}^{\gamma_{j}}(x_{j})=$
+$=\prod\limits_{j=1}^{2}\frac{1}{\Gamma(1-\gamma_{j})}
+\left(\frac{x_{j}+1}{x_{j}-1}\right)^ {\frac{\gamma_{j}}{2}}$
+$F\left(-\delta_{j},1+\delta_{j};1-\gamma_{j};
+\frac{1-x_{j}}{2}\right),$ где $P_{\delta_{j}}^{\gamma_{j}}(x_{j})$
+$(j=1,2)$-- функции Лежандра первого рода [1,2];
+
+\noindent $F\left(-\delta_{j},1+\delta_{j};1-\gamma_{j};
+\frac{1-x_{j}}{2}\right)(j=1,2)$ -- гипергеометрические функции
+Гаусса [1,2].
+
+ Находим двумерное преобразование Меллина [3,формула 1.4.42]:
+$(\mathfrak{M}\varphi)(s)=$ $\int\limits_{R_{++}^{2}} {\bf
+t}^{s-1}\varphi (\bf t)d\bf t$, ${R_{++}^{2}}=\{{\bf
+t}=(t_{1},t_{2})\in R^{2}: t_{j}>0$ $(j=1,2)\}$, $s=(s_{1},s_{2})$,
+$s_{j}\in C$ $(j=1,2)$, выражения (1).
+
+Последовательно применяя [4,лемма 2,формула 39, формула 10],
+ окончательно получаем:
+
+$$(\mathfrak{M}\mathrm{\bf P}^{\gamma}_{\delta}f)(s)
+=\prod\limits_{j=1}^{2}2^{\gamma_{j}-1}\frac{\Gamma\Bigl(\frac{1+\gamma_{j}+\delta_{j}-s_{j}}{2}\Bigr)
+\Gamma\Bigl(\frac{\gamma_{j}-\delta_{j}-s_{j}}{2}\Bigr)}{\Gamma\Bigl(1-\frac{s_{j}}{2}\Bigr)
+\Gamma\Bigl(\frac{1-s_{j}}{2}\Bigr)}\times$$
+$$\times \int\limits_{0}^{\infty}t_{2}^{1-\gamma_{2}+s_{2}-1}
+\Bigl\{\int\limits_{0}^{\infty} t_{1}^{1-\gamma_{1}+s_{1}-1}
+f(t_{1},t_{2})dt_{1}\Bigr\}dt_{2}=$$
+$$\Bigl(\mathfrak{M}f\Bigr)(1-\gamma+s)
+\prod\limits_{j=1}^{2}2^{\gamma_{j}-1}
+\mathcal{H}^{0,2}_{2,2}\Biggl[
+{\bigl(\frac{1-\gamma_{j}-\delta_{j}}{2},\frac{1}{2}\bigr),\,\,\,\,
+\bigl(1+\frac{\delta_{j}-\gamma_{j}}{2},\frac{1}{2}\bigr)\atop
+\bigl(0,\frac{1}{2}\bigr),\,\,\,\,\bigl(\frac{1}{2},
+\frac{1}{2}\bigr)}\biggl|s_{j}\Biggr]$$
+$$ =2^{\gamma-1}
+\mathcal{H}^{0,2}_{2,2}\Biggl[
+{\bigl(\frac{1-\gamma-\delta}{2},\frac{1}{2}\bigr),\,\,\,\,
+\bigl(1+\frac{\delta-\gamma}{2},\frac{1}{2}\bigr)\atop
+\bigl(0,\frac{1}{2}\bigr),\,\,\,\,\bigl(\frac{1}{2},
+\frac{1}{2}\bigr)}\biggl|s\Biggr]\Bigl(\mathfrak{M}f\Bigr)(1-\gamma+s).$$
+Поэтому в силу [5, формула (5.1.14)] исходный интеграл
+преобразования (1)является двумерным аналогом модифицированного
+$\mathrm{H}$ -- преобразования [5, формула (5.1.4)] с
+$\sigma=0,\,\,k=1-\gamma$:
+%
+$$ (\mathrm{\bf P}^{\gamma}_{\delta}f\bigr)({\bf
+x})=2^{\gamma-1}\int\limits_{{\bf 0}}^{\infty}\mathrm{H}
+^{0,2}_{2,2}\Biggl[\frac{\bf x}{\bf t}\biggl|
+{\bigl(\frac{1-\gamma-\delta}{2},\frac{1}{2}\bigr)\,\,\,\,
+\bigl(1+\frac{\delta-\gamma}{2},\frac{1}{2}\bigr)\atop
+\bigl(0,\frac{1}{2}\bigr)\,\,\,\,\bigl(\frac{1}{2},
+\frac{1}{2}\bigr)}\Biggr]{\bf t}^{-\gamma}f(\bf t)d\bf t. \eqno(2)
+$$
+%
+
+
+На основании (2) формулы обращения [5, (5.5.23), (5.5.24)] для
+$\mathrm{\bf P}^{\gamma}_{\delta}f$ : $f({\bf x})=-2^{1-\gamma} h
+{\bf x}^{(\lambda+1)/h -1+\gamma}\frac{d}{d {\bf x}}{\bf
+x}^{-(\lambda+1)/h}\times$
+%
+$$
+\times\int\limits_{{\bf 0}}^{\infty}\mathrm{H}^{2,1}_{3,3}
+\Biggl[\frac{\bf t}{{\bf
+x}}\biggl|\,{(-\lambda,h),\,\bigl(\frac{\gamma+\delta}{2},\frac{1}{2}\bigr),\,\,\,\,
+\bigl(\frac{\gamma-\delta-1}{2},\frac{1}{2}\bigr)\atop
+\bigl(\frac{1}{2},\frac{1}{2}\bigr),\,\,\,\,\bigl(0,
+\frac{1}{2}\bigr),\,(-\lambda-1,h)}\Biggr]\bigl(\mathrm{{\bf
+P}}^{\gamma}_{\delta}f \bigr)({\bf t})d{\bf t},\eqno(3)
+$$
+%
+или
+
+$f({\bf x})=2^{1-\gamma}h{\bf x}^{(\lambda+1)/h-1}\frac{d}{d{\bf
+x}}{\bf x}^{-(\lambda+1)/h}\times$
+%
+$$
+\times\int\limits_{{\bf 0}}^{\infty}\mathrm{H}^{3,0}_{3,3}
+\Biggl[\frac{{\bf t}}{{\bf
+x}}\biggl|\,{\bigl(\frac{\gamma+\delta}{2},\frac{1}{2}\bigr),\,\,\,\,
+\bigl(\frac{\gamma-\delta-1}{2},\frac{1}{2}\bigr),\,(-\lambda,h)\atop
+(-\lambda-1,h),\,\bigl(\frac{1}{2},\frac{1}{2}\bigr),\,\,\,\,\bigl(0,
+\frac{1}{2}\bigr)\,}\Biggr]\bigl(\mathrm{{\bf P}}^{\gamma}_{\delta}f
+\bigr)({\bf t})d{\bf t}.\eqno(4)
+$$
+%
+
+Введем пространство  $\mathfrak{L}_{{\bf v},\,{\bf r}}$ функций
+$f({\bf{x}})$$=f(x_{1},x_{2})$, имеющих конечную норму
+
+\noindent$ \|f\|_{\bf{v},\bf{r}}$=
+ $ \{\int_{R_{+}^{1}}x_{2}^{v_{2}r_{2}-1}$
+$[\int_{R_{+}^{1}}x_{1}^{v_{1}r_{1}-1}
+|f(x_{1},x_{2})|^{r_{1}}dx_{1}]^{r_{2}/r_{1}}dx_{2}\} <\infty$
+
+ \noindent(${\bf r}=(r_{1},r_{2}), 1<{ r_{j}}<\infty$,
+ ${\bf v}=(v_{1},v_{2})\in { R}^{2}$).
+
+
+ \textbf{Теорема~1.} {\it Пусть
+$0<{\bf
+v}-\mathrm{Re}(1-\gamma)<\min[\mathrm{Re}(1+\gamma+\delta),\mathrm{Re}(\gamma-\delta)],\,\,
+0<1-{\bf v}+\mathrm{Re}(1-\gamma)<\infty$ и пусть $\lambda =
+(\lambda_{1},\lambda_{2})\in C^{2},\,\,h>0$.
+
+(a) Если $\mathrm{Re}(\gamma-1)=0$ и $f\in\mathfrak{L}_{{\bf v},2}$,
+то формула обращения (3)  справедлива  при
+$\mathrm{Re}(\lambda)>(1-{\bf v}+\mathrm{Re}(1-\gamma))h-1$, а
+формула (4) справедлива при $\mathrm{Re}(\lambda)<(1-{\bf
+v}+\mathrm{Re}(1-\gamma))h-1$.
+
+(b) Если $\mathrm{Re}(\gamma-1)=0,\,f\in\mathfrak{L}_{{\bf v},{\bf
+r}},\,\,1<{\bf r}<\infty$, то формула обращения  (3) справедлива при
+$\mathrm{Re}(\lambda)>(1-{\bf v}+\mathrm{Re}(1-\gamma))h-1$, а
+формула (4) справедлива при $\mathrm{Re}(\lambda)<(1-{\bf
+v}+\mathrm{Re}(1-\gamma))h-1$.}
+
+Работа выполнена в рамках Государственной программы научных
+исследований Республики Беларусь " Конвергенция -- 2020 "(программа
+1, задание 1.2.01).
+
+%%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+
+1. {\it Самко С. Г., Килбас А. А., Маричев О. И.} Интегралы и
+производные дробного порядка и некоторые их приложения. Минск: Наука
+и техника, 1987. -- 688 с.
+
+2. {\it  Бейтмен Г.,Эрдейи А.}  Высшие трансцендентные функции. Том
+1. Гипергеометрическая функция Гаусса. Функция Лежандра. М.: Наука,
+1965.
+
+3. {\it Kilbas A.A., Srivastava H.M., Trujillo J.J.} Theory and
+applications of fractional differential equations. North - Holland
+Mathematics Studies 204. Amsterdam: Elsevier.xv, 2006.--523 p.
+
+4.{\it Kilbas A.A., Skoromnik O.V.} Integral transforms with the
+Legendre function of the first kind in the kernels on $L_{\nu,r}$ -
+spaces // Integral Transforms and Special Functions. - 2009. - Vol.
+20, № 9. - P. 653-672.
+
+5. {\it  Kilbas A. A., Saigo M.} H — Transforms. Theory and
+Applications // Boca Raton, Florida: Chapman and Hall. 2004.— 400 p.
+
+

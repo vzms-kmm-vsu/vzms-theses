@@ -1,0 +1,85 @@
+\begin{center}{ \bf  О ПОЧТИ ПЕРИОДИЧЕСКИХ РЕШЕНИЯХ УРАВНЕНИЙ НЕЙТРАЛЬНОГО ТИПА С БЫСТРО ОСЦИЛЛИРУЮЩИМИ ЧЛЕНАМИ}\\
+{\it Е.В. Иконникова } \\
+(Воронеж; {\it uralochka\_87@mail.ru} )
+\end{center}
+\addcontentsline{toc}{section}{Иконникова Е.В.\dotfill}
+
+В настоящей статье рассматривается задача о существовании и единственности почти периодического решения, а также о сходимости решений к стационарному решению для дифференциальных уравнений нейтрального типа:
+$$
+y'(\tau)=f\bigl(\frac{\tau}{\varepsilon},y(\tau)\bigr)+ Cy'(\tau-\varepsilon h).\;\eqno{(1)}
+$$
+Предполагается, что выполнены следующие условия:
+$D1)$ функция $f: \mathbb{R}^1\times \mathbb{R}^n \rightarrow \mathbb{R}^n$ непрерывна по совокупности переменных, $\varepsilon \in (0,1)$;
+$D2)$ $f(\cdot,u)$ является почти периодической по первой переменной;
+$D3)$ $f(\xi,\cdot)$ удовлетворяет условию Липшица с константой $k_1$ по второй переменной;
+$D4)$ Оператор $C:\mathbb{R}^n\rightarrow\mathbb{R}^n$, $C=\{c_{ij}\delta_{ij}\}$, где $\delta_{ij}$ -- символы Кронекера и $|c_{ii}|< 1$.
+
+Пусть $Q=[q_{ij}]_{i,j=1}^{n}$ -- квадратная матрица размера $n\times n$;
+$\mathfrak{R}$ -- метрическое пространство; $coA$ --- выпуклая оболочка множества $A\subset\mathfrak{R}$;
+ $C(\mathbb{R}^n)$ --- пространство непрерывных и ограниченных на $(-\infty,\infty)$ функций $x\in\mathbb{R}^n$ с векторной нормой $\|x\|_{C,\:n}=colon(\|x_1\|_{C\left(\mathbb{R}\right)},\ldots, \|x_n\|_{C\left(\mathbb{R}\right)}),$
+где $\|x_i\|_{C\left(\mathbb{R}\right)}=\sup\limits_{t\in\mathbb{R}} |x_i(t)|\;(i=\overline{1,n})$;  $B(\mathbb{R}^n)$ --- пространство почти периодических функций $x\in\mathbb{R}^n$ с нормой $\|x\|_{B,\:n}=\|x\|_{C,\:n}$.
+
+Пусть функция $g: \mathbb{R}^n\rightarrow\mathbb{R}^n$ локально-липшицева. Через $\Omega_g$ обозначим множество точек, в которых $g$ не дифференцируема. Если в точке $y\in \mathbb{R}^n$ функция $g$ дифференцируема, то через $Jg(y)$ будем обозначать матрицу якобиана.
+
+ \textbf{Определение}  [1, стр. 69]. {\it Пусть $g: \mathbb{R}^n\rightarrow\mathbb{R}^n$ локально-липшицева. Обобщенный якобиан Кларка $\partial g(x)$ функции $g$ в точке $x$ определяется следующим образом:
+\begin{equation*}
+\partial g(x)=co\left\{\lim_{k\rightarrow \infty}Jg(x_k): \{x_k\}\subset \mathbb{R}^n, x_k\xrightarrow [k\rightarrow \infty] {\,}x, x_k\notin \Omega_f\right\}.
+\end{equation*}}
+
+Пусть функция $f: \mathbb{R}^1\times \mathbb{R}^n\rightarrow\mathbb{R}^n$ липшицева по второй переменной. Через $\partial f(\xi,u)$ обозначим обобщенный якобиан Кларка по переменной $u$ при фиксированной $\xi$.
+Элемент строки с номером $i$ и столбца с номером $j$ матрицы $\partial f(\xi,u)$ обозначен через $\frac {\partial f_i(\xi,u)}{\partial u_j}.$
+Пусть $\mathfrak{A}=\{\partial f(\xi,u): \xi \in (-\infty,\infty), u\in \mathbb{R}^n\}$. Обозначим:
+\begin{equation*}
+\begin{split}
+m_{ii}=&\min_{\mathfrak{A}}\frac {\partial f_i(\xi,u)}{\partial u_i},
+ M_{ii}=\max_{\mathfrak{A}}\frac {\partial f_i(\xi,u)}{\partial u_i}\;(i=\overline{1,n});\\
+ &|M_{ij}|=\max_{\mathfrak{A}}\left|\frac {\partial f_i(\xi,u)}{\partial u_j}\right|\;(i,j=\overline{1,n};\, i\neq j).
+\end{split}
+\end{equation*}
+
+\textbf{Замечание.} {\it В зависимости от значений $M_{ii}$ на элементы матрицы $C$ накладываются следующие ограничения:
+1) $-1<\frac{-m_{ii}}{M_{ii}-m_{ii}}<c_{ii}<\frac{m_{ii}}{m_{ii}+M_{ii}}<1$, если $M_{ii}>0$; 2) $-1<c_{ii}<\frac{1}{2}$, если $M_{ii}<0$.}
+
+Пусть $u\in \mathbb{R}^n$.
+Обозначим $F^0(u)= \lim_{T\rightarrow\infty}\frac {1}{T}\int\limits_{0}^{T}f(\varsigma,u)d\varsigma$.
+Наряду с (1) рассмотрим уравнение:
+$$
+\frac {dy}{d\tau}=\sum\limits_{l=0}^\infty C^lF^0 (y). \eqno{(2)}
+$$
+
+
+Предположим также, что правая часть уравнения (1) удовлетворяет следующему условию:
+
+\textbf{i)} Пусть $m_{ii},\: M_{ii},\:|M_{ij}|$ конечны при всех $i,j=\overline{1,n}$, причем ${M_{ii}\neq 0}$.
+Определим вспомогательную матрицу $Q$ следующим образом. Пусть среди $M_{ii}$ и соответствующих им компонент $c_{ii}$ встречаются числа разных знаков, без ограничения общности можно считать, что существуют $\nu, p, r\in \mathbb{N}$,  $1\leq \nu\leq p\leq r\leq n-1$ такие, что $M_{i_ki_k}>0, c_{i_ki_k}>0$ при $i_k=\overline{1,\nu}$, $M_{i_ki_k}>0, c_{i_ki_k}<0$ при $i_k=\overline{\nu+1,p}$, $M_{i_ki_k}<0, c_{i_ki_k}>0$ при $i_k=\overline{p+1,r}$  и $M_{i_ki_k}<0, c_{i_ki_k}<0$ при $i_k=\overline{r+1,n}$.
+Положим
+\begin{multline*}
+Q=
+\begin{pmatrix}
+Q^+_{ij}\bigr|_{i=\overline{1,\nu}}^{j=\overline{1,\nu}}& Q^+_{ij}\bigr|_{i=\overline{1,\nu}}^{j=\overline{\nu+1,p}}&
+Q^+_{ij}\bigr|_{i=\overline{1,\nu}}^{j=\overline{p+1,r}}& Q^+_{ij}\bigr|_{i=\overline{1,\nu}}^{j=\overline{r+1,n}}\\
+Q^-_{ij}\bigr|_{i=\overline{\nu+1,p}}^{j=\overline{1,\nu}}&
+Q^-_{ij}\bigr|_{i=\overline{\nu+1,p}}^{j=\overline{\nu+1,p}}&
+Q^-_{ij}\bigr|_{i=\overline{\nu+1,p}}^{j=\overline{p+1,r}}&
+Q^-_{ij}\bigr|_{i=\overline{\nu+1,p}}^{j=\overline{r+1,n}}\\
+\overline{Q}^+_{ij}\bigr|_{i=\overline{p+1,r}}^{j=\overline{1,\nu}}&
+\overline{Q}^+_{ij}\bigr|_{i=\overline{p+1,r}}^{j=\overline{\nu+1,p}}&
+\overline{Q}^+_{ij}\bigr|_{i=\overline{p+1,r}}^{j=\overline{p+1,r}}&
+\overline{Q}^+_{ij}\bigr|_{i=\overline{p+1,r}}^{j=\overline{r+1,n}}\\
+\overline{Q}^-_{ij}\bigr|_{i=\overline{r+1,n}}^{j=\overline{1,\nu}}&
+\overline{Q}^-_{ij}\bigr|_{i=\overline{r+1,n}}^{j=\overline{\nu+1,p}}&
+\overline{Q}^-_{ij}\bigr|_{i=\overline{r+1,n}}^{j=\overline{p+1,r}}&
+\overline{Q}^-_{ij}\bigr|_{i=\overline{r+1,n}}^{j=\overline{r+1,n}}
+\end{pmatrix}.
+\end{multline*}
+
+
+Здесь матрица $Q$ записана в виде блоков:  $Q^+_{ij}$, $Q^-_{ij}$, $\overline{Q}^+_{ij}$, $\overline{Q}^-_{ij}$ с элементами $q^+_{ij}$, $q^-_{ij}$, $\bar{q}^+_{ij}$, $\bar{q}^-_{ij}$, соответственно. Элементы блоков определены следующим образом: $q^+_{ii}=\frac{m_{ii}}{M_{ii}}-\frac{c_{ii}}{1-c_{ii}}$ при $i=\overline{1, \nu}$; $q^+_{ij}=-\frac{|M_{i,j}|}{M_{ii}} \frac{1}{1-c_{ii}}$ при $i=\overline{1, \nu}, j=\overline{1, n}, j\neq i$; $q^-_{ii}=\frac{m_{ii}}{M_{ii}}+\frac{c_{ii}}{1-c_{ii}}$ при $i=\overline{\nu+1, p}$; $q^-_{ij}=-\frac{|M_{ij}|}{M_{ii}} \Bigl(1-\frac{c_{ii}}{1-c_{ii}}\Bigr)$ при $i=\overline{\nu+1, p}, j=\overline{1,n}, j\neq i$; $\bar{q}^+_{ii}=\frac{M_{ii}}{m_{ii}}\Bigl(1-\frac{c_{ii}}{1-c_{ii}}\Bigr)$  при $i=\overline{p+1, r}$; $\bar{q}^+_{ij}=\frac{|M_{ij}|}{m_{ii}}\frac{1}{1-c_{ii}}$ при $i=\overline{p+1, r}, j=\overline{1,n}, j\neq i$; $\bar{q}^-_{ii}=\frac{M_{ii}}{m_{ii}}\frac{1}{1-c_{ii}}$ при $i=\overline{r+1, n}$; $\bar{q}^-_{ij}= \frac{|M_{ij}|}{m_{ii}}\Bigl(1-\frac{c_{ii}}{1-c_{ii}}\Bigr)$ при $i=\overline{r+1, n}, j=\overline{1,n},  j\neq i$.
+
+\textbf{Теорема~1.} {\it Пусть выполнены условия  $D1)$--$D4)$, \textbf{i)} и пусть все последовательные главные миноры соответствующей матрицы $Q$ положительны. Тогда для любого $\varepsilon >0$ уравнение (1) имеет единственное почти периодическое решение $y^\varepsilon(\tau)$, причем ${\|y^\varepsilon(\tau)-y^*\|_{B,\, n}\rightarrow 0}$ при $\varepsilon\rightarrow 0$, где $y^*$ --- стационарное решение усредненной задачи (2)} .
+
+
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Кларк, Фрэнк} Оптимизация и негладкий анализ. М.: Наука, 1988. 280 с.
+
