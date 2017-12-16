@@ -8,3 +8,8 @@ tail -n +2 |\
 grep -B 10000 -x '\\end{document}' |\
 head -n -1 >\
 $1
+
+#From: http://blog.e-shell.org/188
+
+sed '/./,$!d' $1 > $1.parsed
+mv $1.parsed $1
