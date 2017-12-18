@@ -1,0 +1,193 @@
+\begin{center}{ \bf  Об асимптотических свойствах оператора Чезаро}%
+\footnote{Работа выполнена за счёт гранта РНФ, проект 16-11-10125}
+\\
+{\it Н.Н. Авдеев } \\
+(Воронеж, ВГУ; {\it nickkolok@mail.ru} ) \\
+{\it Е.М. Семенов } \\
+(Воронеж, ВГУ; {\it nadezhka\_ssm@geophys.vsu.ru}
+)
+\end{center}
+\addcontentsline{toc}{section}{Авдеев Н.Н., Семёнов Е.М.}
+%Или тут раздельно?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Немного магии
+% Мне ОЧЕНЬ хочется использовать автонумерацию формул.
+% Если причина только в том, что при автонумерации
+% номера формул в статье будут начинаться не с 1,
+% то это можно побороть вот так:
+
+\setcounter{equation}{0}
+
+% Достаточно включить предыдущую строчку в образец оформления,
+% и автонумерацией формул можно будет смело пользоваться.
+% С теоремами это тоже делается при желании,
+% но перед набором тезисов автор обычно знает,
+% сколько теорем будет в тексте. А с формулами это не так :(
+% Библиографию не трогаю, это вообще отдельная песня с непотребным припевом.
+
+На пространстве ограниченных последовательностей $l_\infty$ определяется оператор Чезаро $C$
+равенством
+$
+	(Cx)_n = {1}/{n} \cdot \sum_{k=1}^n x_k.
+$
+Определим на $l_\infty$ $\alpha$--функцию,
+характеризующую асимптотические свойства последовательности,
+равенством
+$$
+	\alpha(x) = \varlimsup_{i\to\infty}\sup_{i < j \leqslant 2i} |x_i - x_j|.
+$$
+Пусть $A = \{x\in l_\infty | 0 \leqslant x_n \leqslant 1\}$.
+Асимптотические свойства оператора Чезаро удобнее сначала изучать на множестве $A$,
+а затем перенормировкой распространять на всё $l_\infty$.
+В [1] изучается ряд свойств оператора Чезаро.
+Можно легко доказать, что для $x\in A$ выполнено соотношение $\alpha(Cx) \leqslant 1/2$
+и $\alpha(Cx) \leqslant \alpha(x)$.
+Возникает естественный вопрос о справедливости более точной оценки.
+
+\textbf{Теорема~1.}
+{\it
+	Не существует такого $\gamma < 1$,
+	что для любого $x\in A$ выполнена мультипликативная оценка
+	$$
+		\alpha(Cx) \leqslant \gamma \cdot \alpha(x)
+	,
+	$$
+или, что то же самое, не существует такого $p\in \mathbb{N}$,
+	что для любого $x\in A$ выполнено неравенство
+	$
+		\alpha(Cx) \leqslant (1-2^{-p+1})\cdot \alpha(x).
+	$
+}
+
+Для доказательства теоремы~1 потребуются вспомогательные построения.
+\begin{equation}\label{summa_drobey}
+	\sum_{i=0}^{p-1} \frac{i \cdot 2^i}{p} = \frac{2^p(p-2) + 2}{p}
+\end{equation}
+Введём вспомогательный оператор $S:l_\infty \to l_\infty$:
+\begin{equation*}\label{operator_S}
+	(Sy)_k = y_{i+2}, \mbox{ где } 2^i < k \leqslant 2^i+1
+\end{equation*}
+Нам потребуются следующие свойства оператора $S$.
+\begin{equation}\label{alpha_S}
+	\alpha(Sx) = \varlimsup_{k\to\infty} |x_{k+1} - x_{k}|
+\end{equation}
+\begin{equation}\label{summa_S_less}
+	\sum_{k=2}^{2^p} (Sy)_k =
+	\sum_{i=0}^{p-1} 2^i y_{i+2}
+\end{equation}
+Здесь и далее $(Tx)_n = x_{n+1}$.
+\begin{equation}\label{summa_S}
+	\sum_{k=2^i+1}^{2^{i+j+1}} (Sx)_k =
+	2^i\sum_{k=2}^{2^{j+1}} (ST^ix)_k
+\end{equation}
+Введём вспомогательную функцию
+%\vspace{-2.28em}
+\begin{equation*}\label{def_k_b}
+	k_b(x) = (2b)^{-1} \left|
+		\sum\nolimits_{k=1}^{b}x_k - \sum\nolimits_{k=b+1}^{2b}x_k
+	\right|
+\end{equation*}
+Тогда
+\begin{equation}\label{alpha_greater_k_b}
+	\alpha (Cx) \geqslant \varlimsup_{i\to \infty} k_i(x)
+\end{equation}
+
+\textbf{Схема доказательства теоремы~1.}
+Зафиксируем $p$ и построим $y\in l_\infty$:
+\begin{equation*}\label{y_construction}
+	y = \left\{
+		0, 0, \frac{1}{p}, \frac{2}{p}, %\frac{3}{p},
+		...,
+		\frac{p-1}{p}, 1, \frac{p-1}{p},
+		...,
+		\frac{1}{p},
+		0, ..., 0,
+		\frac{1}{p}, ...
+	\right\}
+\end{equation*}
+так, что
+\begin{equation}\label{T_y}
+	T^{5p}y = y
+\end{equation}
+Положим $x = Sy$, тогда с учётом (\ref{alpha_S})
+$
+	\alpha (x) = \alpha (Sy) = \frac{1}{p}
+$.
+
+Оценим $\alpha(Cx)$, принимая во внимание (\ref{summa_drobey}) и (\ref{summa_S_less}) --- (\ref{alpha_greater_k_b}):
+\begin{multline*}
+	\alpha (Cx) \mathop{\geqslant}^{(\ref{alpha_greater_k_b})}
+	\varlimsup_{b\to \infty} k_b(x) \geqslant
+	\varlimsup_{
+		i\to \infty,~
+		b=2^i~
+	}\frac{1}{2^{i+1}}\left|
+		\sum_{k=1}^{2^i}(Sy)_k - \sum_{k=2^i+1}^{2^{i+1}}(Sy)_k
+	\right| \geqslant
+	\\ \geqslant
+	\varlimsup_{
+		m\to \infty,~
+		i=5pm+p~
+	}\left|
+		\frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm+p}}(Sy)_k - \frac{y_{5pm+p+2}}{2}
+	\right| =
+	\\=
+	\varlimsup_{m\to \infty}\left|
+		\frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+		+
+		\frac{1}{2^{5pm+p+1}}\sum_{k=2^{5pm}+1}^{2^{5pm+p}}(Sy)_k
+		- \frac{1}{2}
+	\right|
+	\mathop{=}^{(\ref{summa_S})}
+	\\=
+	\varlimsup_{m\to \infty}\left|
+		\frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+		+
+		\frac{2^{5pm}}{2^{5pm+p+1}} \sum_{k=2}^{2^p}(ST^{5pm}y)_k
+		- \frac{1}{2}
+	\right|
+	\mathop{=}^{(\ref{T_y})}
+	\\=
+	\varlimsup_{m\to \infty}\left|
+		\frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+		+
+		\frac{1}{2^{p+1}} \sum_{k=2}^{2^p}(Sy)_k
+		- \frac{1}{2}
+	\right|
+	\mathop{=}^{(\ref{summa_S_less})}
+	\\=
+	\varlimsup_{m\to \infty}\left|
+		\frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+		+
+		\frac{1}{2^{p+1}} \sum_{i=0}^{p-1}2^i \cdot \frac{i}{p}
+		- \frac{1}{2}
+	\right|
+	\mathop{=}^{(\ref{summa_drobey})}
+%\end{multline*}
+%\begin{multline*}
+	\\=
+	\varlimsup_{m\to \infty}\left|
+		\frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm-2p}}(Sy)_k
+		-\frac{1}{p} + \frac{1}{p 2^p}
+	\right| \geqslant
+	\\ \geqslant
+	\varlimsup_{m\to \infty} \left(
+		\frac{1}{p} (1-2^{-p})
+		- \frac{1}{2^{3p+1}}
+	\right) >
+	\frac{1}{p} (1-2^{-p+1})
+\end{multline*}
+
+
+Таким образом,
+$
+	\alpha(Cx) >
+	(1-2^{-p+1}) \cdot \alpha(x)
+$.
+
+%%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Semenov E. M., Sukochev F. A.}
+ Invariant Banach limits and applications //Journal of Functional Analysis. – 2010. – Т. 259. – №. 6. – С. 1517-1541.
