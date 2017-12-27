@@ -1,0 +1,72 @@
+\begin{center}{ \bf  SOLUTIONS EXISTENCE FOR PROBLEMS OF VISCOELASTIC MEDIA WITH MEMORY MOTION} \footnote{This paper was financially supported by the RFBR (16-01-00370).}\\
+{\it V.G. Zvyagin } \\
+(Voronezh; {\it zvg$\_$vsu@mail.ru} )
+\end{center}
+\addcontentsline{toc}{section}{Zvyagin V.G.}
+
+\begin{center}
+{\bf\small \it This is join work with Prof. V.P. Orlov.}
+\end{center}
+
+{\bf Motion model with memory on finite time interval}
+
+Integrating the Jeffreys-Oldroyd rheological relation $(1+\lambda \, \frac{d}{ d t}) \sigma = 2 \nu (1+ \varkappa \nu ^ {- 1} \frac{d}{ d t}) \mathcal{E}$
+(where $ \frac{d}{ dt} = \frac{\partial}{\partial t} + \sum\limits_{i = 1}^ nv_i \frac{\partial}{\partial x_i}$, $\mathcal{E} = $$ \{\mathcal{E} _ {ij} \} _ {i, j = 1}^ n $, $\mathcal{E} _ {ij} = \frac {1} {2} (\frac{\partial v_i} {\partial x_j} + \frac{\partial v_j}  {\partial x_i }) $ is the strain rate tensor  and $\lambda, \varkappa, \nu $ are positive constants) along velocity field $v$, expressing $\sigma$ from this relationship and substituting it in the general equation of fluid motion we get the following initial-boundary value problem
+%%%
+\begin{multline*} \label{1a}
+\dfrac{\partial v} {\partial t} + \sum\limits_{i = 1}^ n v_i \dfrac{\partial v} {\partial x_i} -\mu_0 \Delta v-\\
+\mu_1 \mathrm{Div} \, \int_0 ^ t \exp {\left(\dfrac{s-t} {\lambda}\right)} \, \mathcal{E} (v) \left(s, z (s; t, x)\right) ds + \nabla p = f;
+\end{multline*}
+\begin{equation*} \label{2a}
+\mathrm {div} \, v (t, x) = 0, \quad (t, x)  \in Q_T;
+\end{equation*}
+\begin{equation*} \label{3a}
+z (\tau; t, x) = x + \int_t^{ \tau} v \left(s, z (s; t, x)\right) \, ds, \, 0 \leqslant t, \tau \leqslant T, \, x  \in \overline {\Omega};
+\end{equation*}
+\begin{equation*} \label{4a}
+v (0, x) = v _ 0 (x),\ x\in \Omega; \quad v (t, x) = 0, \quad (t, x)  \in [0, T] \times \partial \Omega.
+\end{equation*}
+Here the integral term takes into account the memory of the system.
+For simplicity, we assume $\rho = 1 $ in rheological relation and $\mu_0 = 2 \varkappa $, $\mu_1 \! = \! 2 (\nu- \varkappa) $.
+
+\textbf{Theorem~1.} {\it Let $f=f_{1}+f_2$, where $f_{1}\in L_1(0,T;H)$, $f_{2}\in L_2(0,T;V^{-1})$ and $v_0\in H$. Then
+there exists a weak solution of the problem.}
+
+{\bf Motion model with memory on infinite time interval}
+
+Let $ Q=(-\infty, T]\times \Omega$, where $T> 0$, $\Omega \subset \mathbb{R}^n$, $n=2,3$, is a bounded domain with boundary $\partial\Omega \subset C^2$.  We consider in $Q$ the problem
+\begin{multline*}\label{1a1}
+\dfrac{\partial v}{\partial t}+\sum\limits_{i=1}^n v_i \dfrac{\partial v}{\partial x_i}-\mu_0\Delta v-\\-\mu_1\mathrm{Div}\,\int_{-\infty}^t\exp{(\dfrac{s-t}{\lambda})}\,\mathcal{E}(v)(s, z(s; t, x))ds\,
++ \nabla p=f;
+\end{multline*}
+\begin{equation*}\label{3a1}
+\mathrm{div}\,v(t, x)=0, \, (t, x)\in Q;\, v(t, x)=0, \, (t, x)\in (-\infty, T]\times \partial\Omega;
+\end{equation*}
+\begin{equation*}\label{4a1}
+%v(0, x)=v^0(x), \quad
+z(\tau; t, x)=x+\int_t^\tau v(s, z(s;t, x))\,ds, \quad t,\tau \in (-\infty, T], x\in \overline{\Omega}.
+\end{equation*}
+% конец блока "Results and Discussion"
+
+
+\textbf{Theorem~2.} {\it Let $f\in L_2(-\infty,T;V^{-1})$. Then this problem has at least one weak solution.}
+
+{\bf Fractional model of viscoelastic Voigt type fluid}
+
+Let $ Q=[0, T]\times \Omega$, where $T> 0$, $\Omega \subset \mathbb{R}^n$, $n=2,3$, is a bounded domain with boundary $\partial\Omega \subset C^2$.  We consider in $Q$ the problem
+\begin{multline*}\label{1a2}
+\dfrac{\partial v}{\partial t}+\sum\limits_{i=1}^n v_i \dfrac{\partial v}{\partial x_i}-\mu_0\Delta v-\\-\mu_1\dfrac{1}{\mbox{Г}(1-\alpha)}\mathrm{Div}\,\int_{0}^t(t-s)^{-\alpha}\mathcal{E}(v)(s, z(s; t, x))ds\,
++ \nabla p=f;
+\end{multline*}
+\begin{equation*}\label{3a2}
+\mathrm{div}\,v(t, x)=0, \, (t, x)\in Q;\,\,\, v(0,x)=v^0(x), \, x\in \Omega;
+ \end{equation*}
+\begin{equation*}
+ v(t, x)=0, \, (t, x)\in [0, T]\times \partial\Omega;
+\end{equation*}
+\begin{equation*}\label{4a2}
+%v(0, x)=v^0(x), \quad
+z(\tau; t, x)=x+\int_t^\tau v(s, z(s;t, x))\,ds, \quad t,\tau \in [0, T], x\in \overline{\Omega}.
+\end{equation*}
+
+\textbf{Theorem~3.} {\it Let $f\in L_2(0,T;V^{-1})$. Then this problem has at least one weak solution.}
