@@ -1,24 +1,25 @@
-\addcontentsline{toc}{section}{Елецких К.\,C.}
+\addcontentsline{toc}{section}{Елецких К.\,C. О среднем по окружности радиальной j-функции Бесселя}
 
 \begin{center}
-	{\bf О среднем по окружности радиальной j-функции Бесселя }\\
+	\bf О среднем по окружности радиальной j-функции Бесселя \\
 	К.\,C.~Елецких (Россия, Елец)\\
 	kostan.yeletsky@gmail.com\\
 \end{center}
 
 
-В этой работе доказаны некоторые из формул о весовых средних значениях при интегрировании  функций со степенным весом по окружности.
+В этой работе приведены некоторые из формул о весовых средних значениях при интегрировании со степенным весом по окружности.
 
 В евклидовом пространстве $\mathbb{R}_2^+=\{x=(x_1,x_2),\,\,x_1>0\}$ рассматривается смешанное преобразование Фурье-Бесселя [1]. Через $j_\nu$ обозначена j-функция Бесселя
-$j_\nu=J_\nu(t)/t^\nu$. По  переменной $x_1$ действует преобразование Бесселя (по j-функции Бесселя), по $x_2$ --- преобразование Фурье. Применением  формулы  весового интеграла по полуокружности от ядра этого преобразования
+$j_\nu(t){=}
+\Gamma(\nu{+}1)\,{J_\nu(t)\over t^\nu}$, $J_\nu$ порядка $\nu{=}{\gamma-1\over2}$, см. [1]. По  переменной $x_1$ действует преобразование Бесселя (по j-функции Бесселя), по $x_2$ --- преобразование Фурье. Применением  формулы  весового интеграла по полуокружности от ядра этого преобразования
 
-$\int\limits_{S_r^+}{\Lambda(x,\xi)\xi_1^\gamma}dS(\xi)
-=\frac{\Gamma\left(\gamma+1\over2\right)\Gamma\left(1\over2\right)}{\Gamma\left(\gamma+2\over2\right)}\,r^{\gamma+1}\,j_{\frac{\gamma}{2}}(r\,\rho),$\\
-где $\rho=|x|=\sqrt{x_1^2+x_2^2}$,
-\\  получено обратное преобразование Фурье-Бесселя финитной радиальной функции $\psi(\xi)=\left\{ \begin{array}{cc}
+$$\int\limits_{S_r^+}{\Lambda(x,\xi)\xi_1^\gamma}dS(\xi)
+=\frac{\Gamma\left(\gamma+1\over2\right)\Gamma\left(1\over2\right)}{\Gamma\left(\gamma+2\over2\right)}\,r^{\gamma+1}\,j_{\frac{\gamma}{2}}(r\,\rho),$$
+где $\Lambda(x,\xi)=j_\frac{\gamma-1}{2}(x_1,\xi_1)e^{-ix_2\xi_2}$ --- ядро смешанного преобразования, $\rho=|x|=\sqrt{x_1^2+x_2^2}$,
+получено обратное преобразование Фурье-Бесселя финитной радиальной функции\\ $\psi(\xi)=\left\{ \begin{array}{cc}
           (a^2-|\xi|^2)^{{\nu-{2+\gamma\over2}}} , & |\xi|\le a\,, \\
 					   0  ,& |\xi|>a\,.
-\end{array}\right.\,\,.$ для случая $\nu>{\gamma\over2}$:
+\end{array}\right.\,\,$ для случая $\nu>{\gamma\over2}$:
 
 $F^{-1}_B[\psi]=\left\{ \begin{array}{cc}
           C(\gamma)\,|S^+_1(2)|_\gamma \,\,\frac{\Gamma\left(\nu-\frac{\gamma}{2}\right)\,\Gamma\left(\frac{2+\gamma}{2}\right)}
@@ -26,7 +27,7 @@ $F^{-1}_B[\psi]=\left\{ \begin{array}{cc}
 j_{\nu}(a|x|) , & |\xi|\le a\,, \\
 					   0  ,& |\xi|>a\,,
 \end{array}\right.\,\,$\\
-где $C(\gamma)=\frac{1}{2^{\gamma}\,\pi\,\,\Gamma^2\left(\frac{\gamma+1}{2}\right)}\,,$ $|S^+_1(2)|_\gamma=\sqrt{\pi}\frac{\Gamma(\frac{\gamma+1}{2})}{\Gamma(\frac{\gamma+2}{2})}$
+где $C(\gamma)=\frac{1}{2^{\gamma}\,\pi\,\,\Gamma^2\left(\frac{\gamma+1}{2}\right)}\,,$ $|S^+_1(2)|_\gamma=\sqrt{\pi}\frac{\Gamma(\frac{\gamma+1}{2})}{\Gamma(\frac{\gamma+2}{2})}.$
 
 Применяя эту формулу найдено преобразование Фурье-Бесселя функции $j_\nu(a|x|)$ для случая $\nu>{\gamma+1\over2}$. Приведем полученную формулу
 
@@ -50,7 +51,7 @@ $F_B[j_\nu(a\,|x|)](\xi)=\left\{\begin{array}{cll}
 % Для оформления списка литературы, пожалуйста, используйте следующий образец
 %
 \smallskip
-
+{\small
 \centerline{\bf Литература}
 \vspace{-0.2cm}
 \begin{enumerate}
