@@ -1,0 +1,138 @@
+\begin{center}{ \bf  On the method of generalized multivalent guiding functions in the periodic problem for random differential equations }\\
+{\it S.V. Kornev} \\
+(Voronezh, Russia; {\it kornev$\_$vrn@mail.ru} )\\
+{\it V.V. Obukhovskii} \\
+(Voronezh, Russia; {\it valerio-ob2000@mail.ru} )\\
+{\it P. Zecca} \\
+(Firenze, Italy; {\it pietro.zecca@unifi.it} )\\
+\end{center}
+\addcontentsline{toc}{section}{Kornev S.V.}
+
+In order to study of periodic problem for random differential equations we introduce the notion of random multivalent guiding function. Let us mention that the method of guiding functions was developed by A.M. Krasnoselskii and A.I. Perov (see, e.g., [8]) for the investigation of periodic oscillations in dynamical systems governed by differential equations. The notion of guiding function was then generalized in several directions and applied to various problems. One of the most important directions of its development became the notion of multivalent guiding functions by D. Rachinskii (see [10]). Concerning the applications of the method of guiding functions to periodic problems of differential inclusions we can refer to the works (see, e.g., [2, 4-7]). The backgrounds and applications of the method of guiding functions in nonlinear analysis can be found also in the recent monograph (see [9]).
+
+ J. Andres and L. G\'orniewicz in the paper [1] introduced the random topological degree and developed the method of random guiding functions for the study of random periodic solutions of random differential inclusions in finite dimensional spaces. We introduce the notion of random generalized multiva\-lent guiding function and use it to prove some existence theorems of random periodic solutions to periodic problem for random differential equations.
+
+Let $X,Y$ be metric spaces.
+
+\textbf{Definition~1.} A map $f\colon\Omega\times X\to Y$ is called a {\it random operator} if it is product-measurable, i.e., measurable w.r.t. $\Sigma\otimes\mathbb{B}(X)$, where $\Sigma\otimes\mathbb{B}(X)$ is the smallest $\sigma$-algebra on $\Omega\times X$ which contains all the sets $A\times B$, where $A\in\Sigma$ and $B\in\mathbb{B}(X)$ and $\mathbb{B}(X)$ denotes the Borel $\sigma$-algebra on $X$. If, moreover, $f(\omega,\cdot)\colon X\to Y$ is continuous for all $\omega\in\Omega$, then $f$ is called a {\it random $c$-operator}.
+
+Let $(\Omega,\Sigma,\mu)$ be a complete probability space (see, e.g., [3]) and $I=[0,T]$. We consider the periodic problem for a random differential equation of the form:
+$$
+z'(\omega,t)= f\bigr(\omega, t, z(\omega,t)\bigr), \ \ \mbox{for a.e.}\ \ t\in I,
+\eqno{(1)}
+$$
+$$
+z(\omega,0) = z(\omega,T),
+\eqno{(2)}
+$$
+for all $\omega\in\Omega$, where $f\colon \Omega\times I\times\mathbb{R}^{n}\to \mathbb{R}^{n}$ satisfies the following conditions
+\begin{itemize}
+	\item [$(f_1)$] $f\colon \Omega \times I \times \mathbb{R}^n \to \mathbb{R}^n$ is a random $c$-operator;
+	\item [$(f_T)$] for every $\omega\in\Omega$
+	$$
+    f(\omega,t+T,z)=f(\omega,t,z),
+    $$
+    for all $z \in \mathbb{R}^{n},$ for a.e. $t\in I$.
+\end{itemize}
+
+By a \emph{random solution} of (1) we mean a function $\varsigma\colon\Omega\times I\to\mathbb{R}^{n}$ such that
+\begin{itemize}
+\item[$1)$] the map $\omega \in \Omega \to \varsigma(\omega, \cdot) \in C(I,\mathbb{R}^n)$ is measurable:
+\item[$2)$] for each $\omega \in \Omega$ the function $\varsigma(\omega,\cdot)$ is in $C^{1}(I,\mathbb{R}^{n})$ and satisfies (1), (2) for a.e. $t\in I$.
+\end{itemize}
+
+\noindent
+\textbf{Definition~2.} A map $V\colon\Omega\times\mathbb{R}^{n}\to\mathbb{R}$ is called a {\it random potential} if the following two conditions are satisfied:
+\begin{itemize}
+	\item[$(i)$] $V(\cdot,z)\colon\Omega\to\mathbb{R}$ is measurable for every $z\in\mathbb{R}^{n}$;
+	\item[$(ii)$] $V(\omega,\cdot)\colon\mathbb{R}^{n}\to\mathbb{R}$ is a $C^1$-map for every $\omega\in\Omega$.
+\end{itemize}
+
+\textbf{Definition~3.} A {random potential} $V$ is called a {\it random direct potential} if there exists $R_0>0$ such that
+$$
+	\nabla V(\omega, z) = \left(\frac{\partial V(\omega, z)}{\partial z_1}, \cdots, \frac{\partial V(\omega, z)}{\partial z_n}\right)
+	\neq 0
+$$
+for all $(\omega,z)\in\Omega\times\mathbb{R}^{n}\colon \|z\|\geq R_0$.
+
+Let $\mathbb{R}^{n}=\mathbb{R}^{n - 2}\times \mathbb{R}^{2}$ be a metric space. Denote by $q$ the operator of projection on $\mathbb{R}^{2}$ and $p= i - q,$ where $i$ is the identity map. The elements of $\mathbb{R}^{2}$ we shall denote as $\xi,$ the elements $\mathbb{R}^{n -2}$ as $\zeta $. Let $\varphi ,\rho $ be polar coordinates in $\mathbb{R}^{2}.$
+
+We consider the multivalent Riemann surface
+$$
+\Pi = \left\{ {\left( {\varphi ,\rho } \right):\varphi \in ( - \infty ,\infty),\rho \in (0,\infty )} \right\}.
+$$
+
+On $\Omega\times\Pi$ we define a random potential $W(\omega, \varphi, \rho)$ such that for each $\omega\in\Omega$ the following conditions
+$$
+ \frac{\partial}{\partial \varphi}W (\omega,\varphi,\rho) > 0, \quad \left(
+{\varphi ,\rho } \right) \in \Pi,
+\eqno{(3)}
+$$
+$$
+ W(\omega, \varphi + 2\pi, \rho ) = W(\omega, \varphi, \rho ) + 2\pi, \quad \left( {\varphi ,\rho } \right) \in \Pi,
+\eqno{(4)}
+$$
+hold true.
+
+On $\Omega\times\mathbb{R}^{n-2}$ let $V(\omega, \zeta)$ be a random potential satisfying for each $\omega\in\Omega$ the following coercivity condition
+$$
+\mathop{\lim}\limits_{\left\| {\zeta } \right\| \to \infty } V(\omega,\zeta ) = + \infty.
+\eqno{(5)}
+$$
+
+For each $\omega\in\Omega$ we denote $\vartheta_0=\vartheta_0(\omega):= \min V(\omega,\zeta).$ In view (5) for each $\omega\in\Omega$ the domain $\{\zeta\in \mathbb{R}^{n-2}: V(\omega, \zeta)<\vartheta\}$ is nonempty and bounded for $\vartheta:=\vartheta(\omega) > \vartheta_0.$
+
+For each $\omega\in\Omega$ we choose $\vartheta > \vartheta _{0}$ and $\rho _{2}:=\rho _{2}(\omega),\; \rho _{1}:=\rho _{1}(\omega)$ such that $\rho _{2} > \rho _{1} \ge 0.$ For each $\omega\in\Omega$ we define the following domain
+$$
+\mathfrak{G} \left( {\vartheta ,\rho _{1} ,\rho _{2} } \right) = \left\{{z \in \mathbb{R}^{n}:V(\omega, pz) < \vartheta ,\ \rho _{1} < \left\| {qz}\right\| < \rho _{2} } \right\}.
+$$
+
+We assume that on $\mathfrak{G}\times[0,T]$ random potentials $\alpha _{\vartheta ,\rho _{1} ,\rho _{2} } ( \cdot )$ and $\beta_{\vartheta ,\rho _{1} ,\rho _{2} } ( \cdot )$ are given such that
+$$
+\mathop {\sup}\limits_{z \in \mathfrak{G} \left({\vartheta ,\rho _{1} ,\rho _{2} } \right)} \langle\nabla W(\omega, qz), qf(\omega,t,z)\rangle = \alpha_{\vartheta ,\rho _{1} ,\rho _{2} } (\omega,t),
+\eqno{(6)}
+$$
+$$
+\mathop {\inf}\limits_{z \in \mathfrak{G} \left({\vartheta ,\rho _{1} ,\rho _{2} } \right)} \langle\nabla W(\omega, qz),qf(\omega,t,z)\rangle = \beta_{\vartheta ,\rho _{1} ,\rho _{2} } (\omega,t).
+\eqno{(7)}
+$$
+
+\textbf{Definition~4.} A pair of functions $\left\{ {V(\omega,\zeta),\;W(\omega,\varphi,\rho )} \right\}$ with properties (3)--(5) is called the {\it random generalized multiva\-lent guiding function} for equation (1) on $\mathfrak{G}\left({\vartheta ,\rho _{1} ,\rho _{2} } \right),$ if for each $\omega\in\Omega$ the function $V(\omega,\zeta)$ is a random direct potential and the following estimate is fulfilled:
+$$
+\mathop {\sup}\limits_{t \in \left[ {0,T} \right]}\frac{{\left| {\langle {qf(\omega,t,z),qz} \rangle} \right|}}{{\left\|{qz} \right\|}} < \frac{{\rho _{2} - \rho _{1} }}{{2T}},\quad z\in \mathfrak{G} (\vartheta ,\rho _{1} ,\rho _{2} );
+$$
+$$
+\langle\nabla V(\omega,pz),pf(\omega,t,z)\rangle \le 0,\quad V(\omega,pz) \ge \vartheta ,\;\left\| {qz} \right\| \le \rho _{2};
+$$
+$$
+2\pi (N_{\omega} - 1) < \int\limits_{0}^{T} {\alpha_{\vartheta ,\rho _{1} ,\rho _{2} } (\omega,\tau )d\tau } , \quad
+\int\limits_{0}^{T} {\beta _{\vartheta ,\rho _{1} ,\rho _{2} } (\omega,\tau )d\tau < 2\pi N_{\omega}},
+$$
+where $N_{\omega}$ is an integer; $\alpha _{\vartheta ,\rho_{1} ,\rho _{2} } (\omega,t),\,\;\beta _{\vartheta ,\rho _{1} ,\rho _{2}} (\omega,t)$ are functions from  (6)--(7).
+
+\textbf{Theorem.} {\it Let $\left\{ {V(\omega,\zeta),\;W(\omega,\varphi,\rho )} \right\}$ be random generalized multivalent guiding function for equation (1) on $\mathfrak{G}\left({\vartheta ,\rho _{1} ,\rho _{2} } \right),$ such that $\nabla V(\omega,\zeta)$ is a random $c$-operator. Then for each $\omega\in\Omega$ equation (1) has a $T$-periodic solution $z_{ * } ( \cdot )$  such that
+$$
+z_{ * } (\omega,t) \in G(\vartheta,\rho _{0}),\quad t \in [0,T], \rho _{0} = \left( {\rho _{1} + \rho _{2} } \right)/2.
+$$}
+%%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
+\smallskip \centerline{\bf References}\nopagebreak
+
+1. {\it Andres J., G\'orniewicz L.} Random topological degree and random differential inclusions // Topol. Meth. Nonl. Anal. 2012. V.\, 40. P.\, 337--358.
+
+2. {\it Borisovich Yu. G., Gelman B. D., Myshkis A. D. and Obukhovskii V. V.} Introduction to the Theory of Multivalued Maps and Differential Inclusions. (in Russian) Second edition, Moscow: Librokom, 2011.
+
+3. {\it Castaing C., Valadier M.} Convex Analysis and Measurable Multifunctions. Lecture Notes in Mathematics. 580. Berlin-New York: Springer-Verlag, 1977.
+
+4. {\it G\'{o}rniewicz L.} Topological Fixed Point Theory of Multi\-valued Mappings. 2nd edition. Topological Fixed Point Theory and Its Applications. 4. Dordrecht: Springer, 2006.
+
+5. {\it Kornev S. V.} On the method of multivalent guiding func\-tions to the periodic problem of differential inclusions // Autom. Remote Control. 2003. V.\, 64. P.\, 409--419.
+
+6. {\it Kornev S. V., Obukhovskii V. V.} On nonsmooth multiva\-lent guiding functions // Differential Equations. 2003. V.\, 39. P.\, 1578--1584.
+
+7. {\it Kornev S. V.} Multivalent guiding function in a problem on existence of periodic solutions of some classes of differential inclusions // Russian Mathematics (Iz. VUZ). 2016. V.\, 11. P.\, 14--26.
+
+8. {\it Krasnosel'skii M. A.} The Operator of Translation Along the Trajectories of Differential Equations. Translations of Mathe\-matical Monographs 19. Amer. Math. Soc. Providence. R.I., 1968.
+
+9. {\it Obukhovskii V., Zecca P., Loi N. V., Kornev S.}  Method of Guiding Functions in Problems of Nonlinear Analysis. Lecture Notes in Math. 2076. Berlin-Heidelberg: Springer-Velag, 2013.
+
+10. {\it Rachinskii D. I.} Multivalent guiding functions in forced oscillation problems // Nonlin. Anal. Theory, Methods and Appl. 1996. V.\, 26. P.\, 631--639.
