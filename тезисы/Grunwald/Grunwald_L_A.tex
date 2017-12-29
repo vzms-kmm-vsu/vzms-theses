@@ -1,0 +1,106 @@
+\documentclass[a5paper,12pt,openbib]{report}
+\usepackage{amsmath}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsfonts}
+\usepackage{amsfonts,amssymb}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{euscript}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage[dvips]{graphicx}
+\usepackage{geometry}
+\usepackage{wrapfig}
+
+\geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
+
+\righthyphenmin=2
+
+
+\begin{document}
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+
+
+\begin{center}{ \bf РАЗРЕШИМОСТЬ ИНТЕГРАЛЬНЫХ УРАВНЕНИЙ АБЕЛЯ С ВЫРОЖДЕНИЕМ В БАНАХОВЫХ ПРОСТРАНСТВАХ}\\
+{\it Л.А. Грюнвальд } \\
+(Иркутск; {\it lfb\_o@yahoo.co.uk} )
+\end{center}
+\addcontentsline{toc}{section}{Грюнвальд Л.А.}
+
+Пусть $E_1$, $E_2$~--- банаховы пространства, $u$~--- неизвестная, а $f$~--- заданная функции аргумента $t\geq0$ со значениями в $E_{1}$ и $E_{2}$ соответственно. Рассмотрим уравнение
+$$
+Bu-{\mathscr I}_{0+}^{\alpha}(Au)=f,\,\eqno(1)
+$$ 
+с правосторонним оператором Римана--Лиувилля дробного интегрирования порядка $\alpha$  [1]
+$$
+{\mathscr I}_{0+}^{\alpha}v=\frac{1}{\Gamma(\alpha)}\int\limits_{0}^{t}(t-s)^{\alpha-1}v(s)ds,
+$$
+где $\Gamma(\alpha)$~--- гамма-функция Эйлера аргумента $0<\alpha<1$, $B,\,A$~--- замкнутые линейные операторы из $E_{1}$ в $E_{2}$, причем $D(B)\subseteq D(A)$ и $\overline{D(B)}=\overline{D(A)}=E_1$. Оператор $B$ фредгольмов, т.~е. $\dim N(B)=\dim N(B^*)=n<+\infty$ и 
+$\overline{R(B)}=R(B)$.
+
+\textbf{Теорема~1.} {\it Пусть $N(B)=\varnothing$ и $f(t)\in C([0;+\infty); E_2)$, тогда уравнение (1) имеет единственное непрерывное на луче $[0;+\infty)$ решение вида
+$$
+u(t)=B^{-1}\biggl(f(t)+\int\limits_{0}^{t} \frac{\partial E_{\alpha}\bigl((t-s)^{\alpha}AB^{-1}\bigr)}{\partial t}f(s)ds\biggr),
+$$
+где $E_{\alpha}(t)=\sum\limits_{k=0}^{+\infty}\frac{t^{k}}{\Gamma(k\alpha+1)}$~--- функция Миттаг-Леффлера.}
+
+Пусть $\lbrace\varphi_{i}\rbrace_{i=1}^{n}$~--- базис в $N(B)$, $\lbrace\varphi_{i}\rbrace_{i=1}^{n}$~--- базис в $N(B^{\ast})$.
+Будем предполагать, что фредгольмов оператор $B$ имеет полный $A$-жорданов набор  $\lbrace\varphi_{i}^{(j)},\,j=\overline{1,p_{i}},\,i=\overline{1,n}\rbrace$. В этом случае, как известно из [2], оператор $B^{\ast}$ тоже имеет полный $A^{\ast}$-жорданов набор  $\lbrace\psi_{i}^{(j)},\,j=\overline{1,p_{i}},\,i=\overline{1,n}\rbrace$.
+
+\textbf{Теорема~2.} {\it Пусть 
+$$
+\langle f(t),\psi^{(j)}_i\rangle\in C_{[0;+\infty)}^{[(p_i+1-j)\alpha]+1},\,j=\overline{1,p_{i}},\,i=\overline{1,n},
+$$ 
+тогда, если при всех $j=\overline{1,p_{i}},\,i=\overline{1,n}$ выполняются условия 
+$$
+\langle f(0),\psi^{(j)}_i\rangle^{(k-1)}=0,\,k=\overline{1,[(p_{i}+1-j)\alpha]+1},\,\eqno(2)
+$$ 
+то уравнение (1) имеет единственное непрерывное на луче $[0;+\infty)$ решение вида
+$$
+u(t)=\Gamma\biggl((\mathbb I_{2}-\tilde{Q})f(t)+\int\limits_{0}^{t}\frac{\partial E_{\alpha}\bigl((t-s)^{\alpha}A\Gamma\bigr)}{\partial t}(\mathbb I_{2}-\tilde{Q})f(s)ds\biggr)-
+$$
+$$
+-\sum\limits_{i=1}^{n}\sum\limits_{k=1}^{p_i}\sum\limits_{j=1}^{p_i-k+1}{\mathscr D}^{(p_i-k+2-j)\alpha}\langle f(t),\psi_{i}^{(j)}\rangle\varphi_{i}^{(k)},
+$$
+где $\Gamma$~--- регуляризатор Треногина, ${\mathbb I}_{2}$~--- тождественный оператор на $E_{2}$, $\tilde{Q}=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{p_i}\langle\cdot,\psi_i^{(j)}\rangle A\varphi_i^{(p_i+1-j)}$~--- проектор.} 
+
+Правосторонний оператор Римана--Лиувилля дробного дифференцирования порядка $\beta>0$   [1] на классе функций $g(t)\in C_{[0;+\infty)}^{[\beta]+1}$ задается следующим образом:
+$$
+{\mathscr D}^{\beta}_{0+}g=\sum\limits_{k=1}^{[\beta]+1}\frac{g^{(k-1)}(0)}{\Gamma(k-\beta)\,t^{\beta-k+1}}+
+$$
+$$
++\frac{1}{\Gamma(1-\lbrace\beta\rbrace)}\int\limits_{0}^{t}(t-s)^{-\lbrace\beta\rbrace}g^{([\beta]+1)}(s)ds.
+$$
+
+\textbf{Теорема~3.} {\it Если в теореме 2 не выполняются условия разрешимости (2), то уравнение (1) имеет единственное непрерывное на интервале $(0; +\infty)$ решение вида
+$$
+u(t)=\Gamma\biggl((\mathbb I_{2}-\tilde{Q})f(t)+\int\limits_{0}^{t}\frac{\partial E_{\alpha}\bigl((t-s)^{\alpha}A\Gamma\bigr)}{\partial t}(\mathbb I_{2}-\tilde{Q})f(s)ds\biggr)-
+$$
+$$
+-\sum\limits_{i=1}^{n}\sum\limits_{k=1}^{p_{i}}\sum\limits_{j=1}^{p_{i}+1-k}\biggl[\sum\limits_{m=1}^{[\beta_{i}(k;\,j)]+1}\frac{\langle f(0),\psi_{i}^{(j)}\rangle^{(m-1)}}{\Gamma(m-\beta_{i}(k;\,j))\,t^{\beta_{i}(k;\,j)-m+1}}+\biggr.
+$$
+$$
+\biggl.+\int\limits_{0}^{t}\frac{(t-s)^{-\lbrace\beta_{i}(k;\,j)\rbrace}\langle f(s),\psi_{i}^{(j)}\rangle^{([\beta_{i}(k;\,j)]+1)}}{\Gamma(1-\lbrace\beta_{i}(k;\,j)\rbrace)}ds\biggr]\varphi_{i}^{(k)},
+$$
+которое имеет особенность типа полюса порядка $p\alpha$. Здесь $\beta_{i}(k;\,j)=(p_{i}-k+2-j)\alpha$ и $p=\max\lbrace p_{i}\rbrace$.}
+
+Как показано в [3], решение вырожденного уравнения
+$$
+Bu-k\ast(Au)=f,
+$$ 
+с аналитическим в точке $t=0$ ядром $k: [0;+\infty)\to{\mathbb R}$, при отказе  от условий его разрешимости является сингулярным распределением. Оказалось, если вырожденное уравнение имеет еще и "'плохое"' ядро, например слабосингулярное, как в (1), то ситуация неожиданно улучшается, а именно, в этом случае решение сохраняется в классе "'обычных"' функций.
+\\
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Самко С.Г., Килбас А.А., Маричев О.И.} Интегралы и производные дробного порядка и некоторые их приложения. М.: Наука и техника, 1987. 688 с.
+
+2. {\it Вайнберг М.М.} Теория ветвления решений нелинейных уравнений. М.: Наука, 1969. 528~с.
+ 
+3. {\it Орлов С. С.} О порядке сингулярности обобщенного решения интегрального уравнения Вольтерра типа свертки в банаховых пространствах. Изв. Иркутского гос. ун-та. Сер. Математика. 2014. Т.~10. С.~76--92.
+
+\end{document} 

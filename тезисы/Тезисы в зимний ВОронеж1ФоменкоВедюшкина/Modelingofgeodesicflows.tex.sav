@@ -1,0 +1,72 @@
+\documentclass[a5paper,12pt,openbib]{report}
+\usepackage{amsmath}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsfonts}
+\usepackage{amsfonts,amssymb}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{euscript}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage[dvips]{graphicx}
+\usepackage{geometry}
+\usepackage{wrapfig}
+
+\geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
+
+\righthyphenmin=2
+
+
+\begin{document}
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+
+
+\begin{center}{ \bf  Невыпуклые топологические биллиарды как модели интегрируемых геодезических потоков.}\\
+{\it А.Т.Фоменко } \\
+(Москва; {\it atfomenko@mail.ru} )\\
+{\it В.В.Ведюшкина } \\
+(Москва; {\it arinir@yandex.ru} )
+
+\end{center}
+\addcontentsline{toc}{section}{Фоменко А.Т.}
+
+
+Текст статьи
+
+
+
+Объем статей --- 3 страницы (для лекторов --- до 5 стр.),
+выполненная в редакторе  LaTeX по  образцу, который можно скачать на
+сайте vzmsh2018.ru.
+
+При оформлении текста тезисов просим не  переопределять команды и не
+вводить свои макросы, а также не использовать автоматическую
+нумерацию формул, библиографии, теорем и пр. Для нумерации формул
+используйте, пожалуйста, команду \verb"\eqno".
+
+Утверждения типа теорем и лемм следует оформлять по следующему
+образцу.
+
+\textbf{Теорема~1.} {\it Пример оформления определений и утверждений
+типа теорем, лемм.}
+
+\begin{center}
+Файл должен компилироваться без ошибок \\
+и переполнений ("overfull").
+\end{center}
+
+\textbf{Электронную версию тезисов необходимо выслать  по
+электронному адресу vzms@mail.ru.}
+
+%%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Крейн С.Г.} Линейные дифференциальные уравнения в банаховом пространстве. М.: Наука, 1987. 408 с.
+
+2. {\it Львовский С. М.} Набор и верстка в системе LATEX. М.: МЦНМО, 2003. — 448 с.
+
+\end{document} 
