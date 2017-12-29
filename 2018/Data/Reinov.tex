@@ -1,0 +1,416 @@
+%%%%%%%%%%
+%%%%%
+%%%%           28 12 2017  23:56:48
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{center}{APPROXIMATION PROPERTIES ASSOCIATED WITH QUASI-NORMED OPERATOR IDEALS OF
+$(r,p,q)$-NUCLEAR OPERATORS}\\
+{\it O.I. Reinov}\\
+(Saint Petersburg;  {\it orein51@mail.ru})
+\end{center}
+\addcontentsline{toc}{section}{Reinov O.I.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+We consider quasi-normed tensor products lying between
+Laprest\'e tensor products and the spaces of $(r,p,q)$-nuclear ope\-rators.
+We define and investigate the corresponding approxima\-tion pro\-per\-ties for Banach spaces.
+An intermediate aim is to answer a question of Sten Kaijser.  In the end we present two results in connection with
+a question posed by  Hinrichs A. and Pietsch A. in [2].
+
+Throughout, we denote by $X,Y, \dots$ Banach spaces over a field $\mathbb K$
+(which is either $\mathbb R$ or $\mathbb C);$ $X^*, Y^*,\dots$ are
+Banach dual to $X, Y, \dots.$ By $x, y, x',\dots$ (maybe with indices) we denote elements of
+$X, Y,  Y^*\dots$ respectively. $\pi_Y: Y\to Y^{**}$ is a natural isometric imbedding.
+It is denoted by $F(X,Y)$ a vector space of all finite rank operators
+from $X$ to $Y.$ By $X\otimes Y$ we denote the algebraic tensor product of the spaces
+$X$ and $Y.$
+  $X\otimes Y$ can be considered as a subspace of the vector space $F(X^*, Y)$
+(namely, as a vector space of all linear weak${^*}$-to-weak continuous
+finite rank operators). We can identify also the tensor product (in a natural way)
+with a corresponding subspace of $F(Y^*,X).$ If $X=W^*,$ then
+$W^*\otimes Y$ is identified with $F(X,Y^{**})$ (or with $F(Y^*,X^*).$
+If $z\in X\otimes Y,$ then $\widetilde z$ is the corresponding finite rank operator.
+If $z\in X^*\otimes X$ and e.g. $z=\sum_{k=1}^n x'_k\otimes x_k,$ then
+   $\operatorname{trace}\, z:= \sum_{k=1}^n \langle x'_k, x_k\rangle$ does not depend on representation
+   of $z$ in $X^*\otimes X.$
+ $L(X,Y)$ is a Banach space of all linear continuous mappings ("operators")
+ from $X$ to $Y$ equipped with the usual operator norm.
+ %We have:
+%$X\otimes Y\subset F(X^*, Y)\subset L(X^*,Y);$ a completion of the algebraic
+%tensor product $X\otimes Y$ with respect to the operator norm is denoted by
+%$X\widehat\otimes Y$ ("")
+
+
+  If $A\in L(X,W),$ $B\in L(Y,G)$ and $z\in X\otimes Y,$ then  a linear map
+  $A\otimes B: X\otimes Y\to W\otimes G$ is defined by
+  $A\otimes B((x\otimes y):= Ax\otimes By$ (and then extended by linearity). Since
+ $\widetilde{A\otimes B(z)}= B\widetilde z A^*$ for $z\in X\otimes Y,$ we will use notation
+$B\circ z \circ A^*\in W\otimes G$ for $A\otimes B(z).$
+In the case where $X$ is a dual space, say $F^*,$ and $T\in L(W,F)$
+(so, $A=T^*: F^*\to W^*),$
+one considers a composition $B\widetilde z T;$ in this case $T^*\otimes B$ maps
+$F^*\otimes Y$ into $W^*\otimes Y$ and
+we use notation
+$B\circ z\circ T$ for $T^*\otimes B (z).$
+
+If $\nu$ is a tensor quasi-norm (see [3, 0.5]),
+then $\nu(A\otimes B (z))\le ||A||\, ||B||\, \nu(z)$  and we can extend the map
+$A\otimes B$ to the comple\-tions of the tensor products with respect to the quasi-norm
+$\nu,$ having the same inequality. The natural map $(X\otimes Y, \nu)\to L(X^*, Y)$
+is continuous and can be extended to the completion $\widehat{X\otimes_\nu Y};$ for
+a tensor element $z\in \widehat{X\otimes_\nu Y},$ we still denote by $\widetilde z$ the corresponding
+operator. The natural mapping
+  $\widehat{X\otimes_\nu Y}\to L(X^*, Y)$  need not to be injective; {\it if it is injective
+  for a fixed $Y$ and for all $X,$ then we say that $Y$ has the $\nu$-approximation property}.
+
+A projective tensor product $X\widehat\otimes Y$ of Banach spaces $X$ and $Y$ is defined
+as a completion of $X\otimes Y$ with respect to the norm $||\cdot||_{\land}:$
+if $z\in X\otimes Y,$ then
+$ ||z||_\land:= \inf \sum_{k=1}^n ||x_k||\, ||y_k||,
+$
+where infimum is taken over all representation of $z$ as $\sum_{k=1}^n x_k\otimes y_k.$
+We can try to consider
+    $X\widehat\otimes Y$ also as operators $X^*\to Y$ or $Y^*\to X,$ but this
+    correspondence is, in general, not one-to-one.
+Note that $X\widehat\otimes Y= Y\widehat\otimes X$ in a sense.
+If $z\in X\widehat\otimes Y, \varepsilon>0,$ then one can represent $z$ as
+$z=\sum_{k=1}^\infty x_k\otimes y_k$ with $\sum_{k=1}^\infty ||x_k||\, ||y_k||<||z||_\land+\varepsilon.$
+For $z\in X^*\widehat\otimes X$ with a "projective representation" $z=\sum_{k=1}^\infty x'_k\otimes x_k,$
+trace of $z, \operatorname{trace}\, z:=z=\sum_{k=1}^\infty \langle x_k, y_k\rangle,$ does not depend of representation of $z.$
+The Banach dual $(X\widehat\otimes Y)^*= L(Y,X^*)$ by $\langle T, z\rangle=\operatorname{trace}\, T\circ z.$
+
+Finally,
+$l_p(X)$ (resp. $l^w_p(X)$) are the Banach spaces of all sequences  $(x_i)\subset X$ so that
+the norm  $ ||(x_i)||_p:=\big(\sum ||x_i||^p\big)^{1/p}$
+(resp. $||(x_i)||_{w,p}:= \sup_{||x'||\le1}\big(\sum |\langle x', x_i\rangle|^p\big)^{1/p}$) is finite.
+  % $$l^w_p(X):=\{(x_i)\subset X:\ ||(x_i)||_{w,p}:= \sup_{||x'||\le1}\big(\sum |\langle x', x_i\rangle|^p\big)^{1/p}<\infty\},$$
+   %$$l^w_\infty(X):=\{(x_i)\subset X:\ ||(x_i)||_{w,\infty}:=\sup_i ||x_i||<\infty\}.$$
+
+   {\bf Below $0<r, s\le1,$ $0< p,q \le\infty$ and $1/r+1/p+1/q=1/\beta\ge1.$}
+
+
+      \medskip
+
+       {\bf 1. The tensor products $X\widehat\otimes_{r,p,q} Y.$}
+       We use partially nota\-ti\-ons from [3].
+   For $z\in X\otimes Y$ we put
+  $$\mu_{r,p,q}(z):= \inf\{||(\alpha_k)||_r ||(x_k)||_{w,p} ||(y_k)||_{w,q}:\
+  z=\sum_{k=1}^n \alpha_k x_k\otimes y_k\};$$
+$X\otimes_{r,p,q} Y$ is the tensor product, equipped with this quasi-norm $\mu_{r,p,q}.$
+Note that $\mu_{1,\infty,\infty}$ is the projective tensor norm of A. Grothendieck [1].
+
+Let us denote by $\widehat{X\otimes_{r,p,q} Y}$ the completion of $X\otimes Y$ with respect to
+this quasi-norm $\mu_{r,p,q}$ (in [3] --- $X\underset{r,p,q}{\widehat\otimes} Y).$
+Every tensor element $z\in \widehat{X\otimes_{r,p,q} Y}$
+admits a representation of type
+$z= \sum_{k=1}^\infty \alpha_k x_k\otimes y_k,$
+where $||(\alpha_k)||_r ||(x_k)||_{w,p} ||(y_k)||_{w,q}<\infty,$ and
+$\mu_{r,p,q}(z):= \inf ||(\alpha_k)||_r ||(x_k)||_{w,p} ||(y_k)||_{w,q}$
+(inf. is taken over all such finite or infinite representations) [3, Proposition 1.3, p. 52].
+Note that $\widehat{X\otimes_{1,\infty,\infty} Y}= X\widehat\otimes Y.$
+
+The topological dual to $(\widehat{X\otimes_{r,p,q} Y}, \mu_{r,p,q})$ is the Banach space
+$\Pi_{\infty,p,q}(X,Y^*)$ of absolutely $(\infty,p,q)$-summing operators
+from $X$ to $Y^*$ [3, Theorem 1.3, p. 57]
+(recall that $0<r\le1):$ If $\tau\in (\widehat{X\otimes_{r,p,q} Y})^*$ and
+$x\otimes y\in X\otimes Y,$ then the corresponding operator $T$
+is defined by $\langle \tau, x\otimes y\rangle= \langle Tx, y\rangle$ [3, pp. 56-57].
+Recall that, by definition, an operator $T: X\to F$ is
+absolutely $(\infty,p,q)$-summing if for any finite sequences
+$(x_k)$ and $(f'_k)$ (from $X$ and $F^*$ respectively) one has
+$$ \sup_k |\langle Tx_k, f'_k\rangle|\le C\, ||(x_k)||_{w,p} ||(f'_k)||_{w,q}.
+$$
+With a norm $\pi_{\infty,p,q}(T):= \inf C,$ the space
+ $\Pi_{\infty,p,q}(X, F)$ is a Banach space and in duality above (for $F=Y^*)$
+ $\pi_{\infty,p,q}(T)= ||\tau||$ (on the right, the norm of the functional
+  $\tau\in(\widehat{X\otimes_{r,p,q} Y})^*$).
+ Futhermore, taking a sequence in $X\times F^*,$ consisting of one nonzero element
+ $(x,f'),$ we obtain: If $T\in \Pi_{\infty,p,q}(X, F),$ then
+ $|\langle Tx, f'\rangle|\le \pi_{\infty,p,q}(T)\, ||x||\, ||f'||;$
+ thus, $||T||\le \pi_{\infty,p,q}(T).$
+  On the other hand, if $T\in L(X,F),$ then
+for any finite sequences $(x_k)$ and $(f'_k),$ \,
+$\sup_k |\langle Tx_k, f'_k\rangle|\le
+ ||T||\, ||(x_k)||_{w,p}\, ||(f'_k)||_{w,q}.$
+ There\-fo\-re,
+ $\Pi_{\infty,p,q}(X, F)= L(X, F).$
+
+ I do not know whether the dual space $\Pi_{\infty,p,q}(X, Y^*)$ sepa\-ra\-tes
+ points of $\widehat{X\otimes_{r,p,q} Y}.$ If so, then a natural map
+   $\widehat{X\otimes_{r,p,q} Y}\to X\widehat\otimes Y$ is one-to-one. As a matter of fact,
+   it follows from the above considerations, that
+ {\it the space $\Pi_{\infty,p,q}(X, Y^*)$ separates
+ points of $\widehat{X\otimes_{r,p,q} Y}$ iff the natural map
+   $j_{r,p,q}:\, \widehat{X\otimes_{r,p,q} Y}\to X\widehat\otimes Y$ is one-to-one.}
+       \smallskip
+
+ \textbf{Definition 1.1.}  {\it
+ We define a tensor product $X\widehat\otimes_{r,p,q} Y$ as a linear subspace of
+ the projective tensor product $X\widehat\otimes Y,$ consisting of all tensor elements $z,$
+ which admit representations of type
+ $
+  z=\sum_{k=1}^\infty \alpha_k x_k\otimes y_k,\
+  (\alpha_k)\in l_r,\, (x_k)\in l_{w,p},\, (y_k)\in l_{w,q}
+ $
+ and equipped with the quasi-norm $||z||_{\land\!; r,p,q}= \inf ||(\alpha_k)||_r\,
+  ||(x_k)||_{w,p}\, ||(y_k)||_{w,q},$ where the infimum is taken over all
+  representations of $z$ in the above form.
+  }
+       \smallskip
+
+ \textbf{Remark 1.1}.\,
+  We can define $X\widehat\otimes_{r,p,q} Y$ also as a quotient of the space $\widehat{X\otimes_{r,p,q} Y}$
+ by the kernel of the map $j_{r,p,q}$ (i.e. by the annihilator $L(X,Y^*)_{\perp}$ of
+$L(X,Y^*)$ in the space $\widehat{X\otimes_{r,p,q} Y}).$ Therefore:
+
+ (i)\,
+ The tensor product $X\widehat\otimes_{r,p,q} Y$ is complete, i.e. a quasi-Banach space.
+This, with the injectivity of the natural map $X\widehat\otimes_{r,p,q} Y\to X\widehat\otimes Y$
+answers a  question of Sten Kaijser ("Why the last map is one-to-one
+for the "completion" $X\widehat\otimes_{r,p,q} Y$?").
+
+ (ii)\,
+If the dual of $\widehat{X\otimes_{r,p,q} Y}$ separates points of this space,
+ then we can write $\widehat{X\otimes_{r,p,q} Y}= X\widehat\otimes_{r,p,q} Y.$ In this case
+ "finite nuclear" quasi-norm $\mu_{r,p,q}$ coincides with the tensor quasi-norm
+$||z||_{\land\!; r,p,q}$ (compare with [4, 18.1.10.]).
+
+(iii)\,
+ The dual space to $X\widehat\otimes_{r,p,q} Y$ is still
+ $\Pi_{\infty,p,q}(X,Y^*)$ of absolutely $(\infty,p,q)$-summing operators
+from $X$ to $Y^*$ with its natural quasi-norm.
+                        \smallskip
+
+
+\textbf{Proposition 1.1} {\it
+Let
+1)\,
+$0<r_1\le r_2\le1,$ $p_1\le p_2$ and $q_1\le q_2$
+or
+2)\,
+ $0<r_1< r_2\le1,$ $p_1\ge p_2,$ $q_1\ge q_2$ and
+ $1/r_2+1/p_2+1/q_2\le 1/r_1+1/p_1+1/q_1.$
+If $z\in X\otimes Y,$ then
+ $||z||_{\land\!; r_2,p_2,q_2} \le ||z||_{\land\!; r_1,p_1,q_1}.$
+     %$\mu_{r_2,p_2,q_2}(z)\le \mu_{r_1,p_1,q_1}(z).$
+In particular,
+$||z||_{\land\!; 1,\infty,\infty} \le ||z||_{\land\!; r_1,p_1,q_1}.$
+   %$\mu_{1,\infty,\infty}(z)\le \mu_{r_1,p_1,q_1}(z).$
+Consequen\-t\-ly, a natural mappings
+$X\widehat\otimes_{r_1,p_1,q_1} Y\to X\widehat\otimes_{r_2,p_2,q_2} Y\to X\widehat\otimes Y$ are continuos
+injections of quasi-norms 1.
+}
+                       \smallskip
+
+
+  \textbf{Proposition 1.2.}  {\it
+ If $X$ or $Y$ has the bounded approximation property, then
+ $\mu_{r,p,q}= ||\cdot||_{\land\!; r,p,q}$ on $X\otimes Y.$ Hence, in this case
+ the dual of $\widehat{X\otimes_{r,p,q} Y}$ separates points, $j_{r,p,q}$ is injective and
+ $\widehat{X\otimes_{r,p,q} Y}= X\widehat\otimes_{r,p,q} Y$ (and equals to the corresponding space of
+ $(r,p,q)$-nuclear operators; see below Corollary 2.1).
+ }
+                              \smallskip
+
+
+\textbf{Remark 1.2.}
+For an "operator" situation, see Corollary 2.1 below
+and (for $1\le p,q,\le \infty)$ [4, pp. 249-251].
+
+          \bigskip
+
+
+{\bf 2. Approximation properties.}
+We begin with the main definition.
+\smallskip
+
+\textbf{Definition 2.1.} {\it
+ A Banach space $X$ has the approximation property $AP_{r,p,q}$ if
+ for every Banach space $Y$ the canonical map\-ping $Y\widehat\otimes_{r,p,q} X\to L(Y^*,X)$
+ is one to one.
+ }
+ \smallskip
+
+\textbf{Proposition 2.1.} {\it
+  The following conditions are equivalent:
+
+  1)\,
+$X$ has the $AP_{r,p,q}.$
+
+2)\,
+For every space $W$
+the natural map from $W^*\widehat\otimes_{r,p,q} X$ to $L(W,X)$ is one-to-one.
+
+3)\,
+The natural map $X^*\widehat\otimes_{r,p,q} X\to L(X):=L(X,X)$ is one-to-one.
+}
+        \smallskip
+
+
+  \textbf{Proposition 2.2.} {\it
+ If $X^*$ has the $AP_{r,p,q},$ then $X$ has the $AP_{r,q,p}.$
+ }
+             \smallskip
+
+       \textbf{Remark 2.1.}
+        The inverse statement is not true. Exam\-ples
+     are given in [7, Remark 6.1].
+             \smallskip
+
+
+Recall that a linear map $T: X\to Y$ is called $(r,p,q)$-nuclear
+if it has a representation $T= \sum_{k=1}^\infty \alpha_k\, \langle  x'_k, \cdot\rangle y_k,$
+where $(\alpha_k)\in l_r,$ $(x'_k)\in l_{w,p}(X^*)$ and $(y_k)\in l_{w,q}(Y).$
+Every such a map is continuous. The space $N_{r,p,q}(X,Y)$ of all
+$(r,p,q)$-nuclear operators from $X$ to $Y$ can be considered as a quotient
+of the tensor product $X^*\widehat\otimes_{r,p,q} Y$ (as well as a quotient of
+$\widehat{X^*\otimes_{r,p,q} Y})$ by the kernel of the natural map
+$X^*\widehat\otimes_{r,p,q} Y \to L(X,Y).$ We equip this space with the induced
+quasi-norm $(\beta$-norm)
+denoted by $\nu_{r,p,q}.$ If the corresponding quotient map has
+a trivial kernel, then we write $N_{r,p,q}(X,Y)= X^*\widehat\otimes_{r,p,q} Y$
+Thus, $X$ has the $AP_{r,p,q}$ iff for every space $Y$ the equality
+ $N_{r,p,q}(Y,X)= Y^*\widehat\otimes_{r,p,q} X$ holds.
+        \smallskip
+
+
+It follows from Proposition 1.1:
+\smallskip
+
+\textbf{Proposition 2.3.} {\it
+Let
+1)\,
+$0<r_1\le r_2\le1,$ $p_1\le p_2$ and $q_1\le q_2$
+or
+2)\,
+ $0<r_1< r_2\le1,$ $p_1\ge p_2,$ $q_1\ge q_2$ and
+ $1/r_2+1/p_2+1/q_2\le 1/r_1+1/p_1+1/q_1.$
+If
+$X$ has the $AP_{r_2,p_2,q_2},$ then $X$ has the $AP_{r_1,p_2,q_3}.$
+In particular, the $AP$ of A. Grothendieck implies any $AP_{r,p,q}.$
+}
+\smallskip
+
+\textbf{Corollary 2.1.}    {\it
+(i)\,
+If $X$ has the bounded approximation property, then for all $r,p,q$ and $Y$
+the equalities
+$N_{r,p,q}(Y,X)= Y^*\widehat\otimes_{r,p,q} X = \widehat{Y^*\otimes_{r,p,q} X}$
+hold (with the same quasi-norms).
+  (ii)\,
+If $Y^*$ has the bounded approximation property, then for all $r,p,q$ and $X$
+the equalities
+$N_{r,p,q}(Y,X)= Y^*\widehat\otimes_{r,p,q} X = \widehat{Y^*\otimes_{r,p,q} X}$
+hold (with the same quasi-norms).
+}
+                        \smallskip
+
+
+The first part of the following fact is partially known
+(cf. [4, 18.1.15-18.1.16] for $1\le p,q\le\infty).$
+\smallskip
+
+ \textbf{Proposition 2.4.} {\it
+ For any  spaces $X,Y$ the equalities
+ $$
+    N_{r,p,2}(Y,X)= Y^*\widehat\otimes_{r,p,2} X = \widehat{Y^*\otimes_{r,p,2} X}, $$
+
+$$    N_{r,2,q}(Y,X)= Y^*\widehat\otimes_{r,2,q} X = \widehat{Y^*\otimes_{r,2,q} X}
+ $$
+ hold (with the same quasi-norms).
+ In particular, every Banach space has the $AP_{r,p,2}$ and the $AP_{r,2,p}.$
+ }
+  \smallskip
+
+\textbf{Remark 2.2.}
+The fact that every $X$ has the $AP_{1,2,\infty}$ is essentially contained in
+[4, 27.4.10, Proposition]. It is strange, but it seems that
+a corresponding fact for $AP_{1,\infty,2}$ appears here for the first time.
+Note that this fact follows also from the preceding by virtue of Proposition 2.2:
+if every $X$ has the $AP_{1,2,\infty},$ then $X^*$ possesses this property,
+and by Proposition 2.2 $X$ has the $AP_{1,\infty,2}.$
+
+  \smallskip
+
+Many of the above approximation properties were consider\-ed earlier, e.g. in the
+papers [5, 6, 7]:
+(i)\,
+For $p=q=\infty,$ we get the $AP_r$ from [6, 7].  \,
+(ii)\,
+For $p=\infty,$ we get the $AP_{[r,q]}$ from [5, 7].   \,
+(iii)\,
+For $q=\infty,$ we get the $AP^{[r,p]}$ from [5, 7].
+
+\smallskip
+
+Following notations from [7] (see also [5]), we denote
+$N_{r,\infty,\infty}$ by $N_r,$
+$N_{r,\infty,q}$ by $N_{[r,q]},$
+$N_{r,p,\infty}$ by $N^{[r,p]}.$
+The corresponding notations are used also for $AP_{r,p,q}$
+(cf.  (i)--(iii) above).
+Almost all the information about Banach spaces without (or with) the properties
+ $AP_r,$ $AP_{[r,q]}$ and  $AP^{[r,p]}$ which is known to us by now,
+ can be found in [5, 6, 7].
+                \medskip
+
+
+{\bf 3. On regularity of $N_{r,p,q}.$}
+The following question was posed by A. Hinrichs and A. Pietsch  in [2]:
+suppose $T$ is a (bounded linear) operator acting between Banach spaces $X$ and $Y,$
+and let $s\in(0,1).$ Is it true that if $T^*$ is $s$-nuclear then $T$ is $s$-nuclear too?
+We present here two results (answering the question in negative):
+\smallskip
+
+\textbf{Theorem 3.1.} {\it
+Let  $ T\in L(X,Y)$
+and assume that either
+$\, X^*\in \,AP_{r,q,p}\ $ or $\, Y^{***}\in \,AP_{r,q,p}.$
+If $\pi_Y T\in N_{r,p,q}(X, Y^{**}),$
+     $\nu_{r,p,q}(T)<1,$
+then  $T\in N_1(X,Y)$ and
+      $\nu_1(T)\le1.$
+ }
+\smallskip
+
+This theorem is sharp. For example:
+
+\smallskip
+
+  \textbf{Theorem 3.2.} {\it
+  Let $r\in(2/3,1]$, $p\in(1,2], 1/r-1/p=1/2.$
+ There exists a separable Banach space $Z$ so that
+   $Z^{**}$ has a ba\-sis and
+ there is an operator $U:Z^{**}\to Z$ such that
+
+  $(\alpha)$\, $\pi_ZU\in N^{[r,p_0]}(Z^{**},Z^{**}),\ \forall \, p_0\in[1,p);$
+
+  $(\beta)$\, $U$ is not nuclear as a map from $Z^{**}$ into $Z$
+}
+
+  \smallskip
+  \centerline{\bf References}\nopagebreak
+
+1. {\it Grothendieck A.} Produits tensoriels topologiques et \'espa\-ces nucl\'eaires.
+Mem. Amer. Math. Soc. 16, 1955.
+
+2. {\it Hinrichs A.,  Pietsch A.} $p$-nuclear operators in the sense of Grothendieck.
+Math. Nachr. 283 (2), 2010, 232--261.
+
+3. {\it Lapreste, J. T.} Op\'erateurs sommants et factorisations \`a travers les espaces $L_p.$
+Studia Math. 57, 1976, 47-83.
+
+4. {\it Pietsch A.} Operator Ideals. North Holland, 1980. 451 p.
+
+5. {\it Reinov O., Latif Q.} Distribution of eigenvalues of nuclear operators and
+Grothendieck-Lidski type formulas. J. Math. Sci., Springer,
+193 (2),  2013, 312-329.
+
+6. {\it Reinov O.} On linear operators with s-nuclear adjoints, $0 < s \le 1.$
+Math. Anal. Appl. 415, 2014, 816-824.
+
+7. {\it Reinov O.} Some Remarks on Approximation Properties with Applications.
+Ordered Structures and Applications: Positi\-vity VII, Trends in Mathematics. 2016, 371-394,
