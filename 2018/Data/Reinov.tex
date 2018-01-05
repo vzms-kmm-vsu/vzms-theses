@@ -57,7 +57,7 @@ we use notation
 $B\circ z\circ T$ for $T^*\otimes B (z).$
 
 If $\nu$ is a tensor quasi-norm (see [3, 0.5]),
-then $\nu(A\otimes B (z))\le ||A||\, ||B||\, \nu(z)$  and we can extend the map
+then $\nu(A\otimes B (z))\leqslant ||A||\, ||B||\, \nu(z)$  and we can extend the map
 $A\otimes B$ to the comple\-tions of the tensor products with respect to the quasi-norm
 $\nu,$ having the same inequality. The natural map $(X\otimes Y, \nu)\to L(X^*, Y)$
 is continuous and can be extended to the completion $\widehat{X\otimes_\nu Y};$ for
@@ -85,11 +85,11 @@ The Banach dual $(X\widehat\otimes Y)^*= L(Y,X^*)$ by $\langle T, z\rangle=\oper
 Finally,
 $l_p(X)$ (resp. $l^w_p(X)$) are the Banach spaces of all sequences  $(x_i)\subset X$ so that
 the norm  $ ||(x_i)||_p:=\big(\sum ||x_i||^p\big)^{1/p}$
-(resp. $||(x_i)||_{w,p}:= \sup_{||x'||\le1}\big(\sum |\langle x', x_i\rangle|^p\big)^{1/p}$) is finite.
+(resp. $||(x_i)||_{w,p}:= \sup_{||x'||\leqslant1}\big(\sum |\langle x', x_i\rangle|^p\big)^{1/p}$) is finite.
   % $$l^w_p(X):=\{(x_i)\subset X:\ ||(x_i)||_{w,p}:= \sup_{||x'||\le1}\big(\sum |\langle x', x_i\rangle|^p\big)^{1/p}<\infty\},$$
    %$$l^w_\infty(X):=\{(x_i)\subset X:\ ||(x_i)||_{w,\infty}:=\sup_i ||x_i||<\infty\}.$$
 
-   {\bf Below $0<r, s\le1,$ $0< p,q \le\infty$ and $1/r+1/p+1/q=1/\beta\ge1.$}
+   {\bf Below $0<r, s\leqslant1,$ $0< p,q \leqslant\infty$ and $1/r+1/p+1/q=1/\beta\geqslant1.$}
 
 
       \medskip
@@ -115,13 +115,13 @@ Note that $\widehat{X\otimes_{1,\infty,\infty} Y}= X\widehat\otimes Y.$
 The topological dual to $(\widehat{X\otimes_{r,p,q} Y}, \mu_{r,p,q})$ is the Banach space
 $\Pi_{\infty,p,q}(X,Y^*)$ of absolutely $(\infty,p,q)$-summing operators
 from $X$ to $Y^*$ [3, Theorem 1.3, p. 57]
-(recall that $0<r\le1):$ If $\tau\in (\widehat{X\otimes_{r,p,q} Y})^*$ and
+(recall that $0<r\leqslant1):$ If $\tau\in (\widehat{X\otimes_{r,p,q} Y})^*$ and
 $x\otimes y\in X\otimes Y,$ then the corresponding operator $T$
 is defined by $\langle \tau, x\otimes y\rangle= \langle Tx, y\rangle$ [3, pp. 56-57].
 Recall that, by definition, an operator $T: X\to F$ is
 absolutely $(\infty,p,q)$-summing if for any finite sequences
 $(x_k)$ and $(f'_k)$ (from $X$ and $F^*$ respectively) one has
-$$ \sup_k |\langle Tx_k, f'_k\rangle|\le C\, ||(x_k)||_{w,p} ||(f'_k)||_{w,q}.
+$$ \sup_k |\langle Tx_k, f'_k\rangle|\leqslant C\, ||(x_k)||_{w,p} ||(f'_k)||_{w,q}.
 $$
 With a norm $\pi_{\infty,p,q}(T):= \inf C,$ the space
  $\Pi_{\infty,p,q}(X, F)$ is a Banach space and in duality above (for $F=Y^*)$
@@ -129,11 +129,11 @@ With a norm $\pi_{\infty,p,q}(T):= \inf C,$ the space
   $\tau\in(\widehat{X\otimes_{r,p,q} Y})^*$).
  Futhermore, taking a sequence in $X\times F^*,$ consisting of one nonzero element
  $(x,f'),$ we obtain: If $T\in \Pi_{\infty,p,q}(X, F),$ then
- $|\langle Tx, f'\rangle|\le \pi_{\infty,p,q}(T)\, ||x||\, ||f'||;$
- thus, $||T||\le \pi_{\infty,p,q}(T).$
+ $|\langle Tx, f'\rangle|\leqslant \pi_{\infty,p,q}(T)\, ||x||\, ||f'||;$
+ thus, $||T||\leqslant \pi_{\infty,p,q}(T).$
   On the other hand, if $T\in L(X,F),$ then
 for any finite sequences $(x_k)$ and $(f'_k),$ \,
-$\sup_k |\langle Tx_k, f'_k\rangle|\le
+$\sup_k |\langle Tx_k, f'_k\rangle|\leqslant
  ||T||\, ||(x_k)||_{w,p}\, ||(f'_k)||_{w,q}.$
  There\-fo\-re,
  $\Pi_{\infty,p,q}(X, F)= L(X, F).$
@@ -147,7 +147,7 @@ $\sup_k |\langle Tx_k, f'_k\rangle|\le
    $j_{r,p,q}:\, \widehat{X\otimes_{r,p,q} Y}\to X\widehat\otimes Y$ is one-to-one.}
        \smallskip
 
- \textbf{Definition 1.1.}  {\it
+ \textbf{Definition 1.1.1.}  {\it
  We define a tensor product $X\widehat\otimes_{r,p,q} Y$ as a linear subspace of
  the projective tensor product $X\widehat\otimes Y,$ consisting of all tensor elements $z,$
  which admit representations of type
@@ -188,16 +188,16 @@ from $X$ to $Y^*$ with its natural quasi-norm.
 \textbf{Proposition 1.1} {\it
 Let
 1)\,
-$0<r_1\le r_2\le1,$ $p_1\le p_2$ and $q_1\le q_2$
+$0<r_1\leqslant r_2\leqslant1,$ $p_1\leqslant p_2$ and $q_1\leqslant q_2$
 or
 2)\,
- $0<r_1< r_2\le1,$ $p_1\ge p_2,$ $q_1\ge q_2$ and
- $1/r_2+1/p_2+1/q_2\le 1/r_1+1/p_1+1/q_1.$
+ $0<r_1< r_2\leqslant1,$ $p_1\geqslant p_2,$ $q_1\geqslant q_2$ and
+ $1/r_2+1/p_2+1/q_2\leqslant 1/r_1+1/p_1+1/q_1.$
 If $z\in X\otimes Y,$ then
- $||z||_{\land\!; r_2,p_2,q_2} \le ||z||_{\land\!; r_1,p_1,q_1}.$
+ $||z||_{\land\!; r_2,p_2,q_2} \leqslant ||z||_{\land\!; r_1,p_1,q_1}.$
      %$\mu_{r_2,p_2,q_2}(z)\le \mu_{r_1,p_1,q_1}(z).$
 In particular,
-$||z||_{\land\!; 1,\infty,\infty} \le ||z||_{\land\!; r_1,p_1,q_1}.$
+$||z||_{\land\!; 1,\infty,\infty} \leqslant ||z||_{\land\!; r_1,p_1,q_1}.$
    %$\mu_{1,\infty,\infty}(z)\le \mu_{r_1,p_1,q_1}(z).$
 Consequen\-t\-ly, a natural mappings
 $X\widehat\otimes_{r_1,p_1,q_1} Y\to X\widehat\otimes_{r_2,p_2,q_2} Y\to X\widehat\otimes Y$ are continuos
@@ -206,7 +206,7 @@ injections of quasi-norms 1.
                        \smallskip
 
 
-  \textbf{Proposition 1.2.}  {\it
+  \textbf{Proposition 1.2.2.}  {\it
  If $X$ or $Y$ has the bounded approximation property, then
  $\mu_{r,p,q}= ||\cdot||_{\land\!; r,p,q}$ on $X\otimes Y.$ Hence, in this case
  the dual of $\widehat{X\otimes_{r,p,q} Y}$ separates points, $j_{r,p,q}$ is injective and
@@ -216,9 +216,9 @@ injections of quasi-norms 1.
                               \smallskip
 
 
-\textbf{Remark 1.2.}
+\textbf{Remark 1.2.2.}
 For an "operator" situation, see Corollary 2.1 below
-and (for $1\le p,q,\le \infty)$ [4, pp. 249-251].
+and (for $1\leqslant p,q,\leqslant \infty)$ [4, pp. 249-251].
 
           \bigskip
 
@@ -227,14 +227,14 @@ and (for $1\le p,q,\le \infty)$ [4, pp. 249-251].
 We begin with the main definition.
 \smallskip
 
-\textbf{Definition 2.1.} {\it
+\textbf{Definition 2.1.1.} {\it
  A Banach space $X$ has the approximation property $AP_{r,p,q}$ if
  for every Banach space $Y$ the canonical map\-ping $Y\widehat\otimes_{r,p,q} X\to L(Y^*,X)$
  is one to one.
  }
  \smallskip
 
-\textbf{Proposition 2.1.} {\it
+\textbf{Proposition 2.1.1.} {\it
   The following conditions are equivalent:
 
   1)\,
@@ -250,12 +250,12 @@ The natural map $X^*\widehat\otimes_{r,p,q} X\to L(X):=L(X,X)$ is one-to-one.
         \smallskip
 
 
-  \textbf{Proposition 2.2.} {\it
+  \textbf{Proposition 2.2.2.} {\it
  If $X^*$ has the $AP_{r,p,q},$ then $X$ has the $AP_{r,q,p}.$
  }
              \smallskip
 
-       \textbf{Remark 2.1.}
+       \textbf{Remark 2.1.1.}
         The inverse statement is not true. Exam\-ples
      are given in [7, Remark 6.1].
              \smallskip
@@ -280,21 +280,21 @@ Thus, $X$ has the $AP_{r,p,q}$ iff for every space $Y$ the equality
 It follows from Proposition 1.1:
 \smallskip
 
-\textbf{Proposition 2.3.} {\it
+\textbf{Proposition 2.3.3.} {\it
 Let
 1)\,
-$0<r_1\le r_2\le1,$ $p_1\le p_2$ and $q_1\le q_2$
+$0<r_1\leqslant r_2\leqslant1,$ $p_1\leqslant p_2$ and $q_1\leqslant q_2$
 or
 2)\,
- $0<r_1< r_2\le1,$ $p_1\ge p_2,$ $q_1\ge q_2$ and
- $1/r_2+1/p_2+1/q_2\le 1/r_1+1/p_1+1/q_1.$
+ $0<r_1< r_2\leqslant1,$ $p_1\geqslant p_2,$ $q_1\geqslant q_2$ and
+ $1/r_2+1/p_2+1/q_2\leqslant 1/r_1+1/p_1+1/q_1.$
 If
 $X$ has the $AP_{r_2,p_2,q_2},$ then $X$ has the $AP_{r_1,p_2,q_3}.$
 In particular, the $AP$ of A. Grothendieck implies any $AP_{r,p,q}.$
 }
 \smallskip
 
-\textbf{Corollary 2.1.}    {\it
+\textbf{Corollary 2.1.1.}    {\it
 (i)\,
 If $X$ has the bounded approximation property, then for all $r,p,q$ and $Y$
 the equalities
@@ -310,10 +310,10 @@ hold (with the same quasi-norms).
 
 
 The first part of the following fact is partially known
-(cf. [4, 18.1.15-18.1.16] for $1\le p,q\le\infty).$
+(cf. [4, 18.11.15-18.1.16] for $1\leqslant p,q\leqslant\infty).$
 \smallskip
 
- \textbf{Proposition 2.4.} {\it
+ \textbf{Proposition 2.4.4.} {\it
  For any  spaces $X,Y$ the equalities
  $$
     N_{r,p,2}(Y,X)= Y^*\widehat\otimes_{r,p,2} X = \widehat{Y^*\otimes_{r,p,2} X}, $$
@@ -325,9 +325,9 @@ $$    N_{r,2,q}(Y,X)= Y^*\widehat\otimes_{r,2,q} X = \widehat{Y^*\otimes_{r,2,q}
  }
   \smallskip
 
-\textbf{Remark 2.2.}
+\textbf{Remark 2.2.2.}
 The fact that every $X$ has the $AP_{1,2,\infty}$ is essentially contained in
-[4, 27.4.10, Proposition]. It is strange, but it seems that
+[4, 27.44.10, Proposition]. It is strange, but it seems that
 a corresponding fact for $AP_{1,\infty,2}$ appears here for the first time.
 Note that this fact follows also from the preceding by virtue of Proposition 2.2:
 if every $X$ has the $AP_{1,2,\infty},$ then $X^*$ possesses this property,
@@ -365,14 +365,14 @@ and let $s\in(0,1).$ Is it true that if $T^*$ is $s$-nuclear then $T$ is $s$-nuc
 We present here two results (answering the question in negative):
 \smallskip
 
-\textbf{Theorem 3.1.} {\it
+\textbf{Theorem 3.1.1.} {\it
 Let  $ T\in L(X,Y)$
 and assume that either
 $\, X^*\in \,AP_{r,q,p}\ $ or $\, Y^{***}\in \,AP_{r,q,p}.$
 If $\pi_Y T\in N_{r,p,q}(X, Y^{**}),$
      $\nu_{r,p,q}(T)<1,$
 then  $T\in N_1(X,Y)$ and
-      $\nu_1(T)\le1.$
+      $\nu_1(T)\leqslant1.$
  }
 \smallskip
 
@@ -380,7 +380,7 @@ This theorem is sharp. For example:
 
 \smallskip
 
-  \textbf{Theorem 3.2.} {\it
+  \textbf{Theorem 3.2.2.} {\it
   Let $r\in(2/3,1]$, $p\in(1,2], 1/r-1/p=1/2.$
  There exists a separable Banach space $Z$ so that
    $Z^{**}$ has a ba\-sis and
@@ -409,7 +409,7 @@ Studia Math. 57, 1976, 47-83.
 Grothendieck-Lidski type formulas. J. Math. Sci., Springer,
 193 (2),  2013, 312-329.
 
-6. {\it Reinov O.} On linear operators with s-nuclear adjoints, $0 < s \le 1.$
+6. {\it Reinov O.} On linear operators with s-nuclear adjoints, $0 < s \leqslant 1.$
 Math. Anal. Appl. 415, 2014, 816-824.
 
 7. {\it Reinov O.} Some Remarks on Approximation Properties with Applications.

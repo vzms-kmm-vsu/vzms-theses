@@ -9,7 +9,7 @@
 
 Пусть $H$ -- действительное гильбертово пространство со скалярным произведением $\left(\cdot, \cdot \right)$ и порожденной нормой  $\left\| \cdot \right\|$, $C$ -- непустое выпуклое замкнутое подмножество пространства  $H$ и $A:H\to H$ -- некоторый оператор. Рассмотрим вариационное неравенство:
 $$
-	\mbox{найти} \  x \in C :  \ \left(Ax, y-x \right)\geq 0\quad \forall y \in C. \eqno{(1)}
+	\mbox{найти} \  x \in C :  \ \left(Ax, y-x \right)\geqslant 0\quad \forall y \in C. \eqno{(1)}
 $$
 Множество решений вариационного неравенства (1) обозначим  $VI\left(A, C\right)$.
 
@@ -32,7 +32,7 @@ $$
 $$
 \left\{
 \begin{array}{l}
-  j\left(n\right) = \min  \left\{j\ge 0: \; \;  \left\| AP_{C} \left(x_{n} -\sigma \tau ^{j} Ax_{n} \right)-Ax_{n} \right\| \right. \le \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \left.\le \frac{\theta}{\sigma \tau ^{j}} \left\| P_{C} \left(x_{n} -\sigma \tau ^{j} Ax_{n} \right)-x_{n} \right\| \right\},  \\
+  j\left(n\right) = \min  \left\{j\geqslant 0: \; \;  \left\| AP_{C} \left(x_{n} -\sigma \tau ^{j} Ax_{n} \right)-Ax_{n} \right\| \right. \leqslant \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \left.\leqslant \frac{\theta}{\sigma \tau ^{j}} \left\| P_{C} \left(x_{n} -\sigma \tau ^{j} Ax_{n} \right)-x_{n} \right\| \right\},  \\
 \lambda_{n} =\sigma \tau ^{j\left(n\right)} .
 \end{array}
 \right.
@@ -43,7 +43,7 @@ x_{n+1} =P_{T_{n} } \left(x_{n} -\lambda _{n} Ay_{n} \right),
 $$
 где
 $$
-T_{n} =\left\{z\in H:\; \left(x_{n} -\lambda _{n} Ax_{n} -y_{n} ,z-y_{n} \right)\le 0\right\}.
+T_{n} =\left\{z\in H:\; \left(x_{n} -\lambda _{n} Ax_{n} -y_{n} ,z-y_{n} \right)\leqslant 0\right\}.
 $$
 }
 
@@ -56,7 +56,7 @@ $$}
 \textbf{Лемма~2.} {\it
 Для последовательностей $\left(x_{n} \right)$, $\left(y_{n} \right)$, порожденных алгоритмом, имеет место неравенство
 $$
-\left\| x_{n+1} -z\right\|^{2} \le \left\| x_{n} -z\right\|^{2} -\left(1-\theta \right)\left\| x_{n} -y_{n} \right\|^{2} -
+\left\| x_{n+1} -z\right\|^{2} \leqslant \left\| x_{n} -z\right\|^{2} -\left(1-\theta \right)\left\| x_{n} -y_{n} \right\|^{2} -
 $$
 $$
  \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad -\left(1-\theta \right)\left\| x_{n+1} -y_{n} \right\|^{2} , \eqno{(2)}
