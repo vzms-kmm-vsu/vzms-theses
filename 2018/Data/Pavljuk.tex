@@ -1,0 +1,100 @@
+\begin{center}{ \bf  ОБ ОДНОЙ СМЕШАННОЙ ЗАДАЧЕ ДЛЯ ВОЛНОВОГО УРАВНЕНИЯ НА ГРАФЕ}\\
+{\it Я.П. Павлюк} \\
+(Воронеж, ВГУ; {\it ioanna1997@yandex.ru} )
+\end{center}
+\addcontentsline{toc}{section}{Павлюк Я.П.\dotfill}
+
+На простейшем графе из двух ребер,первое из которых образует кольцо(цикл), а второе примыкает к нему,  рассматривается следующая смешанная задача, трактуемая как задача в пространстве вектор-функций$u(x,t)=(u_{1} (x,t),u_{2} (x,t))^{T} $(\textit{T~}- знак транспонирования):
+
+
+$$\frac{\partial ^{2} u_{j} (x,t)}{\partial t^{2} } =\frac{\partial ^{2} u_{j} (x,t)}{\partial x^{2} } ,(j=1,2),t\in (-\infty ,\infty ),x\in [0,1],  \eqno(1) $$
+$$u_{1} \left(0,t\right)=u_{1} \left(1,t\right)=u_{2} \left(0,t\right),u_{2} \left(1,t\right)=0, \eqno(2) $$
+$$u_{1x}^{{'} } \left(0,t\right)-u_{1x}^{{'} } \left(1,t\right)+u_{2x}^{{'} } \left(0,t\right)=0, \eqno(3) $$
+$$u_{1} \left(x,0\right)=\phi _{1} \left(x\right),u_{2} \left(x,0\right)=\phi _{2} \left(x\right),x\in \left[0,1\right],\eqno(4)$$
+$$u_{1t}^{{'} } \left(x,0\right)=u_{2t}^{{'} } \left(x,0\right)=0. \eqno(5) $$
+
+
+Используя методы из [1], получено классическое решение задачи (1)-(5) при минимальных требованиях на $\phi \left(x\right)=\left(\phi _{1} \left(x\right),\phi _{2} \left(x\right)\right)^{T} $:$\phi _{j} \left(x\right)\in C^{2} \left[0,1\right]$ и комплекснозначные,
+
+
+$$\phi _{1} \left(0\right)=\phi _{1} \left(1\right)=\phi _{2} \left(0\right),\phi _{2} \left(1\right)=0,\phi _{1}^{{'} } \left(0\right)-\phi _{1}^{{'} } \left(1\right)+\phi _{2}^{{'} } \left(0\right)=0,\eqno(6)$$
+$$\phi _{1}^{{'} {'} } \left(0\right)=\phi _{1}^{{'} {'} } \left(1\right)=\phi _{2}^{{'} {'} } \left(0\right),\phi _{2}^{{'} {'} } \left(1\right)=0 \eqno(7) $$
+
+
+(условие (7) следует из дифференциальной системы).
+
+Как известно, решение начальной задачи для уравнения (1) задается формулой Даламбера:
+
+
+$$ u\left(x,t\right)=\frac{1}{2} \left(F(x+t)+F\left(x-t\right)\right). \eqno(8) $$
+
+
+Покажем, что решение задачи (1)-(5) при условиях (6)-(7) на начальные данные также дается аналогом формулы Даламбера (см.также [1], [2]).
+
+\textbf{Лемма 1.} Пусть функция $u(x,t)$ из (8), где $F\left(x\right)=\left(F_{1} \left(x\right),F_{2} \left(x\right)\right)^{T} ,$и$F_{k} (x)$ - дважды дифференцируемые функции, удовлетворяет задаче (1)-(5). Тогда $F\left(x\right)=\phi \left(x\right)$ при $x\in \left[0,1\right],$ и $F_{k} (x)$ удовлетворяют следующим соотношениям:
+
+\[F_{1} \left(-t\right)=\frac{1}{2} \left(F_{1} \left(1-t\right. \right)-\left. F_{1} \left(t\right)\right)+F_{2} \left(t\right),F_{2} \left(-t\right)=\frac{1}{2} \left(F_{1} \left(t\right. \right)+\left. F_{1} \left(1-t\right)\right),\]
+
+\[F_{1} \left(1+t\right)=\frac{1}{2} \left(F_{1} \left(t\right. \right)-\left. F_{1} \left(1-t\right)\right)+F_{2} \left(t\right),F_{2} \left(1+t\right)=-F_{2} \left(1-t\right).\]
+
+\textbf{Доказательство.  }Распишем покомпонентно вектор $u\left(x,t\right)$ из (8):
+
+\[u_{1} \left(x,t\right)=\frac{1}{2} \left(F_{1} (x+t)+F_{1} \left(x-t\right)\right),u_{2} \left(x,t\right)=\frac{1}{2} \left(F_{2} (x+t)+F_{2} \left(x-t\right)\right).\]
+
+При $t=0,x\in \left[0,1\right]$ получим: $u_{1} \left(x,0\right)=F_{1} \left(x\right)=\phi _{1} \left(x\right),$$u_{2} \left(x,0\right)=F_{2} \left(x\right)=\phi _{2} \left(x\right).$Выпишем значения вектор-функции $u\left(x,t\right)$при$x=0$и$x=1:$
+
+\[u_{1} \left(0,t\right)=\frac{1}{2} \left(F_{1} (t)+F_{1} \left(-t\right)\right),u_{1} \left(1,t\right)=\frac{1}{2} \left(F_{1} (1+t)+F_{1} \left(1-t\right)\right),\]
+
+\[u_{2} \left(0,t\right)=\frac{1}{2} \left(F_{2} (t)+F_{2} \left(-t\right)\right),u_{2} \left(1,t\right)=\frac{1}{2} \left(F_{2} (1+t)+F_{2} \left(1-t\right)\right).\]
+
+Из краевых условий (2) и (3) получим:
+
+
+$$F_{1} \left(t\right)+F_{1} \left(-t\right)=F_{1} \left(1+t\right)+F_{1} \left(1-t\right),  \eqno(9) $$
+$$F_{1} \left(t\right)+F_{1} \left(-t\right)=F_{2} \left(t\right)+F_{2} \left(-t\right),  \eqno(10) $$
+$$F_{2} \left(1+t\right)+F_{2} \left(1-t\right)=0, \eqno(11) $$
+$$F_{1}^{{'} } \left(t\right)+F_{1}^{{'} } \left(-t\right)-F_{1}^{{'} } \left(1+t\right)-F_{1}^{{'} } \left(1-t\right)+F_{2}^{{'} } \left(t\right)+F_{2}^{1} \left(-t\right)=0. \eqno(12) $$
+
+
+Из условий на функцию $\phi \left(x\right)$имеем:
+
+\[F_{1} \left(0\right)=F_{1} \left(1\right)=F_{2} \left(0\right),F_{2} \left(1\right)=0,\]
+
+\[F_{1}^{{'} } \left(0\right)-F_{1}^{{'} } \left(1\right)+F_{2}^{{'} } \left(0\right)=0,\]
+
+\[F_{1}^{{'} {'} } \left(0\right)=F_{1}^{{'} {'} } \left(1\right)=F_{2}^{{'} {'} } \left(0\right),F_{2}^{{'} {'} } \left(1\right)=0.\]
+
+Выразим $F_{k} \left(-t\right)$ и $F_{k} \left(1+t\right)$ через$F_{k} \left(t\right)$ и$F_{k} \left(1-t\right),$$k=1,2.$ Продифференцируем  (9)  по переменной $t,$ и полученное уравнение вычтем из (12):
+
+
+$$F_{1}^{{'} } \left(-t\right)-F_{1}^{{'} } \left(1-t\right)+F_{2}^{{'} } \left(t\right)+F_{2}^{{'} } \left(-t\right)=0. $$
+
+
+Проинтегрировавэто соотношение с учетом приведенных выше условий на функцию $F(x)$при$t=0$, получим уравнение, которое будем рассматривать вместо (12):
+
+\[F_{1} \left(-t\right)-F_{1} \left(1-t\right)-F_{2} \left(t\right)+F_{2}^{{'} } \left(t\right)+F_{2} \left(-t\right)=0.\]
+
+Таким образом, система (9)-(12) примет вид:
+
+
+$$F_{1} \left(t\right)+F_{1} \left(-t\right)=F_{1} \left(1+t\right)+F_{1} \left(1-t\right), $$
+$$F_{1} \left(t\right)+F_{1} \left(-t\right)=F_{2} \left(t\right)+F_{2} \left(-t\right),$$
+$$F_{2} \left(1+t\right)+F_{2} \left(1-t\right)=0,$$
+$${F_{1} \left(-t\right)-F_{1} \left(1-t\right)-F_{2} \left(t\right)+F_{2}^{{'} } \left(t\right)+F_{2} \left(-t\right)=0.} $$
+
+
+Разрешая эту систему относительно $F_{k} \left(-t\right)$ и $F_{k} \left(1+t\right)$, придем к утверждению леммы${\rm \blacktriangle }$
+
+Непосредственной проверкой можно убедиться, что функция $F(x)$ из леммы 1 является дважды непрерывно-дифференцируемой периодической функциейс периодом 2. Отсюда следует основной результат.
+
+\textbf{Теорема.} Классическое решение задачи (1)-(5) имеет вид $u\left(x,t\right)=\frac{1}{2} \left(F(x+t)+F\left(x-t\right)\right),$ где $F\left(x\right)=\left(F_{1} \left(x\right),F_{2} \left(x\right)\right)^{T} ,$$F_{k} \left(x\right)$ - дважды дифференцируемая периодическая функция (с периодом 2), причем $F\left(x\right)=\phi \left(x\right)$при$x\in \left[0,1\right]$, а на отрезке $\left[-1,0\right]$$F\left(x\right)$ определяется соотношениями:
+
+\[F_{1} \left(-t\right)=\frac{1}{2} \left(F_{1} \left(1-t\right. \right)-\left. F_{1} \left(t\right)\right)+F_{2} \left(t\right),F_{2} \left(-t\right)=\frac{1}{2} \left(F_{1} \left(t\right. \right)+\left. F_{1} \left(1-t\right)\right).\]
+
+
+
+\smallskip \centerline{\bf Литература}\nopagebreak
+
+1. {\it Бурлуцкая М.Ш., Хромов А.П.} Резольвентный подход в методе Фурье / М.Ш.Бурлуцкая, А.П.Хромов //Докл. РАН. -- 2014. - Т. 458, №2. -- С. 138-140.
+
+2. {\it Бурлуцкая М.Ш.} Метод Фурье в смешанной задаче для волнового уравнения на графе / М.Ш.Бурлуцкая// Докл. РАН. - 2015. - Т. 465, № 5. - С.~519--522.
