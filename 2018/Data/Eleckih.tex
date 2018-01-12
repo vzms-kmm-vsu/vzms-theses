@@ -29,11 +29,17 @@ j_{\nu}(a|x|) , & |\xi|\leqslant a\,, \\
 \end{array}\right.\,\,$\\
 где $C(\gamma)=\frac{1}{2^{\gamma}\,\pi\,\,\Gamma^2\left(\frac{\gamma+1}{2}\right)}\,,$ $|S^+_1(2)|_\gamma=\sqrt{\pi}\frac{\Gamma(\frac{\gamma+1}{2})}{\Gamma(\frac{\gamma+2}{2})}.$
 
-Применяя эту формулу найдено преобразование Фурье-Бесселя функции $j_\nu(a|x|)$ для случая $\nu>{\gamma+1\over2}$. Приведём полученную формулу
+Применяя эту формулу найдено преобразование Фурье-Бесселя функции $j_\nu(a|x|)$ для случая $\nu>{\gamma+1\over2}$.
+Приведём полученную формулу:
+$$
+	F_B[j_\nu(a|x|)](\xi)=\!
+	\begin{cases}
+		\!\frac{2^{\gamma+1}\sqrt{\pi}\,\Gamma(\frac{\gamma+1}{2})\Gamma\left(\nu+1\right)}{\Gamma\left(\nu-\frac{\gamma}{2}\right)\,a^{2\nu}}(a^2-|\xi|^2)^{{\nu-\frac{2+\gamma}{2}}}, &\!  |\xi|\leqslant a \\
+%		{} & \\
+		\!0 , &\! |\xi|> a\,.
+	\end{cases}
+$$
 
-$F_B[j_\nu(a\,|x|)](\xi)=\left\{\begin{array}{cll}
-\frac{2^{\gamma+1}\sqrt{\pi}\,\Gamma(\frac{\gamma+1}{2})\Gamma\left(\nu+1\right)}{\Gamma\left(\nu-\frac{\gamma}{2}\right)\,a^{2\nu}}(a^2-|\xi|^2)^{{\nu-\frac{2+\gamma}{2}}} &, &  |\xi|\leqslant a \\
-{} & {} & \\									0 \, &, & |\xi|> a\,.\end{array} \right.$
 % Для оформления теорем, пожалуйста, используйте следующий образец
 %
 % \textbf{Теорема.} \textit{ Текст формулировки теоремы.}

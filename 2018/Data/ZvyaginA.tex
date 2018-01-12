@@ -5,13 +5,17 @@
 \end{center}
 \addcontentsline{toc}{section}{Звягин А.В.}
 
-Пусть $\Omega \subset \mathbb{R}^n$, $n=2,3$, -- ограниченная область с границей $\partial\Omega$ класса $C^2$. В $Q_T=[0,T]\times \Omega$ рассматривается начально--краевая задача:
+Пусть $\Omega \subset \mathbb{R}^n$, $n=2,3$, -- ограниченная область с границей
+$\partial\Omega$ класса $C^2$. В $Q_T=[0,T]\times \Omega$ рассматривается начально-краевая задача:
 \small{
 \begin{gather*}
 \label{Eq1}\frac{\partial v}{\partial t} +  \sum_{i=1}^nv_i\frac{\partial v}{\partial x_i}- 2 \mbox{Div }(\nu(\theta)\mathcal{E})-\varkappa\frac{\partial\Delta v}{\partial t} - 2 \varkappa \mbox{Div} (\sum_{i=1}^n v_i \frac{\partial\mathcal{E}}{\partial {x_i}})-\\
 - 2\varkappa\mbox{Div} \left(\mathcal{E}(v) W_{\rho}(v)-W_{\rho}(v)\mathcal{E}(v)\right)+\nabla{p}=f;\\
 \label{Eq2} \mbox{div }{v}=0 \mbox{ в } Q_T;\qquad v|_{t=0}\,=v_0 \mbox{ в } \Omega; \qquad v|_{[0,T]\times\partial \Omega  }\,=0;\\
-\label{Eq3} \frac{\partial \theta}{\partial t} + \sum_{i=1}^n v_i \frac{\partial \theta}{\partial x_i}  - \chi\Delta \,\theta=2\big{(}{\nu}(\theta)\mathcal {E}+\varkappa \frac{\partial \mathcal{E}}{\partial t} + \varkappa \sum_{i=1}^n v_i \frac{\partial\mathcal{E}}{\partial {x_i}}\big{)}: \mathcal{E}(v)+g;\\
+\label{Eq3}
+\frac{\partial \theta}{\partial t} + \sum_{i=1}^n v_i \frac{\partial \theta}{\partial x_i}  - \chi\Delta\theta=
+\\=
+2\big{(}{\nu}(\theta)\mathcal {E}+\varkappa \frac{\partial \mathcal{E}}{\partial t} + \varkappa \sum_{i=1}^n v_i \frac{\partial\mathcal{E}}{\partial {x_i}}\big{)}: \mathcal{E}(v)+g;\\
 \label{Eq4}
   \theta|_{t=0} =\theta_0 \mbox{ в } \Omega; \qquad \theta|_{[0,T]\times\partial \Omega  }\,=0.
 \end{gather*}}
@@ -24,7 +28,7 @@ E_{1}=\{v: v\in L_\infty(0,T,V^1), v' \in L_2(0,T;$ $V^{-1})\}
 $  и
 $E_{2}=\{v: v\in L_p(0,T; W^1_p(\Omega)), v' \in L_1(0,T;$ $W^{-1}_{p}(\Omega)),\ 1<p<+\infty\}$.
 
-\textbf{Определение 1.} \textsl{Слабым решением называется пара $(v, \theta) \in E_1 \times E_2,$ удовлетворяющая начальным условиям $v|_{t=0} = v_0$ и $\theta|_{t=0}=\theta_0$ и соотношениям
+\textbf{Определение 1.} \textit{Слабым решением называется пара $(v, \theta) \in E_1 \times E_2,$ удовлетворяющая начальным условиям $v|_{t=0} = v_0$ и $\theta|_{t=0}=\theta_0$ и соотношениям
 \begin{gather*}\begin{array}{lcc}
 \int_{\Omega} {\partial v}/{\partial t}\, \varphi \,dx -\int_{\Omega} \sum_{i,j=1}^n v_i v_j {\partial
 {\varphi_j}}/{\partial
@@ -37,14 +41,17 @@ $E_{2}=\{v: v\in L_p(0,T; W^1_p(\Omega)), v' \in L_1(0,T;$ $W^{-1}_{p}(\Omega)),
 \mathcal{E}(\theta):\mathcal{E}( \phi)\,dx=\\= 2\int_\Omega\big{(}({\nu}(\theta)  \mathcal {E}(v)+\varkappa{\partial  \mathcal {E}(v)}/{\partial t}+\varkappa \sum_{i=1}^n v_i {\partial\mathcal{E}(v)}/{\partial {x_i}}): \mathcal {E}(v)\big{)}:\\:\phi \,dx+\langle g,\phi\rangle \quad \mbox{при всех }  \phi \in C^{\infty}_0(\Omega) \mbox{ и п.в. } t\in [0,T].\end{array}
 \end{gather*}}
 
-\textbf{Теорема 1.} \textsl{Пусть  функция $\nu(\theta)\in C^2(-\infty,+\infty)$ является монотонно возрастающей и $0\leqslant\nu(\theta)\leqslant M$, $f \in L_2(0,T;V^{-1})$, $g \in L_1(0,T; H^{-2(1-1/p)}_p(\Omega))$, $v_0 \in V^1$, $\theta_0 \in W^{1-2/p}_p(\Omega)$. Тогда при $1<p<4/3$ для $n=2$ и для $1<p<5/4$ при $n=3$ существует слабое решение.}
+\textbf{Теорема 1.} \textit{Пусть  функция $\nu(\theta)\in C^2(-\infty,+\infty)$ является монотонно возрастающей и $0\leqslant\nu(\theta)\leqslant M$, $f \in L_2(0,T;V^{-1})$, $g \in L_1(0,T; H^{-2(1-1/p)}_p(\Omega))$, $v_0 \in V^1$, $\theta_0 \in W^{1-2/p}_p(\Omega)$. Тогда при $1<p<4/3$ для $n=2$ и для $1<p<5/4$ при $n=3$ существует слабое решение.}
 
 %%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
 \smallskip \centerline{\bf Литература}\nopagebreak
 
 1. {\it Звягин А.В., Орлов В.П.} Разрешимость задачи термовязкоупругости для одной модели Осколкова // Известия Вузов. Математика. 2014. $\No 9$, стр. 69-74.
 
-2. {\it Zvyagin A.V., Orlov V.P.} Solvability of the thermoviscoelasticity problem for linearly elastically retarded Voiht liquids // Mathematical Notes. 2015. V.97. $\No 5$. pp. 38-52.
+2. {\it Zvyagin A.V., Orlov V.P.}
+Solvability of the ther\-mo\-vis\-co\-elas\-ti\-ci\-ty problem for linearly elastically retarded Voiht liquids
+//
+Mathe\-ma\-tical Notes. 2015. V.97. $\No 5$. pp. 38-52.
 
 3. {\it Звягин А.В.} Разрешимость задачи термовязкоупругости для альфа-модели Лере // Известия ВУЗов. Математика. 2016. $\No 10$. стр. 70-75.
 

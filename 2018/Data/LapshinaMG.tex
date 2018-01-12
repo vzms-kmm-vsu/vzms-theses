@@ -8,21 +8,30 @@
 \addcontentsline{toc}{section}{Лапшина  М.\,Г.}
 
 
-Пусть $N$ и $n$~--- фиксированные натуральные числа, $1\leqslant n\leqslant N $,
-$x=(x',x'')\in \mathbb{R}_N^+=\mathbb{R}_n^+\times\mathbb{R}_{N-n}$,
-$$x'{=}(x_1,\ldots,x_n)\in R_n^+{=}\{x_i{>}0\,,\, i{=}\overline{1,n}\},\,\,
-x''{=}(x_{n+1},\ldots,x_N)\in R_{N{-}n},$$
-$\gamma{=}(\gamma_1,\ldots,\gamma_n)$~--- мультииндекс, состоящий из
+Пусть $N$ и $n$~--- фиксированные натуральные числа,
+$$1\leqslant n\leqslant N,$$
+$$x=(x',x'')\in \mathbb{R}_N^+=\mathbb{R}_n^+\times\mathbb{R}_{N-n},$$
+$$
+%\begin{multline*}
+x'=(x_1,\ldots,x_n)\in R_n^+=\{x_i>0\,,\, i=\overline{1,n}\},\,\,
+$$
+$$
+x''=(x_{n+1},\ldots,x_N)\in R_{N-n},
+%\end{multline*}
+$$
+$\gamma=(\gamma_1,\ldots,\gamma_n)$~--- мультииндекс, состоящий из
 фиксированных положительных чисел, $(x')^\gamma=\prod_{i=1}^n x_i^{\gamma_i}$,
 $\langle x\,,\,\xi\rangle{=}\sum_{i=1}^{N}x_i\xi_i$.
 
-Действие обобщённого сдвига определяется  равенством\\
-$
-(T^y f)(x){=}C(\gamma)\int\limits_{0}^{\pi}
+Действие обобщённого сдвига определяется  равенством
+\begin{multline*}
+(T^y f)(x)=
+\\=
+C(\gamma)\int\limits_{0}^{\pi}
 \ldots \int\limits_{0}^{\pi}
 f\left(\sqrt{x'^2{+}y'^2{-}2x'y'\cos\alpha},\,
  x''{-}y''\right)\sin^{\gamma-1}\alpha' d\alpha',
-$ \\
+\end{multline*}
 где $\sqrt{x^{'2}+y^{'2}-2x'y'\cos\alpha}$ --- $n$-мерный вектор  с координатами\\
 $\sqrt{x_j^{2}+y_j^{2}-2x_jy_j\cos\alpha_j}\,,\,\,\, j=\overline{1,n}$\, и
 $
@@ -30,46 +39,45 @@ C(\gamma)=\prod\limits_{i=1}^n\frac{\Gamma\left(\frac{\gamma_i+1}{2}\right)}
 {\Gamma\left(\frac{1}{2}\right)\Gamma\left(\frac{\gamma_i}{2}\right)}\,.
 $
 
-Понятие функции "весовая плоская волна"\, введено в [1] в виде:
+Понятие функции <<весовая плоская волна>> введено в [1] в виде:
 ${\cal P}^\gamma_{x'} f(\langle x\,,\,\xi\rangle)$,
-где ${\cal P}^\gamma$~--- многомерный оператор Пуассона,\\
-$
-{\cal P}^\gamma_{x'} f(x',x''){=}C(\gamma)
-\int\limits_0^\pi\ldots \int\limits_0^\pi f(x_1\cos\alpha_1,\,\ldots\,,x_n\cos\alpha_n,\,x'')
+где ${\cal P}^\gamma$~--- многомерный оператор Пуассона,
+\begin{multline*}
+{\cal P}^\gamma_{x'} f(x',x'')=
+\\=
+C(\gamma)
+\int\limits_0^\pi\ldots\int\limits_0^\pi f(x_1\cos\alpha_1,\,\ldots,\,x_n\cos\alpha_n,\,x'')
 \sin^{\gamma-1}\alpha'\,d\alpha'.
-$
+\end{multline*}
 
 \smallskip
 \textbf{Теорема~1.}
 {\it Пусть функция $f$ удовлетворяет условию Гёльдера, носитель функции принадлежит ограниченной области $\Omega_{N}^+$,
 тогда если число $N+|\gamma|>2$ -- нечётное и $k=1,3,5,\,\ldots\,$, то
 
-$
-\triangle_{B_{\eta}}^{\frac{N+|\gamma|+k}{2}}
-\int\limits_{\mathbb{R}_N^+}(T^{-\eta}f)(\xi)
-\int\limits_{S^+_1(N)}{\cal P}_{x'}^\gamma |\langle x\,,\,\xi\rangle|^k\,\,
-(x')^\gamma\,\,dS(x)(\xi')^{\gamma} d\xi=
-$
-
-$
-=2^{N+|\gamma|-2n+1}\,\,
-\pi^{N-n-1}\,
-\prod\limits_{i=1}^{n}\Gamma^2\left(\frac{\gamma_i+1}{2}\right)
-\,\,i^{N+|\gamma|-1}\,k!
-\, f(\eta)\,;
-$\\
+\begin{multline*}
+	\triangle_{B_{\eta}}^{\frac{N+|\gamma|+k}{2}}
+	\int\limits_{\mathbb{R}_N^+}(T^{-\eta}f)(\xi)
+	\int\limits_{S^+_1(N)}{\cal P}_{x'}^\gamma |\langle x\,,\,\xi\rangle|^k\,\,
+	(x')^\gamma\,\,dS(x)(\xi')^{\gamma} d\xi=
+	\\=
+	=2^{N+|\gamma|-2n+1}\,\,
+	\pi^{N-n-1}\,
+	\prod\limits_{i=1}^{n}\Gamma^2\left(\frac{\gamma_i+1}{2}\right)
+	\,\,i^{N+|\gamma|-1}\,k!
+	\, f(\eta)\,;
+\end{multline*}
 а если
-число $N+|\gamma|>2$ -- чётное и $k=0,2,4,\,\ldots$, то\\
-$
+число $N+|\gamma|>2$ -- чётное и $k=0,2,4,\,\ldots$, то}
+\begin{multline*}
 \Delta_{B_{\eta}}^{\frac{N+|\gamma|+k}{2}}\int\limits_{\mathbb{R}_N^+}(T^{-\eta}f)(\xi)
+\cdot \\ \cdot
 \int\limits_{S_1^+(N)}{\cal P}_{x'}^\gamma |\langle x,\xi \rangle|^k\,\ln|\langle x,\xi \rangle|
 (x')^{\gamma}\,dS(x)\,(\xi')^{\gamma}\,d\xi=
-$
-
-$
-=-\pi^{N-n} 2^{N+|\gamma|-2n} i^{N+|\gamma|}
+\\=
+-\pi^{N-n} 2^{N+|\gamma|-2n} i^{N+|\gamma|}
 \prod\limits_{i=1}^{n}\Gamma^2\left(\frac{\gamma_i+1}{2}\right)\,k\,!\,f(\eta)\,.
-$}
+\end{multline*}
 
 Особенность этих формул состоит в том, что они верны для дробных $\gamma_i$, при условии, что число $|\gamma|$ --- натуральное.
 

@@ -25,10 +25,13 @@
 	будем обозначать одну или несколько арифметических операций (типа умножения, суммы, разности) между функциями $\left(^\gamma T^xf\right)(y)$\,и \,$g(y)$.
 
 	 Рассмотрим случай, когда обобщённый сдвиг действует только по одной переменной
-$$(\,^\gamma T^{x}f)(y){=}(\,^\gamma T_{y_1}^{x_1}f)(y_1,y'{-}x')=
-\frac{\Gamma\left(\gamma+1\over2\right)}{\Gamma\left(\frac{\gamma}{2}\right)\,\,\Gamma\left(\frac{1}{2}\right)}\int\limits_0^\pi
-f(\sqrt{x_1^2{+}y^2_1{-}2x_1y_1\,\cos\alpha}\,,x'-y')\,\sin\alpha
-d\alpha,$$
+\begin{multline*}
+	(\,^\gamma T^{x}f)(y){=}(\,^\gamma T_{y_1}^{x_1}f)(y_1,y'{-}x')=
+	\\=
+	\frac{\Gamma\left(\gamma+1\over2\right)}{\Gamma\left(\frac{\gamma}{2}\right)\,\,\Gamma\left(\frac{1}{2}\right)}\int\limits_0^\pi
+	f(\sqrt{x_1^2{+}y^2_1{-}2x_1y_1\,\cos\alpha}\,,x'-y')\,\sin\alpha
+	\,d\alpha,
+\end{multline*}
 где $x,\,\,y\in\overline{\mathbb{R}^+_m},\quad	\mathbb{R}^+_m{=}\{x{=}(x_1,x'){=}(x_1,x_2,\,\ldots\,,x_m),\,\,x_1>0\}\,.$
 
 	{\bf Теорема 1.}  {\it $\lim_{\gamma\to0}\,\,^\gamma T^x f(y)=\,\,^0T^x f(y)={f(x+y)+f(x-y)\over2}$.
@@ -42,17 +45,21 @@ $
 |x'-y'|^2}\,)\,\star\,g(|y|)\,\right)\,y_1^\mu\,dy<\infty.
 $ \\
 Тогда справедлива формула
-\begin{equation}\label{eq2}
-[f\,\star\,g]_\mu=|S_1^+(m)|_\mu\, \left[f(r)\,\star\,g(r)\right]_{m+\mu-1} =
-|S^+_1(m)|_\mu\int\limits_0^\infty \,\biggl(\,^\gamma T^\rho f(r)\,\star\,g(r)
-\biggl)\,r^\gamma\,dr,
-\end{equation}
+\begin{multline}\label{eq2}
+	[f\,\star\,g]_\mu=|S_1^+(m)|_\mu\, \left[f(r)\,\star\,g(r)\right]_{m+\mu-1} =
+	\\=
+	|S^+_1(m)|_\mu\int\limits_0^\infty \,\biggl(\,^\gamma T^\rho f(r)\,\star\,g(r)
+	\biggl)\,r^\gamma\,dr,
+\end{multline}
 где  $\rho=|x|\,, \,S^+_1(m){=}\{|y|{=}1\}^+{=}\{y:|y|{=}1,\,\,y_1>0\}$,
 $
 |S_1^+(m)|_\mu{=}\int\limits_{S_1^+(m)} y_1^\mu\,dS,$  $\gamma{=}m{-}1{+}\mu$}}.
 
  При $\mu=\{\gamma\}=0$ (т.е. $\gamma=[\gamma]=m$ --- натуральное число >1) соотношение \eqref{eq2} надо понимать так:
- слева роль обобщённого сдвига выполняет обычный, а в правой части этой формулы операция $[\,\star\,]_\gamma$ выполняется для одномерных функций с обобщённым сдвигом Пуассона целого порядка $[\gamma]=m-1$. Соответствующее равенство для обобщённых свёрток известно   (см., например,  в \cite{lit-ra3} формулу (2.1)).
+ слева роль обобщённого сдвига выполняет обычный,
+ а в правой части этой формулы операция $[\,\star\,]_\gamma$
+ выполняется для одномерных функций с обобщённым сдвигом Пуассона целого порядка $[\gamma]=m-1$.
+ Соответствующее равенство для обобщённых свёрток известно   (см., например,  в \cite{lit-ra3} формулу (2.1)).
 
 \smallskip \centerline{\bf Литература}\nopagebreak
 
