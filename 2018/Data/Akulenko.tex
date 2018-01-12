@@ -4,14 +4,17 @@
 \end{center}
 \addcontentsline{toc}{section}{Акуленко Л.Д., Лещенко Д.Д., Козаченко Т.А.\dotfill}
 
-Рассматривается задача квазиоптимального торможения вращений динамически симметричного твёрдого тела с подвижной массой, прикреплённой к точке на оси симметрии. Считается, что при движении на тело действует упругая сила и сила сопротивления, пропорциональная квадрату скорости. На тело также действует момент сил линейного сопротивления среды.
+Рассматривается задача квазиоптимального
+торможе-\linebreak ния
+вращений динамически симметричного твёрдого тела с подвижной массой, прикреплённой к точке на оси симметрии. Считается, что при движении на тело действует упругая сила и сила сопротивления, пропорциональная квадрату скорости. На тело также действует момент сил линейного сопротивления среды.
 
 Система уравнений управляемого движения в проекциях на главные центральные оси инерции тела имеет вид [1-4]
 
 $$
+\hspace{-0.2em}
 \begin{array}{c}
-A_1\dot p + (A_3 - A_1)qr=-b_1A_1pG^{-1}+FG^2qr+Spr^6\omega_{\perp}-\lambda A_1p,\\
-A_1\dot q + (A_1 - A_3)pr=-b_2A_1qG^{-1}-FG^2pr+Sqr^6\omega_{\perp}-\lambda A_1q,\\
+\!A_1\dot p + (A_3 - A_1)qr=-b_1A_1pG^{-1}+FG^2qr+Spr^6\omega_{\perp}\!-\!\!\:\lambda A_1p,\\
+\!A_1\dot q + (A_1 - A_3)pr=-b_2A_1qG^{-1}-FG^2pr+Sqr^6\omega_{\perp}\!-\!\!\:\lambda A_1q,\\
 A_3\dot r =-b_3A_3rG^{-1}-A_1A_3^{-1}Sr^5\omega_{\perp}^3-\lambda A_3r,\\
 0<A_3\leqslant 2A_1,\,\, A_3\neq A_1.
 \end{array}
@@ -54,12 +57,13 @@ $$
 Для обезразмеривания задачи выбираем моменты инерции тела относительно оси $ x_1-A_1=A_2 $ и величину порядка начальной скорости – $ \omega_0 $ в качестве характерных параметров. Введём безразмерные коэффициенты инерции $ \tilde{A}_i=A_i/A_1 $ и время $ \tau=\omega_0 t$.
 
 Система примет вид
-$$
+$${\small
 \begin{array}{c}
-\dfrac{d\tilde{p}}{d\tau}=-\left(\tilde{A}_3 -1 \right)\tilde{q}\tilde{r}-\varepsilon\dfrac{\tilde{b}_1\tilde{p}}{\tilde{G}}+\varepsilon\tilde{F}\tilde{G}^2\tilde{q}\tilde{r}+\varepsilon\tilde{S}\tilde{p}\tilde{r}^6\left(\tilde{p}^2+\tilde{q}^2\right)^{1/2}-\varepsilon\tilde{\lambda}\tilde{p},\\
-\dfrac{d\tilde{q}}{d\tau}=-\left(1-\tilde{A}_3 \right)\tilde{p}\tilde{r}-\varepsilon\dfrac{\tilde{b}_2\tilde{q}}{\tilde{G}}-\varepsilon\tilde{F}\tilde{G}^2\tilde{p}\tilde{r}+\varepsilon\tilde{S}\tilde{q}\tilde{r}^6\left(\tilde{p}^2+\tilde{q}^2\right)^{1/2}-\varepsilon\tilde{\lambda}\tilde{q},\\
-\dfrac{d\tilde{r}}{d\tau}=-\varepsilon\dfrac{\tilde{b}_3\tilde{r}}{\tilde{G}}-\varepsilon\tilde{S}\tilde{A}_3^{-2}\tilde{r}^5\left(\tilde{p}^2+\tilde{q}^2\right)^{3/2}-\varepsilon\tilde{\lambda}\tilde{r}.
+	\dfrac{d\tilde{p}}{d\tau}=-\left(\tilde{A}_3 -1 \right)\tilde{q}\tilde{r}-\varepsilon\dfrac{\tilde{b}_1\tilde{p}}{\tilde{G}}+\varepsilon\tilde{F}\tilde{G}^2\tilde{q}\tilde{r}+\varepsilon\tilde{S}\tilde{p}\tilde{r}^6\left(\tilde{p}^2+\tilde{q}^2\right)^{1/2}\!\!-\varepsilon\tilde{\lambda}\tilde{p}\lefteqn{,}\\
+	\dfrac{d\tilde{q}}{d\tau}=-\left(1-\tilde{A}_3 \right)\tilde{p}\tilde{r}-\varepsilon\dfrac{\tilde{b}_2\tilde{q}}{\tilde{G}}-\varepsilon\tilde{F}\tilde{G}^2\tilde{p}\tilde{r}+\varepsilon\tilde{S}\tilde{q}\tilde{r}^6\left(\tilde{p}^2+\tilde{q}^2\right)^{1/2}\!\!-\varepsilon\tilde{\lambda}\tilde{q}\lefteqn{,}\\
+	\dfrac{d\tilde{r}}{d\tau}=-\varepsilon\dfrac{\tilde{b}_3\tilde{r}}{\tilde{G}}-\varepsilon\tilde{S}\tilde{A}_3^{-2}\tilde{r}^5\left(\tilde{p}^2+\tilde{q}^2\right)^{3/2}-\varepsilon\tilde{\lambda}\tilde{r}.
 \end{array}
+}
 \eqno(6)
 $$
 $$
@@ -133,6 +137,7 @@ $$
 
 Подставим выражение для $ G $ (13) в уравнение (16) для $ \alpha $ и проинтегрируем это уравнение [5]
 $$
+{\small
 \begin{array}{c}
 A_3^6\left[-\dfrac{1}{\alpha}+\dfrac{\alpha}{4(1-\alpha^2)^2}+\dfrac{7\alpha}{8(1-\alpha^2)}+\dfrac{15}{16}\ln\left|\dfrac{1+\alpha}{1-\alpha}\right|\right]=\\
 =S\Biggl[-\dfrac{b^7}{\lambda^7}\theta-\dfrac{7b^6}{\lambda^7}b_*\exp(-\lambda\theta)+\dfrac{21b^5}{2\lambda^6}b_*^2\exp(-2\lambda\theta)-\\
@@ -140,6 +145,7 @@ A_3^6\left[-\dfrac{1}{\alpha}+\dfrac{\alpha}{4(1-\alpha^2)^2}+\dfrac{7\alpha}{8(
 \dfrac{35b^3}{4\lambda^4}b_*^4\exp(-4\lambda\theta)-\dfrac{21b^2}{5\lambda^3}b_*^5\exp(-5\lambda\theta)+\\
 +\dfrac{7b}{6\lambda^2}b_*^6\exp(-6\lambda\theta)-\dfrac{1}{7\lambda}b_*^7\exp(-7\lambda\theta)\Biggr]+C_2,
 \end{array}
+}
 \eqno(17)
 $$
 $$
