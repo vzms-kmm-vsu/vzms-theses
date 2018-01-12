@@ -175,12 +175,7 @@
 \def\Pro{{\Bbb P}}
 
 
-\newcommand{\thesis}[1]{
-	\setcounter{equation}{0}
-	\setcounter{figure}{0}
-	\setcounter{table}{0}
-	\setcounter{footnote}{0}
-	\input{Data/#1}
+\newcommand{\prepareforthesis}{
 	\setcounter{equation}{0}
 	\setcounter{figure}{0}
 	\setcounter{table}{0}
@@ -188,6 +183,12 @@
 	\renewcommand{\theenumi}{\arabic{enumi}}
 	\renewcommand{\labelenumi}{\theenumi)} % Не правда ли, Виктор Григорьевич?
 	\selectlanguage{russian} % Дабы невозбранно переключаться на английский в конце библиографии, если очень надо
+}
+
+\newcommand{\thesis}[1]{
+	\prepareforthesis
+	\input{Data/#1}
+	\prepareforthesis
 }
 
 \begin{document}
