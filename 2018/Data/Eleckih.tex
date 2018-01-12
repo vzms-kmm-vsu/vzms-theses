@@ -9,10 +9,16 @@
 
 В этой работе приведены некоторые из формул о весовых средних значениях при интегрировании со степенным весом по окружности.
 
-В евклидовом пространстве $\mathbb{R}_2^+=\{x=(x_1,x_2),\,\,x_1>0\}$ рассматривается смешанное преобразование Фурье-Бесселя [1]. Через $j_\nu$ обозначена j-функция Бесселя
-$j_\nu(t){=}
-\Gamma(\nu{+}1)\,{J_\nu(t)\over t^\nu}$, $J_\nu$ порядка $\nu{=}{\gamma-1\over2}$, см. [1]. По  переменной $x_1$ действует преобразование Бесселя (по j-функции Бесселя), по $x_2$ --- преобразование Фурье. Применением  формулы  весового интеграла по полуокружности от ядра этого преобразования
-
+В евклидовом пространстве $\mathbb{R}_2^+=\{x=(x_1,x_2),\,\,x_1>0\}$
+рассматривается смешанное преобразование Фу\-рье--Бес\-се\-ля [1].
+Через $j_\nu$ обозначена $j$-функция Бесселя
+$j_\nu(t)=
+$\linebreak$
+=
+\Gamma(\nu{+}1)\,{J_\nu(t)\over t^\nu}$, $J_\nu$ порядка
+$\nu={\gamma-1\over2}$, см. [1].
+По  переменной $x_1$ действует преобразование Бесселя (по $j$-функции Бесселя), по $x_2$~--- преобразование Фурье.
+Применением  формулы  весового интеграла по полуокружности от ядра этого преобразования
 $$\int\limits_{S_r^+}{\Lambda(x,\xi)\xi_1^\gamma}dS(\xi)
 =\frac{\Gamma\left(\gamma+1\over2\right)\Gamma\left(1\over2\right)}{\Gamma\left(\gamma+2\over2\right)}\,r^{\gamma+1}\,j_{\frac{\gamma}{2}}(r\,\rho),$$
 где $\Lambda(x,\xi)=j_\frac{\gamma-1}{2}(x_1,\xi_1)e^{-ix_2\xi_2}$ --- ядро смешанного преобразования, $\rho=|x|=\sqrt{x_1^2+x_2^2}$,
@@ -21,15 +27,19 @@ $$\int\limits_{S_r^+}{\Lambda(x,\xi)\xi_1^\gamma}dS(\xi)
 					   0  ,& |\xi|>a\,.
 \end{array}\right.\,\,$ для случая $\nu>{\gamma\over2}$:
 
-$F^{-1}_B[\psi]=\left\{ \begin{array}{cc}
-          C(\gamma)\,|S^+_1(2)|_\gamma \,\,\frac{\Gamma\left(\nu-\frac{\gamma}{2}\right)\,\Gamma\left(\frac{2+\gamma}{2}\right)}
-{2\Gamma\left(\nu+1\right)}\,\,\,a^{2\nu}\,
-j_{\nu}(a|x|) , & |\xi|\leqslant a\,, \\
-					   0  ,& |\xi|>a\,,
-\end{array}\right.\,\,$\\
+\begin{multline*}
+	F^{-1}_B[\psi]=
+	\left\{\begin{array}{lc}
+		\!\!C(\gamma)|S^+_1(2)|_\gamma\frac{\Gamma\left(\nu-\frac{\gamma}{2}\right)\Gamma\left(\frac{2+\gamma}{2}\right)}
+		{2\Gamma\left(\nu+1\right)}a^{2\nu}
+		j_{\nu}(a|x|), & |\xi|\leqslant a,\\
+		0  ,& |\xi|>a,
+	\end{array}\hspace{-1em}\right.
+\end{multline*}
+
 где $C(\gamma)=\frac{1}{2^{\gamma}\,\pi\,\,\Gamma^2\left(\frac{\gamma+1}{2}\right)}\,,$ $|S^+_1(2)|_\gamma=\sqrt{\pi}\frac{\Gamma(\frac{\gamma+1}{2})}{\Gamma(\frac{\gamma+2}{2})}.$
 
-Применяя эту формулу найдено преобразование Фурье-Бесселя функции $j_\nu(a|x|)$ для случая $\nu>{\gamma+1\over2}$.
+С применением этой формулы найдено преобразование Фурье-Бесселя функции $j_\nu(a|x|)$ для случая $\nu>{\gamma+1\over2}$.
 Приведём полученную формулу:
 $$
 	F_B[j_\nu(a|x|)](\xi)=\!

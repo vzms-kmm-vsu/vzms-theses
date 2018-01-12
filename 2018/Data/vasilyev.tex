@@ -27,11 +27,13 @@ $H^s_0(D_d)$ состоит из дискретных функций  $u_d$ with
 где infimum берётся по всевозможным продолжениям  $\ell$.
 }
 
-\textbf{Определение~2.} {\it Дискретный псевдодифференциальный оператор на функциях дискретного аргумента $u_d(\tilde x)$ определяется формулой
+\textbf{Определение~2.}
+{\it Дискретный псе\-в\-до\-диф\-фе\-ре\-н\-ци\-аль-\linebreak ный оператор на функциях дискретного аргумента $u_d(\tilde x)$ определяется формулой
+}
 \[
 (A_du_d)(\tilde x)=\int\limits_{\hbar\mathbb T^m}\sum\limits_{\tilde y\in h\mathbb Z^m}A(\xi)e^{i(x-y)\cdot\xi}\tilde u_d(\xi)h^md\xi,~~~\tilde x\in D_d,\eqno(1)
 \]
-}
+
 
 Рассмотрим уравнение
 \[
@@ -50,27 +52,37 @@ $$
 \[
 A_d(\xi)=A_{d,+}(\xi)A_{d,-}(\xi),
 \]
-где сомножители  $A_{d,\pm}(\xi)$ допускают аналитическое продолжение в полу-полосы  $\hbar\Pi_{\pm}$ по последней переменной  $\xi_m$
+где сомножители  $A_{d,\pm}(\xi)$ допускают аналитическое продолжение в полуполосы  $\hbar\Pi_{\pm}$ по последней переменной  $\xi_m$
 при почти всех фиксированных  $\xi'\in\hbar{\mathbb T}^{m-1}$ и удовлетворяют оценкам
 \[
 |A^{\pm 1}_{d,+}(\xi)|\leqslant c_1(1+|\hat\zeta^2|)^{\pm\frac{\ae}{2}},~~~|A^{\pm 1}_{d,-}(\xi)|\leqslant c_2(1+|\hat\zeta^2|)^{\pm\frac{{\alpha-\ae}}{2}},
 \]
 с постоянными $c_1, c_2$, не зависящими от $h$,
 \[
-\hat\zeta^2\equiv\hbar^2\left(\sum\limits_{k=1}^{m-1}(e^{-ih\xi_k}-1)^2+(e^{-ih(\xi_m+i\tau)}-1)^2\right),~~~\xi_m+i\tau\in\hbar\Pi_{\pm}.
+\hat\zeta^2\equiv\hbar^2\!\left(\sum\limits_{k=1}^{m-1}(e^{-ih\xi_k}-1)^2+(e^{-ih(\xi_m+i\tau)}-1)^2\right)\!,~\xi_m+i\tau\in\hbar\Pi_{\pm}.
 \]
 
 Число $\ae\in{\mathbb R}$ называется индексом периодической факторизации.
 
 }
 
-\textbf{Теорема.} {\it Пусть $\ae-s=n+\delta, n\in{\mathbb N}, |\delta|<1/2$. Тогда общее решение уравнения  $(2)$ в образах Фурье имеет следующий вид
-\[
-\tilde u_d(\xi)=\tilde A^{-1}_{d,+}(\xi)X_n(\xi)P^{\it per}_{\xi'}(X_n^{-1}(\xi)\tilde A^{-1}_{d,-}(\xi)\widetilde{\ell v_d}(\xi)) +\tilde A^{-1}_{d,+}(\xi)\sum\limits_{k=0}^{n-1}c_k(\xi')\hat\zeta_m^k,
-\]
-\[
-(P_{\xi'}^{\it per}\tilde u_d)(\xi)\equiv\frac{1}{2}\left(\tilde u_d(\xi)+\frac{1}{2\pi i}v.p.\int\limits_{-\hbar\pi}^{\hbar\pi}{\tilde u_d(\xi',\eta_m)}\ctg\frac{h(\xi_m-\eta_m)}{2}d\eta_m\right),
-\]
+\textbf{Теорема.} {\it Пусть $\ae-s=n+\delta, n\in{\mathbb N}, |\delta|<1/2$.
+Тогда общее решение уравнения  $(2)$ в образах Фурье имеет следующий вид:
+\begin{multline*}
+	\tilde u_d(\xi)=
+%	\\%=
+	\tilde A^{-1}_{d,+}(\xi)X_n(\xi)P^{\it per}_{\xi'}(X_n^{-1}(\xi)\tilde A^{-1}_{d,-}(\xi)\widetilde{\ell v_d}(\xi)) +\tilde A^{-1}_{d,+}(\xi)
+	\cdot \\ \cdot
+%	\!\!
+	\sum\limits_{k=0}^{n-1}
+%	\!
+	c_k(\xi')\hat\zeta_m^k,
+\end{multline*}
+\begin{multline*}
+	(P_{\xi'}^{\it per}\tilde u_d)(\xi)\equiv
+	\\ \equiv
+	\frac{1}{2}\left(\tilde u_d(\xi)+\frac{1}{2\pi i}\mathrm{v.p.}\int\limits_{-\hbar\pi}^{\hbar\pi}{\tilde u_d(\xi',\eta_m)}\ctg\frac{h(\xi_m-\eta_m)}{2}d\eta_m\right),
+\end{multline*}
 где $X_n(\xi)$ -- произвольный многочлен степени  $n$ переменных $\hat\zeta_k=\hbar(e^{-ih\xi_k}-1)$, $k=1,\cdots,m$, удовлетворяющий условию  $(3)$, $c_j(\xi'), j=0,1,\cdots,n-1,$ -- произвольные функции из  $H_{s_j}({h\mathbb T}^{m-1}), s_j=s-\ae+j-1/2$. Имеют место априорные оценки
 \[
 ||u_d||_s\leqslant C(||f||^+_{s-\alpha}+\sum\limits_{k=0}^{n-1}[c_k]_{s_k})
@@ -83,12 +95,20 @@ A_d(\xi)=A_{d,+}(\xi)A_{d,-}(\xi),
 %%%%  ОФОРМЛЕНИЕ СПИСКА ЛИТЕРАТУРЫ %%%
 \smallskip \centerline{\bf Литература}\nopagebreak
 
-1. {\it Vasilyev A.V., Vasilyev V.B.} Discrete singular integrals in a half-space. In:
+1. \foreignlanguage{english}{
+	{\it Vasilyev A.V., Vasilyev V.B.} Discrete singular integrals in a half-space. In:
              Current Trends in Analysis and its Applications. Research Perspectives. Mityushev, V., Ruzhansky, M. (Eds.) Birkh\"auser, Basel, 2015. P. 663-670.
+}
 
-2. {\it	Vasilyev V.B.} Discreteness, periodicity, holomorphy, and factorization. In: Integral Methods in Science and Engineering. V.1. Theoretical Technique.  C. Constanda, Dalla Riva, M., Lamberti, P.D., Musolino, P. (Eds.)  Birkh\"auser, Cham, 2017. P. 315--324.
+2. \foreignlanguage{english}{
+	{\it	Vasilyev V.B.} Discreteness, periodicity, holomorphy, and factorization. In: Integral Methods in Science and Engineering. V.1. Theoretical Technique.  C. Constanda, Dalla Riva, M., Lamberti, P.D., Musolino, P. (Eds.)  Birkh\"auser, Cham, 2017. P. 315--324.
+}
 
-3. {\it Vasilyev V.B.} The periodic Cauchy kernel, the periodic Bochner kernel, and discrete pseudo-differential operators. AIP Conf. Proc.  V. 1863. 2017 (140014).
+3. \foreignlanguage{english}{
+	{\it Vasilyev V.B.} The periodic Cauchy kernel, the periodic Bochner kernel, and discrete pseudo-differential operators. AIP Conf. Proc.  V. 1863. 2017 (140014).
+}
 
-4. {\it Vasilyev V.B.} On discrete boundary value problems. AIP Conf. Proc. V. 1880. 2017 (050010).
+4. \foreignlanguage{english}{
+	{\it Vasilyev V.B.} On discrete boundary value problems. AIP Conf. Proc. V. 1880. 2017 (050010).
+}
 
