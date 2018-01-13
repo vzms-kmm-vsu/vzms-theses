@@ -8,3 +8,9 @@ utf8:
 overfull:
 	pdflatex main.tex | grep -v Underfull | grep . | grep -C 12 Overfull
 	pdflatex main.tex | grep -c Overfull
+
+join:
+	js ~/git/node-text-split-join/text-join.js Data/joined.tex.tmp Data/*.tex Data/hist/*.tex
+
+split:
+	js ~/git/node-text-split-join/text-split.js Data/joined.tex.tmp
