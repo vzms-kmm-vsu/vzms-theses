@@ -187,7 +187,13 @@
 
 \newcommand{\thesis}[1]{
 	\prepareforthesis
+	\typeout{*}
+	\typeout{******* Processing thesis #1 *******}
+	\typeout{*}
 	\input{Data/#1}
+	\typeout{*}
+	\typeout{******* End of thesis #1 *******}
+	\typeout{*}
 	\prepareforthesis
 }
 
