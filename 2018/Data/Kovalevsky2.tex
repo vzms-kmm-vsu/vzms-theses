@@ -1,0 +1,300 @@
+\begin{center}
+\textbf{О разрешимости начально-краевой задачи для вырождающегося
+параболического уравнения высокого порядка}
+\end{center}
+
+\begin{center}
+\textbf{Ковалевский Р.А.}
+\end{center}
+\addcontentsline{toc}{section}{Ковалевский Р.А.}
+
+\begin{center}
+Воронежский государственный университет
+\end{center}
+
+
+
+
+
+Рассмотрим функцию $\alpha (t),\,\,t \in R_ + ^1 $, для которой $\alpha ( +
+0) = {\alpha }'( + 0) = 0$, $\alpha \mbox{(}t\mbox{) > 0}$при$t > 0$,
+$\alpha \mbox{(}t\mbox{) = const}$ для $t \ge d$ при некотором $d\mbox{ >
+0}$. Рассмотрим интегральное преобразование
+\[
+F_\alpha [u(t)](\eta ) = \int\limits_0^{ + \infty } {u(t)\exp (i\eta }
+\int\limits_t^d {\frac{d\rho }{\alpha (\rho )}} )\frac{dt}{\sqrt {\alpha
+(t)} },
+\]
+определенное, например, на функциях
+$u(t) \in C_0^\infty (R_ + ^1 )$.
+Свойства этого преобразования доказаны в [1]--[5].
+
+В $R_{ + + }^{n + 1} = \{(x,t,y):x \in R^{n - 1},\,\,0 < t < + \infty ,\,\,0
+< y < + \infty \}$ рассматривается линейное дифференциальное уравнение вида
+\begin{equation}
+\label{eq4700}
+A(y,\partial _t ,D_x ,D_{\alpha ,y} ,\partial _y )v(t,x,y) = F(t,x,y),
+\end{equation}
+где
+\begin{equation}
+\label{eq4701}
+A(y,\partial _t ,D_x ,D_{\alpha ,y} ,\partial _y )v = \sum\limits_{\left|
+\tau \right| + j_1 + qj_2 + rj_3 \le 2m} {a_{\tau j_1 j_2 j_3 } (y)D_x^\tau
+D_{\alpha ,y}^{j_1 } } \partial _y^{j_2 } \partial _t^{j_3 } v.
+\end{equation}
+
+
+
+Здесь $m,k,l$~--- натуральные числа, $q = \frac{2m}{k} > 1,\,\,r = \frac{2m}{l} >
+1,\,\,a_{\tau j_1 j_2 j_3 } (y)$~--- некоторые ограниченные на $\bar {R}_ + ^1
+$ функции,
+\linebreak
+$a_{00k0} (y) \ne 0$, $a_{000l} (y) \ne 0_{ }$при всех$y \in
+\bar {R}_ + ^1 .$ Без ограничения общности будем считать, что $a_{00k0} (y)
+= 1$ при всех $t \in \bar {R}_ + ^1 .$
+
+На границе $t = 0_{ }$множества $R_{ + + }^{n + 1} $ задаются граничные
+условия вида$B_j (\partial _t ,D_x ,\partial _y )\left. v \right|_{t = 0} =
+\sum\limits_{\left| \tau \right| + rj_3 + qj_2 \le m_j }^ {b_{\tau j_2 j_3 }
+\partial _t^{j_3 } D_x^\tau \partial _y^{j_2 } } \left. v \right|_{y = 0} =
+G_j (t,x),j = 1,2,...,\mu .$ (3)
+
+На границе $y = 0$ множества $R_{ + + }^{n + 1} $ задаются начальные условия
+вида
+\begin{equation}
+\label{eq4702}
+\partial _t^\mu \left. v \right|_{t = 0} = \Phi _\mu (x,y),\,\,\mu =
+1,2,...,l - 1.
+\end{equation}
+
+
+
+Рассмотрим абстрактную функцию $u(t)$ со значениями в ги\-ль\-бе\-р\-то\-вом
+пространстве $Y_1 $, такую, что $u(t) = 0$ при $t < 0$. Предположим, что
+существует преобразование Фурье функции $e^{ - \gamma t}u(t)$ ($\gamma \ge
+0)$, принадлежащее гильбертову пространству $Y_0 \supset Y_1 $. Будем
+говорить, что функция $V(p)$ принадлежит пространству $W_{2,\gamma }^a (Y_1
+,Y_0 ),\,\,a \ge 0,\,\,\gamma \ge 0$ если конечна норма
+\begin{multline*}
+\left\| u \right\|_{W_{2,\gamma }^a (Y_1 ,Y_0 )} =
+\\=
+\{\int\limits_{R^1}
+{\left\| {e^{ - \gamma t}u(t)} \right\|_{Y_1 }^2 dy} + \int\limits_{R^1}
+{\left| {\gamma + i\tau } \right|^{2a}\left\| {F_{y \to \tau } [e^{ - \gamma
+t}u(t)]} \right\|_{Y_0 }^2 d\tau \}^{\frac{1}{2}}} .
+\end{multline*}
+
+
+
+Обозначим через $E_{2,\gamma }^a (Y_1 ,Y_0 )_{ }$множество функций $V(p)$,
+где $p$ - комплексное число, для которого $Rep > \gamma $, таких что функции
+$V(p)$ принимают значения в гильбертовом пространстве $Y_1 \subset Y_0 $,
+являются аналитическими функциями в полуплоскости $Rep > \gamma $ и для них
+конечна норма
+\[
+\left\| u \right\|_{E_{2,\gamma }^a (Y_1 ,Y_0 )} = \mathop {\sup
+}\limits_{\rho > \gamma } \{\int\limits_{Rep = \rho } {(\left\| {V(p)}
+\right\|_{Y_1 }^2 + \left| p \right|^{2a}\left\| {V(p)} \right\|_{Y_0 }^2
+)dp} \}^{\frac{1}{2}}.
+\]
+
+Преобразование Лапласа устанавливает взаимно однозначное и взаимно
+непрерывное соответствие между пространствами $W_{2,\gamma }^a (Y_1 ,Y_0 )$
+и $E_{2,\gamma }^a (Y_1 ,Y_0 )$ .
+
+Рассмотрим также однородные условия (\ref{eq4702})
+\begin{equation}
+\label{eq4703}
+\partial _t^\mu \left. v \right|_{t = 0} = 0,\,\,\mu = 1,2,...,l - 1.
+\end{equation}
+
+
+
+\textbf{Условие 1.} Уравнение
+\begin{equation}
+\label{eq4704}
+\sum\limits_{\left| \tau \right| + j_1 + qj_2 + rj_3 = 2m}^ {a_{\tau j_1 j_2
+j_3 } (y)\xi ^\tau \eta ^{j_1 }} z^{j_2 }p^{j_3 } = 0.
+\end{equation}
+не имеет $z$ -- корней, лежащих на мнимой оси при всех $y \ge 0\,\,(\xi
+,\eta ) \in R^n\,\,$,$p \in Q = \{p \in C,\,\,\left| {\arg p} \right| <
+\frac{\pi }{2},\,\,\left| p \right| > 0\}$, $\left| p \right| + \left| \eta
+\right| + \left| \xi \right| > 0$.
+
+Пусть $z_1 (p,y,\xi ,\eta ),...,z_{r_1 } (p,y,\xi ,\eta )\,\,\,(1 \le r_1
+\le k)$ - корни, лежащие в левой полуплоскости, а $z_{r_1 + 1} (p,y,\xi
+,\eta ),...,z_k (p,y,\xi ,\eta )$ лежат в правой полуплоскости.
+
+\textbf{Условие 2.} Функции $z_j (p,y,\xi ,\eta )$, $j = 1,\,2,...,\,k,$ при
+всех $\xi \in R^{n - 1}$ являются бесконечно дифференцируемыми функциями по
+переменным $y \in \Omega \subset \bar {R}_ + ^1 $ и $\eta \in R^1$. Причем,
+при всех $p \in Q = \{p \in C,\,\,\left| {\arg p} \right| < \frac{\pi
+}{2},\,\,\left| p \right| > 0\}$, $j_1 = 0,\,\,1,\,\,2,\,...,l =
+0,\,\,1,\,\,2,\,...,\xi \in R^{n - 1}$, $y \in \Omega \subset \bar {R}_ +
+^1 $, $\eta \in R^1$ справедливы оценки
+\[
+\left| {(\alpha (y)\partial _y )^{j_1 }\partial _\eta ^{j_2 } z_j (y,\xi
+,\eta )} \right| \le c_{j_1 ,l} (\left| p \right| + \left| \xi \right| +
+\left| \eta \right|)^{q - j_2 },\,\,\,\,\,\left| p \right| + \left| \xi
+\right| + \left| \eta \right| > 0,
+\]
+с константами $c_{j_1 ,l} > 0$, не зависящими от$p,y,\,\,\xi ,\,\,\eta .$
+
+Из условия 4 следует, что при всех $p \in Q$, $\xi \in R^{n - 1}$, $y \in
+\Omega \subset \bar {R}_ + ^1 $, $\eta \in R^1$ справедливы оценки
+\begin{equation}
+\label{eq4705}
+Rez_j (p,y,\xi ,\eta ) \le - c_1 (\left| p \right| + \left| \xi \right| +
+\,\left| \eta \right|)^q,\,\,\,j = 1,...,r_1 ;
+\end{equation}
+\begin{equation}
+\label{eq4706}
+Rez_j (p,y,\xi ,\eta ) \ge c_2 (\left| p \right| + \left| \xi \right| +
+\,\left| \eta \right|)^q,\,\,\,j = r_1 + 1,...,k,
+\end{equation}
+с некоторыми константами $c_1 >0$
+и $c_2 > 0$, не зависящими
+от $p,\,\,y,\,\,\xi ,\,\,\eta $.
+
+\textbf{Условие 3.} Число граничных условий (22) равно числу $z$ - корней
+уравнения (23), лежащих в левой полуплоскости, и при всех $\xi \in R^{n -
+1},\,\,\,\,\left| \xi \right| > 0$ многочлены $$B_j^0 (\xi ,z) =
+\sum\limits_{\left| \tau \right| + qj_2 + rj_3 = m_j } {b_{\tau j_2 j_3 }
+p^{j_3 }} \xi ^\tau z^{j_2 }\,$$ линейно независимы по модулю многочлена
+$$P(\xi ,z) = \prod\limits_{j_1 = 1}^{r_1 } {(z - z_{j_1 } (0,\xi ,0))} .$$
+
+Доказаны следующие утверждения.
+
+\textbf{Теорема 1. }
+Пусть $s \ge \max \{2m,\,\,\mathop {\max }\limits_{1 \le
+j \le r_1 } m_j + \frac{1}{2}\max \{q,r\},\,\,s$- кратно $2m$. Пусть
+выполнены условия 4--6. Тогда существует такое число $\gamma _0 > 0$ , что
+при всех $\gamma > \gamma _0 $ и любых $F(t,x,y) \in H_{r,\gamma ,\alpha
+.q}^{s - 2m} (R_{ + + }^{n + 1} ) \equiv W_{2,\gamma }^{\frac{s - 2m}{r}}
+(H_{s - 2m,\alpha ,q} (R_ + ^n ),L_2 (R_ + ^n ))$ и
+\linebreak
+$G_j (x,y) \in
+H_{r,\gamma }^{\sigma _j } (R_ + ^n ) \equiv W_{2,\gamma }^{\frac{s -
+2m}{r}} (H_{\sigma _j } (R^{n - 1}),L_2 (R^{n - 1}),\,\,\sigma _j = s - m_j
+- \frac{1}{2}q,\,\,j = 1,2,...,r_1 $ задача (\ref{eq4700}), (3), (\ref{eq4703}) имеет единственное
+решение, принадлежащее пространству $H_{r,\gamma ,\alpha .q}^s $, причем
+справедлива априорная оценка
+\[
+\left\| v \right\|_{H_{r,\gamma ,\alpha ,q}^s } \le C(\left\| F
+\right\|_{H_{r,\gamma ,\alpha ,q}^{s - 2m} } + \sum\limits_{j = 1}^{r_1 }
+{\left\langle {\left\langle {G_j } \right\rangle } \right\rangle }
+_{H_{r,\gamma ,}^{\sigma _j } } ) \quad .
+\]
+
+
+
+
+
+
+Рассмотрим теперь задачу (\ref{eq4700}), (3), (\ref{eq4702}). Введем наряду с пространствами
+$W_{2,\gamma }^a (Y_1 ,Y_0 )$ пространства $\hat {W}_{2,\gamma }^a (Y_1 ,Y_0
+)$ абстрактных функций $t \to u(t),t \in R_ + ^1 $ со значениями в$Y_1
+\subset Y_0 $ с конечной нормой
+\[
+\left\| u \right\|_{\hat {W}_{2,\gamma }^a (Y_1 ,Y_0 )} = \{\int\limits_{R_
++ ^1 } {\left\| {e^{ - \gamma t}u(t)} \right\|_{Y_1 }^2 dy} + \sum\limits_{j
+= 0}^a {\int\limits_{R_ + ^1 } {\left\| {\partial _t^j (e^{ - \gamma
+t}u(t)]} \right\|_{Y_0 }^2 dt\}^{\frac{1}{2}}} } .
+\]
+
+Здесь $a \ge 0$ - целое число.
+
+В дальнейшем используются пространства $\hat {W}_{2,\gamma }^a (Y_1 ,Y_0 )$
+при следующем конкретном выборе пространств $Y_1 ,\,\,\,Y_0 $ :
+\begin{gather*}
+\hat {H}_{r,\gamma ,\alpha .q}^s (R_{ + + }^{n + 1} ) \equiv \hat
+{W}_{2,\gamma }^{\frac{s}{r}} (H_{s,\alpha ,q} (R_ + ^n ),L_2 (R_ + ^n )),
+\\
+\hat {H}_{r,\gamma }^\beta (R_ + ^n ) \equiv \hat {W}_{2,\gamma
+}^{\frac{\beta }{r}} (H_{\sigma _j } (R^{n - 1}),L_2 (R^{n - 1}).
+\end{gather*}
+
+
+
+Задача (\ref{eq4700}), (3), (\ref{eq4702}) сводится к задаче (\ref{eq4700}), (3), (\ref{eq4703}), если выполнено
+следующее условие согласования.
+
+\textbf{Условие 4. }Для набора функций $F(t,x,y) \in \hat {H}_{r,\gamma
+,\alpha .q}^{s - 2m} (R_{ + + }^{n + 1} )$, $G_j (x,y) \in \hat
+{H}_{r,\gamma }^{\sigma _j } (R_ + ^n ),\,\,\,\,\sigma _j = s - m_j -
+\frac{1}{2}q,\,\,j = 1,2,...,r_1 ;\,\,\,\Phi _\mu (x,t) \in \hat {H}_{\alpha
+,q}^{\beta _\mu } (R_ + ^n )$
+$\beta _\mu = s - \mu r - \frac{1}{2}r,\,\,\mu = 1,2,...,l -1$
+существует такая функция
+$v_0 (y,x,t) \in \hat {H}_{r,\gamma ,\alpha ,q}^s (R_{ + + }^{n + 1}
+)$,
+что
+выполняется условие $\partial _t^\mu \left. v \right|_{t = 0} = \Phi _\mu
+(x,y),\,\,\mu = 1,2,...,l - 1$ ;
+после продолжения функций $F - Av_0 ,\,\,G_j - B_j v_0 \vert _{y = 0}
+\,\,\,j = 1,2,...,r_1 $ нулем при$y < 0$ справедливы включения $F - Av_0 \in
+\hat {H}_{r,\gamma ,\alpha ,q}^{s - 2m} ,\,G_j - B_j v_0 \vert _{y = 0} \,
+\in \,\hat {H}_{r,\gamma }^{\sigma _j } \,,\,\,j = 1,2,...,r_1 $;
+существует постоянная $c > 0$ , что справедлива оценка
+\[
+\left\| {v_0 } \right\|_{\hat {H}_{r,\gamma ,\alpha ,q}^s } \le
+c\sum\limits_{\mu = 0}^{l - 1} {\left\| {\Phi _\mu } \right\|} _{\hat
+{H}_{r,\gamma }^{\beta _\mu } } \quad .
+\]
+
+
+
+
+
+
+
+Справедлива следующая теорема.
+
+\textbf{Теорема 2. }Пусть выполнено условие 7 и условия теоремы 1. Тогда
+существует такое $\gamma _0 > 0$, что при всех $\gamma > \gamma _0 $ и любых
+$F(t,x,y) \in \hat {H}_{r,\gamma ,\alpha .q}^{s - 2m} (R_{ + + }^{n + 1} )$,
+$G_j (x,y) \in \hat {H}_{r,\gamma }^{\sigma _j } (R_ + ^n ),\,\,\sigma _j =
+s - m_j - \frac{1}{2}q,\,\,j = 1,2,...,r_1 $,
+\[
+\Phi _\mu (x,t) \in \hat {H}_{\alpha ,q}^{\beta _\mu } (R_ + ^n ),\,\,\beta
+_\mu = s - \mu r - \frac{1}{2}r,\,\,\mu = 0,1,...,l - 1
+\]
+задача (\ref{eq4700}), (3), (\ref{eq4702}) имеет единственное решение, принадлежащее пространству
+$\hat {H}_{r,\gamma ,\alpha .q}^s (R_{ + + }^{n + 1} )$, причем справедлива
+априорная оценка
+\[
+\left\| v \right\|_{\hat {H}_{r,\gamma ,\alpha ,q}^s } \le C(\left\| F
+\right\|_{\hat {H}_{r,\gamma ,\alpha ,q}^{s - 2m} } + \sum\limits_{j =
+1}^{r_1 } {\left\langle {\left\langle {G_j } \right\rangle } \right\rangle }
+_{\hat {H}_{r,\gamma }^{\sigma _j } } + \sum\limits_{\mu = 0}^{l - 1}
+{\left\| {\Phi _\mu } \right\|} _{\hat {H}_{\alpha .q}^{\beta _\mu } } ) .
+\]
+
+
+
+Литература
+
+1. Баев А. Д. Вырождающиеся эллиптические уравнения высокого порядка и
+связанные с ними псевдодифференциальные операторы / А. Д. Баев // Доклады
+Академии наук. -- 1982. - Т. 265, № 5. - С. 1044 -- 1046.
+
+2. Баев А.Д. Об общих краевых задачах в полупространстве для вырождающихся
+эллиптических уравнений высокого порядка /А.Д. Баев// Доклады Академии наук,
+2008, т. 422, №6, с. 727 -- 728.
+
+3. Баев А.Д. Об одном классе псевдодифференциальных операторов с вырождением
+/А.Д. Баев, Р.А. Ковалевский// Доклады академии наук. -- 2014. - T. 454.- №
+1. - С. 7-10.
+
+4. Баев А.Д. Теоремы об ограниченности и композиции для одного класса весовых
+псевдодифференциальных операторов / А.Д. Баев, Р.А. Ковалевский// Вестник
+Воронежского государственного университета Серия: Физика. Математика.--
+2014, №1. -- С. 39- 49.
+
+5. Баев А.Д. Краевые задачи для одного класса вырождающихся
+псевдодифференциальных уравнений /А.Д. Баев, Р.А. Ковалевский// Доклады
+академии наук. -- 2015. - T. 461.- № 1. - С. 1-3.
+
+Работа выполнена при финансовой поддержке Министерства образования и науки
+РФ (проект 14.Z50.31.0037).
+
