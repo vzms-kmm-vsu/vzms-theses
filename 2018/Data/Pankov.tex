@@ -53,7 +53,7 @@ $A(D_x ,D_{\alpha ,t} ,\partial _t )v = L_{2m} (D_x ,D_{\alpha ,t} )v -
 b( - 1)^{k - 1}\partial _t^{2k - 1} v$,
 \linebreak
 $L_{2m} (D_x ,D_{\alpha ,t} ) =
-\sum\limits_{\left| \tau \right| + j \le 2m} {a_{\tau j} D_x^\tau D_{\alpha
+\sum\limits_{\left| \tau \right| + j \leqslant 2m} {a_{\tau j} D_x^\tau D_{\alpha
 ,t}^j } $, $b,\,\,a_{\tau j} $ - комплексные числа, $Im\,\overline b a_{02m}
 = 0$, $D_{\alpha ,t} = \frac{1}{i}\sqrt {\alpha (t)} \partial _t \sqrt
 {\alpha (t)} ,\,\,\,\,\partial _t = \frac{\partial }{\partial t}$, $D_x^\tau
@@ -63,7 +63,7 @@ _2 } ...\partial _{x_{n - 1} }^{\tau _{n - 1} } $.
 На границе $t = 0$ полосы $R_d^n $ задаются условия вида
 \begin{equation}
 \label{eq4501}
-B_j (D_x )\left. v \right|_{t = 0} = \!\!\! \sum\limits_{\left| \tau \right| \le
+B_j (D_x )\left. v \right|_{t = 0} = \!\!\! \sum\limits_{\left| \tau \right| \leqslant
 m_j } {b_{\tau j} D_x^\tau \partial _t^{j - 1} \left. v \right|_{t = 0} =
 G_j (x)} ,\,\,j = 1,2,...,k - 1
 \end{equation}
@@ -79,15 +79,15 @@ G_j (x)} ,\,\,j = 1,2,...,k - 1
 Пусть выполнены следующие условия.
 
 \textbf{Условие 1.} При всех $(\xi ,\eta ) \in R^n$ справедливо неравенство
-$\,Re\overline b L_{2m} (\xi ,\eta ) \ge c(1 + \left| \xi \right|^2 + \left|
+$\,Re\overline b L_{2m} (\xi ,\eta ) \geqslant c(1 + \left| \xi \right|^2 + \left|
 \eta \right|^2)^m$, где постоянная $c > 0\,$ не зависит от $(\xi ,\eta )$.
 
-\textbf{Условие 2.} Для некоторого $s \ge 2m + \mathop {\max }\limits_{1 \le
-j \le k} (m_j )$ функция $\alpha (t)$ принадлежит $C^{s - 1}[0,d]\,$, причём
+\textbf{Условие 2.} Для некоторого $s \geqslant 2m + \mathop {\max }\limits_{1 \leqslant
+j \leqslant k} (m_j )$ функция $\alpha (t)$ принадлежит $C^{s - 1}[0,d]\,$, причём
 $\,\alpha (0) = \,\alpha '(0) = 0,\,\,\,\alpha (t) > 0$ при $\,t > 0$.
 
 \textbf{Условие 3.}
-$\sum\limits_{\left| \tau \right| \le m_j } {b_{\tau
+$\sum\limits_{\left| \tau \right| \leqslant m_j } {b_{\tau
 j} \xi _\tau \ne 0,\,\,} \,j = 1,2,...,k - 1$ при всех $\xi \in R^{n - 1}$.
 
 Рассмотрим интегральное преобразование $F_\alpha $, которое на функциях
@@ -124,7 +124,7 @@ $j = 0,1,2,...,s$.
 Введём пространства, в которых будет изучаться задача (\ref{eq4500})-(\ref{eq4502}).
 
 \textbf{Определение 1.} Пространство $H_{s,\alpha ,\frac{2m}{2k - 1}} (R_d^n
-)$ ($s \ge 0$ - целое число) состоит из тех функций $v(x,t) \in L_2 (R_d^n
+)$ ($s \geqslant 0$ - целое число) состоит из тех функций $v(x,t) \in L_2 (R_d^n
 )$, для которых конечна норма
 \begin{multline*}
 	\left\| v \right\|_{s,\alpha ,\frac{2m}{2k - 1}} =
@@ -150,7 +150,7 @@ $j = 0,1,2,...,s$.
 является целым числом, то эта норма эквивалентна следующей норме
 \[
 \left\| v \right\|_{s,\alpha ,\frac{2m}{2k - 1}} = \{\sum\limits_{\left|
-\tau \right| + j + \frac{2m}{2k - 1}l \le s} {\left\| {D_x^\tau D_{\alpha
+\tau \right| + j + \frac{2m}{2k - 1}l \leqslant s} {\left\| {D_x^\tau D_{\alpha
 ,t}^j \partial _t^l v} \right\|} _{L_2 (R_d^n )} \}^{\frac{1}{2}}.
 \]
 
@@ -161,12 +161,12 @@ $j = 0,1,2,...,s$.
 
 Справедливы следующие теоремы.
 
-\textbf{Теорема 1.} $Пусть s \ge \max \{2m,\,\,\mathop {\max }\limits_{1 \le j \le
-k} (m_j + \frac{2m(j - 1)}{2k - 1}) + \frac{m}{2k - 1}\}$\textit{ - целое число, }$m \ge 2k - 1$\textit{ и выполнены условия 1 - 3. Тогда для любого решения }$v(x,t)$\textit{ задачи (\ref{eq4500}) - (\ref{eq4502}), принадлежащего пространству }$H_{s,\alpha
+\textbf{Теорема 1.} $Пусть s \geqslant \max \{2m,\,\,\mathop {\max }\limits_{1 \leqslant j \leqslant
+k} (m_j + \frac{2m(j - 1)}{2k - 1}) + \frac{m}{2k - 1}\}$\textit{ - целое число, }$m \geqslant 2k - 1$\textit{ и выполнены условия 1 - 3. Тогда для любого решения }$v(x,t)$\textit{ задачи (\ref{eq4500}) - (\ref{eq4502}), принадлежащего пространству }$H_{s,\alpha
 ,\frac{2m}{2k - 1}} (R_d^n )\,$\textit{ справедлива коэрцитивная априорная оценка }
 \begin{multline*}
-\left\| v \right\|_{s,\alpha ,\frac{2m}{2k - 1}} \le
-\\ \le
+\left\| v \right\|_{s,\alpha ,\frac{2m}{2k - 1}} \leqslant
+\\ \leqslant
 c(\left\| {Av}
 \right\|_{s - 2m,\alpha ,\frac{2m}{2k - 1}} + \sum\limits_{j = 1}^{k - 1}
 {\left\| {B_j \left. v \right|_{t = 0} } \right\|_{s - m_j - \frac{2m(j -
