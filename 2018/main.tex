@@ -35,6 +35,8 @@
 \usepackage{etoolbox}
 \usepackage[overload]{textcase}
 \usepackage{textcomp}
+\usepackage{needspace}
+
 
 \geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
 
@@ -270,15 +272,23 @@
 \newcommand{\vzmscaption}{
 	\vzmsflushauthors
 	\vzmsflushauthors
-	\begin{center}
+
+	%\begin{minipage}{c}
+	\needspace{20em}
+	%\vbox{
+	\begin{center}%\nopagebreak
 		\textbf{\MakeUppercase{
 			\varvzmstitle
 		}\varvzmstitleopt
 		}
 		 \ \\
 		\varvzmsflushedauthors %\\
+	%\needspace{5em}
 	\end{center}
+	%}
+	%\end{minipage}
 	\addcontentsline{toc}{section}{\varvzmsauthortoc}
+	%\needspace{20em}
 
 
 	\def\varvzmsauthor{}
@@ -292,6 +302,7 @@
 	\smallskip \centerline{\bf Литература}\nopagebreak
 }
 
+%\flushbottom
 
 \begin{document}
 
