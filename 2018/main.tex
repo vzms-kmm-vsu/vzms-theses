@@ -30,6 +30,9 @@
 \graphicspath{{Data/pic/}}
 \usepackage{geometry}
 \usepackage{wrapfig}
+\usepackage{ifthen}
+\usepackage{etoolbox}
+
 
 \geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
 
@@ -197,7 +200,67 @@
 	\prepareforthesis
 }
 
+%\makeatletter
+
+%\let\varvzmsauthor\relax
+
+%\newcommand{\vzmsauthor}[2]{
+%	\ifthenelse{
+%		\equal{\varvzmsautor}{}
+%	}{
+%		\renewcommand{\varvzmsauthor}{#1~#2}
+%	}{
+%		\renewcommand{\varvzmsauthor}{\varvzmsauthor, #1~#2}
+%	}
+%}
+
+%\newcommand{\vzmsauthor}[2]{%
+%	\ifdefined\varvzmsauthor
+%		\def\varvzmsauthor{\varvzmsauthor, #1~#2}
+%	\else
+%		\def\varvzmsauthor{#1~#2}
+%	\fi
+%}
+
+%\makeatother
+%	\ifdefined\varvzmsauthor
+%		\def\varvzmsauthor{\varvzmsauthor, #1~#2}
+%	\else
+%		\def\varvzmsauthor{#1~#2}
+%	\fi
+%}
+
+
+%\def\pretovar#1#2{\edef#1{\unexpanded{#2}\unexpanded\expandafter{#1}}}
+\def\addtovar#1#2{\edef#1{\unexpanded\expandafter{#1#2}}}
+
+
+
+
+
+\def\varvzmsauthor{}
+
+\newcommand{\vzmsauthor}[2]{%
+%	\ifthenelse{
+%		\equal{\varvzmsautor}{}
+%	}{
+		\def\varvzmsauthor{#1~#2}
+%	}{
+		\addtovar\varvzmsauthor{, #1~#2}
+%	}
+}
+
+\newcommand{\vzmscaption}{
+	\varvzmsauthor
+}
+
+
+
+
 \begin{document}
+
+
+
 
 
 \input{auxpages/title}
