@@ -201,35 +201,6 @@
 	\prepareforthesis
 }
 
-%\makeatletter
-
-%\let\varvzmsauthor\relax
-
-%\newcommand{\vzmsauthor}[2]{
-%	\ifthenelse{
-%		\equal{\varvzmsautor}{}
-%	}{
-%		\renewcommand{\varvzmsauthor}{#1~#2}
-%	}{
-%		\renewcommand{\varvzmsauthor}{\varvzmsauthor, #1~#2}
-%	}
-%}
-
-%\newcommand{\vzmsauthor}[2]{%
-%	\ifdefined\varvzmsauthor
-%		\def\varvzmsauthor{\varvzmsauthor, #1~#2}
-%	\else
-%		\def\varvzmsauthor{#1~#2}
-%	\fi
-%}
-
-%\makeatother
-%	\ifdefined\varvzmsauthor
-%		\def\varvzmsauthor{\varvzmsauthor, #1~#2}
-%	\else
-%		\def\varvzmsauthor{#1~#2}
-%	\fi
-%}
 
 
 \def\pretovar#1#2{\edef#1{\unexpanded{#2}\unexpanded\expandafter{#1}}}
@@ -261,9 +232,9 @@
 	\ifthenelse{
 		\equal{\varvzmsflushedauthors}{}
 	}{
-		\edef\varvzmsflushedauthors{\varvzmsauthor}
+		\edef\varvzmsflushedauthors{\noexpand\textit{\varvzmsauthor}}
 	}{
-		\edef\varvzmsflushedauthors{\varvzmsflushedauthors \\ \varvzmsauthor}
+		\edef\varvzmsflushedauthors{\varvzmsflushedauthors \\ \noexpand\textit{\varvzmsauthor}}
 	}
 	\def\varvzmsauthor{}
 }
@@ -272,14 +243,16 @@
 	\def\varvzmstitle{#1}
 }
 
+
+
 \newcommand{\vzmscaption}{
 	\vzmsflushauthors
 	\begin{center}
 		\textbf{\varvzmstitle} \\
-		\textit{\varvzmsflushedauthors}\\
+		\varvzmsflushedauthors \\
 	\end{center}
 	\addcontentsline{toc}{section}{\varvzmsauthortoc}
-	\\
+
 
 	\def\varvzmsauthor{}
 	\def\varvzmsauthortoc{}
