@@ -18,6 +18,7 @@
 \documentclass[a5paper,12pt,openbib]{report}
 \usepackage{amsmath}
 \usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
 \usepackage[english,russian]{babel}
 \usepackage{amsfonts}
 \usepackage{amsfonts,amssymb}
@@ -32,7 +33,7 @@
 \usepackage{wrapfig}
 \usepackage{ifthen}
 \usepackage{etoolbox}
-
+\usepackage[overload]{textcase}
 
 \geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
 
@@ -239,20 +240,50 @@
 
 
 \def\varvzmsauthor{}
+\def\varvzmsauthortoc{}
+\def\varvzmstitle{}
+\def\varvzmsflushedauthors{}
 
 \newcommand{\vzmsauthor}[2]{%
 	\ifthenelse{
 		\equal{\varvzmsauthor}{}
 	}
 	{
-		\def\varvzmsauthor{#1~#2}
+		\def\varvzmsauthor{#2~#1}
+		\def\varvzmsauthortoc{#1~#2}
 	}{
-		\addtovar\varvzmsauthor{, #1~#2}
+		\addtovar\varvzmsauthor{, #2~#1}
+		\addtovar\varvzmsauthortoc{, #1~#2}
 	}
 }
 
+\newcommand{\vzmsflushauthors}{
+	\ifthenelse{
+		\equal{\varvzmsflushedauthors}{}
+	}{
+		\edef\varvzmsflushedauthors{\varvzmsauthor}
+	}{
+		\edef\varvzmsflushedauthors{\varvzmsflushedauthors \\ \varvzmsauthor}
+	}
+	\def\varvzmsauthor{}
+}
+
+\newcommand{\vzmstitle}[1]{
+	\def\varvzmstitle{#1}
+}
+
 \newcommand{\vzmscaption}{
-	\varvzmsauthor
+	\vzmsflushauthors
+	\begin{center}
+		\textbf{\varvzmstitle} \\
+		\textit{\varvzmsflushedauthors}\\
+	\end{center}
+	\addcontentsline{toc}{section}{\varvzmsauthortoc}
+	\\
+
+	\def\varvzmsauthor{}
+	\def\varvzmsauthortoc{}
+	\def\varvzmstitle{}
 }
 
 
