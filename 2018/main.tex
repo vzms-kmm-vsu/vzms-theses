@@ -34,6 +34,7 @@
 \usepackage{ifthen}
 \usepackage{etoolbox}
 \usepackage[overload]{textcase}
+\usepackage{textcomp}
 
 \geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
 
@@ -241,7 +242,7 @@
 		\equal{\varvzmsflushedauthors}{}
 	}{
 		%\addtovar\varvzmsflushedauthors{{\noexpand\it{\varvzmsauthor}}}
-		\edef\varvzmsflushedauthors{{\noexpand\it{\varvzmsauthor}}}
+		\edef\varvzmsflushedauthors{{\noexpand\textcopyright \ 2018 \ \noexpand\it{\varvzmsauthor}}}
 		%\edef\varvzmsflushedauthors{\varvzmsauthor}
 	}{
 		\ifthenelse{
@@ -249,7 +250,7 @@
 		}{
 		}{
 			\edef\vartmp{\varvzmsauthor}
-			\addtovar\varvzmsflushedauthors{\ \\{\it\vartmp}}
+			\addtovar\varvzmsflushedauthors{\\ {\textcopyright} 2018 \  {\it\vartmp}}
 			%\addtovar\varvzmsflushedauthors{\varvzmsauthor}
 		}
 	}
