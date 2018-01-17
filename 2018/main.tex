@@ -231,7 +231,7 @@
 %}
 
 
-%\def\pretovar#1#2{\edef#1{\unexpanded{#2}\unexpanded\expandafter{#1}}}
+\def\pretovar#1#2{\edef#1{\unexpanded{#2}\unexpanded\expandafter{#1}}}
 \def\addtovar#1#2{\edef#1{\unexpanded\expandafter{#1#2}}}
 
 
@@ -241,13 +241,14 @@
 \def\varvzmsauthor{}
 
 \newcommand{\vzmsauthor}[2]{%
-%	\ifthenelse{
-%		\equal{\varvzmsautor}{}
-%	}{
+	\ifthenelse{
+		\equal{\string \varvzmsautor}{}
+	}
+	{
 		\def\varvzmsauthor{#1~#2}
-%	}{
+	}{
 		\addtovar\varvzmsauthor{, #1~#2}
-%	}
+	}
 }
 
 \newcommand{\vzmscaption}{
