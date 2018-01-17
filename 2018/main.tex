@@ -403,6 +403,35 @@
 
 \thesis{Vorushilov}
 
+\renewcommand{\vzmscaption}{
+	\vzmsflushauthors
+	\vzmsflushauthors
+
+	%\begin{minipage}{c}
+	\needspace{10em}
+	%\vbox{
+	\begin{center}%\nopagebreak
+		\textbf{\MakeUppercase{
+			\varvzmstitle
+		}\varvzmstitleopt
+		}
+		 \ \\
+		\varvzmsflushedauthors %\\
+	%\needspace{5em}
+	\end{center}
+	%}
+	%\end{minipage}
+	\addcontentsline{toc}{section}{\varvzmsauthortoc}
+	%\needspace{20em}
+
+
+	\def\varvzmsauthor{}
+	\def\varvzmsauthortoc{}
+	\def\varvzmstitle{}
+	\def\varvzmsflushedauthors{}
+	\def\varvzmstitleopt{}
+}
+
 \thesis{Vysockaya}
 
 \thesis{Galdin}
@@ -451,7 +480,7 @@
 
 \thesis{Kostin}
 
-\thesis{KostinVA}
+%\thesis{KostinVA}
 
 \thesis{KostinDV}
 
@@ -487,7 +516,7 @@
 
 \thesis{Pepa}
 
-\thesis{Peshkova}
+%\thesis{Peshkova}
 
 \thesis{Podoprikhin}
 
@@ -550,6 +579,12 @@
 \thesis{Shelkovoi}
 
 \thesis{Shemetova_V_V}
+
+\renewcommand{\litlist}{
+	\smallskip \centerline{\bf References}\nopagebreak
+}
+
+
 
 \thesis{Khabibulin}
 
