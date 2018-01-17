@@ -221,9 +221,15 @@
 	}
 	{
 		\def\varvzmsauthor{#2~#1}
-		\def\varvzmsauthortoc{#1~#2}
 	}{
 		\addtovar\varvzmsauthor{, #2~#1}
+	}
+	\ifthenelse{
+		\equal{\varvzmsauthortoc}{}
+	}
+	{
+		\def\varvzmsauthortoc{#1~#2}
+	}{
 		\addtovar\varvzmsauthortoc{, #1~#2}
 	}
 }
@@ -232,14 +238,17 @@
 	\ifthenelse{
 		\equal{\varvzmsflushedauthors}{}
 	}{
-		\edef\varvzmsflushedauthors{\noexpand\textit{\varvzmsauthor}}
+		%\addtovar\varvzmsflushedauthors{{\noexpand\it{\varvzmsauthor}}}
+		\edef\varvzmsflushedauthors{{\noexpand\it{\varvzmsauthor}}}
+		%\edef\varvzmsflushedauthors{\varvzmsauthor}
 	}{
-		%\edef\varvzmsflushedauthors{\unexpanded\expandafter{\varvzmsflushedauthors} \\ \noexpand\textit{\varvzmsauthor}}
 		\ifthenelse{
 			\equal{\varvzmsauthor}{}
 		}{
 		}{
-			\addtovar\varvzmsflushedauthors{ \\ \noexpand\textit{\varvzmsauthor}}
+			\edef\vartmp{\varvzmsauthor}
+			\addtovar\varvzmsflushedauthors{\ \\{\it\vartmp}}
+			%\addtovar\varvzmsflushedauthors{\varvzmsauthor}
 		}
 	}
 	\def\varvzmsauthor{}
@@ -251,14 +260,14 @@
 
 \newcommand{\vzmsinfo}[1]{
 	\vzmsflushauthors
-	\addtovar\varvzmsflushedauthors{ \\ (#1)}
+	\addtovar\varvzmsflushedauthors{\ \\ (#1)}
 }
 
 \newcommand{\vzmscaption}{
 	\vzmsflushauthors
 	\vzmsflushauthors
 	\begin{center}
-		\textbf{\varvzmstitle} \\
+		\textbf{\varvzmstitle} \ \\
 		\varvzmsflushedauthors %\\
 	\end{center}
 	\addcontentsline{toc}{section}{\varvzmsauthortoc}
@@ -267,6 +276,7 @@
 	\def\varvzmsauthor{}
 	\def\varvzmsauthortoc{}
 	\def\varvzmstitle{}
+	\def\varvzmsflushedauthors{}
 }
 
 
