@@ -214,6 +214,7 @@
 \def\varvzmsauthor{}
 \def\varvzmsauthortoc{}
 \def\varvzmstitle{}
+\def\varvzmstitleopt{}
 \def\varvzmsflushedauthors{}
 
 \newcommand{\vzmsauthor}[2]{%
@@ -255,8 +256,9 @@
 	\def\varvzmsauthor{}
 }
 
-\newcommand{\vzmstitle}[1]{
-	\def\varvzmstitle{#1}
+\newcommand{\vzmstitle}[2][]{
+	\def\varvzmstitle{#2}
+	\def\varvzmstitleopt{#1}
 }
 
 \newcommand{\vzmsinfo}[1]{
@@ -268,7 +270,11 @@
 	\vzmsflushauthors
 	\vzmsflushauthors
 	\begin{center}
-		\textbf{\varvzmstitle} \ \\
+		\textbf{\MakeUppercase{
+			\varvzmstitle
+		}\varvzmstitleopt
+		}
+		 \ \\
 		\varvzmsflushedauthors %\\
 	\end{center}
 	\addcontentsline{toc}{section}{\varvzmsauthortoc}
@@ -278,6 +284,7 @@
 	\def\varvzmsauthortoc{}
 	\def\varvzmstitle{}
 	\def\varvzmsflushedauthors{}
+	\def\varvzmstitleopt{}
 }
 
 \newcommand{\litlist}{
