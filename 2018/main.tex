@@ -234,7 +234,13 @@
 	}{
 		\edef\varvzmsflushedauthors{\noexpand\textit{\varvzmsauthor}}
 	}{
-		\edef\varvzmsflushedauthors{\varvzmsflushedauthors \\ \noexpand\textit{\varvzmsauthor}}
+		%\edef\varvzmsflushedauthors{\unexpanded\expandafter{\varvzmsflushedauthors} \\ \noexpand\textit{\varvzmsauthor}}
+		\ifthenelse{
+			\equal{\varvzmsauthor}{}
+		}{
+		}{
+			\addtovar\varvzmsflushedauthors{ \\ \noexpand\textit{\varvzmsauthor}}
+		}
 	}
 	\def\varvzmsauthor{}
 }
@@ -243,13 +249,17 @@
 	\def\varvzmstitle{#1}
 }
 
-
+\newcommand{\vzmsinfo}[1]{
+	\vzmsflushauthors
+	\addtovar\varvzmsflushedauthors{ \\ (#1)}
+}
 
 \newcommand{\vzmscaption}{
 	\vzmsflushauthors
+	\vzmsflushauthors
 	\begin{center}
 		\textbf{\varvzmstitle} \\
-		\varvzmsflushedauthors \\
+		\varvzmsflushedauthors %\\
 	\end{center}
 	\addcontentsline{toc}{section}{\varvzmsauthortoc}
 
