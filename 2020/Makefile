@@ -10,7 +10,7 @@ overfull:
 	pdflatex main.tex | grep -c Overfull
 
 join:
-	nodejs ~/git/node-text-split-join/text-join.js Data/joined.tex.tmp Data/*.tex Data/hist/*.tex
+	nodejs ~/git/node-text-split-join/text-join.js Data/joined.tex.tmp Data/*.tex
 
 split:
 	nodejs ~/git/node-text-split-join/text-split.js Data/joined.tex.tmp
