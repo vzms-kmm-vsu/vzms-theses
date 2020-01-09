@@ -1,59 +1,59 @@
 \begin{center}
-    {\bf ПОСТРОЕНИЕ ПРОГРАММНОГО  УПРАВЛЕНИЯ ДЛЯ ДИНАМИЧЕСКОЙ СИСТЕМЫ В ЧАСТНЫХ ПРОИЗВОДНЫХ}
+    {\bf РџРћРЎРўР РћР•РќРР• РџР РћР“Р РђРњРњРќРћР“Рћ  РЈРџР РђР’Р›Р•РќРРЇ Р”Р›РЇ Р”РРќРђРњРР§Р•РЎРљРћР™ РЎРРЎРўР•РњР« Р’ Р§РђРЎРўРќР«РҐ РџР РћРР—Р’РћР”РќР«РҐ}
 
-    {\it С.П. Зубова, Е.В. Раецкая}
+    {\it РЎ.Рџ. Р—СѓР±РѕРІР°, Р•.Р’. Р Р°РµС†РєР°СЏ}
 
-    (Воронеж; {\it spzubova@mail.ru, \it raetskaya@inbox.ru})
+    (Р’РѕСЂРѕРЅРµР¶; {\it spzubova@mail.ru, \it raetskaya@inbox.ru})
 
 \end{center}
 
-\addcontentsline{toc}{section}{Зубова С.П., Раецкая Е.В.}
+\addcontentsline{toc}{section}{Р—СѓР±РѕРІР° РЎ.Рџ., Р Р°РµС†РєР°СЏ Р•.Р’.}
 
- Рассматривается система в частных производных
+ Р Р°СЃСЃРјР°С‚СЂРёРІР°РµС‚СЃСЏ СЃРёСЃС‚РµРјР° РІ С‡Р°СЃС‚РЅС‹С… РїСЂРѕРёР·РІРѕРґРЅС‹С…
 \begin{equation}
 \frac{\partial x}{\partial t}=B(\frac{\partial x}{\partial s}+ \alpha  x) + Du,
 \end{equation}
- где $\quad t\in [0,T],\quad s\in [0,S]$;     $x(t,s)\in R ^{n}$; $u(t,s)\in R^{m}$; $\alpha(t,s)$ - скалярная функция; $B$, $D$ --- матрицы соответствующих  размеров.
+ РіРґРµ $\quad t\in [0,T],\quad s\in [0,S]$;     $x(t,s)\in R ^{n}$; $u(t,s)\in R^{m}$; $\alpha(t,s)$ - СЃРєР°Р»СЏСЂРЅР°СЏ С„СѓРЅРєС†РёСЏ; $B$, $D$ --- РјР°С‚СЂРёС†С‹ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС…  СЂР°Р·РјРµСЂРѕРІ.
 
-Система $(1)$ называется полностью управляемой, если существует такое управление $u(t,s)$,
-под воздействием которого система переводится   из произвольного состояния $x(0,s)$ в произвольное состояние $x(T,s)$.
+РЎРёСЃС‚РµРјР° $(1)$ РЅР°Р·С‹РІР°РµС‚СЃСЏ РїРѕР»РЅРѕСЃС‚СЊСЋ СѓРїСЂР°РІР»СЏРµРјРѕР№, РµСЃР»Рё СЃСѓС‰РµСЃС‚РІСѓРµС‚ С‚Р°РєРѕРµ СѓРїСЂР°РІР»РµРЅРёРµ $u(t,s)$,
+РїРѕРґ РІРѕР·РґРµР№СЃС‚РІРёРµРј РєРѕС‚РѕСЂРѕРіРѕ СЃРёСЃС‚РµРјР° РїРµСЂРµРІРѕРґРёС‚СЃСЏ   РёР· РїСЂРѕРёР·РІРѕР»СЊРЅРѕРіРѕ СЃРѕСЃС‚РѕСЏРЅРёСЏ $x(0,s)$ РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ $x(T,s)$.
 
-Для системы $(1)$, описывающей  процессы в вязко-пластической среде, решается задача построения программного управления.
+Р”Р»СЏ СЃРёСЃС‚РµРјС‹ $(1)$, РѕРїРёСЃС‹РІР°СЋС‰РµР№  РїСЂРѕС†РµСЃСЃС‹ РІ РІСЏР·РєРѕ-РїР»Р°СЃС‚РёС‡РµСЃРєРѕР№ СЃСЂРµРґРµ, СЂРµС€Р°РµС‚СЃСЏ Р·Р°РґР°С‡Р° РїРѕСЃС‚СЂРѕРµРЅРёСЏ РїСЂРѕРіСЂР°РјРјРЅРѕРіРѕ СѓРїСЂР°РІР»РµРЅРёСЏ.
 
 
-Основным методом исследования является метод каскадной декомпозиции $([1]-[6])$, опирающийся на свойство фредголь-
-мовости конечномерного отбражения и заключающийся  в поэтапном переходе к системам в подпространствах, так что на
-последнем шаге декомпозиции формируется система
+РћСЃРЅРѕРІРЅС‹Рј РјРµС‚РѕРґРѕРј РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ СЏРІР»СЏРµС‚СЃСЏ РјРµС‚РѕРґ РєР°СЃРєР°РґРЅРѕР№ РґРµРєРѕРјРїРѕР·РёС†РёРё $([1]-[6])$, РѕРїРёСЂР°СЋС‰РёР№СЃСЏ РЅР° СЃРІРѕР№СЃС‚РІРѕ С„СЂРµРґРіРѕР»СЊ-
+РјРѕРІРѕСЃС‚Рё РєРѕРЅРµС‡РЅРѕРјРµСЂРЅРѕРіРѕ РѕС‚Р±СЂР°Р¶РµРЅРёСЏ Рё Р·Р°РєР»СЋС‡Р°СЋС‰РёР№СЃСЏ  РІ РїРѕСЌС‚Р°РїРЅРѕРј РїРµСЂРµС…РѕРґРµ Рє СЃРёСЃС‚РµРјР°Рј РІ РїРѕРґРїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР°С…, С‚Р°Рє С‡С‚Рѕ РЅР°
+РїРѕСЃР»РµРґРЅРµРј С€Р°РіРµ РґРµРєРѕРјРїРѕР·РёС†РёРё С„РѕСЂРјРёСЂСѓРµС‚СЃСЏ СЃРёСЃС‚РµРјР°
 \begin{equation}
 \frac{\partial x_{p}}{\partial t}=B(\frac{\partial x_{p}}{\partial s}+ \alpha_{p} x_{p}) + D_{p}(\frac{\partial u_{p}}{\partial s}+ \beta_{p}  u_{p}),
 \end{equation}
-где $D_{p}=0$ или $D_{p}$ - сюръекция;  $x_{p}(t,s)$ - удовлетворяет условиям
+РіРґРµ $D_{p}=0$ РёР»Рё $D_{p}$ - СЃСЋСЂСЉРµРєС†РёСЏ;  $x_{p}(t,s)$ - СѓРґРѕРІР»РµС‚РІРѕСЂСЏРµС‚ СѓСЃР»РѕРІРёСЏРј
 \begin{equation}
 \frac{\partial x^{j}_{p}}{\partial s}|_{t=0} = a_{j},      \frac{\partial x^{j}_{p}}{\partial s}|_{t=T} = b_{j},    j=1,...,p,
 \end{equation}
-где  $a_{j}$ и $b_{j}$ - некоторые функции. Доказывается
+РіРґРµ  $a_{j}$ Рё $b_{j}$ - РЅРµРєРѕС‚РѕСЂС‹Рµ С„СѓРЅРєС†РёРё. Р”РѕРєР°Р·С‹РІР°РµС‚СЃСЏ
 
-\textbf{Теорема~1.} {\it Система $(1)$ полностью управляема в том и только том случае, когда  $D_{p}$ - сюръекция.}
-
-
-В случае сюръективного $D_{p}$, для любого гладкого $x_{p}$, удовлетворяющего
-условиям $(3)$ существует гладкое $u_{p}$, удовле-
-творяющее уравнению $(2)$. Обратным ходом декомпозиции  строятся функции состояния
-и управления в аналитическом виде   с любой желаемой степенью гладкости.
-
-\smallskip \centerline {\bf Литература} \nopagebreak
+\textbf{РўРµРѕСЂРµРјР°~1.} {\it РЎРёСЃС‚РµРјР° $(1)$ РїРѕР»РЅРѕСЃС‚СЊСЋ СѓРїСЂР°РІР»СЏРµРјР° РІ С‚РѕРј Рё С‚РѕР»СЊРєРѕ С‚РѕРј СЃР»СѓС‡Р°Рµ, РєРѕРіРґР°  $D_{p}$ - СЃСЋСЂСЉРµРєС†РёСЏ.}
 
 
-1. {\it  Zubova С.П.} Construction of Controls Providing the Desired Output of the Linear Dynamic System /Zubova С.П., Raetskaya Е.V.// Automation and Remote Control. 2018 .Vol.79, No. 5, p. 774--791.
+Р’ СЃР»СѓС‡Р°Рµ СЃСЋСЂСЉРµРєС‚РёРІРЅРѕРіРѕ $D_{p}$, РґР»СЏ Р»СЋР±РѕРіРѕ РіР»Р°РґРєРѕРіРѕ $x_{p}$, СѓРґРѕРІР»РµС‚РІРѕСЂСЏСЋС‰РµРіРѕ
+СѓСЃР»РѕРІРёСЏРј $(3)$ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РіР»Р°РґРєРѕРµ $u_{p}$, СѓРґРѕРІР»Рµ-
+С‚РІРѕСЂСЏСЋС‰РµРµ СѓСЂР°РІРЅРµРЅРёСЋ $(2)$. РћР±СЂР°С‚РЅС‹Рј С…РѕРґРѕРј РґРµРєРѕРјРїРѕР·РёС†РёРё  СЃС‚СЂРѕСЏС‚СЃСЏ С„СѓРЅРєС†РёРё СЃРѕСЃС‚РѕСЏРЅРёСЏ
+Рё СѓРїСЂР°РІР»РµРЅРёСЏ РІ Р°РЅР°Р»РёС‚РёС‡РµСЃРєРѕРј РІРёРґРµ   СЃ Р»СЋР±РѕР№ Р¶РµР»Р°РµРјРѕР№ СЃС‚РµРїРµРЅСЊСЋ РіР»Р°РґРєРѕСЃС‚Рё.
 
-2. {\it  Zubova С.П.}  Algorithm to Solve Of Control By The Method Of Cascade Decomposition /Zubova С.П., Raetskaya Е.V.// Automation and Remote Control. 2017 .Vol.78, No. 7, p. 1189--1202.
-
-3. {\it  Zubova С.П.} A Study Of The Rigidity Of Descriptor Dynamical System In a Banach Space /Zubova С.П., Raetskaya Е.V.// Journal of Mathematical Sciences. 2015. Vol.208, 1, p. 131--138.
+\smallskip \centerline {\bf Р›РёС‚РµСЂР°С‚СѓСЂР°} \nopagebreak
 
 
-4.{\it  Zubova С.П.} Solution Of The Coushy Problem For Two Descriptive Equations With Fredholm Operator /Zubova С.П., Raetskaya Е.V.//
+1. {\it  Zubova РЎ.Рџ.} Construction of Controls Providing the Desired Output of the Linear Dynamic System /Zubova РЎ.Рџ., Raetskaya Р•.V.// Automation and Remote Control. 2018 .Vol.79, No. 5, p. 774--791.
+
+2. {\it  Zubova РЎ.Рџ.}  Algorithm to Solve Of Control By The Method Of Cascade Decomposition /Zubova РЎ.Рџ., Raetskaya Р•.V.// Automation and Remote Control. 2017 .Vol.78, No. 7, p. 1189--1202.
+
+3. {\it  Zubova РЎ.Рџ.} A Study Of The Rigidity Of Descriptor Dynamical System In a Banach Space /Zubova РЎ.Рџ., Raetskaya Р•.V.// Journal of Mathematical Sciences. 2015. Vol.208,В 1, p. 131--138.
+
+
+4.{\it  Zubova РЎ.Рџ.} Solution Of The Coushy Problem For Two Descriptive Equations With Fredholm Operator /Zubova РЎ.Рџ., Raetskaya Р•.V.//
 Doklady Mathematics. 2014.  Vol. 90, No. 3.  p. 732--736.
 
-5.{\it  Zubova С.П.}  Invariance Of a Nonstationary  Observability System Under Certain Perturbations /Zubova С.П., Raetskaya Е.V.// Journal of Mathematical Sciences. 2013.  Vol.  188, No. 3. p. 218--226.
+5.{\it  Zubova РЎ.Рџ.}  Invariance Of a Nonstationary  Observability System Under Certain Perturbations /Zubova РЎ.Рџ., Raetskaya Р•.V.// Journal of Mathematical Sciences. 2013.  Vol.  188, No. 3. p. 218--226.
 
-6.{\it  Zubova С.П.} On Polinomial  Solution Of The Linear Stationary Control /Zubova С.П., Trung L.H., Raetskaya Е.V.// Automation and Remote Control. 2008 .Vol.69, No. 11, p. 1852--1858.
+6.{\it  Zubova РЎ.Рџ.} On Polinomial  Solution Of The Linear Stationary Control /Zubova РЎ.Рџ., Trung L.H., Raetskaya Р•.V.// Automation and Remote Control. 2008 .Vol.69, No. 11, p. 1852--1858.
