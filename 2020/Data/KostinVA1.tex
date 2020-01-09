@@ -1,0 +1,88 @@
+
+\begin{center}
+    {\bf О КОРРЕКТНОЙ РАЗРЕШИМОСТИ ЗАДАЧИ КОШИ ДЛЯ ОБОБЩЕННОГО УРАВНЕНИЯ МАЙНАРДИ С ДРОБНОЙ ПРОИЗВОДНОЙ}
+
+    {\it В.А. Костин, Е.Д. Кочетова, С.С. Лемешаев}
+
+    (Воронеж; ВГУ им. М.В. Ломоносова; {\it jancd@inbox.ru})
+\end{center}
+
+\addcontentsline{toc}{section}{Костин В.А., Кочетова Е.Д., Лемешаев С.С.}
+
+
+В Банаховом пространстве $E$ с нормой $||*||_E$ раccматривается уравнение
+
+\begin{equation}\label{eq_lin_operator}
+	\frac{\partial^{1+\alpha} u(t)}{\partial t^{1+\alpha}} = Au(t), \ \ \ t \geqslant 0
+\end{equation}
+
+где $A$  - линейный замкнутый оператор с областью определения $D(A) \subset E$ и областью значения $R(A)$.
+
+\begin{equation}\label{Green_Eq}
+        \frac{\partial^{1+\alpha}u(t,x)}{\partial t^{1+\alpha}} = \frac{1}{\Gamma(1-\alpha)} \int\limits_0^t \frac{u''(s)ds}{(t - s)^{\alpha}}; \ \ \ \alpha \in (0, 1)
+\end{equation}
+ - дробная производная в смысле Капуто.
+\vspace{3mm}
+
+
+Рассматривается задача о нахождении решения уравнения \ref{eq_lin_operator}, удовлетворяющее условиям
+
+\begin{equation}\label{Koshi_uslovie}
+	u(0) = u_0, \ u'(0) = 0
+\end{equation}
+
+\begin{definition}
+	Решением уравнения \ref{eq_lin_operator} называется оператор-функция $u(t)$ со значениями в $D(A)$, для которой определяется производная \ref{Green_Eq} и удовлетворяющая уравнению \ref{eq_lin_operator}
+\end{definition}
+
+\begin{definition}
+	Решением уравнения \ref{eq_lin_operator} удовлетворяющее условиям \ref{Koshi_uslovie}, где $u_0 \in D(A), u_1 \in D(A)$, называется решением задачи Каши.
+\end{definition}
+
+\begin{definition}
+	Задачу \ref{eq_lin_operator} - \ref{Koshi_uslovie} будем называть равномерно-корректной, если для ее решения справедлива оценка
+	\begin{equation}\label{ocenka}
+		||u(t)||_E \leq M||u_0||_E,
+	\end{equation}
+	где константа $M$ от $t$ и $u_0$ не зависит.
+\end{definition}
+Для оператора $A$, заданного выражением $D=d^2/dx^2$, уравнение \ref{eq_lin_operator} рассматривалось Ф. Майнарди [7].
+\vspace{3mm}
+
+
+В настоящем сообщении доказывается
+	\begin{Theorem}
+		Если оператор $A$ является производящим оператором сильно-непрерывной косинус функции $C(t,A)$ с оценкой
+		\begin{equation}
+			||C(t,A)||_E \leq M,
+		\end{equation}
+		то задача Коши \ref{eq_lin_operator} - \ref{Koshi_uslovie} равномерно-корректна и ее решение имеет вид
+		\begin{equation}
+			u(t) = \int\limits^{\infty}_0 I^{(1-\alpha)}_t (h_{\alpha}(t, \xi) C(\xi, A)u_0 d\xi,
+		\end{equation}
+	\end{Theorem}
+	где $I^{(1-\alpha)}f(t)$ - дробный интеграл Риммана-Лиувиля,
+	$$
+		h_\alpha(t,s) = \frac{1}{2\pi i} \int\limits^{\sigma + i\infty}_{\sigma - i \infty} e^{tp-\xi p^{\alpha}} dp
+	$$ --- функция Иосиды
+	и справедлива оценка \ref{ocenka}
+	
+\smallskip \centerline {\bf Литература} \nopagebreak
+
+1. {\it Иосида К.} Функциональный анализ // К. Иосида - Издательство Мир, Москва 1967, с. 357.
+
+2. {\it Голдстейн Дж.} Полугруппы линейных операторов и их приложения. Киев: Выща школа, 1989. 347 с.
+
+3. {\it Крейн С.Г.} Линейные дифференциальные уравнения в банаховом пространстве, М.: Наука 1967. -464 с.
+
+4. {\it Маслов В.П.} Операторные методы / Главная редация физико-математической литературы изд-ва "Наука М., 1973. - 544 с.
+
+5. {\it Kurepa S.} Semigroups  and cosine functions. Lecture Notes in Math, vol 948 Berlin, Springs, 1982. - p. 47 - 72.
+
+6. {\it Самко С.Г.} Интегралы и производные дробного порядка и некоторих их приложения // С.Г. Самко / А.А. Килбис / О.И. Маричев
+
+7. {\it Mainardi F.} Временное уравнение диффузии-волны. Радиофизика и квантовая электроника, вып. 38, №1-2, 1995
+
+8. {\it Костин В.А.,. Костин А.В,. Костин Д.В} "Операторные косинус-функции и граничные задачи". ДАН, 2019,т.486 №5, с.531-536.
+
+
