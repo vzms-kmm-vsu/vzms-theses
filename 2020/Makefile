@@ -6,7 +6,7 @@ utf8:
 	./utf8.sh
 
 overfull:
-	pdflatex main.tex | grep -v Underfull | grep . | grep -C 12 Overfull
+	pdflatex main.tex | grep -va Underfull | grep  -a . | grep -aC 12 Overfull
 	pdflatex main.tex | grep -c Overfull
 
 join:
