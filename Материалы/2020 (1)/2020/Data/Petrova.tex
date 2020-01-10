@@ -1,0 +1,52 @@
+\begin{center}
+    {\bf ОБ ОБОСНОВАНИИПРИБЛИЖЁННЫХ МЕТОДОВ РЕШЕНИЯ ЗАДАЧ ВЫПУКЛОГО ПРОГРАММИРОВАНИЯ}
+
+    {\it Л.П. Петрова, И.Н. Прядко}
+
+    (Воронеж, ВГУ; {\it lpp1950@mail.ru, pryadko\_irina@mail.ru})
+\end{center}
+
+\addcontentsline{toc}{section}{Петрова Л.П., Прядко И.Н.}
+
+
+Здесь в качестве модели задачи о поиске минимума выпуклой дифференцируемой функции $f\left(x\right)$в пределах выпуклого замкнутого множества $Q\subset R^{n} $рассматривается дифференциальное включение
+
+\begin{equation} \label{GrindEQ__1_} \dot{x}\in -\nabla f\left(x\right)-N_{x}  \end{equation}
+с \textit{нормальным} конусом $N_{x} :=\left\{n:\, \, \forall \left(z\in Q\right)\left[\left\langle z-x,\, \, n\right\rangle \le 0\right]\right\}$, построенным к $Q$ в точке $x$. Система \eqref{GrindEQ__1_}  эквивалентна следующему уравнению с разрывной правой частью
+
+$$\dot{x}={Pr}_{T_{x} } \left(-\nabla f\left(x\right)\right),\eqref{GrindEQ__2_}$$                                            
+где $T_{x} $ - касательный конус к $Q$ в точке $x$(сопряжённый к $N_{x} $)
+
+Если ввести новую неизвестную функцию $\sigma (t)$, которая связана с $x(t)$ соотношением $\dot{\sigma }(t)=-\nabla f\left(x\left(t\right)\right),\, \, \, \sigma (t_{0} )=0$, то \eqref{GrindEQ__2_} запишется в виде $\dot{x}=\Pr _{T_{x} } \dot{\sigma }$. Обозначим через $U_{t_{0} }^{t} (\sigma _{t} )x_{0} $ оператор упора, соответствующий $Q$, который сопоставляет любой непрерывно дифференцируемой \textit{входной }вектор-функции $\sigma (t)$ и начальному значению $x_{0} =x(t_{0} )$\textit{ выходной} функции функцию $x(t)$ - решение уравнения $\dot{x}=\Pr _{T_{x} } \dot{\sigma }$. В новых обозначениях \eqref{GrindEQ__2_} принимает вид системы дифференциальных уравнений с оператором упора $x(t)=U_{t_{0} }^{t} (\sigma _{t} )x_{0} $ и $\dot{\sigma }(t)=-\nabla f\left(U_{t_{0} }^{t} (\sigma _{t} )x_{0} \right)$, основные свойства которого впервые были изучены Красносельским М.А и Покровским А.В.[1].
+
+Наряду с \eqref{GrindEQ__1_} рассматривается система дифференциальных уравнений
+
+$$\dot{x}=-\nabla \left(f\left(x\right)+M\cdot h\left(x\right)\right)\eqref{GrindEQ__2_}.$$                                     
+
+В этом виде могут быть представлены некоторые приближённые методы поиска точки минимума $f\left(x\right)$ в области $Q$. Например, система $\dot{x}=-\nabla f\left(x\right)-M\cdot \left(x-\Pr _{Q} \left(x\right)\right)$, предназначенная для поиска приближённого значения точки минимума со штрафной функцией $-M\cdot \left(x-\Pr _{Q} \left(x\right)\right)$ представима в виде \eqref{GrindEQ__2_} с функциями $h\left(x\right)=\frac{1}{2} \left\| x-\Pr _{Q} x\right\| ^{2} $. А для многогранной области $Q=\left\{x:\, \, \left\langle x,\, \, n_{k} \right\rangle \le c_{k} ,\, \, \, k=1,\, \, 2,\ldots ,m\right\}\, $ система $\dot{x}=-\nabla f\left(x\right)-M\cdot \sum _{k=1}^{m}\xi _{k} n_{k}  $, $\xi _{k} =\max \left\{0,\, \, \left\langle x,\, \, n_{k} \right\rangle -c_{k} \right\}$ записывается в виде \eqref{GrindEQ__2_} с $h\left(x\right)=\frac{1}{2} \sum _{k=1}^{m}\xi _{k}^{2}  $.
+
+ Введём следующие ограничения:
+
+1) $Q$ содержится в области определения функции $f$ вместе с некоторой своей окрестностью $Q^{\, r} :=\left\{x:\, \, \rho \left(x,\, \, Q\right)\le r\right\}$;
+
+2) градиент $\nabla f\left(x\right)$ ограничен в области $Q^{\, r} $;
+
+3)$h\left(x\right)$ -- определена, дифференцируема и выпукла (нестрого) на множестве \textit{$Q^{\, r} $}, а её градиент $\nabla h\left(x\right)\in N_{\Pr _{Q} \left(x\right)} $ и $h\left(x\right)=0$ для всех $x\in Q$;
+
+2. для любого сколь угодно малого \textit{$r>\varepsilon >0$} найдётся число $\mu \left(\varepsilon \right)>0$ такое, что $\left\langle \nabla h\left(x\right),\, \, x-\Pr _{Q} x\right\rangle \ge \mu \left(\varepsilon \right)\left\| x-\Pr _{Q} x\right\| ^{2} $ для всех $x\in X=\left\{x\in R^{n} :\, \, \varepsilon \le \rho \left(x,\, \, Q\right)\le r\right\}$.
+
+При этих ограничениях справедлива
+
+\textbf{Теорема}: \textit{Если градиент }$\nabla f\left(x\right)\ne 0$\textit{ для все}х $x\in Q$, \textit{то для любого }$\varepsilon >0$\textit{ существуют такие }$M>0$\textit{ и }$T>0$, \textit{что для решения }$x\left(t\right)$\textit{ системы }\eqref{GrindEQ__2_}\textit{ с начальным значением $x\left(0\right)=x_{0} \in X$ при всех $t\ge T$ выполнено неравенство $f\left(x\left(t\right)\right)<f_{o} $ и $\rho \left(x\left(t\right),\, \, Q\right)\le \varepsilon $}, \textit{где }$f_{o} $ -- з\textit{начение минимума функции }$f\left(x\right)$\textit{на множестве }$Q$.
+
+ Доказательство теоремы приведено в [2].
+
+\smallskip \centerline {\bf Литература} \nopagebreak
+
+1.
+{\it Красносельский М.А. Покровский А.В.} Системы с гистерезисом. ---М.:Наука, 1983. 272с.
+
+2.
+{\it  Петрова Л.П, Прядко И.Н., Макринова Д.Л., Гулимова Е.Н.} Системы с диодными нелинейностями в обосновании корректности некоторого класса приближённых методов решения задач выпуклого программирования  // Системы управления и информационные технологии. 2019. № 2 (76). С. 7-11.
+
+

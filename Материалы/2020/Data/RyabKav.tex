@@ -1,0 +1,132 @@
+
+\begin{center}
+    {\bf ТОПОЛОГИЧЕСКИЙ АТЛАС ОДНОЙ ИНТЕГРИРУЕМОЙ СИСТЕМЫ С ТРЕМЯ СТЕПЕНЯМИ СВОБОДЫ\footnote{Работа первого автора поддержана Российским научным фондом (№ 19-71-30012).}}\\
+
+    {\it П.Е. Рябов, В.К. Каверина}
+
+    (Москва; {\it PERyabov@fa.ru; VKKaverina@fa.ru})
+\end{center}
+
+\addcontentsline{toc}{section}{Рябов П.Е., Каверина В.К.}
+
+
+В докладе представлены задачи и результаты исследования фазовой топологии интегрируемых систем с двумя и тремя степенями свободы из динамики твердого тела, допускающих представление Лакса. Основой таких исследований послужило понятие топологического атласа, введенное М.~П.~Харламовым в начале 2000-х гг. для неприводимых интегрируемых систем с тремя степенями свободы [1]. Топологический атлас включает аналитическое описание  критических подсистем полного отображения момента, каждая из которых при фиксированных физических параметрах является почти гамильтоновой системой с меньшим числом степеней свободы; классификацию оснащенных изоэнергетических  диаграмм Смейла с полным описанием регулярных торов Лиувилля и их бифуркаций; определение типов всех критических точек полного отображения момента и программы-конструктора построения топологических инвариантов. Как оказалось, к настоящему моменту локальное и полулокальное исследование критических подсистем является эффективным средством для конструирования грубых топологических инвариантов. Для интегрируемых гамильтоновых систем с $n$ степенями свободы с полиномиальными или рациональными интегралами множество критических значений отображения момента $\cal F$ может быть записано в виде $P=0$, где $P$ -- полином от фазовых переменных. Разложение его на неприводимые сомножители $P=\prod\nolimits_j {L_j}$ приводит к определению критической подсистемы ${\cal M}_j$ как множества критических точек нулевого уровня некоторой функции $L_j$. Оказывается, критическая точка ранга $k$ локально является точкой пересечения $n-k$ подобластей критических подсистем. Интегралы $L_j$ этих подсистем порождают симплектические операторы ${\cal A}_{L_j}$, которые определяют тип критической точки. Бифуркации, которые возникают при пересечении поверхностей ${\cal F}(M_j)$ в точке
+${\cal F}(x)$, порождают полулокальный тип критической точки. Такой подход приводит к аналитическому описанию топологических инвариантов исключительно в терминах первых интегралов. Для некоторых интегрируемых задач динамики твердого тела  (волчок Ковалевской в двойном поле сил, интегрируемый случай Ковалевской-Соколова, интегрируемый случай Ковалевской-Яхья) удалось эффективно реализовать программу построения топологического атласа [2], [3], [4].
+
+%%%%%%%%%%%%%%%%%%%%%%
+В докладе также представлены некоторые результаты построения топологического атласа интегрируемой системы с тремя степенями свободы на ко-алгебре Ли ${e(3,2)}^*$, которая описывает динамику двухполевого обобщенного гиростата при наличии двух силовых полей (случай интегрируемости Соколова-Цыганова) [5]. Это один из наиболее общих найденных на сегодня случаев интегрируемости гиростата в двойном поле с условиями типа Ковалевской и гироскопическими силами с непостоянным гироскопическим моментом. В общем случае не удавалось даже выписать в обозримом виде дополнительные интегралы.
+
+Речь идет о следующей системе обыкновенных дифференциальных уравнений
+\begin{equation*}
+\begin{array}{l}
+ \displaystyle{\dot{\boldsymbol M}={\boldsymbol M}\times\frac{\partial H}{\partial{\boldsymbol
+M}}+ {\boldsymbol\alpha}\times\frac{\partial H}{\partial{\boldsymbol\alpha}}+
+{\boldsymbol\beta}\times\frac{\partial H}{\partial{\boldsymbol\beta}},}\\[3mm]
+\displaystyle{\dot{\boldsymbol \alpha}={\boldsymbol\alpha}\times\frac{\partial
+H}{\partial{\boldsymbol M}},\quad \dot{\boldsymbol
+\beta}={\boldsymbol\beta}\times\frac{\partial H}{\partial{\boldsymbol M}}}
+\end{array}
+\eqno (1)
+\end{equation*}
+c гамильтонианом
+\begin{equation*}
+\begin{array}{l}
+\displaystyle{H= M_1^2+M_2^2+2M_3^2+2\lambda M_3-2\varepsilon_2(\alpha_1+\beta_2)}\\[3mm]
+{\displaystyle\qquad+2\varepsilon_1(M_2\alpha_3-M_3\alpha_2+M_3\beta_1-M_1\beta_3).}
+\end{array}
+\eqno (2)
+\end{equation*}
+
+Здесь трехмерные векторы ${\boldsymbol M}, {\boldsymbol\alpha}, {\boldsymbol\beta}$
+представляют собой проекции кинетического момента и двух силовых полей  на оси, жестко
+связанные с твердым телом; $\lambda$ -- параметр гиростатического момента, направленного
+вдоль оси динамической симметрии; $\varepsilon_1$ и $\varepsilon_2$ -- параметры деформации. Система с таким гамильтонианом, существенно зависящими от
+${\boldsymbol\alpha}$ и ${\boldsymbol\beta}$, не допускает непрерывной группы симметрии,
+и поэтому неприводима глобально к семейству систем с двумя степенями свободы.
+
+Соответствующая скобка Ли--Пуассона задается формулами
+\begin{equation*}
+\begin{array}{l}\{M_i,M_j\}=\varepsilon_{ijk}M_k, \{M_i,\alpha_j\}=\varepsilon_{ijk}\alpha_k,\\[3mm]
+\{M_i,\beta_j\}=\varepsilon_{ijk}\beta_k, \{\alpha_i,\alpha_j\}=0,\\[3mm]
+\{\alpha_i,\beta_j\}=0, \{\beta_i,\beta_j\}=0, \\[3mm]
+\varepsilon_{ijk}=\frac{1}{2}(i-j)(j-k)(k-i), 1\leqslant i,j,k\leqslant 3.
+\end{array}
+\eqno (3)
+\end{equation*}
+
+Функциями Казимира являются выражения ${\boldsymbol\alpha}^2$,
+${\boldsymbol\alpha}\cdot{\boldsymbol\beta}$ и ${\boldsymbol\beta}^2$.
+
+Относительно
+скобки Ли--Пуассона, заданной соотношениями $(3)$, систему $(1)$ можно
+представить в гамильтоновом виде
+\begin{equation*}
+\dot x=\{H,x\},
+\end{equation*}
+где через $x$ обозначена любая из координат.
+
+Фазовое пространство $\cal P$ системы уравнений $(1)$ задается общим уровнем функций Казимира
+\begin{equation*}
+\boldsymbol\alpha^2=a^2,\quad \boldsymbol\beta^2=b^2,\quad
+{\boldsymbol\alpha}\cdot{\boldsymbol\beta}=c, \quad (0<b<a, |c|<ab).
+\end{equation*}
+
+Для гамильтониана $(2)$ необходимые для интегрируемости по Лиувиллю два дополнительных интеграла $K$ и $G$ имеют следующий явный вид [6]:
+\begin{equation*}
+\begin{array}{l}
+K=Z_1^2+Z_2^2-\lambda[(M_3+\lambda)(M_1^2+M_2^2)+2\varepsilon_2(\alpha_3M_1+\beta_3M_2)]\\[3mm]
+\qquad+\lambda\varepsilon_1^2({\boldsymbol\alpha}^2+{\boldsymbol\beta}^2)M_3+\\[3mm]
++2\lambda\varepsilon_1[\alpha_2M_1^2-\beta_1M_2^2-(\alpha_1-\beta_2)M_1M_2]
+-2\lambda\varepsilon_1^2\omega_\gamma,\\[5mm]
+G=\omega_\alpha^2+\omega_\beta^2+2(M_3+\lambda)\omega_\gamma-
+2\varepsilon_2({\boldsymbol\alpha}^2\beta_2+{\boldsymbol\beta}^2\alpha_1)+\\[3mm]
++2\varepsilon_1[{\boldsymbol\beta}^2(M_2\alpha_3-M_3\alpha_2)-
+{\boldsymbol\alpha}^2(M_1\beta_3-M_3\beta_1)]\\[3mm]
++2({\boldsymbol\alpha}\cdot{\boldsymbol\beta})[\varepsilon_2(\alpha_2+\beta_1)+\varepsilon_1(\alpha_3M_1-\alpha_1M_3+\beta_2M_3-\beta_3M_2)],
+\end{array}
+\end{equation*}
+где
+\begin{equation*}
+\begin{array}{l}
+Z_1=\frac{1}{2}(M_1^2-M_2^2)+\varepsilon_2(\alpha_1-\beta_2)+\\[3mm]
+\qquad+\varepsilon_1[M_3(\alpha_2+\beta_1)-M_2\alpha_3-M_1\beta_3]+
+\frac{1}{2}\varepsilon_1^2({\boldsymbol\beta}^2-{\boldsymbol\alpha}^2),\\[3mm]
+Z_2=M_1M_2+\varepsilon_2(\alpha_2+\beta_1)-\\[3mm]
+\qquad-\varepsilon_1[M_3(\alpha_1-\beta_2)+\beta_3M_2-\alpha_3M_1]-\varepsilon_1^2(
+{\boldsymbol\alpha}\cdot{\boldsymbol\beta}),\\[3mm]
+\omega_\alpha=M_1\alpha_1+M_2\alpha_2+M_3\alpha_3,\\[3mm]
+\omega_\beta=M_1\beta_1+M_2\beta_2+M_3\beta_3,\\[3mm]
+\omega_\gamma=M_1(\alpha_2\beta_3-\alpha_3\beta_2)+\\[3mm]
+\qquad +M_2(\alpha_3\beta_1-\alpha_1\beta_3)+
+M_3(\alpha_1\beta_2-\alpha_2\beta_1).
+\end{array}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+В докладе предложен подход к описанию фазовой топологии такой системы. В явном виде описываются некоторые критические подсистемы с указанием бифуркаций торов Лиувиля [6], [7], [8], а также некоторые оснащенные изоэнергетические диаграммы. На сегодняшний день для указанной системы определены порядка 150 оснащенных  изоэнергетических диаграмм полного отображения момента с указанием всех камер, семейств регулярных 3-мерных торов и  их 4-мерных бифуркаций.
+
+
+
+% Оформление списка литературы
+\smallskip \centerline {\bf Литература} \nopagebreak
+
+1. {\it Kharlamov M.P.} Bifurcation diagrams of the Kowalevski top in two constant fields // Regular and Chaotic Dynamics. 2005. Vol.~10, \No~4. P.~381--398.
+
+2. {\it Kharlamov M.P., Ryabov P.E.} Topological atlas of the Kovallevskaya
+top in a double field // Journal of Mathematical Sciences (United
+States). 2017. Vol.~223, \No.~6. P.~775--809.
+
+3. {\it Kharlamov M.P., Ryabov P.E., Savushkin A.Y.} Topologi\-cal Atlas of the
+Kowalevski-Sokolov~// Regular and Chaotic Dynamics. 2016. Vol.~21, \No.~1. P.~24--65.
+
+4. {\it Kharlamov M.P., Ryabov P.E., Kharlamova I.I.} Topo\-lo\-gical At\-las of the Kovalevskaya-Yehia Gyrostat // Journal of Mathe\-ma\-tical Sciences (United States). 2017. Vol.~227, \No.~3. P.~241--386.
+
+5. {\it Sokolov V.V., Tsiganov A.V.} Lax Pairs for the Deformed Kowalevski and Goryachev-Chaplygin Tops // Theoretical and Mathematical Physics. 2002. Vol.~131, \No.~1.  P.~543--549.
+
+6. {\it Ryabov P.E.} Phase topology of one irreducible integrable problem in the dynamics of a rigid body // Theoretical and Mathematical Physics. 2013. Vol.~176, \No.~2.  P.~1000--1015.
+
+7. {\it Ryabov P.E.} New invariant relations for the generalized two-field gyrostat // Journal of Geometry and Physics. 2015. Vol.~87. P.~415--421.
+
+8. {\it Sokolov S.V.} New invariant relations for one critical sub\-system of a generalized two-field gyrostat //  Doklady Physics. 2017. Vol.~62, \No.~12. P.~567--570.
+

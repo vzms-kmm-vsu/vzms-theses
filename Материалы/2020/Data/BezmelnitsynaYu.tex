@@ -1,0 +1,133 @@
+\begin{center}
+    {\bf ON GUIDING POTENTIALS AND ASYMPTOTIC BEHAVIOR OF TRAJECTORIES FOR RANDOM DIFFERENTIAL INCLUSIONS}
+
+    {\it Y.E. Bezmelnitsyna }
+
+    (Voronezh; {\it bezmelnicyna@inbox.ru})
+\end{center}
+
+\addcontentsline{toc}{section}{Bezmelnitsyna  Y.E.}
+
+In the recent years the sphere of applications of the method of guiding functions which is due to M.A. Krasnoselskii and A.I. Perov (see, e.g., [8] and also [3, 5] and their references) has been extended to the study of qualitative behavior of solutions of differential equations and inclusions of various types, covering, in particular, their asymptotics (see, e.g., [2, 6, 7, 9, 10]).
+
+In the present paper we define a random nonsmooth guiding potential for random differential inclusions and apply it to the study of the asymptotic behavior of solutions for such inclusions.
+
+In what follows we will use some known notions and notati\-ons from the theory of multimaps (see, e.g., [3, 5]).
+
+Let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces. By the symbols $P(Y),$ $C(Y)$ and $K(Y)$ we denote the collections of all nonempty, closed and, respectively, compact subsets of the space $Y.$ If $Y$ is a normed space, $Kv(Y)$ denote the collections of all nonempty convex compact subsets of $Y.$
+
+\textbf{Definition~1.}
+A multimap $F:X \to P(Y)$ is called {\it upper semicontinuous (u.s.c.)} at the point $x\in X$  if for each open set $V \subset Y$ such that $F(x) \subset V$ there exists $\delta >0$ such that $d_X(x,x^\prime)<\delta$ implies $F(x^\prime)\subset V.$  A multimap $F:X \to P(Y)$ is called u.s.c. if it is u.s.c. at each point $x\in X.$
+
+Let $I$ be a closed subset of $\mathbb{R}$ with the Lebesgue measure.
+
+\textbf{Definition~2.}
+A multifunction $F:I \to K(Y)$ is called {\it measurable} if, for each open subset $W \subset Y,$ its pre-image \linebreak
+$F^{-1}(W)=\{t\in I:F(t)\subset W\}$ is the measurable subset of$I.$
+
+Let $(\Omega,\Sigma,\mu)$ be a complete probability space.
+
+\textbf{Definition~3.} (see [1]). Multimap $\mathcal{F}\colon\Omega\times X\to C(Y)$ is called a {\it random multioperator} if it is product-measurable, i.e. measurable w.r.t. $\Sigma\otimes\mathbb{B}(X)$, where $\Sigma\otimes\mathbb{B}(X)$ is the smallest
+$\sigma$-algebra on $\Omega\times X$ which contains all the sets $A\times B$, where $A\in\Sigma$ and $B\in\mathbb{B}(X)$ and
+$\mathbb{B}(X)$ denotes the Borel $\sigma$-algebra on $X$. If, moreover, $\mathcal{F}(\omega,\cdot)\colon X\to C(Y)$ is u.s.c. for all
+$\omega\in\Omega$, then $\mathcal{F}$ is called a {\it random $u$-multioperator}.
+
+We consider the following Cauchy problem for a random differential inclusion of the form:
+$$
+x'(\omega,t)\in \mathcal{F}(\omega,t,x(\omega,t)), \eqno{(1)}
+$$
+under assumptions that the random $u$-multioperator $\mathcal{F}:\Omega\times\mathbb{R} \times \mathbb{R}^n \to Kv(\mathbb{R}^n)$ satisfies the sublinear growth condition:
+
+\noindent
+there exists a function $\alpha:\Omega\times \mathbb{R}_+\to \mathbb{R}_+$ such that
+$(i)$ for each $\omega\in\Omega$ a function $\alpha(\cdot,t)$ is measurable,
+$(ii)$ a function $\alpha(\omega,\cdot)$ is locally integrable,
+and we have for each $\omega\in\Omega$
+$$
+\|\mathcal{F}(\omega,t,x)\| \leq \alpha(\omega,t)(1 + \|x\|) \,\,\mbox{for a.e.}\;t \in \mathbb{R}; \,x \in \mathbb{R}^n .
+$$
+By a {\it solution of inclusion (1) on $\mathbb{R}$} we mean a function $x:\Omega\times\mathbb{R}\to \mathbb {R}^n,$ such that
+$(j)$ $x(\cdot, t)$ is measurable for a.e. $t\in \mathbb{R};$
+$(jj)$ $x(\omega,\cdot)$ is absolutely continuous for each $\omega\in\Omega$;
+satisfying for each $\omega\in\Omega$ inclusion (1) for a.e. $t\in \mathbb{R}$ and the initial condition at almost every point
+$$
+x(\omega,0)=x_0. \eqno{(2)}
+$$
+Let us recall some notions of non-smooth analysis (see [4]).
+
+Let $V$ be a locally Lipschitz function on the space $\mathbb{R}^{n}.$ For $x_{0} \in \mathbb{R}^{n}$ and $\nu \in \mathbb{R}^{n}$ {\it the Clarke generalized derivative} $V^{0}(x_{0} ;\nu )$ at $x_{0} $ along the direction $\nu $ is given by the formula
+$$
+V^{0}(x_{0} ;\nu ) = \mathop{\overline {\lim}}\limits_{{\begin{array}{*{20}c}
+ {x \to x_{0}} \hfill \\
+ {t \to 0+} \hfill \
+ \end{array} }}\frac{{V(x + t\nu ) - V(x)}}{{t}},
+$$
+where $x \in \mathbb{R}^{n}.$ Then {\it the Clarke generalized gradient} $\partial V(x)$ of the function $V$ at the point $x_{0}$ is defined in the following way:
+$$
+\partial V(x_{0} ) = \left\{ {x \in \mathbb{R}^{n}:\quad \langle {x,\nu } \rangle \le V^{0}(x_{0} ;\nu )\quad \mbox{for all}\;\;\nu \in \mathbb{R}^{n}} \right\}.
+$$
+Recall (see, e.g., [4]) that a locally Lipschitz function $V:\mathbb{R}^n\to \mathbb{R}$ is called {\it regular} if for each $x\in \mathbb{R}^{n}$ and $\nu \in \mathbb{R}^{n}$ there exists the derivative along the direction  $V'(x,\nu)$ and it coincides with $V^0(x,\nu).$ It is known that convex functions are regular.
+
+\textbf{Definition~4.}
+A map $V\colon\Omega\times\mathbb{R}^{n}\to\mathbb{R}$ is called a {\it random nonsmooth potential} if the following two conditions are satisfied:
+$(i)$ $V(\cdot,x)\colon\Omega\to\mathbb{R}$ is measurable for every $x\in\mathbb{R}^{n}$; \linebreak
+$(ii)$ $V(\omega,\cdot)\colon\mathbb{R}^{n}\to\mathbb{R}$ is a regular function for every $\omega\in\Omega$.
+
+\noindent Denote by $\mathfrak{V}$ the collection of all random nonsmooth potentials $V: \Omega\times\mathbb{R}^n \to \mathbb{R}$ such that for each $\omega\in\Omega$ the coercivity condition
+$
+\lim_{\|x\|\to +\infty} V(\omega,x) = -\infty
+$
+holds true.
+
+Notice that, given a function $V \in \mathfrak{V},$ for each $r>0$ and $\omega\in\Omega$ there exists $k_\omega(r) > r$ such that
+if
+$
+\alpha_r(\omega):=\inf\{V(\omega,x),\|x\|\leq r\},
+$
+then for each $\omega\in\Omega$ we have
+$
+ V(\omega,x)< \alpha_r(\omega), \;\|x\|\geq k_\omega(r).
+$
+
+Now, let $g:\Omega\times\mathbb{R}_+\to \mathbb{R}_+$ be a given function such that
+$(j)$ $g(\cdot, t)$ is measurable for a.e. $t\in\mathbb{R}_+$;
+$(jj)$ $g(\omega, \cdot)$ is absolutely continuous;
+$(jjj)$ $\inf \{g(\omega,t):\; \omega\in\Omega,\; t\in \mathbb{R}\}\geq 1$.
+
+\textbf{Definition~5.} A random nonsmooth potential $V \in \mathfrak{V}$ is called a {\it random nonsmooth guiding potential for inclusion (1) along the function $g$} if for each $\omega\in\Omega$ there exists $r_0(\omega)>0$ such that $g(\omega,t)\|x\|\ge r_0(\omega),$ \,$t \in \mathbb{R}$ implies for each $\omega\in\Omega$
+$$
+\left< {\upsilon,g'(\omega,t)x+g(\omega,t)y} \right> \geq 0, \quad \mbox {if} \; t>0;
+$$
+$$
+\left< {\upsilon,g'(\omega,t)x+g(\omega,t)y} \right> \leq 0, \quad \mbox {if}\; t<0;
+$$
+for each $y\in F(\omega,t,x), \; \upsilon \in \partial V(g(\omega,t)x).$
+
+\textbf{Theorem~1.}
+If $V \in \mathfrak{V}$ is a random nonsmooth guiding potential for inclusion (1) along the function $g$
+then each solu\-tion of Cauchy problem (1), (2) satisfies the estimate
+$$
+\|x(\omega,t)\|\leq k_V(\omega)\cdot \frac{1}{g(\omega,t)},\quad \omega\in\Omega,\;t\in \mathbb{R}, \; k_V(\omega)>0.
+$$
+% ќформление списка литературы
+\centerline {\bf Bibliography} 
+
+1. {\it Andres J., G\'orniewicz L.} Random topological degree and random differential inclusions. Topol. Meth. Nonl. Anal. 40 (2012), 337--358.
+
+2.  {\it Avramescu C.} Asymptotic behavior of solutions of nonli\-near differential equations and generalized guiding functions. Elec\-tronic J. of Qualitive Theory of Differ. Equ. 13 (2003), 1-9.
+
+3. {\it Borisovich Yu.G., Gel'man B.D., Myshkis A.D., Obukho\-vskii V.V.} Introduction to the Theory of Multivalued Maps and Dif\-fe\-ren\-tial Inclusions - 2nd ed. Moscow: Librokom, 2011.
+
+4.  {\it Clarke F.H.} Optimization and Nonsmooth Analysis - 2nd ed. Classics in Applied Mathematics, 5. Society for Industrial and Applied Mathematics (SIAM). Philadelphia: PA, 1990.
+
+5.{\it G\'orniewicz L.}  Topological Fixed Point Theory of Multi\-valued Mappings - 2nd ed. Berlin: Springer, 2006.
+
+6. {\it Kornev S., Obukhovskii V., Yao J.-C.} On asymptotics of solutions for a class of functional differential inclusions. Discus\-sio\-nes Mathematicae. Differential Inclusions, Control and Opti\-mi\-zation. 34 (2014), 219--227.
+
+7. {\it Kornev S.V., Obukhovskii V.V.}  On asymptotic behavior of solutions of differential inclusions and the method of guiding functions. Differential Equations. 51 (2015), 711--716.
+
+8.  {\it Krasnosel'skii M.A.} The Operator of Translation Along the Trajectories of Differential Equations. Translations of Mathe\-ma\-tical Monographs - Vol. 19.  Providence, R.I.: American Ma\-the\-matical Society, 1968.
+
+9. {\it Obukhovskii V., Kamenskii M., Kornev S., Liou Y.-C.} On asymptotics of solutions for a class of differential inclusions with a regular right-hand part. Journal of Nonlinear and Convex Analysis. 18 (2017), no. 5, 967--975.
+
+10. {\it Kornev S., Obukhovskii V., Yao J.-C.}  Nonsmooth integ\-ral guiding potentials and asymptotic behavior of solutions for inclusions with causal multioperators. Optimization (2019)
