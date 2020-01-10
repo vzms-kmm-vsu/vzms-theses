@@ -275,6 +275,9 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 
+# gedit temporary files
+*~
+
 ## У этих файлов нет исходников
 !2018/Data/pic/Fomenko_Vedushkina_topologicalbilliards.pdf
 !2018/Data/pic/Vedushkina_moleculesSimple.pdf
