@@ -1,4 +1,4 @@
-all:
+all: include_theses
 	pdflatex main.tex
 	pdflatex main.tex
 
@@ -14,3 +14,6 @@ join:
 
 split:
 	nodejs ~/git/node-text-split-join/text-split.js Data/joined.tex.tmp
+
+include_theses:
+	./include_theses.sh

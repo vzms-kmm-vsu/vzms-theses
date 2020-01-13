@@ -278,6 +278,8 @@ TSWLatexianTemp*
 # gedit temporary files
 *~
 
+theses.tex
+
 ## У этих файлов нет исходников
 !2018/Data/pic/Fomenko_Vedushkina_topologicalbilliards.pdf
 !2018/Data/pic/Vedushkina_moleculesSimple.pdf
