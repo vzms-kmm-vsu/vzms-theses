@@ -1,5 +1,5 @@
 \begin{center}
-    {\bf ПОСТРОЕНИЕ ПРОГРАММНОГО  УПРАВЛЕНИЯ ДЛЯ ДИНАМИЧЕСКОЙ СИСТЕМЫ В ЧАСТНЫХ ПРОИЗВОДНЫХ}
+    {\bf ПОСТРОЕНИЕ ПРОГРАММНОГО УПРАВЛЕНИЯ ДЛЯ ДИНАМИЧЕСКОЙ СИСТЕМЫ В ЧАСТНЫХ ПРОИЗВОДНЫХ}
 
     {\it С.П. Зубова, Е.В. Раецкая}
 
@@ -11,49 +11,49 @@
 
  Рассматривается система в частных производных
 \begin{equation}
-\frac{\partial x}{\partial t}=B(\frac{\partial x}{\partial s}+ \alpha  x) + Du,
+\frac{\partial x}{\partial t}=B(\frac{\partial x}{\partial s}+ \alpha x) + Du,
 \end{equation}
- где $\quad t\in [0,T],\quad s\in [0,S]$;     $x(t,s)\in R ^{n}$; $u(t,s)\in R^{m}$; $\alpha(t,s)$ - скалярная функция; $B$, $D$ --- матрицы соответствующих  размеров.
+ где $\quad t\in [0,T],\quad s\in [0,S]$; $x(t,s)\in R ^{n}$; $u(t,s)\in R^{m}$; $\alpha(t,s)$ - скалярная функция; $B$, $D$ --- матрицы соответствующих размеров.
 
 Система $(1)$ называется полностью управляемой, если существует такое управление $u(t,s)$,
-под воздействием которого система переводится   из произвольного состояния $x(0,s)$ в произвольное состояние $x(T,s)$.
+под воздействием которого система переводится  из произвольного состояния $x(0,s)$ в произвольное состояние $x(T,s)$.
 
-Для системы $(1)$, описывающей  процессы в вязко-пластической среде, решается задача построения программного управления.
+Для системы $(1)$, описывающей процессы в вязко-пластической среде, решается задача построения программного управления.
 
 
 Основным методом исследования является метод каскадной декомпозиции $([1]-[6])$, опирающийся на свойство фредголь-
-мовости конечномерного отбражения и заключающийся  в поэтапном переходе к системам в подпространствах, так что на
+мовости конечномерного отбражения и заключающийся в поэтапном переходе к системам в подпространствах, так что на
 последнем шаге декомпозиции формируется система
 \begin{equation}
-\frac{\partial x_{p}}{\partial t}=B(\frac{\partial x_{p}}{\partial s}+ \alpha_{p} x_{p}) + D_{p}(\frac{\partial u_{p}}{\partial s}+ \beta_{p}  u_{p}),
+\frac{\partial x_{p}}{\partial t}=B(\frac{\partial x_{p}}{\partial s}+ \alpha_{p} x_{p}) + D_{p}(\frac{\partial u_{p}}{\partial s}+ \beta_{p} u_{p}),
 \end{equation}
-где $D_{p}=0$ или $D_{p}$ - сюръекция;  $x_{p}(t,s)$ - удовлетворяет условиям
+где $D_{p}=0$ или $D_{p}$ - сюръекция; $x_{p}(t,s)$ - удовлетворяет условиям
 \begin{equation}
-\frac{\partial x^{j}_{p}}{\partial s}|_{t=0} = a_{j},      \frac{\partial x^{j}_{p}}{\partial s}|_{t=T} = b_{j},    j=1,...,p,
+\frac{\partial x^{j}_{p}}{\partial s}|_{t=0} = a_{j}, \frac{\partial x^{j}_{p}}{\partial s}|_{t=T} = b_{j}, j=1,...,p,
 \end{equation}
-где  $a_{j}$ и $b_{j}$ - некоторые функции. Доказывается
+где $a_{j}$ и $b_{j}$ - некоторые функции. Доказывается
 
-\textbf{Теорема~1.} {\it Система $(1)$ полностью управляема в том и только том случае, когда  $D_{p}$ - сюръекция.}
+\textbf{Теорема~1.} {\it Система $(1)$ полностью управляема в том и только том случае, когда $D_{p}$ - сюръекция.}
 
 
 В случае сюръективного $D_{p}$, для любого гладкого $x_{p}$, удовлетворяющего
 условиям $(3)$ существует гладкое $u_{p}$, удовле-
-творяющее уравнению $(2)$. Обратным ходом декомпозиции  строятся функции состояния
-и управления в аналитическом виде   с любой желаемой степенью гладкости.
+творяющее уравнению $(2)$. Обратным ходом декомпозиции строятся функции состояния
+и управления в аналитическом виде  с любой желаемой степенью гладкости.
 
 \smallskip \centerline {\bf Литература} \nopagebreak
 
 
 1. {\it  Zubova С.П.} Construction of Controls Providing the Desired Output of the Linear Dynamic System /Zubova С.П., Raetskaya Е.V.// Automation and Remote Control. 2018 .Vol.79, No. 5, p. 774--791.
 
-2. {\it  Zubova С.П.}  Algorithm to Solve Of Control By The Method Of Cascade Decomposition /Zubova С.П., Raetskaya Е.V.// Automation and Remote Control. 2017 .Vol.78, No. 7, p. 1189--1202.
+2. {\it Zubova С.П.} Algorithm to Solve Of Control By The Method Of Cascade Decomposition /Zubova С.П., Raetskaya Е.V.// Automation and Remote Control. 2017 .Vol.78, No. 7, p. 1189--1202.
 
-3. {\it  Zubova С.П.} A Study Of The Rigidity Of Descriptor Dynamical System In a Banach Space /Zubova С.П., Raetskaya Е.V.// Journal of Mathematical Sciences. 2015. Vol.208, 1, p. 131--138.
+3. {\it Zubova С.П.} A Study Of The Rigidity Of Descriptor Dynamical System In a Banach Space /Zubova С.П., Raetskaya Е.V.// Journal of Mathematical Sciences. 2015. Vol.208, 1, p. 131--138.
 
 
-4.{\it  Zubova С.П.} Solution Of The Coushy Problem For Two Descriptive Equations With Fredholm Operator /Zubova С.П., Raetskaya Е.V.//
-Doklady Mathematics. 2014.  Vol. 90, No. 3.  p. 732--736.
+4. {\it Zubova С.П.} Solution Of The Coushy Problem For Two Descriptive Equations With Fredholm Operator /Zubova С.П., Raetskaya Е.V.//
+Doklady Mathematics. 2014. Vol. 90, No. 3. p. 732--736.
 
-5.{\it  Zubova С.П.}  Invariance Of a Nonstationary  Observability System Under Certain Perturbations /Zubova С.П., Raetskaya Е.V.// Journal of Mathematical Sciences. 2013.  Vol.  188, No. 3. p. 218--226.
+5. {\it Zubova С.П.} Invariance Of a Nonstationary Observability System Under Certain Perturbations /Zubova С.П., Raetskaya Е.V.// Journal of Mathematical Sciences. 2013. Vol. 188, No. 3. p. 218--226.
 
-6.{\it  Zubova С.П.} On Polinomial  Solution Of The Linear Stationary Control /Zubova С.П., Trung L.H., Raetskaya Е.V.// Automation and Remote Control. 2008 .Vol.69, No. 11, p. 1852--1858.
+6. {\it Zubova С.П.} On Polinomial Solution Of The Linear Stationary Control /Zubova С.П., Trung L.H., Raetskaya Е.V.// Automation and Remote Control. 2008 .Vol.69, No. 11, p. 1852--1858.
