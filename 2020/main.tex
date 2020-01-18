@@ -311,7 +311,9 @@
 }
 
 \newcommand{\litlist}{
-	\smallskip \centerline{\bf Литература}\nopagebreak
+	\smallskip \centerline{\bf
+		\expandafter\iflanguage{russian}{Литература}{References}
+	}\nopagebreak
 }
 
 %\flushbottom
@@ -335,11 +337,6 @@
 % Или, по крайней мере, должна
 
 \input{theses.tex}
-
-\renewcommand{\litlist}{
-	\smallskip \centerline{\bf References}\nopagebreak
-}
-
 
 
 %\thesis{Khabibulin}
