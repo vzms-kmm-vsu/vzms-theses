@@ -9,3 +9,10 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T2A,T1]{fontenc}
 \RequirePackage[english,russian]{babel}
+
+
+% Graphics and related tricks
+
+\RequirePackage{graphics}
+\RequirePackage[dvips]{graphicx}
+\RequirePackage{wrapfig}
