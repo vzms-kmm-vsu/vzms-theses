@@ -3,5 +3,9 @@
 
 \LoadClass[a5paper,12pt,openbib]{report}
 
-%\RequirePackage{xcolor}
 
+% First of all, we deal with encodings and basic fonts
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T2A,T1]{fontenc}
+\RequirePackage[english,russian]{babel}
