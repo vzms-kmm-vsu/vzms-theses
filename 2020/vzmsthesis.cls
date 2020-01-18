@@ -31,3 +31,30 @@
 \fancyhf{}
 \fancyfoot[C]{\vspace{-25pt}\thepage}
 \renewcommand{\headrulewidth}{0pt}
+
+
+% Packages that we need for development purposes
+% (e.g. creating new macros)
+
+\RequirePackage{ifthen}
+\RequirePackage{etoolbox}
+
+
+% {ams*} packages are a gold standart in LaTeX
+
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+
+% ... but, obviously, sometimes we need some others!
+
+\RequirePackage{enumerate}
+\RequirePackage{euscript}
+\RequirePackage[shortcuts]{extdash}
+\RequirePackage{hhline}
+\RequirePackage{latexsym}
+\RequirePackage{mathrsfs}
+\RequirePackage{multirow}
+\RequirePackage{needspace}
+\RequirePackage[overload]{textcase}
+\RequirePackage{textcomp}
