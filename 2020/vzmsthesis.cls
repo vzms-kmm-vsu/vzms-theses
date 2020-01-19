@@ -174,3 +174,34 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now, we are going to provide some frequent custom commands.
+% Note that we refuse to copy all the new commands invented by authors.
+% Here we define only such commands that _are expected to work_.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% First of all, the numero sign (if it is not available):
+
+\providecommand{\No}{№}
+
+
+% The list of widely used mathematical operators
+
+\newcommand{\varDeclareMathOperator}[2]{
+	\newcommand{#1}{\mathop{\mathrm{#2}}}
+}
+
+\varDeclareMathOperator{\diag}{diag}
+\varDeclareMathOperator{\Ker} {Ker}
+\varDeclareMathOperator{\Lin} {Lin}
+\varDeclareMathOperator{\Hol} {Hol}
+\varDeclareMathOperator{\ind} {ind}
+\varDeclareMathOperator{\Ind} {Ind}
+\varDeclareMathOperator{\Dim} {Dim}
+\varDeclareMathOperator{\rank}{rank}
+
+\varDeclareMathOperator{\osc} {osc}
+\varDeclareMathOperator{\ess} {ess}
+\varDeclareMathOperator{\esssup} {ess\,sup}
+\varDeclareMathOperator{\essinf} {ess\,inf}
+\varDeclareMathOperator{\essosc} {ess\,osc}
