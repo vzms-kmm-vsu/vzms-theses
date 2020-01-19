@@ -59,6 +59,18 @@
 \RequirePackage[overload]{textcase}
 \RequirePackage{textcomp}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Now we will adjust some settings for typesetting the text
+
+\righthyphenmin=2
+\lefthyphenmin=2
+\clubpenalty=10000
+\widowpenalty=10000
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Providing custom commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
