@@ -86,52 +86,28 @@
 
 % The following commands are the dark magic which generates headers
 
-\def\pretovar#1#2{\edef#1{\unexpanded{#2}\unexpanded\expandafter{#1}}}
-\def\addtovar#1#2{\edef#1{\unexpanded\expandafter{#1#2}}}
+\newcommand{\vzmsyear}{2020}
+
 
 \def\varvzmsauthor{}
 \def\varvzmsauthortoc{}
 \def\varvzmstitle{}
 \def\varvzmstitleopt{}
 \def\varvzmsflushedauthors{}
+\def\defaultvzmsbeforeauthor{\textcopyright \vzmsyear \  \it}
+\def\varvzmsbeforeauthor{\defaultvzmsbeforeauthor}
 
 \newcommand{\vzmsauthor}[2]{%
-	\ifthenelse{
-		\equal{\varvzmsauthor}{}
-	}
-	{
-		\def\varvzmsauthor{#2~#1}
-	}{
-		\addtovar\varvzmsauthor{, #2~#1}
-	}
+	\g@addto@macro\varvzmsflushedauthors{\varvzmsbeforeauthor{}#2~#1}
+
 	\ifthenelse{
 		\equal{\varvzmsauthortoc}{}
-	}
-	{
+	}{
 		\def\varvzmsauthortoc{#1~#2}
 	}{
-		\addtovar\varvzmsauthortoc{, #1~#2}
+		\g@addto@macro\varvzmsauthortoc{, #1~#2}
 	}
-}
-
-\newcommand{\vzmsflushauthors}{
-	\ifthenelse{
-		\equal{\varvzmsflushedauthors}{}
-	}{
-		%\addtovar\varvzmsflushedauthors{{\noexpand\it{\varvzmsauthor}}}
-		\edef\varvzmsflushedauthors{{\noexpand\textcopyright \ 2018 \ \noexpand\it{\varvzmsauthor}}}
-		%\edef\varvzmsflushedauthors{\varvzmsauthor}
-	}{
-		\ifthenelse{
-			\equal{\varvzmsauthor}{}
-		}{
-		}{
-			\edef\vartmp{\varvzmsauthor}
-			\addtovar\varvzmsflushedauthors{\\ {\textcopyright} 2018 \  {\it\vartmp}}
-			%\addtovar\varvzmsflushedauthors{\varvzmsauthor}
-		}
-	}
-	\def\varvzmsauthor{}
+	\def\varvzmsbeforeauthor{, }
 }
 
 \newcommand{\vzmstitle}[2][]{
@@ -140,14 +116,11 @@
 }
 
 \newcommand{\vzmsinfo}[1]{
-	\vzmsflushauthors
-	\addtovar\varvzmsflushedauthors{\ \\ (#1)}
+	\g@addto@macro\varvzmsflushedauthors{\ \\ (#1)}
+	\def\varvzmsbeforeauthor{\ \\ \textcopyright \vzmsyear \  \it}
 }
 
 \newcommand{\vzmscaption}{
-	\vzmsflushauthors
-	\vzmsflushauthors
-
 	%\begin{minipage}{c}
 	\needspace{20em}
 	%\vbox{
@@ -171,6 +144,7 @@
 	\def\varvzmstitle{}
 	\def\varvzmsflushedauthors{}
 	\def\varvzmstitleopt{}
+	\def\varvzmsbeforeauthor{\defaultvzmsbeforeauthor}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
