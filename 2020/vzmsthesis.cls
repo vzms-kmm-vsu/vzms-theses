@@ -94,11 +94,21 @@
 \def\varvzmstitle{}
 \def\varvzmstitleopt{}
 \def\varvzmsflushedauthors{}
-\def\defaultvzmsbeforeauthor{\textcopyright \vzmsyear \  \it}
-\def\varvzmsbeforeauthor{\defaultvzmsbeforeauthor}
+\def\defaultvzmsbeforeauthor{\textcopyright \vzmsyear \  }
+\def\varvzms@previous@author@item{none}
 
 \newcommand{\vzmsauthor}[2]{%
-	\g@addto@macro\varvzmsflushedauthors{\varvzmsbeforeauthor{}#2~#1}
+
+	\ifthenelse{
+		\equal{\varvzms@previous@author@item}{author}
+	}{
+		\g@addto@macro\varvzmsflushedauthors{, }
+	}{
+		\g@addto@macro\varvzmsflushedauthors{\defaultvzmsbeforeauthor }
+	}
+
+
+	\g@addto@macro\varvzmsflushedauthors{{\it #2~#1}}
 
 	\ifthenelse{
 		\equal{\varvzmsauthortoc}{}
@@ -107,7 +117,7 @@
 	}{
 		\g@addto@macro\varvzmsauthortoc{, #1~#2}
 	}
-	\def\varvzmsbeforeauthor{, }
+	\def\varvzms@previous@author@item{author}
 }
 
 \newcommand{\vzmstitle}[2][]{
@@ -116,8 +126,8 @@
 }
 
 \newcommand{\vzmsinfo}[1]{
-	\g@addto@macro\varvzmsflushedauthors{\ \\ (#1)}
-	\def\varvzmsbeforeauthor{\ \\ \textcopyright \vzmsyear \  \it}
+	\g@addto@macro\varvzmsflushedauthors{\ \\ \bgroup(#1)\egroup \\}
+	\def\varvzms@previous@author@item{info}
 }
 
 \newcommand{\vzmscaption}{
@@ -144,7 +154,7 @@
 	\def\varvzmstitle{}
 	\def\varvzmsflushedauthors{}
 	\def\varvzmstitleopt{}
-	\def\varvzmsbeforeauthor{\defaultvzmsbeforeauthor}
+	\def\varvzms@previous@author@item{none}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
