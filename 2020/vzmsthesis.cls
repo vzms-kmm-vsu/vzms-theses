@@ -58,3 +58,16 @@
 \RequirePackage{needspace}
 \RequirePackage[overload]{textcase}
 \RequirePackage{textcomp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Providing custom commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% For the reference list
+
+\newcommand{\litlist}{
+	\smallskip \centerline{\bf
+		\expandafter\iflanguage{russian}{Литература}{References}
+	}\nopagebreak
+}
