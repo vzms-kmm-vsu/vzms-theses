@@ -16,3 +16,18 @@
 \RequirePackage{graphics}
 \RequirePackage[dvips]{graphicx}
 \RequirePackage{wrapfig}
+
+
+% Page geometry
+
+\RequirePackage{geometry}
+\geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
+\RequirePackage{lscape}
+
+% ... and "fancy" headers
+% (indeed, it looks like default headers are removed)
+
+\RequirePackage{fancyhdr}
+\fancyhf{}
+\fancyfoot[C]{\vspace{-25pt}\thepage}
+\renewcommand{\headrulewidth}{0pt}
