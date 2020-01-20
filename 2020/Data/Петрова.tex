@@ -21,15 +21,15 @@ $$\dot{x}=-\nabla \left(f\left(x\right)+M\cdot h\left(x\right)\right)\eqref{Grin
 
 В этом виде могут быть представлены некоторые приближённые методы поиска точки минимума $f\left(x\right)$ в области $Q$. Например, система $\dot{x}=-\nabla f\left(x\right)-M\cdot \left(x-\Pr _{Q} \left(x\right)\right)$, предназначенная для поиска приближённого значения точки минимума со штрафной функцией $-M\cdot \left(x-\Pr _{Q} \left(x\right)\right)$ представима в виде \eqref{GrindEQ__2_} с функциями $h\left(x\right)=\frac{1}{2} \left\| x-\Pr _{Q} x\right\| ^{2} $. А для многогранной области $Q=\left\{x:\, \, \left\langle x,\, \, n_{k} \right\rangle \le c_{k} ,\, \, \, k=1,\, \, 2,\ldots ,m\right\}\, $ система $\dot{x}=-\nabla f\left(x\right)-M\cdot \sum _{k=1}^{m}\xi _{k} n_{k}  $, $\xi _{k} =\max \left\{0,\, \, \left\langle x,\, \, n_{k} \right\rangle -c_{k} \right\}$ записывается в виде \eqref{GrindEQ__2_} с $h\left(x\right)=\frac{1}{2} \sum _{k=1}^{m}\xi _{k}^{2}  $.
 
- Введём следующие ограничения:
+Введём следующие ограничения:
 
 1) $Q$ содержится в области определения функции $f$ вместе с некоторой своей окрестностью $Q^{\, r} :=\left\{x:\, \, \rho \left(x,\, \, Q\right)\le r\right\}$;
 
 2) градиент $\nabla f\left(x\right)$ ограничен в области $Q^{\, r} $;
 
-3)$h\left(x\right)$ "--- определена, дифференцируема и выпукла (нестрого) на множестве \textit{$Q^{\, r} $}, а её градиент $\nabla h\left(x\right)\in N_{\Pr _{Q} \left(x\right)} $ и $h\left(x\right)=0$ для всех $x\in Q$;
+3) $h\left(x\right)$ "--- определена, дифференцируема и выпукла (нестрого) на множестве \textit{$Q^{\, r} $}, а её градиент $\nabla h\left(x\right)\in N_{\Pr _{Q} \left(x\right)} $ и $h\left(x\right)=0$ для всех $x\in Q$;
 
-2. для любого сколь угодно малого \textit{$r>\varepsilon >0$} найдётся число $\mu \left(\varepsilon \right)>0$ такое, что $\left\langle \nabla h\left(x\right),\, \, x-\Pr _{Q} x\right\rangle \ge \mu \left(\varepsilon \right)\left\| x-\Pr _{Q} x\right\| ^{2} $ для всех $x\in X=\left\{x\in R^{n} :\, \, \varepsilon \le \rho \left(x,\, \, Q\right)\le r\right\}$.
+4) для любого сколь угодно малого \textit{$r>\varepsilon >0$} найдётся число $\mu \left(\varepsilon \right)>0$ такое, что $\left\langle \nabla h\left(x\right),\, \, x-\Pr _{Q} x\right\rangle \ge \mu \left(\varepsilon \right)\left\| x-\Pr _{Q} x\right\| ^{2} $ для всех $x\in X=\left\{x\in R^{n} :\, \, \varepsilon \le \rho \left(x,\, \, Q\right)\le r\right\}$.
 
 При этих ограничениях справедлива
 
