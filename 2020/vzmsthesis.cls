@@ -132,7 +132,7 @@
 
 \newcommand{\vzmscaption}{
 	%\begin{minipage}{c}
-	\needspace{20em}
+	\needspace{12em}
 	%\vbox{
 	\begin{center}%\nopagebreak
 		\textbf{\MakeUppercase{
@@ -141,8 +141,9 @@
 		}
 		 \ \\
 		\varvzmsflushedauthors %\\
-	%\needspace{5em}
 	\end{center}
+	%\nopagebreak
+	%\needspace{5em}
 	%}
 	%\end{minipage}
 	\addcontentsline{toc}{section}{\varvzmsauthortoc}
