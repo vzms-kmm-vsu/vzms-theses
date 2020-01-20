@@ -30,12 +30,12 @@ $$
 $$
 
 
-Здесь и ниже $R^n$ --- пространство векторов $\alpha =\{ \alpha ^{1} ,...,\alpha ^{n} \} $ с действительными компонентами и с нормой $||\alpha ||_{R^n}$. Пусть пространство $L$ локально суммируемых $f:[0,\infty )\to R^n$ с полунормами $||f||_{L[0,T]} = {\int _{0}^{T}}||f(t)||_{R^n}\, dt$ для всех $T>0$. Пространство $D$ локально абсолютно непрерывных функций $x:[0,\infty )\to R^n $ с полунормами $||x||_{D[0,T]} =||\dot{x}||_{L[0,T]} +||x(0)||_{R^n} $ для всех $T>0$. $L_{\infty}$ --- банахово пространство (классов эквивалентности) измеримых и ограниченных в существенном функций $z:[0,\infty)\to R^n$ с нормой $||z||_{L_{\infty}} = {\rm vrai}\sup\limits_{t\geq 0} ||z(t)||_{R^n}.$
+Здесь и ниже $R^n$ --- пространство векторов $\alpha =\{ \alpha ^{1} ,...,\alpha ^{n} \} $ с действительными компонентами и с нормой $\|\alpha \|_{R^n}$. Пусть пространство $L$ локально суммируемых $f:[0,\infty )\to R^n$ с полунормами $\|f\|_{L[0,T]} = {\int _{0}^{T}}\|f(t)\|_{R^n}\, dt$ для всех $T>0$. Пространство $D$ локально абсолютно непрерывных функций $x:[0,\infty )\to R^n $ с полунормами $\|x\|_{D[0,T]} =\|\dot{x}\|_{L[0,T]} +\|x(0)\|_{R^n} $ для всех $T>0$. $L_{\infty}$ --- банахово пространство (классов эквивалентности) измеримых и ограниченных в существенном функций $z:[0,\infty)\to R^n$ с нормой $\|z\|_{L_{\infty}} = {\rm vrai}\sup\limits_{t\geq 0} \|z(t)\|_{R^n}.$
 
 Пусть пространство $\ell $ вектор"=функций $$g(t)=g(0)\chi _{[0,1)} (t)+g(1)\chi _{[1,2)} (t)+...+g(N)\chi _{[N,N+1)} (t)+\ldots $$
- с полунормами $||g||_{\ell _{T} } =\sum\limits_{i=0}^{T}||g_{i} ||_{R^n} $ для всех $T\geq 0$.
+ с полунормами $\|g\|_{\ell _{T} } =\sum\limits_{i=0}^{T}\|g_{i} \|_{R^n} $ для всех $T\geq 0$.
 
-Пространство $\ell _{0} $ вектор"=функций $y(t)=y(-1)\chi _{[-1,0)} (t)+y(0)\chi _{[0,1)} (t)+y(1)\chi _{[1,2)} (t)+$ $...+y(N)\chi _{[N,N+1)} (t)+\ldots $ с полунормами $||y||_{\ell _{0T} } =\sum\limits_{i=-1}^{T}||y_{i} ||_{R^n} $ для всех $T\ge -1$.
+Пространство $\ell _{0} $ вектор"=функций $y(t)=y(-1)\chi _{[-1,0)} (t)+y(0)\chi _{[0,1)} (t)+y(1)\chi _{[1,2)} (t)+$ $...+y(N)\chi _{[N,N+1)} (t)+\ldots $ с полунормами $\|y\|_{\ell _{0T} } =\sum\limits_{i=-1}^{T}\|y_{i} \|_{R^n} $ для всех $T\ge -1$.
 
 Операторы ${\mathcal L}_{11} ,F_{11} :D\to L$, ${\mathcal L}_{12} ,F_{12} :\ell _{0} \to L$, ${\mathcal L}_{21} ,F_{21} :D\to \ell $, $
 {\mathcal L}_{22} ,F_{22} :\ell _{0} \to \ell $ предполагаются линейными непрерывными и вольтерровыми.
@@ -49,10 +49,10 @@ $
 $
 
 Норму в пространстве $D({\mathcal L}_{11} ,B)$ можно ввести равенством
-$||x||_{D({\mathcal L}_{11} ,B)} = ||{\mathcal L}_{11} x||_{B} +||x(0)||_{R^n}.$
+$\|x\|_{D({\mathcal L}_{11} ,B)} = \|{\mathcal L}_{11} x\|_{B} +\|x(0)\|_{R^n}.$
 
 Предположим, что оператор ${\mathcal C}_{11} $ непрерывно действует из пространства $B$ в пространство $B$, и оператор ${\mathcal X}_{11} $ действует из пространства $R^n$ в пространство $B$. Это условие эквивалентно тому, что пространство $D({\mathcal L}_{11} ,B)$ линейно изоморфно пространству С.Л.Соболева $W_{B}^{(1)} [0,\infty )$ с обычной нормой
-$||x||_{W_{B}^{(1)} [0,\infty )}$ $=||\dot{x}||_{B} +||x||_{B}.$
+$\|x\|_{W_{B}^{(1)} [0,\infty )}$ $=\|\dot{x}\|_{B} +\|x\|_{B}.$
 
 Дальше будем это пространство обозначать как $W_{B} $. При этом, $W_{B} \subset D$, и это вложение непрерывно.
 
@@ -136,42 +136,42 @@ ${\mathcal L}_{22}\{y_1,y_2\}_2 = x_2 - d_{21}x_{1\theta_{21}} - d_{22}x_{2\thet
 
 Обозначим:
 $$
-\ell_{\infty 0} =\{y\in \ell_{0}: \; ||y||_{\ell_{\infty 0}} = \mathop{\sup}\limits_{k=-1,0,1,\cdots} |y(k)| <+\infty \},
+\ell_{\infty 0} =\{y\in \ell_{0}: \; \|y\|_{\ell_{\infty 0}} = \mathop{\sup}\limits_{k=-1,0,1,\cdots} |y(k)| <+\infty \},
 $$
 $$
-\ell_{\infty} =\{g\in \ell: \; ||g||_{\ell_{\infty}} = \mathop{\sup}\limits_{k=0,1,\cdots} |g(k)| <+\infty \}.
+\ell_{\infty} =\{g\in \ell: \; \|g\|_{\ell_{\infty}} = \mathop{\sup}\limits_{k=0,1,\cdots} |g(k)| <+\infty \}.
 $$
 
 Будем изучать вопрос, когда для нашего уравнения при любом $\{ f,g\} \in L_{\infty}\times \ell_{\infty}$ его решения $\{ x,y\} \in W_{B}\times \ell_{0\infty}$. Для этого надо найти вольтерровую обратимость оператора ${\mathcal L}_1= {\mathcal L}_{11} - {\mathcal L}_{12} {\mathcal C}_{22} {\mathcal L}_{21}: W_{L_{\infty}}^{0} \to L_{\infty}$. Или, для этого надо найти вольтерровую обратимость оператора ${\mathcal L}_2= {\mathcal L}_{22} - {\mathcal L}_{21} {\mathcal C}_{11} {\mathcal L}_{12}: \ell_{0\infty}^0 \to \ell_{\infty}$.
 
-Для этого оценить норму $||{\mathcal C}_{11}{\mathcal L}_{12} {\mathcal C}_{22} {\mathcal L}_{21}||_{W_{L_{\infty}}\to W_{L_{\infty}}}$ или норму $||{\mathcal C}_{22}{\mathcal L}_{21} {\mathcal C}_{11} {\mathcal L}_{12}||_{{\ell_{0\infty}}\to {\ell_{0\infty}}}$.
+Для этого оценить норму $\|{\mathcal C}_{11}{\mathcal L}_{12} {\mathcal C}_{22} {\mathcal L}_{21}\|_{W_{L_{\infty}}\to W_{L_{\infty}}}$ или норму $\|{\mathcal C}_{22}{\mathcal L}_{21} {\mathcal C}_{11} {\mathcal L}_{12}\|_{{\ell_{0\infty}}\to {\ell_{0\infty}}}$.
 
-Оценим нормы: $||{\mathcal L}_{21}||_{W_{L_{\infty}}\to \ell_{\infty}}$, $||{\mathcal C}_{22}||_{\ell_{\infty}\to \ell_{0\infty}}$, $||{\mathcal L}_{12}||_{\ell_{0\infty}\to L_{\infty}}$, $||{\mathcal C}_{11}||_{L_{\infty}\to W_{L_{\infty}}}$.
+Оценим нормы: $\|{\mathcal L}_{21}\|_{W_{L_{\infty}}\to \ell_{\infty}}$, $\|{\mathcal C}_{22}\|_{\ell_{\infty}\to \ell_{0\infty}}$, $\|{\mathcal L}_{12}\|_{\ell_{0\infty}\to L_{\infty}}$, $\|{\mathcal C}_{11}\|_{L_{\infty}\to W_{L_{\infty}}}$.
 
 Справедливы оценки норм:
 $$
-||{\mathcal L}_{21}||_{W_{L_{\infty}}\to \ell_{\infty}} \leq
+\|{\mathcal L}_{21}\|_{W_{L_{\infty}}\to \ell_{\infty}} \leq
 \left|\begin{array}{cc}
 |c_{11}| & |c_{12}| \\
 |c_{21}| & |c_{22}| \\
 \end{array}\right|_{R^n},
 $$
 $$
-||{\mathcal C}_{22}||_{\ell_{\infty}\to \ell_{0\infty}} \leq
+\|{\mathcal C}_{22}\|_{\ell_{\infty}\to \ell_{0\infty}} \leq
 \left|\begin{array}{cc}
 \frac{1}{1-d_{11}} & 0 \\
 0 & \frac{1}{1-d_{11}} \\
 \end{array}\right|_{R^n},
 $$
 $$
-||{\mathcal L}_{12}||_{\ell_{0\infty}\to L_{\infty}} \leq
+\|{\mathcal L}_{12}\|_{\ell_{0\infty}\to L_{\infty}} \leq
 \left|\begin{array}{cc}
 |b_{11}| & |b_{12}| \\
 |b_{21}| & |b_{22}| \\
 \end{array}\right|_{R^n},
 $$
 $$
-||{\mathcal C}_{11}||_{L_{\infty}\to W_{L_{\infty}}} \leq
+\|{\mathcal C}_{11}\|_{L_{\infty}\to W_{L_{\infty}}} \leq
 \left|\begin{array}{cc}
 \sigma_{11} & \sigma_{12} \\
 \sigma_{21} & \sigma_{22} \\
