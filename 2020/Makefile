@@ -21,3 +21,4 @@ include_theses:
 clean:
 	rm *.aux *.log *.toc *.pdf
 	rm Data/pic/*.pdf
+	rm theses.tex
