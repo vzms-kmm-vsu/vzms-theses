@@ -17,3 +17,7 @@ split:
 
 include_theses:
 	./include_theses.sh
+
+clean:
+	rm *.aux *.log *.toc *.pdf
+	rm Data/pic/*.pdf
