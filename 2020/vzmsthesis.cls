@@ -20,6 +20,7 @@
 \RequirePackage{graphics}
 \RequirePackage[dvips]{graphicx}
 \RequirePackage{wrapfig}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 
 % Page geometry
