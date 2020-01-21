@@ -1,8 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{vzmsthesis}[2020/01/20 Voronezh Winter Mathematical School]
 
-\LoadClass[a5paper,12pt,openbib]{report}
+% We have no options yet
+% https://www.overleaf.com/learn/latex/Writing_your_own_class#Options
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+\ProcessOptions\relax
 
+\LoadClass[a5paper,12pt,openbib]{report}
 
 % First of all, we deal with encodings and basic fonts
 
