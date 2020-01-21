@@ -12,13 +12,14 @@
 
 Уравнения закона Гука для нелинейной наследственно"=упругой изотропной среды имеют вид
 
-\begin{equation} \label{GrindEQ__1_} \sigma _{i} =\hat{\lambda }\theta +2\hat{\mu }\varepsilon _{i} ,\quad \tau _{ij} =2\hat{\mu }\varepsilon _{ij} ,\quad \quad \theta =\varepsilon _{1} +\varepsilon _{2} +\varepsilon _{3} ,\quad (i,j=1,2,3), \end{equation}
+\begin{equation} \label{GrindEQ__1_}
+\sigma _{i} =\hat{\lambda }\theta +2\hat{\mu }\varepsilon _{i} ,\quad \tau _{ij} =2\hat{\mu }\varepsilon _{ij} ,\quad \theta =\varepsilon _{1} +\varepsilon _{2} +\varepsilon _{3} ,\quad (i,j=1,2,3), \end{equation}
 где $\sigma _{i} ,\, \tau _{ij} ,\, \varepsilon _{i} ,\, \varepsilon _{ij} $ "--- компоненты тензоров напряжений и деформаций, $\hat{\lambda },\; \hat{\mu }$ "--- операторы Ламе, выбранные в виде
 
 \begin{equation} \label{GrindEQ__2_} \hat{\lambda }=\lambda _{0} (\hat{\lambda }_{1} +\hat{\lambda }_{3} ),\quad \; \hat{\mu }=\mu _{0} \hat{\mu }_{1} , \end{equation}
 где $\lambda _{0} ,\; \mu _{0} $- нерелаксированные значения упругой постоянной Ламе и модуля упругости при сдвиге, а операторы в \eqref{GrindEQ__2_} действуют по правилу
 
-\begin{equation} \label{GrindEQ__3_} \begin{array}{l} {\hat{\lambda }_{1} u(t)=\int _{0}^{t}\lambda _{1}  (\tau )u(t-\tau )d\tau ,\quad \quad \hat{\mu }_{1} u(t)=\int _{0}^{t}\mu _{1}  (\tau )u(t-\tau )d\tau ,} \\ {\hat{\lambda }_{3} u(t)=\mathop{\int \int \int    }\limits_{0}^{t} \lambda _{3} (\tau _{1} ,\tau _{2} ,\tau _{3} )\prod _{k=1}^{3}u(t-\tau _{k} )d\tau _{k}  ,} \end{array} \end{equation}
+\begin{equation} \label{GrindEQ__3_} \begin{array}{l} {\hat{\lambda }_{1} u(t)=\int _{0}^{t}\lambda _{1}  (\tau )u(t-\tau )d\tau ,\quad \hat{\mu }_{1} u(t)=\int _{0}^{t}\mu _{1}  (\tau )u(t-\tau )d\tau ,} \\ {\hat{\lambda }_{3} u(t)=\mathop{\int \int \int    }\limits_{0}^{t} \lambda _{3} (\tau _{1} ,\tau _{2} ,\tau _{3} )\prod _{k=1}^{3}u(t-\tau _{k} )d\tau _{k}  ,} \end{array} \end{equation}
 $\lambda _{1} (\tau ),\; \; \mu _{1} (\tau ),\; \lambda _{3} (\tau _{1} ,\tau _{2} ,\tau _{3} )$ "--- зависящие от времени ядра наследственности, удовлетворяющие условиям симметрии, принципу затухающей памятии содержащие аддитивно дельта функции [1]
 
 \begin{equation} \label{GrindEQ__4_} \begin{array}{l} {\lambda _{1} (t)=\delta (t)-k_{1} \Lambda _{1} (t),\quad \; \; \mu _{1} (t)=\delta (t)-k_{2} M_{1} (t),} \\ {k_{1} =\frac{\lambda _{0} -\lambda _{r} }{\lambda _{0} } ,\quad k_{2} =\frac{\mu _{0} -\mu _{r} }{\mu _{0} } ,\quad } \end{array} \end{equation}
@@ -38,13 +39,13 @@ $\lambda _{r} ,\; \; \mu _{r} $ "--- релаксированные значен
 
 Разрешая систему рекуррентных уравнений относительно трансформант ядер, получим
 
-\begin{equation} \label{GrindEQ__6_} L^{*} _{2n+1} (p_{1} ,...,p_{2n+1} )=\varphi _{n} L_{1}^{*} (p_{1} +...+p_{2n+1} ),\quad L_{1}^{*} (p)=\left(G_{1}^{*} (p)\right)^{-1} , \end{equation}
+\begin{equation} \label{GrindEQ__6_} L^{*} _{2n+1} (p_{1} ,...,p_{2n+1} )=\varphi _{n} L_{1}^{*} (p_{1} +...+p_{2n+1} ),~~ L_{1}^{*} (p)=\left(G_{1}^{*} (p)\right)^{-1} , \end{equation}
 
-\[\varphi _{n} =\frac{3(a_{0}^{(0)} )^{n} }{(2n+1)!} \cdot \frac{d^{2n+1} }{dx^{2n+1} } \cdot \exp \left(\frac{1}{3} \arcsin x\right)\left|\begin{array}{l} {} \\ {x=0} \end{array}\right. ,\quad a_{3}^{(0)} =\frac{27\lambda _{0} a_{3} }{8\pi K_{0} } .\]
+\[\varphi _{n} =\frac{3(a_{0}^{(0)} )^{n} }{(2n+1)!} \cdot \frac{d^{2n+1} }{dx^{2n+1} } \cdot \exp \left.\left(\frac{1}{3} \arcsin x\right)\right|_{x=0} ,~~ a_{3}^{(0)}\! =\frac{27\lambda _{0} a_{3} }{8\pi K_{0} } .\]
 
 Учитывая  \eqref{GrindEQ__6_},  получим
 
-\[(\hat{K})^{-1} (\sigma _{1} +\sigma _{2} +\sigma _{3} )=\sum _{n=0}^{\infty }\varphi _{n}  \int _{0}^{t}L_{1}  (t-\tau )(\sigma _{1} (\tau )+\sigma _{2} (\tau )+\sigma _{3} (\tau ))d\tau .\]
+\[(\hat{K})^{-1} (\sigma _{1} +\sigma _{2} +\sigma _{3} )=\sum _{n=0}^{\infty }\varphi _{n}  \int _{0}^{t} \!\!\! L_{1}  (t-\tau )(\sigma _{1} (\tau )+\sigma _{2} (\tau )+\sigma _{3} (\tau ))d\tau .\]
 
 Таким образои, операторв в выражениях для деформаций \eqref{GrindEQ__5_} полностью определены. В качестве примера построены выражения для деформаций при выборе ядер наследственности $\Lambda _{1} (t)$ и $M_{1} (t)$ соответствующих модели стандартного линейного тела  [1] и получены в явном виде выражения для релаксационных параметров в ядрах интегральных операторов ползучести.
 
