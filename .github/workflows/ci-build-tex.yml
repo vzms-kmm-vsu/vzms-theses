@@ -1,0 +1,44 @@
+name: build_tex
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      YEAR: 2020
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install texlive
+        run: |
+          sudo apt-get install \
+            texlive-latex-extra \
+            texlive-font-utils \
+            texlive-lang-cyrillic
+
+      - name: build
+        run: |
+          make
+        working-directory: ./${{ env.YEAR }}
+
+      - name: rename
+        run: mv main.pdf vzms${{ env.YEAR }}.pdf
+        working-directory: ./${{ env.YEAR }}
+
+      - name: get date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y%m%d%H%M')"
+
+      - name: release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Версия ${{ steps.date.outputs.date }}
+          files: ./${{ env.YEAR }}/vzms${{ env.YEAR }}.pdf
+          tag_name: ${{ steps.date.outputs.date }}
