@@ -21,7 +21,8 @@ jobs:
           sudo apt-get install \
             texlive-latex-extra \
             texlive-font-utils \
-            texlive-lang-cyrillic
+            texlive-lang-cyrillic \
+            zip
 
       - name: build
         run: |
@@ -32,6 +33,9 @@ jobs:
         run: mv main.pdf vzms${{ env.YEAR }}.pdf
         working-directory: ./${{ env.YEAR }}
 
+      - name: zip examples
+        run: zip -r vzms${{ env.YEAR }}_examples.zip examples
+
       - name: get date
         id: date
         run: echo "::set-output name=date::$(date +'%Y%m%d%H%M')"
@@ -40,5 +44,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: Версия ${{ steps.date.outputs.date }}
-          files: ./${{ env.YEAR }}/vzms${{ env.YEAR }}.pdf
+          files: |
+            ./${{ env.YEAR }}/vzms${{ env.YEAR }}.pdf
+            ./vzms${{ env.YEAR }}_examples.zip
           tag_name: ${{ steps.date.outputs.date }}
