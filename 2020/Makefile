@@ -19,6 +19,6 @@ include_theses:
 	./include_theses.sh
 
 clean:
-	rm *.aux *.log *.toc *.pdf
-	rm Data/pic/*.pdf
-	rm theses.tex
+	rm -f *.aux *.log *.toc *.pdf
+	rm -f Data/pic/*.pdf
+	rm -f theses.tex
