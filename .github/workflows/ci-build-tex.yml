@@ -34,7 +34,7 @@ jobs:
         working-directory: ./${{ env.YEAR }}
 
       - name: zip examples
-        run: zip -r vzms${{ env.YEAR }}_examples.zip examples
+        run: zip -r vzms_examples.zip examples
 
       - name: get date
         id: date
@@ -46,5 +46,5 @@ jobs:
           name: Версия ${{ steps.date.outputs.date }}
           files: |
             ./${{ env.YEAR }}/vzms${{ env.YEAR }}.pdf
-            ./vzms${{ env.YEAR }}_examples.zip
+            ./vzms_examples.zip
           tag_name: ${{ steps.date.outputs.date }}
