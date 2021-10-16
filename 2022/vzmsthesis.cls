@@ -116,7 +116,7 @@
 
 % The following commands are the dark magic which generates headers
 
-\newcommand{\vzmsyear}{2020}
+\newcommand{\vzmsyear}{2022}
 
 
 \def\varvzmsauthor{}
