@@ -3,10 +3,10 @@
 
 % We have no options yet
 % https://www.overleaf.com/learn/latex/Writing_your_own_class#Options
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
-\LoadClass[a5paper,12pt,openbib]{report}
+\LoadClass[a5paper,12pt,openbib]{article}
 
 % First of all, we deal with encodings and basic fonts
 
@@ -75,8 +75,14 @@
 \clubpenalty=10000
 \widowpenalty=10000
 
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}%
+  {\z@}{1.25ex \@plus 1ex \@minus .2ex}{-1em}%
+  {\normalfont\normalsize\bfseries}%
+}
 
-% And decorate the bibliography
+
+% ... and decorate the bibliography
 
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
 
@@ -104,7 +110,7 @@
 
 \newcommand{\litlist}{
 	\smallskip \centerline{\bf
-		\expandafter\iflanguage{russian}{Литература}{References}
+		\normalsize\expandafter\iflanguage{russian}{Литература}{References}
 	}\nopagebreak
 }
 
