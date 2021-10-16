@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{vzmsthesis}[2020/01/20 Voronezh Winter Mathematical School]
+\ProvidesClass{vzmsthesis}[2022/10/15 Voronezh Winter Mathematical School]
 
 % We have no options yet
 % https://www.overleaf.com/learn/latex/Writing_your_own_class#Options
