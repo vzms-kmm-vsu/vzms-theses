@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{vzmsthesis}[2021/09/05 Voronezh Winter Mathematical School]
+\ProvidesClass{vzmsthesis}[2022/10/15 Voronezh Winter Mathematical School]
 
 % We have no options yet
 % https://www.overleaf.com/learn/latex/Writing_your_own_class#Options
@@ -10,7 +10,7 @@
 
 % First of all, we deal with encodings and basic fonts
 
-\RequirePackage[cp1251,utf8]{inputenc}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage[T2A,T1]{fontenc}
 \RequirePackage[english,russian]{babel}
 
@@ -25,13 +25,8 @@
 
 % Page geometry
 
-
-\RequirePackage[
-	tmargin=1.75cm,
-	bmargin=2.1cm,
-	lmargin=1.75cm,
-	rmargin=1.75cm
-]{geometry}
+\RequirePackage{geometry}
+\geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
 \RequirePackage{lscape}
 
 % ... and "fancy" headers
@@ -53,14 +48,12 @@
 % {ams*} packages are a gold standart in LaTeX
 
 \RequirePackage{amsmath}
-\RequirePackage{amsthm}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 
 % ... but, obviously, sometimes we need some others!
 
 \RequirePackage{enumerate}
-\RequirePackage{enumitem}
 \RequirePackage{euscript}
 \RequirePackage[shortcuts]{extdash}
 \RequirePackage{hhline}
@@ -70,7 +63,7 @@
 \RequirePackage{needspace}
 \RequirePackage[overload]{textcase}
 \RequirePackage{textcomp}
-\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
+\RequirePackage[colorlinks=true, linktocpage=true, allcolors=black]{hyperref}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,11 +81,8 @@
   {\normalfont\normalsize\bfseries}%
 }
 
-%... waste less space on lists...
-\setlist[itemize,1]{leftmargin=0.9em}
 
-
-% And decorate the bibliography
+% ... and decorate the bibliography
 
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
 
@@ -106,6 +96,11 @@
   \renewcommand{\bibname}{{\protect\litlist}}%
 }
 
+% Remove hanging indent: https://tex.stackexchange.com/questions/598668/remove-left-indentation-in-bibliography
+\patchcmd{\thebibliography}{\leftmargin\labelwidth}{\leftmargin\labelwidth{}\addtolength{\leftmargin}{\parindent}}{}{}
+\def\bibindent{-2\parindent}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Providing custom commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,15 +110,13 @@
 
 \newcommand{\litlist}{
 	\smallskip \centerline{\bf
-		\normalsize\expandafter\iflanguage{russian}{
-			\CYRL\cyri\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra%Литература
-		}{References}
+		\normalsize\expandafter\iflanguage{russian}{Литература}{References}
 	}\nopagebreak
 }
 
 % The following commands are the dark magic which generates headers
 
-\newcommand{\vzmsyear}{2020}
+\newcommand{\vzmsyear}{2022}
 
 
 \def\varvzmsauthor{}
