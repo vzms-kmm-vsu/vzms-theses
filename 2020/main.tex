@@ -155,8 +155,11 @@
 	\prepareforthesis
 }
 
+%To avoid having author-defined subsections in the ToC
+\setcounter{tocdepth}{1}
 
-
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\arabic{subsection}.\arabic{subsubsection}.}
 
 %\flushbottom
 
