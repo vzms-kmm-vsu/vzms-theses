@@ -1,0 +1,210 @@
+\vzmstitle[]{
+	Разрешимость реологического соотношения для обобщённой модели Кельвина--Фойгта
+}
+\vzmsauthor{Гуличев}{И.\,О.}
+\vzmsinfo{Воронеж, ВГУ; {\it igoolichev@gmail.com}}
+
+\vzmscaption
+
+
+
+
+%\Article
+%{.} % Здесь пишите название статьи
+%{Гуличев И.О.} %Автор(ы)
+%{} % Грант если есть;в случае отсутствия ставим {}
+%{Работа посвящена изучению разрешимости реологического соотношения для обобщённой модели Кельвина--Фойгта разных порядков} %Аннотация
+%{Реологическое соотношение, обобщённая модель Кельвина--Фойгта} % ключевые слова
+
+
+\paragraph{Аннотация.}
+Работа посвящена изучению разрешимости реологического соотношения для обобщённой модели Кельвина--Фойгта разных порядков.
+
+\paragraph{Ключевые слова:}
+реологическое соотношение, обобщённая модель Кельвина--Фойгта
+
+\paragraph{Введение.}
+Реологическое соотношение для обобщённой математической модели Кельвина--Фойгта имеет вид
+$$
+\label{e1}
+	\left(1+\sum_{i=1}^{L}\lambda_i\frac{\partial^{i}}{\partial t^{i}}\right)\sigma=2\left(\nu+\sum_{i=1}^{L+1}\varkappa_i\frac{\partial^{i}}{\partial t^{i}}\right)\mathcal{E},\,\,\,\, \varkappa_{L+1}, \lambda_L > 0.
+	\eqno{(1)}
+$$
+Здесь $\lambda_i$ "--- времена релаксации, $\nu$ "--- кинематический коэффициент вязкости, $\varkappa_i$ "--- времена запаздывания (ретардации)\cite{ZT}.\\
+Предполагается, что корни  многочлена
+$$
+Q(p)=1+\sum\limits_{i=1}^L\lambda_ip^i
+$$
+веществены, отрицательны и различны. Требование вещественности и отрицательности исходит из физического смысла, а требование различности корней нужно для простоты и упрощения вычислений.\\
+\par Эти модели являются одними из моделей линейных вязкоупругих жидкостей с конечным числом дискретно распределённых времён релаксации и времён запаздывания. Общая феноменологическая теория таких жидкостей Максвелла, Кельвина--Фойгта и Олдройта.
+В основе теории линейных вязкоупругих жидкостей лежит предположение о том, что все воздействия на среду независимы и аддитивны, а реакции среды на внешние воздействия линейны, называемое принципом суперпозиции Л. Больцмана. К таким жидкостям относится эмульсии и суспензии одной ньютоновской жидкости в другой, сильно разбавленные суспензии твёрдых частиц в ньютоновской жидкости, некоторые полимерные растворы\cite{VM}.\\
+\par В статье не будет рассматриваться случай $L=0$, так как в таком случае $\sigma$ уже выражено.% Текст статьи\ldots
+
+
+\paragraph{Реологическое соотношение для обобщённой модели Кельвина--Фойгта порядка $L=1$.} %Название первого параграфа
+Рассмотрим случай $L=1$.
+$$
+	\left(1+\lambda\frac{\partial}{\partial t}\right)\sigma=2\left(\nu+\sum_{i=1}^{2}\varkappa_i\frac{\partial^{i}}{\partial t^{i}}\right)\mathcal{E}.
+	\eqno{(2)}
+$$
+Для выражения $\sigma$ из этого уравнения нужно разделить обе части на $\lambda$ и домножить на $e^{\lambda t}$.\\
+$$
+	e^{\frac{1}{\lambda} t}\left(\frac{1}{\lambda}\sigma+\frac{\partial}{\partial t}\sigma\right)=\frac{2}{\lambda}e^{\lambda t}\left(\nu+\sum_{i=1}^{2}\varkappa_i\frac{\partial^{i}}{\partial t^{i}}\right)\mathcal{E}.
+$$
+Теперь можно свернуть левую часть уравнения
+$$
+\frac{\partial e^{\frac{1}{\lambda} t}\sigma}{\partial t}=\frac{2}{\lambda}e^{\frac{1}{\lambda} t}\left(\nu+\sum_{i=1}^{2}\varkappa_i\frac{\partial^{i}}{\partial t^{i}}\right)\mathcal{E}.
+$$
+Для получения решения осталось только проинтегрировать обе части, после чего умножить на $e^{-\frac{1}{\lambda} t}$.\\
+$$
+\sigma=e^{-\frac{1}{\lambda} t}\int\limits_{0}^{t}\frac{2}{\lambda}e^{\frac{1}{\lambda} s}\left(\nu+\sum_{i=1}^{2}\varkappa_i\frac{\partial^{i}}{\partial t^{i}}\right)\mathcal{E}ds.
+$$
+По свойствам определённого интеграла получим окончательный ответ
+$$
+\sigma(t) = 2\mu_2\mathcal{E}'(t) + 2\mu_1\mathcal{E}(t)+2\int\limits_0^t 2\beta e^{\frac{1}{\lambda}(s-t)}\mathcal{E}(s)ds+2\alpha e^{-\frac{1}{\lambda}t},
+\eqno{(3)}
+$$
+где
+\begin{align}
+	\mu_2 = \frac{\varkappa_2}{\lambda};\nonumber\\
+	\mu_1 = \frac{\lambda\varkappa_1 - \varkappa_2}{\lambda^2};\nonumber\\
+	\beta = \frac{\varkappa_2-\lambda\kappa_1 +\lambda^2\nu}{\lambda^3};\nonumber\\
+	\alpha = \frac{-\lambda\varkappa_2\mathcal{E}'(0)+(\varkappa_2 - \lambda\varkappa_1)\mathcal{E}(0)}{\lambda^2}.
+	\nonumber
+\end{align}
+{\bf Теорема}{\it (Существования и единственности) Пусть при
+	$$
+    h = 2\nu\mathcal{E} + 2\varkappa_1\mathcal{E}'+2\varkappa_2\mathcal{E}''
+    $$
+	есть непрерывная функция $t \in [0,T]$, $\lambda > 0$. Тогда при любых начальных условиях
+	$$
+		\sigma|_{t=0}=\sigma_0(x);
+		\begin{cases}
+		\mathcal{E}|_{t=0}=\mathcal{E}_0(v); \\
+		\mathcal{E}'|_{t=0}=\mathcal{E}_1(v),
+	\end{cases}
+	\eqno{(4)}
+	$$
+	решение уравнения (2) существует и единственно. Это решение определено при всех $t \in [0,T]$ и имеет вид (3).}
+\paragraph{Реологическое соотношение для обобщённой модели Кельвина--Фойгта порядка $L=2$.}
+Теперь рассмотрим случай, когда $L=2$. В этом случае реологическое соотношение будет иметь вид\\
+$$
+	\left(1+\sum_{i=1}^{2}\lambda_i\frac{\partial^{i}}{\partial t^{i}}\right)\sigma=2\left(\nu+\sum_{i=1}^{3}\varkappa_i\frac{\partial^{i}}{\partial t^{i}}\right)\mathcal{E}.
+	\eqno{(5)}
+$$
+Раскрыв скобки и записав в порядке уменьшения степени производных $\sigma$, получим соотношение вида
+$$
+\label{e4}
+	\lambda_2\sigma'' + \lambda_1\sigma' + \sigma = 2\nu\mathcal{E} + 2\varkappa_1\mathcal{E}'+2\varkappa_2\mathcal{E}'' +2\varkappa_3\mathcal{E}'''.
+	\eqno{(6)}
+$$
+{Нетрудно видеть, что соотношение (5) "--- не что иное, как неоднородное дифференциальное уравнение второго порядка \cite{ZP}, решение которого имеет вид}
+$$
+\sigma = \sigma_{\text{oo}} + \sigma_{\text{чн}} = C_1\sigma_1 + C_2\sigma_2 + \sigma_2\int\limits_{0}^{t}\sigma_1 \frac{g}{\lambda_2} \frac{ds}{W} - \sigma_1\int\limits_{0}^{t}\sigma_2 \frac{g}{\lambda_2} \frac{ds}{W}
+,
+$$
+{где}
+$$
+g = 2\nu\mathcal{E} + 2\varkappa_1\mathcal{E}'+2\varkappa_2\mathcal{E}'' +2\varkappa_3\mathcal{E}''',
+$$
+W - определитель Вронского, равный
+$$
+W = \left|
+\begin{array}{cc}
+	y_1 & y_2\\
+	y_1'& y_2'
+\end{array}\right|.
+$$
+
+Для нахождения общего неоднородного решения сначала найдём общее однородное. Для этого приравняем к нулю правую часть нашего уравнения.
+$$
+	\lambda_2\sigma'' + \lambda_1\sigma' + \sigma = 0.
+	\eqno{(7)}
+$$
+Предполагается, что корни вещественны, отрицательны и различны.
+Перейдём к характеристическому уравнению
+$$
+\lambda_2\xi^2 + \lambda_1\xi + 1 = 0
+$$
+$$
+D=\lambda_1^2-4\lambda_2>0;\,\, \lambda_2>0 \Rightarrow \lambda_1^2 >4\lambda_2 \Rightarrow
+\begin{cases}
+	\lambda_1>4\lambda_2\\
+	\lambda_1<-4\lambda_2
+\end{cases}
+$$
+$$
+\xi_{1,2}={\frac{-\lambda_1\pm\sqrt{\lambda_1^2-4\lambda_2}}{2\lambda_2}}
+$$
+$$
+	\sigma_{\text{oo}}= C_1e^{\xi_1t} + C_2e^{\xi_2t}
+$$
+{Теперь решим частную неоднородную часть:}
+
+\begin{multline}
+	\sigma_{\text{чн}}=
+	e^{\xi_2t}\int\limits_{0}^{t} e^{\xi_1s} \frac{2\nu\mathcal{E}(s) + 2\varkappa_1\mathcal{E}'(s)+2\varkappa_2\mathcal{E}''(s) +2\varkappa_3\mathcal{E}'''(s)}{\lambda_2}
+	\\
+	\frac{ds}{e^{\xi_1s}\xi_2 e^{\xi_2s}- e^{\xi_2s}\xi_1e^{\xi_1s}}-
+	\\
+	\\
+	- e^{\xi_1t}\int\limits_{0}^{t}e^{\xi_2s} \frac{2\nu\mathcal{E}(s) + 2\varkappa_1\mathcal{E}'+2\varkappa_2\mathcal{E}''(s) +2\varkappa_3 \mathcal{E}'''(s)}{\lambda_2}
+	\\
+	\frac{ds}{e^{\xi_1s}\xi_2 e^{\xi_2s} - e^{\xi_2s}\xi_1e^{\xi_1s}}.
+	\nonumber
+\end{multline}
+
+В итоге мы получим выражение вида
+$$
+\label{resh}
+	\sigma_{\text{он}} = 2\mu_2\mathcal{E}'(t)+2\mu_1\mathcal{E}(t) +2\int\limits_{0}^{t}\sum_{i=1}^{2}\beta_ie^{\xi_i(t-s)}\mathcal{E}(s)ds
+	+2\sum_{i=1}^{2}e^{\xi_it}\alpha_i,
+	\eqno{(8)}
+$$
+где
+\begin{multline}
+	\begin{gathered}
+	\mu_2=\frac{\varkappa_3(\xi_2-\xi_1)}{\lambda_2(\xi_2-\xi_1)}= \frac{\varkappa_3}{\lambda_2} > 0; \\ \\
+	\mu_1= \frac{\varkappa_2(\xi_2-\xi_1)+\varkappa_3(\xi_2^2-\xi_1^2)}{\lambda_2(\xi_2-\xi_1)}=\frac{\varkappa_2+\varkappa_3(\xi_2+\xi_1)}{\lambda_2};\\ \\
+	\beta_i=(-1)^i\frac{\nu+ \xi_i\varkappa_1+\varkappa_2\xi_i^2+\varkappa_3\xi_i^3}{\lambda_2(\xi_2-\xi_1)},\text{ где }i=1,2;
+	\end{gathered}\\ \\
+	\alpha_i=2(-1)^{i-1}\Bigl[ \frac{(\varkappa_1+\varkappa_2\xi_i+\varkappa_3\xi_i^2)\mathcal{E}(0)+(\varkappa_2+\varkappa_3\xi_i)\mathcal{E}'(0)}{\lambda_2(\xi_2-\xi_1)}+\\ \\
+	+\frac{\varkappa_3\mathcal{E}''(0)+(-1)^{i-1}C_i(\lambda_2(\xi_2-\xi_1))}{\lambda_2(\xi_2-\xi_1)}\Bigl],\text{ где }i=1,2.
+	\nonumber
+\end{multline}
+	{\bf Теорема}{\it (Существования и единственности) Пусть при
+	$$
+		h = 2\nu\mathcal{E} + 2\varkappa_1\mathcal{E}'+2\varkappa_2\mathcal{E}'' +2\varkappa_3\mathcal{E}'''
+    $$
+	есть непрерывная функция $t \in [0,T]$, $\lambda_1 > 0$ и корни многочлена
+	$$
+	\lambda_2\xi^2 + \lambda_1\xi + 1 = 0
+	$$
+	вещественны, отрицательны и различны. Тогда при любых начальных условиях
+	$$
+		\begin{cases}
+			\sigma|_{t=0}=\sigma_0(x); \\
+			\sigma'|_{t=0}=\sigma_1(x);
+		\end{cases}
+		\begin{cases}
+			\mathcal{E}|_{t=0}=\mathcal{E}_0(v); \\
+			\mathcal{E}'|_{t=0}=\mathcal{E}_1(v); \\
+			\mathcal{E}''|_{t=0}=\mathcal{E}_2(v),
+		\end{cases}
+	\eqno{(9)}
+	$$
+	решение уравнения (6) существует и единственно. Это решение определено при всех $t \in [0,T]$ и имеет вид (8).}
+
+
+\begin{thebibliography}{X}
+	\bibitem{ZT}~В.~Г.~Звягин, М.~В.~Турбин Математические вопросы гидродинамики вязкоупругих сред.--- М.~:~КРАСАНД, 2012."---416~с.
+	\bibitem{VM}~Г.~В.~Виноградов, А.~Я.~Малкин Реология полимеров.---М.~:~Химия, 1977."---438~с.
+	\bibitem{ZP} ~В.~Ф.~Зайцев, А.~Д.~Полянин  Справочник по обыкновенным дифференциальным уравнениям.---М.:Физматлит, 2001."---576~с.
+
+\end{thebibliography}
+
+Сведения об авторе:
+
+\noindent {\bfseries Гуличев Илья Олегович},
+студент математического факультета Воронежского государственного университета.
+
