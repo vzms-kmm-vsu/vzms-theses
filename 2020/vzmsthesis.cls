@@ -63,6 +63,7 @@
 \RequirePackage{needspace}
 \RequirePackage[overload]{textcase}
 \RequirePackage{textcomp}
+\RequirePackage[colorlinks=true, linktocpage=true, allcolors=black]{hyperref}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
