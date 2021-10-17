@@ -63,6 +63,7 @@
 \RequirePackage{needspace}
 \RequirePackage[overload]{textcase}
 \RequirePackage{textcomp}
+\RequirePackage[colorlinks=true, linktocpage=true, allcolors=black]{hyperref}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,6 +75,24 @@
 \clubpenalty=10000
 \widowpenalty=10000
 
+
+% And decorate the bibliography
+
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+
+\addto{\captionsenglish}{%
+  \renewcommand{\refname}{{\protect\litlist}}%
+  \renewcommand{\bibname}{{\protect\litlist}}%
+}
+
+\addto{\captionsrussian}{%
+  \renewcommand{\refname}{{\protect\litlist}}%
+  \renewcommand{\bibname}{{\protect\litlist}}%
+}
+
+% Remove hanging indent: https://tex.stackexchange.com/questions/598668/remove-left-indentation-in-bibliography
+\patchcmd{\thebibliography}{\leftmargin\labelwidth}{\leftmargin\labelwidth{}\addtolength{\leftmargin}{\parindent}}{}{}
+\def\bibindent{-2\parindent}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
