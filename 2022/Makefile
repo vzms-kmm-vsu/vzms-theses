@@ -5,6 +5,10 @@ all: include_theses
 utf8:
 	./utf8.sh
 
+peel:
+	./peel.sh
+
+
 overfull:
 	pdflatex main.tex | grep -va Underfull | grep  -a . | grep -aC 12 Overfull
 	pdflatex main.tex | grep -c Overfull
