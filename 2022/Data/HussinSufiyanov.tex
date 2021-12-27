@@ -29,7 +29,7 @@ And the notation $o(h)$ satisfies  $h>0$, $\lim\limits_{n\to 0}\frac{o(h)}{h}=0$
 
 Definition 1. (Stochastic Stability): [6] MJTDS with input $u(t)=0$ is said to be stochastically stable if for the finite $\phi(t)\in R^n$ defined on $[-\overline \tau,0]$ the following is satisfied
 \begin{equation}
-\lim_{t\to\infty} E\left\{\int_{0}^{t} x^T(s,\phi,\theta_0)x(s,\phi,\theta_0) \,ds\right\}<\infty 
+\lim_{t\to\infty} E\left\{\int_{0}^{t} x^T(s,\phi,\theta_0)x(s,\phi,\theta_0) \,ds\right\}<\infty
 \end{equation}
 where $x(s,\phi,\theta_0)$ is solution to the system at time$t$ under the initial conditions $\phi(t)$  and $\theta_0 $ .
 
@@ -50,12 +50,12 @@ A^TP+PA+H+PAH_\tau^{-1} A^T +\sum_{j=1}^{N}\lambda_jP(j)<0,
 \begin{equation}
 \begin{bmatrix}
 J(i) & PA\\
-A^T & -H_\tau 
+A^T & -H_\tau
 \end{bmatrix} <0,
 \end{equation}
 where:
  $J(i)=A(i)^TP(i)+P(i)A(i)+\sum_{j=1}^{N}\lambda_(ij)P(j)$ for $i \in S$.
- 
+
 $A>0$ (resp., $A<0$):that is positive definite (resp., negative definite) matrix.
 
 The following theorem gives a stochastically stabilizes condition for MJTDS.
@@ -67,7 +67,7 @@ $$X=(X_1,X_2,\cdots,X_N)>0 ,U=H^{-1}>0; H_\tau =(1-\tau^+)H$$ satisfying:
 \begin{bmatrix}
 J(i) & X(i) & S_i(X)\\
 X(i) & -U & 0 \\
-S_i^T(X) & 0 & -\ell_i(X) 
+S_i^T(X) & 0 & -\ell_i(X)
 \end{bmatrix} <0,
 \end{equation}
 
@@ -105,23 +105,27 @@ Conclusion:
 \litlist
 1. {\it Stoica, A.; Yaesh, I. }
  Invariant Banach limits and applicationsump-Markovian based control of wing deployment for an uncrewed air vehicle //Guid. Control Dyn. – 2002. – Т. 25.  – С. 407-411.
- 
+
 2. {\it Sworder, D.D.; Rogers, R.O.  }
  An LQG solution to a control problem with solar thermal receiver //IEEE Trans. Autom. Control . – 1983. – Т. 28. – С. 971-978.
- 
+
 3. {\it Ploplys, N.J.; Kawka, P.A.; Alleyne, A.G. }
  Closed-loop control over wireless networks //IEEE Control Syst. Mag. – 2004. – Т. 24.  – С. 58–71.
- 
+
 4. {\it Ugrinovskii, V.A.; Pota, H }
  Decentralized control of power systems via robust control of uncertain Markov jump parameter systems //. Int. J. Control. – 2005. – Т. 78. – С. 662–677.
- 
+
 5. {\it Svensson, L.E.O.; Williams, N. }
  Optimal monetary policy under uncertainty: A Markov jump-linear-quadratic approach //GFed. Reserve St. Louis Rev. – 2008. – Т. 90. – С. 275–293.
- 
+
 6. {\it Kang Y., Zhao Y.-B., Zhao P. }
  Stability Analysis of Markovian Jump Systems //JScience Press, Beijing, China. – 2018.
- 
+
 7. {\it Do Val, J.B.R.; Geromel, J.C.; Goncalves, A.P.C.}
  The $H_2$-control for jump linear systems: Cluster observations of the Markov state //Automatica. – 2002. – Т. 83. – С. 343–349.
+
+
+% Этот комментарий тут не просто так.
+% Иначе скрипты принимают этот файл за не-юникод, и пытаются конвертировать!
 
 \end{document}
