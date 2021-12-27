@@ -1,0 +1,57 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+\vzmstitle[
+%	\footnote{Работа выполнена за счёт гранта РНФ, проект 16-11-10125}
+]{	О существовании и единственности положительного решения краевой задачи для одного нелинейного функционально - дифференциального уравнения дробного порядка
+}
+\vzmsauthor{Абдурагимов}{Г.\,Э.}
+\vzmsinfo{Махачкала, ДГУ; {\it gusen\_e@mail.ru}}
+%\vzmsauthor{Семенов}{Е.\,М.}
+%\vzmsinfo{Воронеж, ВГУ; {\it nadezhka\_ssm@geophys.vsu.ru}}
+
+\vzmscaption
+
+Обозначим через $C$~--- пространство $C[0,1]$, через $\mathbb{L}_p \  (1<p<\infty)$~--- пространство $\mathbb{L}_p(0,1)$ и через $\tilde{K}$~--- конус неотрицательных функций пространства $C$.
+
+Рассмотрим краевую задачу
+\begin{align}
+&D_{0+}^\alpha x(t)+f \left (t,\left(Tx \right)(t) \right)=0,~~~~ 0<t<1,\label{1}\\
+&x(0)=0,\   x(1)=0,\label{2}
+\end{align}
+где  $\alpha\in (1,2]$~--- действительное число, $D_{0+}^\alpha$~--- дробная производная Римана-Лиувилля [1, c.469], $T\colon C \to \mathbb{L}_p \  (1<p<\infty)$~--- линейный положительный непрерывный оператор, функция $f(t,u)$ неотрицательна, не убывает по второму аргументу, удовлетворяет условию Каратеодори и $f(\cdot, 0)\equiv0$
+
+Предположим, что функция $f(t,u)$ удовлетворяет условию
+\begin{align*}
+f(t,u)\leq a(t)+bu^{p/q},
+\end{align*}
+где $b>0,~~a(t)\in \mathbb{L}_q, ~~1<q<\infty$.
+
+\paragraph{Теорема~1.}
+{\it
+Предположим, что $T\colon C \to \mathbb{L}_p \  $~--- положительный на конусе $\tilde{K}$ оператор, существуют неотрицательные функции $\upsilon$ и $\omega$ такие, что $\upsilon\leq \omega$ и почти всюду на $[0,1]$ выполнены  условия
+      \begin{itemize}
+         \item[$(1)$] $-D_{0+}^\alpha \upsilon(t)\leq f\left (t,\left(T\upsilon \right)(t) \right)$;
+         \item[$(2)$] $-D_{0+}^\alpha \omega(t)\geq f\left (t,\left(T\omega \right)(t) \right)$;
+         \item[$(3)$] $\upsilon(0) \leq 0 \leq \omega(0)$;
+         \item[$(4)$] $\upsilon(1) \leq 0 \leq \omega(1)$.
+      \end{itemize}
+      Тогда краевая задача~{\rm \eqref{1}}--{\rm \eqref{2}} имеет по крайней мере одно положительное решение на конусном отрезке $\langle \upsilon, \omega \rangle$.}
+
+
+\paragraph{Теорема~2.}
+{\it
+Предположим, что при $u>0$ и любом $\tau\in (0,1)$
+\begin{gather*}
+f(t,\tau u)>\tau f(t,u),~~~t\in(0,1).
+\end{gather*}
+Тогда при выполнении условий теоремы~1 краевая задача {\rm \eqref{1}}--{\rm \eqref{2}} имеет единственное положительное решение на конусном отрезке $\langle \upsilon, \omega \rangle$.}
+
+
+\litlist
+
+1. {\it Zhanbing B., Haishen L.}
+ Positive solutions for boundary value problem on nonlinear fractional differential equation // J. Math. Anal. Appl.  – 2005. – Т. 311. – №. 2. – С. 495-505.
+
+\end{document}

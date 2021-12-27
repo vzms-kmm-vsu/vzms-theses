@@ -1,0 +1,127 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+\vzmstitle{
+	Stabilization for Markov Jump Systems with time delays
+}
+\vzmsauthor{Hussin}{S.}
+\vzmsinfo{(Izhevsk , Kalashnikov ISTU; {\it sulimanh17@gmail.com}}
+\vzmsauthor{Sufiyanov}{V.\,G.}
+\vzmsinfo{(Izhevsk , Kalashnikov ISTU; {\it vsufiy@istu.ru}}
+
+\vzmscaption
+
+Random sudden changes are happen for many dynamical systems, which caused by random fails, changes in the connections of subsystems, abrupt environment changes, etc. Usually most dynamic systems are unable to cope with these sudden, random changes. Markov jump linear systems (MJLSs) combine a part of the state which takes values continuously and the other part of the state which takes values discretely. They represent a special class of hybrid systems with many operation modes and each mode corresponds to a deterministic dynamic system. The switching the system modes is given by a Markov process which takes values in a finite set. Markov jump time-delay systems (MJTDSs) are used to model dynamic systems whose structures are subject to abrupt changes and their extensive applications have been applied to many physical systems with time delay, such as communication systems, manufacturing systems, such as unmanned air vehicles [1], solar power stations [2], communication systems [3], power systems [4], economics [5], and so on.
+
+Let the following MJTDS, defined on a complete probability space  $(\Omega, F, P)$, are described as:
+\begin{equation}
+\dot{x}(t)=A(\theta(t))x(t)+A_1(\theta(t))x(t-\tau(t))+B(\theta(t))u(t) , t\geq 0,
+\end{equation}
+where $x(t)\in\mathbb {R}^n $ is standing for the state variable of the system, $u(t)\in\mathbb {R}^n $ is the control variable, $A,A_1$ and $B$ are matrices of appropriate dimensions. $\tau(t)$ is  time delay. We define the set $S=\{1,2,\cdots,N\}$, $\{\theta(t), t\geq0\}$ is a Markov chain on the probability space, takes values on set $S$ with transition probability matrix $\Pi=(\pi_{i j})_{N\times N}$ given by[6]
+
+$$
+{\displaystyle P(\theta(t+h)=j\mid\theta(t)=i)={\begin{cases}\pi_{i j}h+o(h),&i\neq j\\
+ 1+\pi_{i j}h+o(h),&i= j.\end{cases}}}$$
+
+
+And the notation $o(h)$ satisfies  $h>0$, $\lim\limits_{n\to 0}\frac{o(h)}{h}=0$ and $\pi_{i j}\geq0(i,j \in S, i \neq j)$, represents the transition rate from $i \text{ to } j$, which satisfies $\pi_{i i}=-\sum\limits_{j\neq i}\pi_{i j}$ for all $i \in S$.
+
+Definition 1. (Stochastic Stability): [6] MJTDS with input $u(t)=0$ is said to be stochastically stable if for the finite $\phi(t)\in R^n$ defined on $[-\overline \tau,0]$ the following is satisfied
+\begin{equation}
+\lim_{t\to\infty} E\left\{\int_{0}^{t} x^T(s,\phi,\theta_0)x(s,\phi,\theta_0) \,ds\right\}<\infty 
+\end{equation}
+where $x(s,\phi,\theta_0)$ is solution to the system at time$t$ under the initial conditions $\phi(t)$  and $\theta_0 $ .
+
+Now, we introduce the following theorem [7].
+
+Theorem 1. The MJTDS is stochastically stable if one of the following two equivalent conditions hold:
+if there exists symmetric, positive-definite matrices
+\begin{equation}
+P=(P(1),P(2),\cdots,P(N))>0 ,H>0; H_\tau =(1-\tau^+)H
+\end{equation}
+
+1. satisfying the algebraic Riccati inequality
+\begin{equation}
+A^TP+PA+H+PAH_\tau^{-1} A^T +\sum_{j=1}^{N}\lambda_jP(j)<0,
+\end{equation}
+
+2. satisfying LMI
+\begin{equation}
+\begin{bmatrix}
+J(i) & PA\\
+A^T & -H_\tau 
+\end{bmatrix} <0,
+\end{equation}
+where:
+ $J(i)=A(i)^TP(i)+P(i)A(i)+\sum_{j=1}^{N}\lambda_(ij)P(j)$ for $i \in S$.
+ 
+$A>0$ (resp., $A<0$):that is positive definite (resp., negative definite) matrix.
+
+The following theorem gives a stochastically stabilizes condition for MJTDS.
+
+Theorem 2. If there exists symmetric positive definite matrices
+$$X=(X_1,X_2,\cdots,X_N)>0 ,U=H^{-1}>0; H_\tau =(1-\tau^+)H$$ satisfying:
+
+\begin{equation}
+\begin{bmatrix}
+J(i) & X(i) & S_i(X)\\
+X(i) & -U & 0 \\
+S_i^T(X) & 0 & -\ell_i(X) 
+\end{bmatrix} <0,
+\end{equation}
+
+where:
+$$J(i)=X_iA^T(i)+A(i)X_i+B(i)Y_i+Y_i^TB^T+\lambda_{ij}X_i+A(i)(1-\tau^+)^{-1}UA^T(i)$$
+$$S_i(X)=[\sqrt{\lambda_{i1}}X_i,\cdots,\sqrt{\lambda_{iN}}X_i]$$
+$$\ell_i(X)=diag[X_1,X_2,\cdots,X_N]$$
+
+Then the controller:
+\begin{equation}
+u(t)=K(\theta(t))x(t)
+\end{equation}
+with $K(i)=Y_i X_i^{-1}$ is stochastically stabilizes the MJTDS (1).
+
+Proof: : From (1) and (7) we have the closed-loop system given by
+Then the controller:
+\begin{equation}
+\dot{x}(t)=\overline A(\theta(t))x(t) +A_1(\theta(t))x(t-\tau(t)),
+\end{equation}
+
+where $\overline A(\theta(t))=A(\theta(t))+B(\theta(t))K(\theta(t))$ ,  and from the theorem, there are symmetric, positive definite matrix $P=(P(1),P(2),\cdots,P(N))>0 ,H>0; H_\tau =(1-\tau^+)H$ such that:
+\begin{equation}
+\overline A^TP +P\overline A+H+ PAH_\tau^{-1}A^TP+\sum_{j=1}^{N}\lambda_j P(j)<0,
+\end{equation}
+
+Putting  $X_i=P^{-1}(i), U+H^{-1}, Y_i=K(i)X_i$  , and multiply (9) by $X_i$  we find:
+\begin{equation}
+X_iA^T+AX_i+X_iHX_i+AH_\tau ^{-1} A^T+Y_i^TB^T+SY_i+\lambda_{ij}X_i+S_i\ell_i^{-1}S_i<0
+\end{equation}
+Using Schur complement for $\ell_i , S_i , Y_i$ we obtain the inequality (6).
+
+Conclusion:
+ Sufficient conditions for stability, stabilizability of the of MJTDS have been studied.  conditions for stochastic stabile has been given. All conditions are delay-independent and depend on the mode of the MJLS.  For  MJTDS a set of LMI conditions has been given to find a state feedback controller for stability.
+
+\litlist
+1. {\it Stoica, A.; Yaesh, I. }
+ Invariant Banach limits and applicationsump-Markovian based control of wing deployment for an uncrewed air vehicle //Guid. Control Dyn. – 2002. – Т. 25.  – С. 407-411.
+ 
+2. {\it Sworder, D.D.; Rogers, R.O.  }
+ An LQG solution to a control problem with solar thermal receiver //IEEE Trans. Autom. Control . – 1983. – Т. 28. – С. 971-978.
+ 
+3. {\it Ploplys, N.J.; Kawka, P.A.; Alleyne, A.G. }
+ Closed-loop control over wireless networks //IEEE Control Syst. Mag. – 2004. – Т. 24.  – С. 58–71.
+ 
+4. {\it Ugrinovskii, V.A.; Pota, H }
+ Decentralized control of power systems via robust control of uncertain Markov jump parameter systems //. Int. J. Control. – 2005. – Т. 78. – С. 662–677.
+ 
+5. {\it Svensson, L.E.O.; Williams, N. }
+ Optimal monetary policy under uncertainty: A Markov jump-linear-quadratic approach //GFed. Reserve St. Louis Rev. – 2008. – Т. 90. – С. 275–293.
+ 
+6. {\it Kang Y., Zhao Y.-B., Zhao P. }
+ Stability Analysis of Markovian Jump Systems //JScience Press, Beijing, China. – 2018.
+ 
+7. {\it Do Val, J.B.R.; Geromel, J.C.; Goncalves, A.P.C.}
+ The $H_2$-control for jump linear systems: Cluster observations of the Markov state //Automatica. – 2002. – Т. 83. – С. 343–349.
+
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+\vzmstitle[
+	\footnote{Работа выполнена при поддержке Минпросвещения России в рамках выполнения государственного задания в сфере науки  (номер темы FZGF-2020-0009).}
+]{
+	О случайных обобщенных негладких многолистных направляющих функциях
+}
+\vzmsauthor{Безмельницына}{Ю.\,Е.}
+\vzmsinfo{Воронеж, ВГПУ; {\it bezmelnicyna@inbox.ru}}
+
+\vzmscaption
+
+Пусть $(\Omega,\Sigma,\mu)$ -- полное вероятностное пространство, $I=[0,T]$. Мы будем рассматривать периодическую задачу для случайного дифференциального уравнения вида:
+$$
+ z'(\omega, t)= f(\omega,t,z(\omega,t)),\; \mbox{п.в.} \; t\in I,\; (1) \quad z(\omega,0)=z(\omega,T), \; (2)
+$$
+где $f\colon \Omega \times I \times \mathbb{R}^n \to \mathbb{R}^n$ -- случайный $c$-оператор, удовлетворяющий условию $T$-периодичности по второму аргументу (см., напр., [5, 6]).
+
+Под {\it случайным решением} задачи (1), (2) понимается функция $\varsigma\colon\Omega\times I\to\mathbb{R}^{n}$ такая, что
+$(i)$ отображение $\omega \in \Omega \to \varsigma(\omega, \cdot) \in C(I,\mathbb{R}^n)$ измеримо; $(ii)$ для каждого $\omega \in \Omega$ функция $\varsigma(\omega,\cdot)\in C(I,\mathbb{R}^n)$ удовлетворяет (1), (2) п.в. $t\in I.$
+
+
+\paragraph{Определение~1.} 
+{\it
+Отображение $V\colon\Omega\times \mathbb{R}^{n}\to \mathbb{R}$ называется случайным негладким потенциалом, если $(i)$ $V(\cdot,z)\colon\Omega\to\mathbb{R}$ измеримо для любого $z\in \mathbb{R}^{n}$; $(ii)$ $V(\omega,\cdot) \colon$ $\mathbb{R}^{n} \to \mathbb{R}$ -- регулярная функциея для любого $\omega\in\Omega$ (см. [1]).
+}
+
+\paragraph{Определение~2.} 
+{\it
+Локально липшицева функция $V\colon\Omega\times \mathbb{R}^{n}\to \mathbb{R}$ называется случайным негладким прямым потенциалом, если
+$$
+ \langle v, \widetilde{v} \rangle > 0 \quad \mbox{для всех} \; v,  \widetilde{v} \in \partial V(\omega, z), \; z\in \mathbb{R}^{n}, \eqno (3)
+$$
+где $\partial V(\omega, z)$ -- обобщенный градиент Кларка (см. [1]).
+}
+
+Пусть $\mathbb{R}^{n} = \mathbb{R}^{2} \times \mathbb{R}^{n-2},$ $q$ и $p$ -- операторы проектирования на $\mathbb{R}^{2}$ и $\mathbb{R}^{n-2}$ соответственно, для всех $z\in \mathbb{R}^{n}$ имеем $qz=\xi$ и $pz=\zeta$. Пусть $\Pi=\left\{ { (\varphi ,\rho ) :\varphi \in ( - \infty ,\infty),\rho \in (0,\infty )} \right\}.$ На $\Omega\times\Pi$ пусть задан случайный негладкий потенциал $W(\omega,\varphi,\rho )$ такой, что
+$$
+W_1^0 (\omega,\varphi_0,\rho,\psi) > 0, \quad W(\omega,\varphi + 2\pi,\rho)=W(\omega,\varphi ,\rho ) + 2\pi, \eqno (4)
+$$
+для каждого $\omega \in \Omega,\,(\varphi ,\rho )\in \Pi, \psi \in \mathbb{R},$ где $W_1^0 (\omega,\varphi_0,\rho,\psi)$~-- обобщенная частная производная Кларка (см. [1]). На подпространстве $\Omega\times \mathbb{R}^{n-2}$ пусть задан случайный негладкий потенциал $V(\omega,\zeta )$ такой, что для каждого $\omega \in \Omega$ выполнено условие коэрцитивности
+$$
+\mathop {\lim}\limits_{\left\| {\zeta } \right\| \to \infty } V(\omega,\zeta ) = +\infty. \eqno (5)
+$$
+
+Для каждого $\omega\in\Omega$ обозначим $\vartheta_0=\vartheta_0(\omega):= \min V(\omega,\zeta),$ выберем $\vartheta > \vartheta _{0}$ и $\rho _{2}:=\rho _{2}(\omega),\; \rho _{1}:=\rho _{1}(\omega)$ такие, что $\rho _{2} > \rho _{1} \ge 0$ и определим область $\mathfrak{G} \left( {\vartheta ,\rho _{1} ,\rho _{2} } \right) = \{z \in \mathbb{R}^{n}: V(\omega, pz)$ \linebreak $ < \vartheta , \rho _{1} < \left\| {qz}\right\| < \rho _{2} \}.$
+Пусть на $\mathfrak{G}\times[0,T]$ заданы случайные негладкие потенциалы $\alpha( \cdot )$ и $\beta( \cdot )$ такие, что
+$$
+\mathop {\sup}\limits_{z \in \mathfrak{G} \left({\vartheta ,\rho _{1} ,\rho _{2} } \right)} \langle w, qf(\omega,t,z)\rangle < \alpha(\omega,t), w \in \partial W(\omega, qz), \eqno (6)
+$$
+$$
+\mathop {\inf}\limits_{z \in \mathfrak{G} \left({\vartheta ,\rho _{1} ,\rho _{2} } \right)} \langle w,qf(\omega,t,z)\rangle > \beta(\omega,t), w \in \partial W(\omega, qz). \eqno (7)
+$$
+
+\paragraph{Определение~3.} (ср. [2-4, 6])
+{\it
+Пару функций $\{ V(\omega,\zeta),$ \linebreak $W(\omega,\varphi,\rho ) \},$ обладающих свойствами (4)-(7),
+будем называть случайной обобщенной негладкой многолистной на\-прав\-ляющей функцией (МНФ) для уравнения (1) на \linebreak $\mathfrak{G} \left({\vartheta ,\rho _{1} ,\rho _{2} } \right),$ если для каждого $\omega\in\Omega$ функция $V(\omega,\zeta)$ является случайным негладким прямым потенциалом и выполнены условия:
+$$
+ \mathop {\sup}\limits_{t \in \left[ {0,T} \right]}\frac{{\left| {\langle {qf(\omega, t, z),qz} \rangle} \right|}}{{\left\|{qz} \right\|}} < \frac{{\rho _{2} - \rho _{1} }}{{2T}},\quad z\in \mathfrak{G} (\vartheta ,\rho _{1} ,\rho _{2} );
+$$
+$$
+\langle v, pf(\omega, t, z)\rangle \leq 0,\; v \in \partial V(\omega,pz),\; V(\omega,pz) \ge \vartheta ,\;\left\| {qz} \right\| \le \rho _{2};
+$$
+$$
+2\pi (N_{\omega} - 1) < \int\limits_{0}^{T} {\alpha(\omega,\tau )d\tau } , \quad
+\int\limits_{0}^{T} {\beta(\omega,\tau )d\tau < 2\pi N_{\omega}} ,
+$$
+где $N_{\omega}$ -- целое число; $\alpha(\omega,t),\,\;\beta(\omega,t)$ -- функции из (6), (7).
+}
+
+\paragraph{Теорема~1.}
+{\it
+Пусть $\left\{ {V(\omega,\zeta),\;W(\omega,\varphi,\rho )} \right\}$ является случайной обобщенной негладкой МНФ для уравнения (1) на \linebreak $\mathfrak{G} \left({\vartheta ,\rho _{1} ,\rho _{2} } \right).$   Тогда уравнение (1) имеет случайное $T$-пе\-риоди\-ческое ре\-ше\-ние.
+}
+
+
+\litlist
+
+1. {\it Кларк Ф.}
+Оптимизация и негладкий анализ. М.:Наука. 1988. - 280 с.
+
+2. {\it Корнев С.В., Обуховский В.В.}
+О негладких многолистных направляющих функциях // Дифференциальные уравнения. - 2003. - Т.39, N. 11. - С. 1497-1502.
+
+3. {\it Корнев С.В., Обуховский В.В.}
+Негладкие направляющие потенциалы в задачах о вынужденных колебаниях // Автоматика и телемеханика. - 2007. - № 1. - С. 3-10.
+
+4. {\it Корнев С.В.}
+Негладкие интегральные направляющие функции в задачах о вынужденных колебаниях // Автоматика и телемеханика. - 2015. - № 9. - С. 31-43.
+
+5. {\it Andres J., G\'orniewicz L.}
+Random topological degree and random differential inclusions // Topol. Meth. Nonl. Anal. - 2012. - N. 40. - P. 337-358.
+
+6. {\it Kornev S., Obukhovskii V., Zecca P.}
+On multivalent guiding functions method in the periodic problem for random differential equations // Journal of Dynamics and Differential Equations. - 2019. - V. 31, N. 2. - P. 1017-1028.
+
+\end{document}

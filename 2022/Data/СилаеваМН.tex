@@ -1,0 +1,46 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+\inputencoding{cp1251}%It's really a good idea to remove it and switch to UTF-8!
+
+
+{
+	Полугруппы класса $C_0$ с генератором Лапласа в весовых пространствах на интервале
+}
+\vzmsauthor{Силаева}{М.\,Н.}
+\vzmsinfo{Воронеж, ВГУ; {\it marinanebolsina@yandex.ru}}
+
+
+\vzmscaption
+
+Для $t\in(0,l)$ введем классы $C_{i,j}$ непрерывных функций $u(t)$ с нормой
+$  \|u\|_{0,0}=\sup_{t\in(0,l)} |\frac{u(t)}{t(l-t)}|$, $\|u\|_{0,1}=\sup_{t\in(0,l)} |\frac{u(t)}{t}|$, $\|u\|_{1,0}=\sup_{t\in(0,l)} |\frac{u(t)}{l-t}|$, $\|u\|_{1,1}=\sup_{t\in(0,l)} |u(t)|$.
+
+Соответственно зададим операторы $A_{i, j}(i = 0, 1; j = 0, 1)$
+ выражением $\frac{d^2}{dt^2}$ с областями
+определения $$D(A_{i, j}) = \{ u \in C_{i, j},
+\frac{d^2u}{dt^2} \in C_{i, j} \}.$$
+\paragraph{Теорема.} {\it
+	Каждый из операторов $A_{i,j}$ является генератором сжимающей полугруппы
+$U(x,A_{i,j})$ в пространстве $C_{i,j}$ соответственно. Для них справедливо представление
+$$
+U(x,A_{0,0})g(t)=\frac{1}{2\sqrt{\pi x}}\sum_{n=-\infty}^{\infty}\int_{0}^{l}[e^{-\frac{(2nl-t-\xi)^2}{4x}}-
+$$
+$$-e^{-\frac{(2nl-t+\xi)^2}{4x}}]g(\xi)d\xi=\int_{0}^{l}G(t,x,\xi,A_{0,0})g(\xi)d\xi.$$
+$$U(x,A_{0,1})g(t)=\frac{1}{2\sqrt{\pi
+x}}\sum_{u=-\infty}^{\infty}(-1)^{n}\int_{0}^{l}[e^{-\frac{(2nl+t+\xi)^2}{4x}}+$$ $$+e^{-\frac{(2nl+t-\xi)^2}{4x}}]g(\xi)d\xi=
+\int_{0}^{l}G(t,x,\xi,A_{0,1})g(\xi)d\xi,$$
+$$U(x,A_{1,0})g(t)=\frac{1}{2\sqrt{\pi x}}\sum_{n=-\infty}^{\infty}(-1)^n\int_{0}^{l}[e^{-\frac{(2nl+t-\xi)^2}{4x}}
+-$$ $$- e^{-\frac{(2nl+t+\xi)^2}{4x}}]g(\xi)d\xi=\int_{0}^{l}G(t,x,\xi,A_{1,0})g(\xi).$$ $$
+U(x,A_{1,1})g(t)=\frac{1}{2\sqrt{\pi}x}\sum_{n=-\infty}^{\infty}
+\int_{0}^{l}[e^{-\frac{(2nl+t-\xi)^2}{4x}}+$$ $$+e^{-\frac{(2nl+t+\xi)^2}{4x}}]g(\xi)d\xi=\int_{0}^{l}G(t,x,\xi,A_{1,1})g(\xi).$$
+ и выполняются оценки
+ $$
+||U(x,A_{0,0})||\leq e^{-(\frac{\pi}{l})^{2}x};||U(x,A_{0,1})||\leq e^{-(\frac{\pi}{2l})^{2}x}$$
+$$||U(x,A_{1,0})||\leq e^{-(\frac{\pi}{2l})^{2}x};||U(x,A_{1,1})||\leq
+1.$$}
+ 
+
+
+\end{document}
+
