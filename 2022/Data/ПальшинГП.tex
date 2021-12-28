@@ -1,0 +1,94 @@
+\documentclass{vzmsthesis}
+\selectlanguage{english}
+
+
+\begin{document}
+
+\vzmstitle[
+	\footnote{The work was partially supported by the Russian Foundation for Basic Research, grant 20-01-00399}
+]{
+Augmented bifurcation diagram \\in one problem of vortex dynamics
+}
+\vzmsauthor{Palshin}{G.\,P.}
+\vzmsinfo{Dolgoprudny, MIPT; {\it gleb.palshin@yandex.ru}}
+
+\vzmscaption
+
+Since the time of Helmholtz [1], the model of $N$ point vorti\-ces in an ideal fluid with constant intensities $\Gamma_\alpha$ ($\alpha=1 \dots N$) is well known. The model of $N$ interacting \textit{magnetic vortices} in ferromagnets [2] is a more general case than the hydrodynamic model: in addition to vorticities $\Gamma_\alpha$, there are polarities $\lambda_\alpha$ which take values $+1$ or $-1$ depending on magnetization direc\-ted up or down respectively.
+
+In this talk, we consider a \textit{restricted problem} of three magne\-tic vortices, where in the system of three mag\-ne\-tic vortices at positions $r_\alpha = (x_\alpha, y_\alpha)$, $\alpha = 0,1,2$, the vortex with vorticity $\Gamma_0$ is fixed at point $\mathcal{O}(0,0)$. Equations of motion in our ge\-ne\-ra\-lized model have the following complex form:
+$$
+i \lambda_{\alpha} \dot{z}_{\alpha} = \frac{1}{\bar{z}_\alpha} +
+\frac{\Gamma_{\beta}}{\lambda_{\beta}}\frac{1}{\bar{z}_{\alpha}-\bar{z}_{\beta}}, \quad
+\alpha\neq\beta,
+$$
+where $z_{\alpha}=x_{\alpha}+i y_{\alpha}$ is a complex coordinate specifying the position of vortex with vorticity $\Gamma_\alpha$, $\alpha=1,2$.
+The system can be written in Hamiltonian form:
+$$
+\begin{array}{c}
+\displaystyle{
+\Gamma_\alpha\dot{x}_\alpha =  \frac{\partial H}{\partial y_\alpha},
+\qquad
+\Gamma_\alpha\dot{y}_\alpha = -\frac{\partial H}{\partial x_\alpha},
+\qquad
+\alpha=1,2,
+}
+\\[5mm]
+\displaystyle{
+H = \frac{\Gamma_1}{\lambda_1}\ln \ell_{1} +
+    \frac{\Gamma_2}{\lambda_2}\ln \ell_{2} +
+    \frac{\Gamma_1}{\lambda_1}\frac{\Gamma_2}{\lambda_2}\ln \ell_{12},
+}
+\end{array}\eqno{(1)}
+$$
+where $\ell_\alpha = |r_\alpha|$ and $\ell_{\alpha\beta} = |r_\alpha - r_\beta|$. In addition, this system has an integral of the \textit{angular momentum of vorticity} $F = \Gamma_1 \ell_1^2 + \Gamma_2 \ell_2^2$, so it is completely Liouville integrable system with two degrees of freedom.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=.61\linewidth]{Figure1-1.png}
+  \caption{Augmented bifurcation diagram for parameters $\Gamma_1=1$, $\Gamma_2=-1$, $\lambda_1=1$, $\lambda_2=1$.}\label{PalshinGP_fig1}
+\end{figure}
+
+We consider the \textit{augmented bifurcation diagram} $\Sigma$ as the set of points over which the momentum map $\mathcal{F}(\boldsymbol{z})=(F(\boldsymbol{z}),H(\boldsymbol{z}))$ is not locally trivial in the differentiable sense. The set of critical values is always included in the augmented bifurcation diagram $\Sigma$, but does not always coincide with it. In other words, the augmented bifurcation diagram $\Sigma$ consists of \textit{critical} and \textit{non-critical bifurcation curves}. In the restricted system of three magnetic vortices in the case of a ``vortex pair'' (encountered in hyd\-ro\-dyna\-mics), an augmented bifurcation diagram contains non-critical bifurcation line $f=0$ (Fig. \ref{PalshinGP_fig1}). Moreover, it contains \textit{non-compact bifurcations} of the $\left( \mathbb{T}^2 + \mathrm{Cyl} \right) \rightarrow \mathrm{Cyl}$ type. Here <<$\mathbb{T}^2$>> denotes the presence of a two-dimensional Liouville torus, and <<$\mathrm{Cyl}$>> denotes a two-dimensional cylinder.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=.58\linewidth]{Figure2-1.png}
+  \caption{Reduced Hamiltonian level lines for $f=0$, $h = 0$ and parameters $\Gamma_1=1$, $\Gamma_2=-1$, $\lambda_1=1$, $\lambda_2=1$.}\label{PalshinGP_fig2}
+\end{figure}
+
+For the system $(1)$ an explicit reduction to a Hamiltonian system with one degree of freedom was performed (Fig. \ref{PalshinGP_fig2}). By pa\-ra\-met\-ri\-zing the level lines of the reduced Hamiltonian, an aug\-men\-ted bi\-fur\-ca\-tion diagram in Fig. \ref{PalshinGP_fig1} was found explicitly:
+\begin{equation*}
+\Sigma(f,h): \left[
+\begin{array}{l}
+\displaystyle{
+f=0,}
+\\[3mm]
+\displaystyle{
+f=\frac{11-5\sqrt{5}}{2} h_e,}
+\\[3mm]
+\displaystyle{
+f=\frac{11+5\sqrt{5}}{2} h_e.}
+\end{array}
+\right.
+\quad
+h_e=e^{-2h},
+\end{equation*}
+
+The author expresses his gratitude to Professor P.E. Ryabov for posing the problem and attention to this work.
+
+\litlist
+
+1. {\it Helmholtz H.}
+  \"{U}ber Integrale der hydrodynamischen Glei\-chun\-gen, welche den Wirbelbewegungen entsprechen //J. Reine Angew Math. -- 1858. -- Т. 55. -- С. 22-55.
+
+2. {\it Komineas S., Papanicolaou N.}
+ Gr\"{o}bli solution for three magnetic vortices //Journal of Mathematical Physics. -- 2010. -- Т. 51. -- №. 4. -- С. 042705.
+%
+%3. {\it Ryzhov E. A., Koshel K. V.}
+% Dynamics of a vortex pair interacting with a fixed point vortex //EPL (Europhysics Let\-ters). -- 2013. -- Т. 102. -- №. 4. -- С. 44004.
+%
+%4. {\it Koshel K. V. et al.}
+% Entrapping of a vortex pair interacting with a fixed point vortex revisited. I. Point vortices //Physics of Fluids. -- 2018. -- Т. 30. -- №. 9. -- С. 096603.
+
+\end{document} 

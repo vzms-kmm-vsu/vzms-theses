@@ -1,0 +1,83 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+\inputencoding{cp1251}%It's really a good idea to remove it and switch to UTF-8!
+
+
+\vzmstitle[	\footnote{Работа выполнена за счёт гранта РФФИ $\No$ 19--31--60014.}
+]{Об одной дробной модели вязкоупругой среды}
+
+\vzmsauthor{Звягин}{А.\,В.}
+\vzmsinfo{Воронеж, ВГПУ; {\it zvyagin.a@mail.ru}}
+\vzmsauthor{Костенко}{Е.\,И.}
+\vzmsinfo{Воронеж, ВГУ; {\it ekaterinalarshina@mail.ru}}
+
+\vzmscaption
+
+В $Q_T=[0,T]\times\Omega$, где $T\geq 0$, а $\Omega\subset\mathbb{R}^n$, $n=2,3$ --- ограниченная область с границей $\partial\Omega\subset C^2$ рассматривается задача
+$$
+  {\frac{\partial v}{\partial t }}+ \sum\limits_{i=1}^n {v_i{\frac{\partial v}{\partial x_i}}}-\mu_0\triangle v-$$ $$-\mu_1 \frac{1}{\Gamma(1-\alpha)}\mbox {Div }{\int_{0}^t{{e^{\frac{-(t-s)}{\lambda}}(t-s)}^{-\alpha}\varepsilon (v)(s,z(s;t,x))}}ds+$$
+  $$+ \nabla p=f(t,x), \quad (t,x)\in Q_T;\eqno{(1)}
+$$
+$$
+\mbox{div } v(t,x)=0,\quad (t,x)\in Q_T;\eqno{(2)}
+$$
+$$
+z(\tau ;t,x)=x+{\int_t^\tau {v(s,z(s;t,x))}} ,\quad t,\tau \in [0,T],x\in\bar{\Omega};\eqno{(3)}
+$$
+$$
+v\mid _{[0,T]\times\partial\Omega} =0;  \quad v\mid _{t=0}=v_0.\eqno{(4)}
+$$
+
+
+Здесь $v(t,x)$  и $p(t,x)$ искомые скорость и давление рассматриваемой среды, $z(\tau;t,x)$ --- траектория движения частицы среды, $\varepsilon (v)= \{{\varepsilon _{ij}}\} _{i,j=1}^n$~--- тензор скоростей деформации, являющийся матрицей с элементами $\varepsilon _{ij}=\frac{1}{2} (\frac{\partial v_i}{\partial x_j} + \frac{\partial v_j}{\partial x_i})$, $\mu_0 > 0, \mu_1\geq 0$, $0< \alpha <1$, $\lambda > 0$. Знак $\mbox{Div}$ обозначает дивергенцию матрицы, то есть вектор, координатами которого являются  дивергенции векторов--столбцов матрицы.
+
+\paragraph{Определение~1} {\it Пусть $f\in L_2(0,T;V^{-1})$. Cлабым решением задачи (1)--(4) называется функция $v\in W_1=\{v\in L_2(0, T; V^1)\cap L_\infty(0, T; V^0), \quad v'\in L_{4/3}(0, T; V^{-1})\}$, удовлетворяющая при любой $\varphi\in V^1$  и п.в. $t\in (0,T)$ тождеству
+ $$
+  \langle v',\varphi\rangle -\int_{\Omega}\sum\limits_{i=1}^n v_i v\frac{\partial\varphi}{\partial x_i} dx + \mu_0\int_{\Omega} \nabla v: \nabla\varphi\,dx +
+   + \mu_1 {\frac{1}{\Gamma(1-\alpha)}}\times  $$  $$\times\int_{\Omega}\int_{0}^t e^{\frac{-(t-s)}{\lambda}}{(t-s)}^{-\alpha} \varepsilon (v)(s,z(s;t,x))ds\, \varepsilon (\varphi)dx=\langle f,\varphi\rangle
+$$
+  и начальному условию $v(0)=v_0$. Здесь $z$~---РЛП, порожденный $v$.}
+
+\paragraph{Теорема~1} {\it Пусть $f\in L_2(0,T;V^{-1})$, $v(0)\in V^0$. Тогда задача (1)--(4) имеет по крайней мере одно слабое решение $v\in W_1$.}
+
+Также начально--краевая задача (1)--(4) рассматривается с памятью на бесконечном временном интервале. А именно, в $Q=(-\infty,T]\times\Omega$ рассматривается задача
+$$
+  {\frac{\partial v}{\partial t }}+ \sum\limits_{i=1}^n {v_i{\frac{\partial v}{\partial x_i}}}-\mu_0\triangle v-$$ $$-\mu_1 \frac{1}{\Gamma(1-\alpha)}\mbox {Div }{\int_{-\infty}^t{{e^{\frac{-(t-s)}{\lambda}}(t-s)}^{-\alpha}\varepsilon (v)(s,z(s;t,x))}}ds+$$
+  $$+ \nabla p=f(t,x), \qquad (t,x)\in Q; \eqno{(5)}
+$$
+$$
+z(\tau ;t,x)=x+{\int_t^\tau {v(s,z(s;t,x))}} ,\quad t,\tau \in (-\infty,T],x\in\bar{\Omega};\eqno{(6)}
+$$
+$$
+\mbox{div } v(t,x)=0,\quad (t,x)\in Q; \quad v(t,x)\mid _{(-\infty,T]\times\partial\Omega} =0.\eqno{(7)}
+$$
+
+
+
+Введем следующие функциональные пространства:
+ $$
+ W_1 =\{v: v\in L_2(-\infty,T;V^1), v'\in L_{2,loc} (-\infty,T;V^{-1})\};
+ $$
+ $$
+ W_2 =\{v: v\in L_2(-\infty,T;V^1), v'\in L_{{4}/{3},loc} (-\infty,T;V^{-1})\}.
+ $$
+ Здесь $L_{p,loc} (-\infty,T;V^{-1})$~--- пространство, состоящее из функций $v$, определённых почти всюду на $(-\infty ,T]$ и принимающих значение в $V^{-1}$, сужение которых на любой отрезок $[r ,T]\in (-\infty,T]$ принадлежит $L_{p}(r,T;V^{-1})$. Пусть при $n=2$ $W=W_1$, а при $n=3$ и $W=W_2$.
+
+ \paragraph{Определение~1.} {\it Пусть $f\in L_2(-\infty,T;V^{-1})$. Cлабым решением задачи (5)--(7) называется функция $v\in W$, удовлетворяющая при любой $\varphi\in V$  и п.в. $t\in (-\infty,T]$ тождеству
+$$
+  \langle v',\varphi\rangle -\int_{\Omega}\sum\limits_{i=1}^n v_i v\frac{\partial\varphi}{\partial x_i} dx + \mu_0\int_{\Omega} \nabla v: \nabla\varphi\,dx+ + \mu_1 {\frac{1}{\Gamma(1-\alpha)}}\times$$$$\times\int_{\Omega}\int_{-\infty}^t e^{\frac{-(t-s)}{\lambda}}{(t-s)}^{-\alpha} \varepsilon (v)(s,z(s;t,x))ds\,\varepsilon (\varphi)dx=\langle f,\varphi\rangle,$$
+ где $z$ --- РЛП, порожденный $v$.}
+ \paragraph{Теорема~1.}{\it Пусть $f\in L_2(-\infty,T;V^{-1})$. Тогда задача (5)--(7) имеет по крайней мере одно слабое решение $v\in W$.}
+
+% Оформление списка литературы%
+
+%\litlist
+
+1. {\it Zvyagin V.G., Orlov V.P.} Weak solvability of fractional Voigt model of viscoelasticity // Discrete and Continuous Dyna- mical Systems --- Series A. --- 2018. --- V. 38. --- $\No$. 12. --- P. 6327--6350.
+
+2. {\it Звягин А. В.} О слабой разрешимости и сходимости решений дробной альфа--модели Фойгта движения вязкоупругой среды // Успехи математических наук. --- 2019. --- Т. 74. --- №. 3. --- С. 189--190.
+
+3. {\it Звягин А. В.} Исследование слабой разрешимости дробной альфа--модели Фойгта // Известия Российской академии наук. Серия математическая. --- 2021. --- Т. 85. --- №. 1. --- С. 66--97.
+
+\end{document}

@@ -1,0 +1,163 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+\inputencoding{cp1251}%It's really a good idea to remove it and switch to UTF-8!
+
+
+\vzmstitle[
+	\footnote{This research is funded by the Science Committee of the Ministry of Education and Science of the Republic of Kazakhstan (Grants No. AP09258892, 2021-2023).}
+]{
+	Об одной обратной задаче для линеаризованной двумерной системы Навье-Стокса
+}
+\vzmsauthor{Дженалиев}{М.\,Т.}
+\vzmsinfo{Алматы, ИМММ; {\it muvasharkhan@gmail.com}}
+\vzmsauthor{Рамазанов}{М.\,И.}
+\vzmsinfo{Караганда, КарГУ им. Е.А. Букетова; {\it ramamur@mail.ru}}
+\vzmsauthor{Ергалиев}{М.\,Г.}
+\vzmsinfo{Алматы, ИМММ; {\it ergaliev.madi.g@gmail.com}}
+
+\vzmscaption
+
+В докладе изучаются вопросы разрешимости обратной задачи (ОЗ) для уравнений Навье-Стокса. Доказаны теоремы об однозначной слабой и сильной разрешимости ОЗ. Для оператора Стокса с однородными граничными условиями Дирихле построена система ортогональных собственных функций и соответствующих ей собственные значения, на основе которой проведено численное решение ОЗ с конкретными числовыми данными. Представлены графики, иллюстрирующие результаты вычислений.
+
+\paragraph{Постановка задачи.}
+Введем пространства
+$$
+\mathbf{V}=\{v: \, v(y)\in \left(H_0^1(\Omega)\right)^2=\mathbf{H}_0^1(\Omega),\, \textrm{div}\,{v}=0\},
+$$
+$$
+\mathbf{H}=\left\{\textrm{замыкание }\, \mathbf{V}\, \textrm{ в пространстве }\, \left(L_2(\Omega)\right)^2=\mathbf{L}_2(\Omega)\right\},
+$$
+$$
+\,\,\, \mathbf{H}^2(\Omega)=\left(H^2(\Omega)\right)^2,
+$$
+имеют место плотные вложения
+$
+\mathbf{V}\subset\mathbf{H}\equiv\mathbf{H}'\subset\mathbf{V}'.
+$
+
+Пусть $Q_{yt}=\{y,t:|y|<1,\ 0<t<T\}$ и $\Omega=\{|y|<1\}$.
+Рассмотрим обратную задачу по определению вектор-функции $w(y,t)=\{w_1(y,t),w_2(y,t)\}$, скалярной функции $P(y,t)$ и вектор-функции $f_1(y),\, f_2(y)$, где $F_j(y,t)=g_j(t)f_j(y)$, $g_1(t),\ g_2(t)$ -- заданные функции:
+\begin{align} \label{NS-eq1}
+{\partial }_tw-\nu \Delta w=F-\nabla P,\quad\left\{y,t\right\}\in Q_{yt},   \end{align}
+\begin{equation} \label{NS-div1}
+{\rm div}\,w=\partial_{y_1}w_1+\partial_{y_2}w_2=0,\quad\left\{y,t\right\}\in Q_{yt}, \end{equation}
+\begin{equation} \label{NS-bc1}
+w=0,\quad\left\{y,t\right\}\in {\Sigma }_{yt}-\text{\rm боковая\,\,поверхность\,\,цилиндра}, \end{equation}
+\begin{equation} \label{NS-ic1} w=0,\quad\left\{y\right\}\in \Omega-\text{\rm нижнее\, основание\,\,цилиндра},
+\end{equation}
+с финальным условием переопределения:
+\begin{equation} \label{NS-fin1}
+w(y,T){\rm =}w_{T}(y)\in\mathbf{H},
+\end{equation}
+где $w_{T}(y)$ -- заданная функция.
+
+Аналогичные обратные задачи рассматривались, например, в [1, 2].
+
+\paragraph{К разрешимости обратной задачи.}
+Запишем обратную задачу \eqref{NS-eq1}--\eqref{NS-fin1} в дифференциально-операторной форме [3]:
+\begin{align} \label{NS-d-op1}
+w'(t)+\nu Aw(t)=g(t)f,\,\,\, w(0)=0,\,\,\, w(T)=w_T,
+\end{align}
+где в зависимости от класса разрешимости описание оператора $A$ будет дано ниже.
+
+Далее, интегрируя уравнение из \eqref{NS-d-op1} по $t$ от $0$ до $T,$ с учетом условия переопределения мы получаем
+\begin{align} \label{NS-unk1}
+f&=\frac{1}{B_Tg}\left[w_{T}+\nu A B_Tw\right],\\
+\label{NS-load}w'(t)&+\nu A w(t)-\nu M(t)A B_Tw
+=M(t)w_{T},\,\,\, w(0)=0,
+\end{align}
+где
+\begin{equation}\label{NS-def1}
+B_Tv=\int\limits_0^Tv(t)dt,\,\, M(t)=\{M_1(t), M_2(t)\},\,\, M_j\left(t\right)=\frac{g_j\left(t\right)}{B_Tg}.
+\end{equation}
+
+\paragraph{О слабой разрешимости.}
+Рассмотрим нагруженное [4] уравнение \eqref{NS-load} с ограниченным самосопряженным положительно определенным оператором $A$:
+\begin{equation} \label{NS-opA1}
+Aw=\ - \Delta w: \mathbf{V}\to\mathbf{V}',\,\, \textrm{ т.е. }\, A=A^*\in L(\mathbf{V};\mathbf{V}'),
+\end{equation}
+где $A^*$ -- оператор, сопряженный к $A.$
+
+Согласно свойствам оператора $A$ \eqref{NS-opA1} существуют положительные постоянные $\bar{\lambda}$ и $\bar{\Lambda}$, такие, что спектр оператора $A$ удовлетворяет включению: $P_\sigma\{A\}\subset[\bar{\lambda},\bar{\Lambda}].$
+
+\paragraph{Теорема~1.} {\it
+Пусть $w_T\in\mathbf{H}$ и выполнены условия
+\begin{equation}\label{NS-cond2}
+g(t)\in C([0,T]),\,\,\, \left|B_Tg\right|\geq\varepsilon>0,\,\,\, \bar{M}<\frac{\nu \bar{\Lambda}}{\nu T\bar{\Lambda}-1+e^{-\nu T\bar{\Lambda}}},
+\end{equation}
+где $\bar{M}=\max\limits_{t\in[0,T]}|M(t)|.$
+Тогда задача Коши \eqref{NS-load} и вместе с ним обратная задача \eqref{NS-eq1}--\eqref{NS-fin1} однозначно разрешимы, причем,
+$$
+w\in \mathbf{W}_0\equiv \left\{v:\, v(t)\in L_2(0,T;\mathbf{V}),\,\, v'(t)\in L_2(0,T;\mathbf{V}')\right\},
+$$
+$$
+\nabla P\in L_2(0,T; \mathbf{V}'),\,\, f\in \mathbf{V}',
+$$
+и имеют место оценки
+\begin{equation} \label{NS-est1}
+\|w\|_{\mathbf{W}_0}+\|\nabla P\|_{L_2(0,T; \mathbf{V}^{\,'})}\leq C_1\|w_T\|_{\mathbf{H}},
+\end{equation}
+\begin{equation} \label{NS-est2}
+\|f\|_{\mathbf{V}^{\,'}}\leq C_2\|w_T\|_{\mathbf{H}}.
+\end{equation}
+}
+
+\paragraph{О сильной разрешимости.}
+Рассматрим нагруженное уравнение \eqref{NS-load} с неограниченным самосопряженным положительно определенным оператором $A$:
+\begin{equation} \label{NS-opA2}
+Aw=\ - \Delta w: \mathbf{H}\to\mathbf{H},\,\,\, D(A)\equiv \mathbf{V}\cap \mathbf{H}^2(\Omega),\,\, (Aw,w)\geq\bar{\lambda}\|w\|_{\mathbf{V}}^2,
+\end{equation}
+где $\bar{\lambda}$ -- положительное число, $P_\sigma\{A\}\subset[\bar{\lambda},\infty].$
+
+\paragraph{Теорема~2.} {\it
+Пусть $w_T\in\mathbf{V}$, и дополнительно к условиям теоремы 1 выполнены условия
+\begin{equation}\label{NS-cond1}
+g(t)\in C^1([0,T]),\,\,\,\left\{\begin{array}{ll}
+                         \textrm{либо}\,\,\, (a)&M(0)=0,\,\,\, \bar{M}^{\prime}>0,\\
+                         \textrm{либо}\,\,\, (b)&M(0)>0,\,\,\, \bar{M}^{\prime}\geq0,
+                         \end{array}\right.
+\end{equation}
+где $\bar{M}^{\prime}=\min\limits_{t\in[0,T]}M'(t).$
+Тогда обратная задача \eqref{NS-eq1}--\eqref{NS-fin1} однозначно сильно разрешима, причем,
+$$
+w\in \mathbf{W}\equiv \left\{v:\, v(t)\in L_2(0,T;\mathbf{V}\cap\mathbf{H}^2(\Omega)),\,\, v'(t)\in L_2(0,T;\mathbf{H})\right\},
+$$
+$$
+\nabla P\in L_2(0,T; \mathbf{H}),\,\, f\in \mathbf{H},
+$$
+и имеют место оценки
+\begin{equation} \label{NS-est3}
+\|w\|_{\mathbf{W}}+\|\nabla P\|_{L_2(0,T; \mathbf{H})}\leq C_1\|w_T\|_{\mathbf{V}},
+\end{equation}
+\begin{equation} \label{NS-est4}
+\|f\|_{\mathbf{H}}\leq C_2\|w_T\|_{\mathbf{V}}.
+\end{equation}
+}
+
+В доказательствах теорем 1 и 2 используется теория спектральных разложений самосопряженных операторов в гильбертовых пространствах [5].
+
+% Оформление списка литературы
+%\litlist
+
+\begin{center}
+Литература
+\end{center}
+
+1. {\it Прилепко А.И., Васин И.А.} Некоторые обратные на\-чально-краевые задачи для нестационарных линеаризованных уравнений Навье-Стокса //Дифференц. уравнения. – 1989. – Т. 25. – №. 1. – С. 106–117.
+
+2. {\it Kozhanov A.I.} Inverse Problems of Finding the Absorption Parameter in the Diffusion Equation //Math. Notes. – 2019. – Т. 106. – №. 3. – С. 378-389.
+
+3. {\it Темам Р.} Уравнения Навье-Стокса. Теория и численный анализ. //М.: Мир, 1981.
+
+4. {\it Нахушев А.М.}  Нагруженные уравнения и их приложения. //М.: Наука, 2012.
+
+5. {\it Канторович Л.В., Акилов Г.П.} Функциональный анализ. //М.: Наука, 1984. 752 с.
+
+\end{document}
+
+
+\begin{center}
+	\textbf{Электронную версию тезисов необходимо выслать по электронному адресу vzms@mail.ru.}
+\end{center}
+

@@ -1,0 +1,150 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+\vzmstitle[
+	\footnote{Работа выполнена при финансовой поддержке РФФИ в рамках проектов
+20-31-90087,
+20-08-01154.}
+]{Существование позитивных решений
+задач на собственные значения
+с нелинейной зависимостью от спектрального параметра}
+\vzmsauthor{Соловьёв}{П.\,С.}
+\vzmsinfo{Казань, КФУ; {\it pavel.solovev.kpfu@mail.ru}}
+
+\vzmscaption
+
+Пусть
+$\Omega$ -- плоская область с липшицевой границей $\Gamma$,
+$\overline{\Omega}$ -- замыкание области $\Omega$.
+Изучается задача нахождения наименьшего собственного
+значения ${\lambda\in\Lambda}$, ${\Lambda=[0,\infty)}$, и соответствующей
+положительной собственной функции $u(x)$, ${x\in\Omega}$,
+удовлетворяющих в обобщённом смысле однородному
+дифференциальному уравнению
+в частных производных
+второго порядка и
+однородному граничному условию Дирихле
+\begin{equation*}
+\begin{array}{l}
+\displaystyle
+-\sum_{i=1}^{2}\frac{\partial}{\partial x_i}\left(p(\lambda s(x))\frac{\partial u}{\partial x_i}\right)=
+r(\lambda s(x))u,\quad
+x\in\Omega,
+\bigskip
+\\
+\displaystyle
+u(x)=0,\quad
+x\in\Gamma.
+\end{array}
+\label{sol_f1}
+\end{equation*}
+Предположим, что функции
+$p(\mu)$,
+$r(\mu)$, $\mu\in\Lambda$,
+$s(x)$, $x\in\overline{\Omega}$
+являются непрерывными положительными.
+Задачи такого вида возникают при моделировании баланса заряженных частиц
+высокочастотного индукционного разряда
+пониженного давления
+[1--9].
+
+При фиксированном $\mu\in\Lambda$
+через $\gamma(\mu)$ обозначим
+минимальное собственное значение
+параметрической линейной задачи на собственные значения
+\begin{equation*}
+\begin{array}{l}
+\displaystyle
+-\sum_{i=1}^{2}\frac{\partial}{\partial x_i}
+\left(p(\mu s(x))\frac{\partial u}{\partial x_i}\right)=
+\gamma(\mu)
+r(\mu s(x))u,\quad
+x\in\Omega,
+\bigskip
+\\
+\displaystyle
+u(x)=0,\quad
+x\in\Gamma.
+\end{array}
+\label{sol_f1}
+\end{equation*}
+Тогда собственное значение исходной нелинейной задачи на собственные значения
+является корнем характеристического уравнения
+$\gamma(\lambda)=1.$
+С помощью характеристического уравнения исследовано существование
+и единственность
+ведущего собственного значения и
+соответствующей положительной собственной функции
+обобщённой постановки
+дифференциальной задачи на собственные значения
+в частных производных
+второго порядка
+с нелинейной зависимостью от спектрального параметра.
+
+Исходная нелинейная дифференциальная задача на собственные значения аппроксимируется
+с помощью сеточной схемы метода конечных элементов с линейными
+Лагранжевыми конечными элементами на регулярной треугольной
+сетке.
+Устанавливаются оценки погрешности приближённых собственных значений
+и собственных функций в зависимости от размера треугольной сетки.
+
+\litlist
+
+1.
+{\it Zheltukhin V. S., Solov'ev S. I., Solov'ev P. S., Chebakova V. Yu.}
+{Computation of the minimum eigenvalue for a nonlinear Sturm--Liouville problem}
+//Lobachevskii J. Math.~--
+2014.~-- V.~35.~-- No~4.~-- P.~416--426.
+
+2.
+{\it Zheltukhin V. S., Solov'ev S. I., Solov'ev P. S., Chebakova V. Yu.}
+{Existence of solutions for electron balance problem in the stationary radio-frequency induction discharges}
+//IOP Conf. Ser.: Mater. Sci. Engin.~--
+2016.~-- V.~158.~-- No~1.~-- Art.~012103.~-- P.~1--6.
+
+3.
+{\it Zheltukhin V. S., Solov'ev S. I., Solov'ev P. S., Chebakova V. Yu., Sidorov A. M.}
+{Third type boundary conditions for steady state ambipolar diffusion equation}
+//IOP Conf. Ser.: Mater. Sci. Engin.~--
+2016.~-- V.~158.~-- No~1.~-- Art.~012102.~-- P.~1--4.
+
+4.
+{\it Solov'ev S. I., Solov'ev P. S.}
+{Finite element approxima\-tion of the minimal eigenvalue of
+a nonlinear eigenvalue problem}
+//Lobachevskii J. Math.~--
+2018.~-- V.~39.~-- No~7.~-- P.~949--956.
+
+5.
+{\it Samsonov A. A., Solov'ev P. S., Solov'ev S. I.}
+{The bisec\-tion method for solving the nonlinear bar eigenvalue problem}
+//J. Phys.: Conf. Ser.~--
+2019.~-- V.~1158.~-- No~4.~-- Art.~042011.~-- P.~1--5.
+
+6.
+{\it Samsonov A. A., Solov'ev P. S., Solov'ev S. I.}
+{Spectrum division for eigenvalue problems with nonlinear dependence on the parameter}
+//J. Phys.: Conf. Ser.~--
+2019.~-- V.~1158.~-- No~4.~-- Art.~042012.~-- P.~1--5.
+
+7.
+{\it Solov'ev S. I.}
+{The error of the Bubnov--Galerkin method with perturbations
+for symmetric spectral problems with a non-linearly occurring parameter}
+//Comput. Math. Math. Phys.~--
+1992.~-- V.~32.~-- No~5.~-- P.~579--593.
+
+8.
+{\it Solov'ev S. I.}
+{Approximation of operator eigenvalue prob\-lems in a Hilbert space}
+//IOP Conf. Ser.: Mater. Sci. Engin.~--
+2016.~-- V.~158.~-- No~1.~-- Art.~012087.~-- P.~1--6.
+
+9.
+{\it Solov'ev S. I.}
+{Quadrature finite element method for ellip\-tic eigenvalue problems}
+//Lobachevskii J. Math.~--
+2017.~-- V.~38. -- No~5.~-- P.~856--863.
+
+\end{document}
