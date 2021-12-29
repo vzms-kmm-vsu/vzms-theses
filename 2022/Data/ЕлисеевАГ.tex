@@ -1,0 +1,283 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+
+\vzmstitle[
+]{
+	О регуляризованной асимптотике задачи Коши при наличии слабой точки поворота у предельного оператора
+}
+\vzmsauthor{Елисеев}{А.\,Г.}
+\vzmsinfo{Москва, НИУ <<МЭИ>>; {\it eliseevag@mpei.ru}}
+
+\vzmscaption
+
+
+Пусть дана сингулярно возмущенная задача Коши
+$$
+\varepsilon \dot{u}(t,\varepsilon) = A (t) u (t,\varepsilon) + h (t),u (t,\varepsilon) = u^{0}.
+\eqno(1)
+$$
+и выполнены условия
+
+1) $h(t)\in \mathbb{C}^\infty([0, T], R^n))$;
+
+2) $A(t)\in \mathbb{C}^\infty([0, T]$, $\mathcal{L}(R^n,R^n))$, собственные значения которого
+удовлетворяют условиям $\lambda_i(t)\in \mathbb{C}^\infty([0,T])$, $i=1,2$;
+
+3) $A(t)=\lambda_1(t)P_1(t)+\lambda_2(t)P_2(t)$, $P_1(t)+P_2(t)=I$;
+
+4) условие слабой точки поворота:
+$$
+\lambda_2(t)-\lambda_1(t)=t^{k_0}(t-t_1)^{k_1}\ldots(t-t_m)^{k_m}a (t), \ \ a(t)\neq 0,
+$$
+$k_0+k_1+\ldots+k_m=n,$ $\lambda_2(t)\neq \lambda_1(t)$ $\forall t \in(0,t_1)\cup(t_1,t_2)\cup \ldots \cup$ $\cup(t_{m-1},t_m) \cup(t_m,T]$,
+причем геометрическая кратность собственных значений равна алгебраической для любых $t\in[0,T]$;
+
+5) $\lambda_i(t)\neq 0$, ${\rm Re\,}\lambda_i(t)\leq 0$ $\forall t \in[0,T]$.
+
+При изложении метода регуляризации для решения задачи (1) будут использованы интерполяционные многочлены Лагранжа-- \linebreak Сильвестра, которые описывают дифференцируемые функции $f(t)$, заданные в точках $t_0,t_1,\ldots,t_m $ вместе со своими производными. Они имеют вид:
+$$
+K (t)f (t) = \sum\limits_{j = 0}^{m}\sum\limits_{i = 0}^{k_j-1}K_{j, i}(t)f^{( i)}(t_j),
+\eqno(2)
+$$
+где $K_{j,i}(t)$ --- многочлены, обладающие свойством $\frac{d^s}{dt^s}K_{j,i}(t)_{t=t_k}=$ $=\delta^k_j\delta^s_i$. Сингулярности $J_1(t,\varepsilon), J_2(t,\varepsilon)$ задачи (2) находятся из решения задачи Коши
+$$
+\left\{\begin{array}{l}
+\varepsilon \dot J_1(t,\varepsilon)=\lambda_1(t)J_1(t,\varepsilon)+\varepsilon K(t)J_2(t,\varepsilon),\\
+\varepsilon \dot J_2(t,\varepsilon)=\lambda_2(t)J_2(t,\varepsilon)+\varepsilon K(t)J_1(t,\varepsilon),\\
+J_1(0,\varepsilon)=1, \ \ J_2(0,\varepsilon)=1.
+\end{array} \right.
+\eqno(3)
+$$
+Решения системы (3) порождают серию функций, описывающих сингулярности задачи (1):
+$$
+\begin{array}{l}
+\varphi_{i}(t)=\frac{1}{\varepsilon}\int\limits_0^t \lambda_i(s)ds,\ \ \sigma_{i,0}(t,\varepsilon)=e^{\varphi_{i}(t)}, \ \  i=1,2,\\
+\sigma_{1,1}^{(j_1,i_1)}(t,\varepsilon)=e^{\varphi_{1}(t)}\int\limits_0^t
+e^{\Delta\varphi}(s_1)K_{j_1,i_1}(s_1)ds_1,\\ \sigma_{2,1}^{(j_1,i_1)}(t,\varepsilon)=e^{\varphi_{2}(t)}\int\limits_0^t e^{-\Delta\varphi}(s_1)K_{j_1,i_1}(s_1)ds_1,\\
+..................................................................\\
+\sigma_{1,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)=e^{\varphi_{1}(t)}\int\limits_0^t e^{\Delta\varphi(s_1)}K_{j_p,i_p}(s_1)\cdot \\
+\ \ \cdot\int\limits_0^{s_1}e^{-\Delta\varphi(s_2)}K_{j_{p-1},i_{p-1}}(s_2)\ldots\\
+\hfill\ldots\int\limits_0^{s_{p-1}}e^{(-1)^{p-1}\Delta\varphi(s_p)}K_{j_1,i_1}(s_p)ds_p\ldots ds_1,\\
+\sigma_{2,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)=e^{\varphi_{2}(t)}\int\limits_0^t e^{-\Delta\varphi(s_1)}K_{j_p,i_p}(s_1)\cdot\\
+\ \ \cdot\int\limits_0^{s_1}e^{\Delta\varphi(s_2)}K_{j_{p-1},i_{p-1}}(s_2)\ldots\\
+\hfill \ldots\int\limits_0^{s_{p-1}}e^{(-1)^{p}\Delta\varphi(s_p)}K_{j_1,i_1}(s_p)ds_p\ldots ds_1
+\end{array}
+\eqno(4)
+$$
+(здесь $p$ --- число интегралов, $j_s=\overline{0,m}$, $i_s=\overline{0,k_s-1}$, $\Delta\varphi(t)=$ $=\int\limits_0^t(\lambda_2(s)-\lambda_1(s))ds$).
+
+Заметим, что $\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)$ удовлетворяют системе
+$$
+\left\{\begin{array}{l}
+\varepsilon \dot \sigma_{1,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)=
+\lambda_1(t)\sigma_{1,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)+\qquad\ \\
+\hfill +\varepsilon K_{j_p,i_p}(t)\sigma_{2,p-1}^{(j_1,i_1,\ldots,j_{p-1}-1,i_{p-1}-1)}(t,\varepsilon),\\
+\varepsilon \dot \sigma_{2,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)=
+\lambda_2(t)\sigma_{2,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)+\\
+\hfill +\varepsilon K_{j_p,i_p}(t)\sigma_{1,p-1}^{(j_1,i_1,\ldots,j_{p-1}-1,i_{p-1}-1)}(t,\varepsilon).
+\end{array}\right.
+\eqno(5)
+$$
+
+Вместо искомого решения $u(t,\varepsilon)$ задачи (1) будем изучать вектор-функцию $z(t,\sigma,\varepsilon)$ такую, что ее сужение совпадает с искомым решением
+$$
+z(t,\sigma,\varepsilon)\bigl|_{\sigma={\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)}}= u(t,\varepsilon),\ \ s=1,2,\ \ p=\overline{0,\infty}.
+\eqno(6)
+$$
+С учетом (1), (4), (5) можно написать задачу для $z(t,\sigma,\varepsilon)$. Используя формулу сложного дифференцирования задачу для расширенной функции $z(t,\sigma,\varepsilon)$ можно записать в виде
+$$
+\left\{\begin{array}{l} \smallskip
+A(t)z-\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty}\sum\limits_{j_1,\ldots,j_p =0}^{m}\sum\limits_{i_1,\ldots,i_p =0}^{k_1-1,\ldots,k_p-1}( \lambda_s \sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}-\\
+\qquad -K_{j_p,i_p}(t)\sigma_{3-s,p-1}^{(j_1,i_1,\ldots,j_{p-1},i_{p-1})}) \frac{\partial z}{\partial \sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}}=\varepsilon \dot z-h(t),\\
+z(0,0,\varepsilon)=u^0.
+\end{array}\right.
+\eqno(7)
+$$
+По соглашению примем, что если слагаемое, содержит в индексе $p-1<0$, то это слагаемое равно нулю.
+Для решения этой задачи введем пространство безрезонансных решений $\hat E $.
+Элемент $\hat{z}\in \hat {E} $ имеет вид
+$$
+\hat{z}=\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty}\sum\limits_{j_1,\ldots,j_p =0}^{m}\sum\limits_{i_1,\ldots,i_p =0}^{k_1-1,\ldots,k_p-1} z_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}\bigotimes \{\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}\}+w,
+$$
+где $z_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)},w \in E $. Здесь  $\bigotimes$ --- символ тензорного произведения.
+
+
+Задача (7) является регулярной по $\varepsilon$.  Поэтому решение будем определять в виде регулярного ряда по степеням $\varepsilon$, т.е.
+$$
+\hat{z}=\sum\limits_{k=0}^{\infty}\varepsilon^k \hat{z_k}
+$$
+Запишем задачу на итерационном шаге $\varepsilon^0$:
+$$
+\left\{\begin{array}{l}
+(A(t)-\lambda_s(t))z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t)=0,\\
+A(t)w_0(t)=-h(t),\\
+z_{1,0,0}(0)+ z_{2,0,0}(0)+w_0(0)=u^0,\\
+z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t_{j_p}), \ \ p\geq 1, \ \ s=1,2
+\end{array}\right.
+\eqno(8)
+$$
+($p$, $s$ определяются в процессе решения итерационных задач). Решение задачи (8) запишется в виде
+$$
+\begin{array}{c}
+\hat{z_0}=\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty}\sum\limits_{j_1,...,j_p=0}^{m}\sum\limits_{i_1,...,i_p =0}^{k_1-1,...,k_p-1}P_s(t) z_{s,p,0}^{(j_1,i_1,....j_p,i_p)}(t)\bigotimes \\ \bigotimes \{\sigma_{s,p}^{(j_1,i_1,....j_p,i_p)}\}-A^{-1}(t)h(t),
+\end{array}
+\eqno(9)
+$$
+здесь $P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t)$ --- произвольный собственный вектор оператора $A(t)$.
+
+Подчиним (9) начальному условию. При этом учитываем, что
+$\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}(0,\varepsilon)=0$, $p\geq 1$. Тогда имеем
+$$
+P_1(0) z_{1,0,0}(0)+ P_2(0) z_{2,0,0}(0)-A^{-1}(0)h(0)=u^0.
+$$
+Отсюда $P_s(0) z_{s,0,0}(0)= P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)}$, $s=1,2$.
+Начальные условия для $ P_s(t_{j_p}) z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t_{j_p})$ определяются из условий разрешимости итерационной системы на первом итерационном шаге. Таким образом, на нулевом итерационном шаге получили
+$$
+\left \{\begin{array}{l}
+\hat{z_0}=\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty}\sum\limits_{j_1,\ldots,j_p=0}^{m} \sum\limits_{i_1,\ldots,i_p =0}^{k_1-1,\ldots,k_p-1}P_s(t) z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t) \bigotimes\\
+\hfill \bigotimes \{\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}\} -A^{-1}(t)h(t),\\
+P_s(0) z_{s,0,0}(0)= P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)},  \ \ s=1,2.
+\end{array}\right.
+\eqno(10)
+$$
+
+Задача на первом итерационном шаге $\varepsilon$
+$$
+\left\{\begin{array}{l}
+\mathcal{L}_0\hat{z_1}=\dot{\hat{z_0}}+\mathcal{L}_1\hat{z_0},\\
+G\hat{z_1}=0
+\end{array}\right.
+\eqno(11)
+$$
+разрешима в $\hat{E}$. Вычислим
+$$
+\begin{array}{c}
+\mathcal{L}_1\hat{z_0}+\dot{\hat{z_0}}=\\
+=\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty} \sum\limits_{j_1,\ldots,j_p=0}^{m} \sum\limits_{i_1,\ldots,i_p=0}^{k_0-1,\ldots,k_p-1} \bigl[ \frac{d}{dt}(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))+\\
++\sum\limits_{j_{p+1} =0}^{m}\sum\limits_{i_{p+1}=0}^{k_{p+1}-1}  K_{j_{p+1},i_{p+1}}(t)z_{3-s,p+1,0}^{(j_1,i_1,\ldots,j_{p+1},i_{p+1})}(t)\bigl] \bigotimes \\
+\bigotimes \sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}-\frac{d}{dt}A^{-1}(t)h(t).
+\end{array}
+\eqno(12)
+$$
+Расписывая (11) на первом итерационном шаге по компонентам и учитывая (12), получим серию задач
+$$
+\left\{\begin{array}{l}
+(A(t)-\lambda_s(t))z_{s,p,1}^{(j_1,i_1,\ldots,j_p,i_p)}(t)= \frac{d}{dt}(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))+\\
+\hfill +\sum\limits_{j_{p+1}=0}^{m} \sum\limits_{i_{p+1}=0}^{k_{p+1}-1}K_{j_{p+1},i_{p+1}}(t)P_{3-s}(t)z_{3-s,p+1,0}^{(j_1,i_1,\ldots,j_{p+1},i_{p+1})}(t),\\
+z_{1,0,1}(0)+ z_{2,0,1}(0)=((A^{-1}(t)\frac{d}{dt})^2\int\limits_0^t h(s)ds)(0),\\
+z_{s,p,1}(0), \ \ p\geq 1, \ \ s=1,2
+\end{array}\right.
+\eqno(13)
+$$
+($p$, $s$ определяются в процессе решения итерационных задач).
+Из условий разрешимости (13) и учитывая (10), получим серию задач Коши
+$$
+\left\{\begin{array}{l}
+\text{при } p=0 \\
+\frac{d}{dt}(P_s(t)z_{s,0,0}(t))= \dot{P}_s(t)(P_s(t)z_{s,0,0}(t)),\\
+P_s(0)z_{s,0,0}(0)=P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)},  \ \ s=1,2; \\
+\text{при } p\geq 1\\
+\frac{d}{dt}(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))= \dot{P}_s(t)(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t)),\\
+P_s(0)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(0)=? \text{ (на данный момент}\\
+\hfill \text{не определено)}.
+\end{array}\right.
+\eqno(14)
+$$
+
+
+Чтобы определить начальные условия для задач Коши (14) при $p\geq 1$, вычислим
+$\hat{\pi}_0^{(j_0,i_0)}(t)(\mathcal{L}_1\hat{z}_0 + \dot{\hat{z}}_0)=0$, $j_0=\overline{0,m}$, $i_0=\overline{0,k_{j_0}-1}.$ Тогда получим
+$$
+\begin{array}{c}
+\sum\limits_{j_{p+1}=0}^{m}\sum\limits_{i_{p+1}=0}^{k_{p+1}-1}
+P_{s}(t_{j_{0}})\cdot\\
+\cdot\left(\frac{d}{dt}\right)^{i_{0}}(K_{j_{p+1},i_{p+1}}(t)P_{s}(t) z_{s,p+1,0}^{(j_1,i_1,\ldots,j_{p+1},i_{p+1})}(t))|_{t=t_{j_{0}}}=\\
+=P_{s}(t_{j_{0}})\left(\frac{d}{dt}\right)^{i_{0}}(\dot{P}_{s}(t)P_{3-s}(t)z_{{3-s},p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))|_{t=t_{j_{0}}}
+\end{array}
+\eqno(15)
+$$
+Перебирая последовательно $i_{0}$ при фиксированном $p$, получим
+$$
+\left\{\begin{array}{l}
+j_{0}=\overline{0,m},\ \ i_{0}=0,\ \ s=1,2,\\
+P_{s}(t_{j_{0}})z_{s,p+1,0}^{(j_1,i_1,\ldots,j_p,i_p,j_{0},0)}(t_{j_{0}})=\\
+\hfill =\dot{P}_{s}(t_{j_{0}})P_{3-s}(t_{j_{0}})z_{3-s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t_{j_{0}}));\\
+j_{0}=\overline{0,m},\ \ i_{0}=1,\ \ s=1,2,\\
+P_{s}(t_{j_{0}})z_{s,p+1,0}^{(j_1,i_1,\ldots,j_p,i_p,j_{0},1)}(t_{j_{0}})=\\
+\qquad =-P_{s}(t_{j_{0}})\frac{d}{dt}({P}_{s}(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))|_{t=t_{j_{0}}}+\\
+\hfill +P_{s}(t_{j_{0}})\frac{d}{dt}(\dot{P}_{s}(t)P_{3-s}(t)z_{{3-s},p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))|_{t=t_{j_{0}}};
+\\
+j_{0}= \overline{0,m},\ \ i_{0}= n,\ \ n=\overline{0,k_{0}-1}, \ \ s=1,2,\\
+P_{s}(t_{j_{0}})z_{s,p+1,0}^{(j_1,i_1,\ldots,j_p,i_p,j_{0},n)}(t_{j_{0}})=\\
+=-\sum\limits_{j_{p+1}=0}^{m}\sum\limits_{i=0}^{n-1}C_n^i P_{s}(t_{j_0})(\frac{d}{dt})^{n-i}(P_{s}(t)z_{s,p+1,0}^{(j_1,i_1,\ldots,j_p,i_p,j_{0},i)}(t))|_{t=t_{j_{0}}}+\\
+\hfill +P_{s}(t_{j_0})(\frac{d}{dt})^n(\dot{P}_{s}(t)P_{3-s}(t)z_{{3-s},p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))|_{t=t_{j_{0}}}.
+\end{array}\right.
+$$
+Так как начальные условия при $p+1$ выражаются через начальные условия при $p$, то тем самым мы по индукции доказываем, что начальные условия определены для любых $p$.
+После определения начальных условий из системы получаем решения системы (14):
+$$
+\left\{\begin{array}{l}
+P_s(t)z_{s,0,0}(t)=U_s(t,0)(P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)}), \\
+P_s(t)z_{s,p,0}^{(j_1,i_1,....j_p,i_p)}(t)=U_s(t,t_{j_p})P_s(t_{j_p})z_{s,p,0}^{(j_1,i_1,....j_p,i_p)}(t_{j_p}),\\
+s=1,2,\ \ p=\overline{0,\infty},\ \ j_p=\overline{0,m},\ \ i_p=\overline{0,k_{j_p}-1}.
+\end{array}\right.
+\eqno(16)
+$$
+Таким образом,  главный член асимптотики решения после сужения запишется в виде
+$$
+\begin{array}{c}
+u_{gl}(t,\varepsilon)=\sum\limits_{s=1}^{2}U_s(t,0)(P_s(0)u^0+ \frac{P_s(0)h(0)}{\lambda_s(0)})e^{\frac{1}{\varepsilon}\varphi_s(t)}+\\
++\sum\limits_{s=1}^{2}\sum\limits_{p=1}^{\infty}
+\sum\limits_{j_1,\ldots,j_p =0}^{m}\sum\limits_{i_1,\ldots,i_p =0}^{k_1-1,\ldots,k_p-1}U_s(t,t_{j_p}) P_s(t_{j_p})\cdot\\
+\cdot z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t_{j_p}) \sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}(t,\varepsilon)-A^{-1}(t)h(t).
+\end{array}
+\eqno(17)
+$$
+
+\textbf{Теорема 1} (об оценке остатка (асимптотическая сходимость)). {\it
+Пусть дана задача Коши $(1)$ и выполнены условия $1)\div5)$. Тогда верна оценка
+$$
+\begin{array}{c}
+\Big\lVert u(t,\varepsilon) -
+\sum\limits_{q=0}^{n}\varepsilon^q \sum\limits_{s=1}^{2}\sum\limits_{p=0}^{r}\sum\limits_{j_1,...,j_p =0}^{m}
+\sum\limits_{i_1,...,i_p =0}^{k_1-1,...,k_p-1} z_{s,p,q}^{(j_1,i_1,....j_p,i_p)}(t)\cdot \\
+\cdot \sigma_{s,p}^{(j_1,i_1,....j_p,i_p)}(t,\varepsilon)
++\sum\limits_{q=0}^{n}\varepsilon^q w_q(t)\Big\rVert_{\mathbb{C}[0,T]}\leqslant C\varepsilon^{n+1},
+\end{array}
+\eqno(18)
+$$
+где $C\geqslant 0$ --- константа, не зависящая от $\varepsilon$; $z_{s,p,q}^{(j_1,i_1,\ldots,j_p,i_p)}(t)$ и $w_q(t)$ получены из решения итерационных задач при $0\leqslant q \leqslant n$, $0\leqslant p \leqslant r$.}
+
+\textbf{Теорема 2} (о предельном переходе). {\it Пусть дана задача $(1)$ и выполнены условия $1)\div5)$. Тогда:
+\begin{itemize}
+\item[$a)$] если ${\rm Re\,}\lambda_{i}\leq -\delta<0,$ то
+$$\lim\limits_{\varepsilon \to 0}u(t,\varepsilon)= - A^{-1}(t)h(t),
+$$
+где $t\in[\delta_{0},T],$ $\delta_{0}>0$ --- сколь угодно мало;
+\item[$b)$] если ${\rm Re\,}\lambda_{i}\leqslant 0,$ то $\forall\varphi(t)\in
+\mathbb{C}^{\infty}[0,T]$
+$$
+\lim\limits_{\varepsilon\rightarrow 0}\int\limits_{0}^{T}(u(t,\varepsilon)+
+A^{-1}(t)h(t))\varphi(t)dt=0.
+$$
+\end{itemize}
+}
+
+% Оформление списка литературы
+\litlist
+
+1. {\it Ломов С.А.} Введение в общую теорию сингулярных возмущений~/ С.А.~Ломов. ~--- М.~: Наука, 1981.~--- 400~с.
+
+2. {\it Butuzov V.F.} Singularly Perturbed Problems in Case of Exchange of Stabilities~/ V.F.~Butuzov, N.N.~Nefedov, K.R.~Schneider~// Journal of Mathematical Sciences.~--- 2004.~--- Т.~121, №~1.~--- С.~1973--2079.
+
+3. {\it Елисеев А.Г.} Теория сингулярных возмущений в случае спектральных особенностей предельного оператора~/ А.Г.~Елисеев, \linebreak С.А.~Ломов~// Математический сборник.~--- 1986.~--- Т.~173, №~4.~--- С.~544--557.
+
+4. {\it Елисеев А.Г.} Сингулярно возмущенная задача Коши при наличии рациональной «простой» точки поворота у предельного оператора~/ А.Г.~Елисеев, Т.А.~Ратникова~// Дифференциальные уравнения и процессы управления.~--- 2019.~--- №~3.~--- С.~63--73.
+
+5. {\it Елисеев А.Г.} Регуляризованное решение сингулярно возмущенной задачи Коши при наличии иррациональной <<простой>> точки поворота~/ А.Г.~Елисеев~// Дифференциальные уравнения и процессы управления.~--- 2020.~--- №~2.~--- С.~15--32.
+
+6. {\it Елисеев А.Г.} Решение сингулярно возмущенной задачи Коши при наличии <<слабой>> точки поворота у предельного оператора~/ А.Г.~Елисеев, П.В.~Кириченко~// Сибирские электронные математические известия.~--- 2020.~--- №~17.~--- С.~51--60.
+
+\end{document}

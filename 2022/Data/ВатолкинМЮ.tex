@@ -1,0 +1,439 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+
+\vzmstitle[
+	% \footnote{Работа выполнена при моральной поддержке Урюпинского районного военкомата}
+]{
+	СЛУЧАЙ ТОЧНЫХ ОЦЕНОК ДЛЯ КОЭФФИЦИЕНТОВ СТЕПЕННЫХ РЯДОВ, ЯВЛЯЮЩИХСЯ 
+	ПРЕДСТАВЛЕНИЯМИ СОБСТВЕННЫХ ФУНКЦИЙ ОДНОЙ КВАЗИДИФФЕРЕНЦИАЛЬНОЙ КРАЕВОЙ 
+	ЗАДАЧИ ВТОРОГО ПОРЯДКА
+}
+\vzmsauthor{Ватолкин}{М.\,Ю.}
+\vzmsinfo{Ижевск, ИжГТУ имени М.Т.~Калашникова; {\it vmyu6886@gmail.com}}
+
+\vzmscaption
+
+Пусть $ I\subseteq {\mathbb R} $ --- открытый интервал, 
+$ {\cal P}=(p_{ik})_{0}^2$
+--- нижняя треугольная  матрица, $ p_{ik}:I\to {\mathbb R},$ такая, что 
+$ p_{00}(\cdot) $ и
+$ p_{22}(\cdot) $ измеримы, почти всюду конечны и почти всюду отличны от нуля, а
+$ \frac {1}{p_{11}(\cdot)},\
+\frac {p_{10}(\cdot)}{p_{11}(\cdot)},
+\ \frac {p_{20}(\cdot)}{p_{22}(\cdot)},
+$
+$ \frac {p_{21}(\cdot)}{p_{22}(\cdot)}$
+локально\,\,суммируемы\,\,в\,\,$I$.
+Определим\,\,квазипроизводные\,$_{\cal P}^{\;0}x,$\,$_{\cal P}^{\;1}x,$\,$_{\cal P}^{\;2}x$
+$\mbox{функции}\,x$ $:I\to{\mathbb R}$\,
+равенствами:\quad
+$
+ _{\cal P}^{\;0}x\doteq p_{00}x,\quad
+$
+$ 
+ _{\cal P}^{\;1}x\doteq p_{11} \frac {d(_{\cal P}^{\;0}x)}{dt}
++p_{10}(_{\cal P}^{\;0}x),\quad\quad
+$
+\quad
+\quad
+\quad
+$
+  _{\cal P}^{\;2}x\doteq
+p_{22} \frac {d(_{\cal P}^{\;1}x)}{dt}
++p_{21}(_{\cal P}^{\;1}x)
++p_{20}(_{\cal P}^{\;0}x).
+$
+
+Линейным \;однородным \;квазидифференциальным\linebreakназывается
+уравнение [1] (в [1] изучается уравнение произвольного порядка) 
+\vspace{-0,85mm}
+$$ 
+ (_{\cal P}^{\;2}x)(t)=0, \quad t \in I.
+ \eqno(1)
+$$
+
+Его решением называется всякая функция 
+$ x:I\to {\mathbb R}, $
+имеющая локально абсолютно непрерывные нулевую\linebreakи первую квазипроизводные
+и удовлетворяющая (1)
+почти всюду в $ I $.
+\vspace{-0,7mm}
+
+Уравнение (1) называется неосцилляционным на промежутке $J\subset I$ 
+(здесь 
+$ J=[a,b], \ -\infty<a<b< +\infty $), если 
+нулевая квазипроизводная любого его нетривиального решения 
+имеет на $J$ не более одного нуля [1].
+\vspace{-0,7mm}
+
+Рассмотрим 
+краевую задачу на собственные 
+значения
+\vspace{-1,7mm}
+$$
+(_{\cal P}^{\;2}x)(t)= 
+  -\lambda \ ( _{\cal P}^{\;0}x)(t) \  \  \ (t\in J=[a,b]),
+\eqno(2)
+$$
+$$
+x(a)=x(b)=0.
+\eqno(3)
+$$
+
+Последовательность решений
+$\{ x_{k}(\cdot) \}_{0}^{\infty}$
+построим так:\linebreak
+$x_{0}(\cdot)$ есть решение задачи
+$(_{\cal P}^{\;2}x)(t)=0 \ (t\in J)$, \
+$_{\cal P}^{\;0}x(a)=0$,
+$\ _{\cal P}^{\;1}x(a)=1;
+$
+\\
+$x_{k}(\cdot)$ находятся рекуррентно как решения задач
+\linebreak
+$(_{\cal P}^{\;2}x_{k})(t)=(_{\cal P}^{\;0}x_{k-1})(t) \ (t\in J), \quad$
+$_{\cal P}^{\;0}x_{k}(a)=0,$ $\quad _{\cal P}^{\;1}x_{k}(a)=0$ \\$(k=1,2,\dots).$
+
+Решение 
+$ u(t,\lambda) $ 
+уравнения (2), удовлетворяющее первому \;из \;условий (3),
+представимо в виде ряда [2],
+$$
+u(t,\lambda)=x_{0}(t)-
+\lambda x_{1}(t)+ \lambda^{2} x_{2}(t)- \lambda^{3} x_{3}(t)
++ \, \dots \ \ .
+\eqno(4)
+$$
+
+Собственные значения задачи (2),(3) представляют собой корни уравнения
+$
+\Phi(\lambda)=0,
+$
+где $\Phi(\cdot)$ --- сумма ряда (4) при $t=b$.
+Функция
+$
+ u(t,\lambda^{*})= \sum_{k=0}^{\infty} (-1)^{k} (\lambda^{*})^{k} x_{k}(t)
+ \ (t\in J)
+$
+есть собственная функция задачи (2),(3), отвечающая собственному значению
+$\lambda^{*}$.
+\vspace{-1,7mm}
+\paragraph{Теорема~1.} {\it
+Пусть уравнение (1) неосциляционно на $J$ и 
+$
+C(t,s) 
+$
+есть функция Коши уравнения (1),
+вещественные константы $M_{1},$  $M_{2}$  и функция $\varphi(\cdot)$ таковы, что выполняются следующие неравенства:\;
+$1 \leqslant \varphi(t)$ 
+при всех значениях \,$t$\;$(a\leqslant t \leqslant b),$
+\vspace{-3,7mm}
+$$
+\;\;\;\;_{\cal P}^{\;0}C(t,s) \leqslant 
+M_{1}
+{\int_{s}^{t}}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds  
+$$
+\mbox{ \it{при всех значениях}} \;$s$ \mbox{ \it{и}}  \;\,$t$ \;\mbox{\it{таких, что}}
+$
+\;a\leqslant s\leqslant t \leqslant b,
+$
+$$
+\;\;\;\;_{\cal P}^{\;0}C(t,a)\leqslant
+M_{2}
+{\int_{a}^{t}}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds
+$$
+\mbox{\it{при всех значениях}} \; $t$
+$
+\quad(a\leqslant t \leqslant b).\quad
+$
+\mbox{ \it{Пусть \quad далее,}}\\
+$
+ M \doteq max \{ M_{1}, M_{2} \}.
+$
+Тогда (при $t\in J$) 
+справедливы точные (см. примеры 1 и 2 ниже) оценки
+\vspace{-1,7mm}
+$$
+\begin{array}{c}
+0 \leqslant \, _{\cal P}^{\;0}x_{k}(t)\; \leqslant
+\dfrac{M^{k+1}\displaystyle{\Bigg({\int_{a}^{t}}\,\dfrac{\varphi(s)}{p_{22}(s)}\,ds
+\Bigg)}  
+^{2k+1}} {(2k+1)!}
+\big (
+k=0,1,\dots \bigr).
+\end{array}
+\eqno(5)
+$$
+}
+\paragraph{Доказательство.}
+Докажем эту теорему методом математической индукции.
+При $k=0$ оценка (5) верна, т.к.\linebreak
+$_{\cal P}^{\;0}x_{0}(t) \,= \,_{\cal P}^{\;0}C(t,a),$
+следовательно,
+$$_{\cal P}^{\;0}x_{0}(t) = _{\cal P}^{\;0}C(t,a)\leqslant M_{2}
+{\int_{a}^{t}}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds  
+\leqslant
+M
+{\int_{a}^{t}}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds.  
+$$
+Пусть оценка (5) имеет место для некоторого 
+$k {\in{\mathbb N}} $. 
+\\
+Покажем её справедливость для $k+1.$
+$$
+_{\cal P}^{\;0}x_{k+1}(t)=\displaystyle{\int_{a}^{t}}
+\dfrac{_{\cal P}^{\;0}C(t,s)_{\cal P}^{\;0}x_{k}(s)}
+{p_{22}(s)}\,ds
+\leqslant
+$$
+$$
+\leqslant
+\dfrac{M^{k+1}}{(2k+1)!}
+\displaystyle{\int_{a}^{t}}\,
+\Bigg(\dfrac{M_{1}\cdot\varphi(s)}{p_{22}(s)}\Bigg)
+\cdot
+{\Bigg(\int_{s}^{t}}\,
+\dfrac{\varphi(\tau)}{p_{22}(\tau)}\,d\tau\Bigg)\,\cdot
+$$
+$$
+\cdot\,
+\displaystyle{\Bigg({\int_{a}^{s}\,
+\dfrac{\varphi(\tau_1)}{p_{22}(\tau_1)}\,d\tau_1\Bigg)}  
+^{2k+1}}
+ds
+\leqslant
+\dfrac{M^{k+2}}{(2k+1)!}
+\displaystyle{\int_{a}^{t}}\,
+{\Bigg(\int_{s}^{t}}\,
+\dfrac{\varphi(\tau)}{p_{22}(\tau)}\,d\tau\Bigg)\cdot
+$$
+$$
+\cdot
+\displaystyle{\Bigg({\int_{a}^{s}\,
+\dfrac{\varphi(\tau_1)}{p_{22}(\tau_1)}\,d\tau_1\Bigg)}  
+^{2k+1}}
+d
+\displaystyle{\Bigg({\int_{a}^{s}\,
+\dfrac{\varphi(\tau_2)}{p_{22}(\tau_2)}\,d\tau_2\Bigg)}}
+\small{=}
+$$
+
+$$
+=
+\dfrac{M^{k+2}}{(2k+2)!}
+\displaystyle{\int_{a}^{t}}\,
+{\Bigg(\int_{s}^{t}}\,
+\dfrac{\varphi(\tau)}{p_{22}(\tau)}\,d\tau\Bigg)\,
+d
+\displaystyle{\Bigg({\int_{a}^{s}\,
+\dfrac{\varphi(\tau_1)}{p_{22}(\tau_1)}\,d\tau_1\Bigg)}
+^{2k+2}}
+=
+$$
+
+$$
+=
+\dfrac{M^{k+2}}{(2k+2)!}
+\displaystyle{\int_{a}^{t}}\,
+\Bigg(
+\dfrac{\varphi(s)}{p_{22}(s)}\Bigg)\,
+\displaystyle{\Bigg({\int_{a}^{s}\,
+\dfrac{\varphi(\tau_1)}{p_{22}(\tau_1)}\,d\tau_1\Bigg)}
+^{2k+2}}
+ds
+=
+$$
+
+$$
+=
+\dfrac{M^{k+2}}{(2k+3)!}
+\displaystyle{\int_{a}^{t}}
+d
+\displaystyle{\Bigg({\int_{a}^{s}\,
+\dfrac{\varphi(\tau_1)}{p_{22}(\tau_1)}\,d\tau_1\Bigg)}
+^{2k+3}}=
+$$
+
+$$
+=\;\,
+\dfrac{M^{k+2}}{(2k+3)!}
+{\displaystyle{\Bigg({\int_{a}^{t}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds\Bigg)}
+^{2k+3}}}
+=\;\,
+$$
+$$
+=\;\,
+\dfrac{M^{(k+1)+1}}{(2(k+1)+1)!}
+{\displaystyle{\Bigg({\int_{a}^{t}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds\Bigg)}
+^{2(k+1)+1}}}.
+$$
+Таким образом, получаем следующее неравество
+$$
+0 \leqslant \, _{\cal P}^{\;0}x_{k}(t)\; \leqslant
+\dfrac{M^{(k+1)+1} \cdot \displaystyle{\Bigg({\int_{a}^{t}}\,
+\dfrac{\varphi(s)}{p_{22}(s)}\,ds\Bigg)}
+^{2(k+1)+1}_{}} {(2(k+1)+1)!}.
+$$
+По индукции (5) имеет место для всех $k {\in{\mathbb N}} $.
+\;Теорема доказана. 
+\paragraph{Пример~1.}
+Рассмотрим задачу вида (2),(3):
+$$
+\dfrac{1} {\cos t} 
+\bigg(\dfrac{1} {\cos t}\, {x}'\bigg)'=-\lambda x\; (t\in[0,1])
+\eqno(6)
+$$
+$\bigl($уравнение (6) получено из уравнения:\linebreak
+$
+x''+ \tg t \cdot x' = -\lambda \cos^2 t \bigr),
+$
+$$
+x(0)=x(1)=0.
+\eqno(7)
+$$
+Для задачи (6),(7) обозначения теоремы 1 примут следующий вид:
+$$a=0, \; b=1, \; p_{00}(t)=1,$$
+$$p_{11}(t)=
+\dfrac{1}{\cos t},
+\; 
+ p_{10}(t)=p_{21}(t)=0,\;
+p_{22}(t)=
+\dfrac{1}{\cos t}, 
+\;
+p_{20}(t)=0;$$
+$$_{\cal P}^{\;0}C(t,s)=C(t,s)
+=\int_s^t\dfrac{1}{\frac{1}{\cos \tau}}\,d\tau=
+\int_s^t \cos \tau \,d \tau=
+\sin t - \sin s,
+$$
+
+$$
+M_{1}=M_{2}=1,
+\;
+\varphi (t) \equiv 1,
+$$
+$$\;_{\cal P}^{\;0}x_{k}(t)=x_{k}(t)=\dfrac{\;(\sin t)^{2k+1}}{(2k+1)!} 
+\; 
+\bigl( \,  k=0,1,2,\dots\bigr).$$
+Правые части оценок (5) функциями 
+$_{\cal P}^{\;0}x_{k}(t)$
+достигаются. Представление (4) для задачи (6),(7) примет вид:
+$$u(t,\lambda)=
+\dfrac {\sin (\sqrt 
+{\lambda}\cdot\sin t)}{\sqrt 
+{\lambda}}.
+$$
+Корнями уравнения 
+$\Phi(\lambda)=0,$ где 
+$\Phi(\lambda)=u(1,\lambda),$
+и собственными значениями задачи (6),(7) являются
+$\lambda_{k}=
+\bigg(\dfrac {\pi k} {\sin 1}\bigg)^2.
+$
+Функции
+$$
+ u(t,\lambda_{k})= \sum_{m=0}^{\infty} (-1)^{m} \,\lambda_{k}^m
+\cdot x_{m}(t)
+=
+\dfrac { 
+\sin 1 \cdot \sin \bigg(\dfrac {\pi k \cdot\sin t}{\sin 1} \bigg)
+}
+{\pi k}
+$$
+\\
+являются собственными функциями задачи (6),(7), 
+соответствующими собственным значениям $\lambda_{k}$  задачи  
+(6),(7).
+
+Обобщим пример 1, а, именно, рассмотрим следующий пример.
+
+\paragraph{Пример~2.}
+Рассмотрим задачу вида (2),(3):
+$$
+p(t) 
+\bigg(p(t)\, {x}'\bigg)'=-\lambda x\; (t\in[0,1])
+\eqno(8)
+$$
+$\bigl($функция $p(t)$ измерима, почти всюду конечна, неотрицательна и суммирруема на $[0,1]$$\bigl),$
+$$
+x(0)=x(1)=0.
+\eqno(9)
+$$
+Для задачи (8),(9) обозначения теоремы 1 примут следующий вид:
+$$a=0, \; b=1, \; p_{00}(t)=1,$$
+$$p_{11}(t)=
+p(t),
+\; 
+ p_{10}(t)=p_{21}(t)=0,
+ $$
+ $$
+p_{22}(t)=
+p(t), 
+\;
+p_{20}(t)=0;
+$$
+$$_{\cal P}^{\;0}C(t,s)=C(t,s)
+=\int_s^t\dfrac{d\tau}{\ p(\tau)},
+$$
+$$
+M_{1}=M_{2}=1,
+\;
+\varphi (t) \equiv 1,
+$$
+$$\;_{\cal P}^{\;0}x_{k}(t)=x_{k}(t)=\frac{\;\;\bigg(\displaystyle{\int_0^t}\dfrac{d\tau}{\ p(\tau)}\bigg)^{2k+1}}{(2k+1)!} 
+\; 
+\bigl( \,  k=0,1,2,\dots\bigr).$$
+Правые части оценок (5) функциями 
+$_{\cal P}^{\;0}x_{k}(t)$
+ достигаются.
+Представление (4) для задачи (8),(9) примет вид:
+$$u(t,\lambda)=
+\dfrac {\sin\bigg(\sqrt 
+{\lambda}\cdot \bigg(\displaystyle{\int_0^t}\dfrac{d\tau}{\ p(\tau)}\bigg)\bigg)}{\sqrt
+{\lambda}}
+\,.$$
+Корнями уравнения 
+$\Phi(\lambda)=0, \; \mbox{где}\;\;
+\Phi(\lambda)=u(1,\lambda),$
+и собственными значениями задачи (8),(9) являются
+$$\lambda_{k}=
+\Bigg(\dfrac {\pi k} {\int_0^1\frac{d\tau}{\ p(\tau)}}\Bigg)^2.
+$$
+Функции
+\vspace{-1,5mm}
+$$
+ u(t,\lambda_{k})= \sum_{m=0}^{\infty} (-1)^{m} \,\lambda_{k}^m
+\cdot x_{m}(t)
+=
+$$
+$$
+=
+\dfrac { 
+\bigg(\displaystyle{\int_0^1}\dfrac{d\tau}{\ p(\tau)} \bigg)\cdot \sin \Bigg(\dfrac {\pi k \cdot\ \int_0^t\frac{d\tau}{\ p(\tau)}}{\int_0^1\frac{d\tau}{\ p(\tau)}} \Bigg)
+}
+{\pi k}
+$$
+являются собственными функциями задачи (8),(9), 
+соответствующими собственным значениям $\lambda_{k}$ задачи  
+(8),(9).
+
+% Оформление списка литературы
+\litlist
+
+1. {\it Дерр В.Я.} Неосцилляция решений линейного\linebreakквазидифференциального 
+уравнения~/ В.Я.~Дерр~// Изв. института математики и информатики УдГУ.~--- 1999.~--- №~1(16).~---
+С.~3--105.
+
+2. {\it Ватолкин М.Ю.} О представлении решений 
+квазидифференциального уравнения~/ {\it М.Ю.~Ватолкин, В.Я.~Дерр~}// Изв. вузов.~--- 1995.~--- №~10(401).~---
+С.~27--34.
+
+\end{document}

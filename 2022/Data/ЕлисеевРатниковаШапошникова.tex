@@ -1,0 +1,329 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+
+\vzmstitle[
+]{
+	Развитие метода регуляризации для сингулярно возмущенной задачи Коши с <<простой>> рациональной точкой поворота для параболического уравнения
+}
+\vzmsauthor{Елисеев}{А.\,Г.}
+\vzmsinfo{Москва, НИУ <<МЭИ>>; {\it eliseevag@mpei.ru}}
+\vzmsauthor{Ратникова}{Т.\,А.}
+\vzmsinfo{Москва, НИУ <<МЭИ>>; {\it ratnikovata@mpei.ru}}
+\vzmsauthor{Шапошникова}{Д.\,А.}
+\vzmsinfo{Москва, НИУ <<МЭИ>>; {\it shaposhnikovda@mpei.ru}}
+
+\vzmscaption
+
+
+Рассмотрим задачу Коши
+$$
+\left\{ \begin{array}{l}
+\smallskip
+\varepsilon\left(\dfrac{\partial u}{\partial t}-\left( \dfrac{\partial}{\partial x}\left( k(x)\dfrac{\partial u}{\partial x}'\,\right)\right)\right)+t^{m/n}a(t)u=h(x,t),\\
+u(x,0)=f(x), \quad -\infty<x<+\infty.\\
+\end{array} \right.
+\eqno(1)
+$$
+и пусть выполнены условия:
+$$
+\begin{array}{l}
+1) \ h(x,t)\in \mathbb{C}^\infty(R\times[0,T]), \ \text{функция} \ h(x,t) \ \text{и все ее }\\
+\hspace{0.5cm} \text{производные ограничены на} \ \{R\times[0,T]\};\\
+2) \ k(x)\in \mathbb{C}^\infty(R), \ \exists k_0,M>0 \ \ 0<k_0\leqslant k(x)<M(x^2+1),\\
+\hspace{0.5cm} |k'(x)|<M \sqrt{x^2+1};\\
+3) \ f(x)\in \mathbb{C}^\infty(R), \ \text{функция} \ f(x) \ \text{и все ее производные}\\
+\hspace{0.5cm} \text{ограничены на} \ R;\\
+4) \ a(t)\in \mathbb{C}^\infty([0,T]),\ a(t)\neq 0,\ {\rm Re\,} (a(t))\geq 0;\\
+5) \ m,n\in N, \ \ p=m+n-1, \ \ m/n=r \text{ --- дробное}. \hspace{0.5cm}\\
+\end{array}
+\eqno(2)
+$$
+
+Сингулярности задачи (1) имеют вид:
+$$
+e^{-\varphi(t)/\varepsilon}, \ \ \sigma_i(t,\varepsilon)=e^{-\varphi(t)/\varepsilon} \int\limits_0^t e^{\varphi(s)/\varepsilon} s^{\frac{i+1}{n}-1}ds,
+$$
+где $\displaystyle{\varphi(t)=\int\limits_{0}^{t} s^{m/n}a(s)ds}$, $i=\overline{0,(p-1)}$, $p=m+n-1$.
+
+Согласно методу регуляризации, введем расширенную функцию
+$\widetilde{u}(x,t,\tau,\sigma)$, где $\sigma=\{\sigma_0,\sigma_1,\ldots,\sigma_{p-1}\}$, такую, что сужение
+$$
+\widetilde{u}(x,t,\tau,\sigma)\bigl|_{\tau=\varphi(t)/\varepsilon, \ \ \sigma_i=\sigma_i(t,\varepsilon)}= u(x,t)
+$$
+дает решение задачи (1).
+В результате получим задачу для расширенной функции $\widetilde{u}(x,t,\tau,\sigma,\varepsilon)$:
+$$
+\left\{ \begin{array}{l}
+\displaystyle{-q(t) \frac{\partial\widetilde{u}}{\partial\tau} +\sum\limits_{i=0}^{p-1} -q(t)(\sigma_i \frac{\partial\widetilde{u}}{\partial\sigma_i}) +q(t)\widetilde{u}=} \\
+\hspace{0.5cm} \displaystyle{= -\varepsilon\left( \dot{\widetilde{u}}+\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} \frac{\partial\widetilde{u}}{\partial\sigma_i} - \frac{\partial}{\partial x} \left( k(x) \frac{\partial\widetilde{u}}{\partial x}\right)\right)+h(x,t),}\\
+\widetilde{u}(x,0,0,0,\varepsilon)=f(x).
+\end{array} \right.
+\eqno(3)
+$$
+
+В дальнейшем волну будем опускать. Для решения задачи (3) введем пространство безрезонансных решений $E$, элементы которого имеют вид
+$$
+u=X(x,t)e^\tau+ \sum\limits_{i=0}^{p-1} Z^i(x,t)\sigma_i +W(x,t),
+$$
+где $X(x,t),Z^i(x,t),W(x,t)\in C^\infty(R\times (0,T]) \cap \mathbb{C}(R\times[0,T])$.
+
+Решение задачи (3) будем искать в виде ряда по $\varepsilon$:
+$$
+u=\sum\limits_{k=-1}^{\infty} \varepsilon^k u_k(x,t,\tau,\sigma),
+\eqno(4)
+$$
+где $\displaystyle{u_k(x,t,\tau,\sigma)=X_k(x,t)e^{\tau}+\sum\limits_{i=0}^{p-1} Z^i(x,t)\sigma_i +W_k(x,t)}$.
+
+Подставляя (4) в (3), получим серию итерационных задач, которые запишем покомпонентно:
+$$
+\left\{ \begin{array}{l}
+\smallskip
+\displaystyle{\frac{\partial X_k(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial X_{k}(x,t)}{\partial x}\right),}\\
+\displaystyle{\frac{\partial Z_k^i(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{k}(x,t)}{\partial x}\right), \ \ i=\overline{0,(p-1)},}\\
+\displaystyle{t^{m/n}a(t)W_k(x,t)=-\frac{\partial W_{k-1}(x,t)}{\partial t} }+\\
+\displaystyle{+\frac{\partial}{\partial x}\left(k(x)\frac{\partial W_{k-1}(x,t)}{\partial x}\right)-
+\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{k-1}(x,t)+\delta_0^k h(x,t),}\\
+X_k(x,0)+W_k(x,0)=\delta_k^0 f(x), \ \ k=\overline{-1,\infty}; \\
+\text{если индекс} \ (k-1)\le -2, \ \text{то слагаемые по определению}\\
+\ \ \text{ равны 0}.\\
+\end{array} \right.
+\eqno(5)
+$$
+
+Для решения итерационных задач используется теорема о разрешимости. Рассмотрим систему (5) при $k=-1$:
+$$
+\varepsilon^{-1}:\ \ \left\{ \begin{array}{l}
+\displaystyle{\frac{\partial X_{-1}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial X_{-1}(x,t)}{\partial x}\right),}\\
+\displaystyle{\frac{\partial Z_{-1}^i(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{-1}(x,t)}{\partial x}\right), \ \ i=\overline{0,(p-1)},}\\
+t^{m/n}a(t)W_{-1}(x,t)\equiv 0,\\
+\displaystyle{X_{-1}(x,0)+W_{-1}(x,0)=0}.\\
+\end{array} \right.
+\eqno(6)
+$$
+Из начальных условий при $k=-1$ системы (6) следует, что
+$$
+\left\{ \begin{array}{l}
+X_{-1}(x,t)\equiv 0,\\
+Z_{-1}^i(x,t) \text{ --- произвольное решение уравнения,}\\
+\ \ \ i=\overline{0,(p-1)},\\
+W_{-1}(x,t)\equiv 0.
+\end{array} \right.
+\eqno(7)
+$$
+Функции $Z_{-1}^i(x)$ найдем из условия разрешимости системы при~$\varepsilon^0$:
+$$
+\varepsilon^0: \ \ \left\{ \begin{array}{l}
+\smallskip
+\displaystyle{\frac{\partial X_0(x,t)}{\partial t}=\frac{\partial}{\partial x}( k(x)\frac{\partial X_{0}(x,t)}{\partial x})},\\
+\displaystyle{\frac{\partial_t Z_0^i(x)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{-1}(x,t)}{\partial x}\right), \ \ i=\overline{0,(p-1)},}\\
+\displaystyle{t^{m/n}a(t)W_0(x,t)=h(x,t)-\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{-1}(x,t),}\\
+X_0(x,0)+W_0(x,0)=f(x).\\
+\end{array} \right.
+\eqno(8)
+$$
+
+Разложим $h(x,t)$ по формуле Маклорена в точке $t=0$ по $t$:
+$$
+\begin{array}{c}
+\displaystyle{h(x,t)=h(x,0)+t\frac{\partial h(x,0)}{\partial t}+\ldots+ \frac{1}{\left[\frac{m}n\right]!}t^{\left[\frac{m}n\right]}\, \frac{\partial^{\left[\frac{m}n\right]}h(x,0)}{\partial t^{\left[\frac{m}n\right]}} +}\\
+\displaystyle{+t^{\left[\frac{m}n\right]+1} h_0(x,t).}
+\end{array}
+$$
+Из теоремы разрешимости уравнения для $W_0(x,t)$ следует,
+что если $i=n(j+1)-1$, $j=\overline{0,\left[\frac{m}n\right]}$, то положим
+$$
+Z_{-1}^{n(j+1)-1}(x,0)=\frac{1}{j!}\, \frac{\partial^j h(x,0)}{\partial t^j},
+$$
+здесь $\left[\frac{m}n\right]$ --- целая часть.
+Если $i\ne n(j+1)-1$, $i=\overline{0,(p-1)}$, то положим
+$$
+Z_{-1}^i(x,0)=0.
+$$
+
+Таким образом, функции $Z_{-1}(x,t)$ являются решениями задач Коши
+$$
+\left\{\begin{array}{l}
+\displaystyle{\frac{\partial Z_{-1}^{^{n(j+1)-1}}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^{^{n(j+1)-1}}_{-1}(x,t)}{\partial x}\right), \ \ j=\overline{0,\left[\frac{m}n\right]},}\\
+\displaystyle{Z_{-1}^{n(j+1)-1}(x,0)=\frac{1}{j!}\, \frac{\partial^j h(x,0)}{\partial t^j}}.
+\end{array}\right.
+$$
+Остальные функции $Z^i_{-1}(x,t)$ с индексами  $i\ne n(j+1)-1$, \linebreak $i=\overline{0,(p-1)}$ будут тождественно равны $Z_{-1}^i(x,t)\equiv 0,$  так как $Z_{-1}^i(x,0)=0.$
+
+В результате после сужения на регуляризирующие функции получим решение на <<$-1$>> шаге
+$$
+u_{-1}(x,t,\varepsilon)=\sum\limits_{j=0}^{\left[\frac{m}n\right]} Z_{-1}^{n(j+1)-1}(x,t)\sigma_{n(j+1)-1}(t,\varepsilon).
+\eqno(9)
+$$
+
+Система (8) имеет решения:
+
+a) $X_0(x,t)$ --- решение задачи Коши
+$$
+\left\{\begin{array}{l}
+\displaystyle{\frac{\partial X_{0}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial X_{0}(x,t)}{\partial x}\right)},\\
+\displaystyle{X_0(x,0)=f(x);}
+\end{array}\right.
+$$
+
+б) $Z^i_0(x,t)$ --- на данном этапе произвольное решение уравнения теплопроводности
+$$
+\frac{\partial Z^i_{0}(x,t)}{\partial t} =\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{0}(x,t)}{\partial x}\right), \ \ i=\overline{0,p-1};
+$$
+
+в) \ $\displaystyle{W_0(x,t)=\frac{h(x,t)-\sum\limits_{j=0}^{\left[\frac{m}n\right]} t^j Z_{-1}^{n(j+1)-1}(x,t)}{t^{m/n}a(t)}=t^{1-\left\{\frac{m}{n}\right\}}\widetilde{h}_0(x,t),}$
+где $\widetilde{h}_0(x,t)$ --- гладкая функция.
+
+Для определения начальных условий $Z_0^i(x,0)$ рассмотрим итерационную
+систему (5) на шаге <<1>>:
+$$
+\left\{ \begin{array}{l}
+\smallskip
+\displaystyle{\frac{\partial X_{1}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial X_{1}(x,t)}{\partial x}\right),}\\
+\displaystyle{\frac{\partial Z^i_{1}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{1}(x,t)}{\partial x}\right), \ \ i=\overline{0,(p-1)},}\\
+\displaystyle{t^{m/n}a(t)W_1(x,t)=-\frac{\partial W_{0}(x,t)}{\partial t}+\frac{\partial}{\partial x}\left( k(x)\frac{\partial W_0(x,t)}{\partial x}\right)}-\\
+\ \ -\displaystyle{\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{0}(x,t),}\\
+X_1(x,0)+W_1(x,0)=0.\\
+\end{array} \right.
+\eqno(10)
+$$
+Для определения $Z_0^i(x,0)$ подчиним уравнение относительно $W_1(x,t)$ условию разрешимости. Для этого разложим $\displaystyle{-\frac{\partial W_0(x,t)}{\partial t}+}$ \linebreak $\displaystyle{+\frac{\partial}{\partial x}\left( k(x)\frac{\partial W_0(x,t)}{\partial x}\right)} $ по формуле Маклорена в точке $t=0$. Предварительно вычислим
+$$
+\begin{array}{c}
+\displaystyle{\frac{\partial W_0(x,t)}{\partial t}-\frac{\partial}{\partial x}\left( k(x)\frac{\partial W_0(x,t)}{\partial x}\right) =}\\
+\displaystyle{=\left( 1-\left\{\frac{m}{n}\right\}\right) t^{-\{\frac{m}{n}\}} \widetilde{h}_0(x,t)+t^{1-\{\frac{m}{n}\}} \frac{\partial \widetilde{h}_0(x,t)}{\partial t}-}\\
+\displaystyle{-t^{1-\{\frac{m}{n}\}}\frac{\partial}{\partial x}\left( k(x)\frac{\partial \widetilde{h}_0(x,t)}{\partial x}\right)
+=-t^{-\left\{\frac{m}{n}\right\}} h_1(x,t).}
+\end{array}
+$$
+Тогда получим
+\begin{multline*}
+-\frac{\partial W_0(x,t)}{\partial t}+\frac{\partial}{\partial x}\left( k(x)\frac{\partial W_0(x,t)}{\partial x}\right)=\\
+=t^{-\left\{\frac{m}{n}\right\}} h_1(x,0)+ t^{1-\left\{\frac{m}{n}\right\}} \frac{\partial h_1(x,0)}{\partial t}+\ldots+ \\
+\displaystyle{+\frac{t^{k-\left\{\frac{m}{n}\right\}}}{k!}\,
+\frac{\partial^k h_1(x,0)}{\partial t^k}+ t^{k+1-\left\{\frac{m}{n}\right\}} \widetilde{h}_1(x,t)},
+\end{multline*}
+где $k=\left[ \frac{m}{n}+\left\{\frac{m}{n}\right\}\right],$ $\left\{\frac{m}{n}\right\}=\frac{s}{n}$, $1\le s\le n-1$. Если $\frac{m}{n}+\left\{\frac{m}{n}\right\}$ --- целое, то $k=\frac{m}{n}+\left\{\frac{m}{n}\right\}-1$.
+
+Для удовлетворения условиям разрешимости возможны следующие
+случаи:
+
+а) если $j-\left\{\frac{m}{n}\right\}=\frac{i+1}{n}-1$, т.е. $i=n(j+1)-n\{\frac{m}{n}\}-1$, $j=\overline{0,k}$, положим
+\begin{equation*}
+Z_0^i(x,0)=\frac{1}{j!}\, \frac{\partial^j h_1(x,0)}{\partial t^j},
+\end{equation*}
+отсюда $Z_0^i(x,t)$ являются решениями задач Коши
+$$
+\left\{ \begin{array}{l}
+\displaystyle{\frac{\partial Z^i_{0}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{0}(x,t)}{\partial x}\right)}\\
+\displaystyle{Z_0^i(x,0)=\frac{1}{j!}\, \frac{\partial^j h_1(x,0)}{\partial t^j};}
+\end{array}\right.
+\eqno(11)
+$$
+
+б) если $i\ne n(j+1)-n\{\frac{m}{n}\}-1$, $j=\overline{0,k}$, положим
+$Z_0^i(x,0)=0.$
+
+Следовательно в этом случае $Z_0^i(x,t)\equiv 0.$
+
+На данном шаге мы определили слагаемое $u_0(x,t)$, а следовательно после
+сужения на регуляризирующие функции  главный член асимптотики имеет
+вид
+$$
+\begin{array}{c}
+\displaystyle{u_0(x,t)=f(x)e^{-\varphi(t)/\varepsilon}+}\\
+\displaystyle{+\sum\limits_{j=0}^{k} Z_0^{n(j+1)-n\{\frac{m}{n}\}-1}(x,t) \sigma_{n(j+1)-n\{\frac{m}{n}\}-1}(t,\varepsilon)+ }\\
+\displaystyle{+\frac{h(x,t)-\sum\limits_{j=0}^{\left[\frac{m}{n}\right]}t^j Z_{-1}^{n(j+1)-1}(x,t)}{t^{m/n}a(t)}.}
+\end{array}
+\eqno(12)
+$$
+Главный член асимптотики запишется в виде суммы
+$$
+\begin{array}{c}
+\displaystyle{u_{\text{гл}}(x,t)=\frac1{\varepsilon}\sum\limits_{j=0}^{\left[\frac{m}n\right]} Z_{-1}^{n(j+1)-1}(x,t)\sigma_{n(j+1)-1}(t,\varepsilon)+}\\ \displaystyle{+\sum\limits_{j=0}^{k} Z_0^{n(j+1)-n\{\frac{m}{n}\}-1}\sigma_{n(j+1)-n\{\frac{m}{n}\}-1}(t,\varepsilon)} + f(x)e^{-\varphi(t)/\varepsilon}+ \\
++ \displaystyle{t^{1-\left\{\frac{m}{n}\right\}} \widetilde{h}_0(x,t).}
+\end{array}
+\eqno(13)
+$$
+
+Решение на <<1>> шаге примет вид
+$$
+\left[ \begin{array}{l}
+\smallskip
+\displaystyle{W_1(x,t)=\frac{t^{-\left\{\frac{m}{n}\right\}} h_1(x,t)-\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{0}(x,t)}{t^{m/n}a(t)}=}\\
+\ \ \ =t^{\{1-\{2\{\frac{m}{n}\}\}\}}h_1(x,t),\\
+Z_1^i(x,t) \text{ --- общее решение уравнения теплопроводности},\\
+\displaystyle{\frac{\partial Z^i_{1}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{1}(x,t)}{\partial x}\right), \ \ i=\overline{0,(p-1)}}.
+\end{array} \right.
+\eqno(14)
+$$
+Отсюда следует, что если:
+
+1) $2\left\{\frac{m}{n}\right\}<>1$, то $W_1(x,0)=0$ и $X_1(x,0)=0$, следовательно $X_1(x,t)\equiv 0$;
+
+\smallskip
+2) $2\left\{\frac{m}{n}\right\}=1$, то $W_1(x,0)=h_1(x,0)$ и $X_1(x,0)=-h_1(x,0)$, следовательно $X_1(x,t)$ --- решение задачи Коши
+$$
+\left\{ \begin{array}{l}
+\smallskip
+\displaystyle{\frac{\partial X_{1}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial X_{1}(x,t)}{\partial x}\right),}\\
+X_1(x,0)=-h_1(x,0).
+\end{array}\right.
+$$
+
+Произвольные функции $Z_1^{i}(x,t)$ находятся из условия разрешимости системы (5) при $k=2$.
+
+По данной схеме можно определить любой член асимптотического регуляризованного ряда.
+
+Пусть решены $(N+1)$ итерационных задач. Тогда решение задачи Коши после сужения на регуляризирующие функции можно представить в виде
+$$
+u(x,t,\varepsilon)=\sum\limits_{k=-1}^{N} u_k(x,t,\varepsilon) \varepsilon^k+\varepsilon^{N+1} R_N(x,t,\varepsilon).
+\eqno(15)
+$$
+где $\displaystyle{u_k(x,t,\varepsilon)=X_k(x,t)e^{-\frac{\varphi(t)}{\varepsilon}}+\sum\limits_{i=0}^{p-1} Z^i(x,t)\sigma_i(t,\varepsilon) +W_k(x,t)}.$
+
+Подставив (15) в (1) и учитывая, что $u_k(x,t,\varepsilon)$ являются решениями итерационных задач, получим задачу Коши для определения остатка $R_N(x,t,\varepsilon)$:
+$$
+\left\{ \begin{array}{l}
+\displaystyle{L(R)=\varepsilon\left(\frac{\partial R_N(x,t)}{\partial t}- \frac{\partial}{\partial x} \left( k(x)\frac{\partial R_N(x,t)}{\partial x}\right)\right) +}\\
+\ \ \ +t^{m/n} a(t)R_N=H(x,t,\varepsilon),\\
+R_N(x,0,\varepsilon)=0, \ \ -\infty<x<+\infty,\\
+\end{array} \right.
+\eqno(16)
+$$
+где $\displaystyle{
+H(x,t)=-\frac{\partial W_N(x,t)}{\partial t} +\frac{\partial}{\partial x} \left( k(x)\frac{\partial W_{N}(x,t)}{\partial x}\right) -\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z_N^i(x,t)=}$ $=-q(t)W_{N+1}(x,t),$
+
+\textbf{Теорема} (оценка остаточного члена). {\it Пусть выполнены условия:}
+
+{\it 1) условия $1)\div 5)$ задачи Коши $(1)$};
+
+{\it 2) $\exists M_1>0$ $\forall(x,t)\in(-\infty,+\infty)\times[0,T]$ $\forall\varepsilon\in(0,\varepsilon_0]$ \\
+$|H(x,t,\varepsilon)|\le M_1$;}
+
+{\it 3) $\exists M>0$ $0<k_0\leq k(x)<M(x^2+1),$ $|k'(x)|<M \sqrt{x^2+1}$.}
+
+\noindent {\it Тогда $\exists \mathbb{C}>0$ $\forall(x,t)\in(-\infty,+\infty)\times[0,T]$ $\forall\varepsilon\in(0,\varepsilon_0]$ $|R_n(x,t,\varepsilon)|\le \mathbb{C}.$ }
+
+% Оформление списка литературы
+\litlist
+
+
+1. {\it Тихонов А.Н.} О зависимости решений дифференциальных уравнений от малого параметра~/ А.Н.~Тихонов~// Математический сборник.~--- 1948.~--- Т.~22(64), №~2.~--- С.~193--204.
+
+2. {\it Маслов В.П.} Теория возмущений и асимптотические методы~/ В.П.~Маслов.~--- М.~: МГУ, 1965.~--- 554~с.
+
+3. {\it Васильева А.Б.} Асимптотические разложения решений сингулярно возмущенных уравнений~/ А.Б.~Васильева, В.Ф.~Бутузов.~--- М.~: Наука, 1973.~--- 272~с.
+
+4. {\it Ломов С.А.} Введение в общую теорию сингулярных возмущений~/ С.А.~Ломов. ~--- М.~: Наука, 1981.~--- 400~с.
+
+5. {\it Елисеев А.Г.} Теория сингулярных возмущений в случае спектральных особенностей предельного оператора~/ А.Г.~Елисеев, \linebreak С.А.~Ломов~// Математический сборник.~--- 1986.~--- Т.~131, №~4.~--- С.~544--557.
+
+6. {\it Елисеев А.Г.} Об аналитических решениях по параметру сингулярно возмущенного уравнения при наличии простейшей точки поворота у предельного оператора~/ А.Г.~Елисеев~// Вестник МЭИ.~--- 1995.~--- №~6.~--- С.~41--47.
+
+7. {\it Ильин А.М.} Линейные уравнения второго порядка параболического типа~/ А.М.~Ильин, А.С.~Калашников, О.А.~Олейник~// УМН.~--- 1962.~--- Т.~17, вып.~3(105).--- С.~3--116.
+
+8. {\it Ратникова Т.А.} Singularly Perturbed Cauchy Problem for a Parabolic Equation with a Rational <<Simple>> Turning Point~/ Т.А.~Ратникова~// Axioms.~--- 2020.~--- №~9, 138.~--- http://doi.org/10.3390/ axioms9040138.
+
+\end{document}

@@ -1,0 +1,231 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+\vzmstitle[
+	\footnote{This research was funded by
+the Science Committee
+of the MES of RK
+(Grant No.~AP09259780, 2021-2023).}
+]{
+	Solvability of a heat boundary value problem in a
+degenerating domain in Sobolev spaces
+}
+\vzmsauthor{Kosmakova}{M.\,T.}
+\vzmsinfo{Buketov Karaganda University, Karaganda, Kazakhstan; {\it svetlanamir578@gmail.com}}
+\vzmsauthor{Tuleutaeva}{Zh.\,M.}
+\vzmsinfo{Karaganda Technical University, Karaganda, Kazakhstan; {\it erasl-79@mail.ru}}
+
+\vzmscaption
+
+In a noncylindrical domain degenerating at the initial moment of time:
+$$
+Q_{xt_{1}}=\left\{(x,t_{1})\,\Big|\quad x=(x_{1}, x_{2})\in R^{2},\; \,|x|\leq t_{1}; \; \,
+0< t_{1}<T_{1}<\infty \right\}
+$$
+the following boundary value problem of heat conduction is investigated for solvability
+\begin{equation}\label{32-1}
+\frac{\partial u}{\partial t_1}=a^{2}\triangle_x u+f(x,t_{1}),
+\end{equation}
+\begin{equation}\label{33-1}
+u|_{\sum_{xt_{1}}}=0,
+\end{equation}
+\begin{equation}\label{34-1}
+u|_{t_{1}=0}=0;\, x\in\Omega_{t_{1}}.
+\end{equation}
+Hear $\sum_{xt_{1}}$ is the lateral surface of the cone $Q_{xt_{1}}$,
+$\Omega_{t_{1}}$ is the section of the cone $Q_{xt_{1}}$ by the plane  $t_{1}$.
+
+To study it, first, in the cylinder the following boundary value problem is posed for the heat equation:
+
+in the domain $Q_{yt}=\{(y_{1}, y_{2}; t) | \, |y|<1, \, 0<t<T \}$,  find a solution to BVP
+\begin{equation}\label{7}
+\tilde{u}_{t}=a^{2}\triangle_{y}\tilde{u}+\sum_{i=1}^{2}\gamma_{i}(y_{i},\,t)\tilde{u}_{y_{i}}+\beta(t)\tilde{f}(y,t),
+\end{equation}
+\begin{equation}\label{5}
+\tilde{u}(y,\,t)|_{|y|=1}=0,
+\end{equation}
+\begin{equation}\label{6}
+\tilde{u}(y,\,t)|_{t=0}=\tilde{u}_{0}(y),
+\end{equation}
+and the functions $\beta(t);\,\gamma_{i}(y_{i},\,t),i=1,2;$
+satisfy the estimates
+\begin{equation}\label{6-1}
+|\beta(t)|\leq \beta; |\beta'(t)|\leq\beta, \, {\forall t\in[0,\,T]},
+\end{equation}
+\begin{equation}\label{6-2}
+|\gamma_{i}(y_{i}, t)|\leq\gamma; \left|\frac{\partial \gamma_{i}(y,\,t)}{\partial t}\right|\leq\gamma, i=1,2,\, \forall(y,\,t)\in Q_{yt},
+\end{equation}
+where $\beta,\, \gamma$ are the given positive constants.
+
+The space
+$$
+\tilde {W}(0,\,T)=$$
+$$=\{\tilde{\psi}(y,\,t)\,\Big | \,\tilde \psi(y,t)\in L_{2}(0,\,T;H_{0}^{1}(\Omega)); \;
+\tilde{\psi_{t}}(y,\,t)\in L_{2}(0,\,T;H^{-1}(\Omega))\}.
+$$
+with norm
+$$
+\|\psi\|_{\tilde{W}(0,\,T)}=
+\left(\int_{0}^{T}\|\tilde{\psi}(y,\,t)
+\|_{H_{0}^{1}(\Omega)}^{2}dt
++\int_{0}^{T}\|\tilde{\psi}_{t}(y,t)\|_{H^{-1}(\Omega)}^{2}\,
+dt\right)^{\frac{1}{2}},
+$$
+is Hilbert [1].
+
+The spaces for the input data of BVP (\ref{7}) -- (\ref{5}) -- (\ref{6}) are:
+\begin{equation}\label{8}
+\begin{cases}
+\tilde{f}(y,t)\in L_{2}(0,\,T;H^{-1}(\Omega));\\
+\tilde{u}_{0}(y)\in L_{2}(\Omega)
+\end{cases}
+\end{equation}
+\paragraph{Theorem~1.}
+{\it For all $\tilde{f}(y,t)$ and $\tilde{u}_{0}(y)$ belonging to classes (\ref{8}) there is a unique solution $\tilde{u}(y, t)\in\tilde{W}(0, T)$ BVP (\ref{7})-(\ref{5})-(\ref{6}), and the solution $\tilde {u} (y, t)$ depends continuously on $\{\tilde{f}(y,t); \tilde{u}_{0}(y)\}$.}
+
+The proof of Theorem~1 follows from the results of works, for example, [2, p.364].
+
+Let us introduce the notation:\\
+$
+Q_{xt_{1}}=\{(x;\,t_{1})\,|x|<t_{0}+t_{1},\, t_{1}\in(0, T_{1})\}$,
+where $x=(x_{1}; x_{2}); t_{0}>0;\,T_{1}>0-const,$\\
+ $\sum_{xt_1}=\left\{(x,\,t_{1}),\,| |x|=t_{0}+t_{1};\, t\in(0,\,T_{1})\right\}$,\\
+$\Omega_{t_{1}}=\{x\in R^{2}\,\, | \,|x|<t_{0}+t_{1}, \,t_{1}\in(0;\,T_{1})\}$ is an open bounded domain in $R^{n}$, a section of the cone $Q_{xt_{1}}$ for a given $t_1 \in [0, \, T_1]$, \\ 
+$\Gamma_{t_1}$ is the boundary of the domain $\Omega_{t_{1}}$.
+
+In the cone $Q_{xt_{1}}$ we consider a BVP for the heat equation
+\begin{equation}\label{1}
+\frac{\partial u(x,\,t)}{\partial t_{1}}=a^2\left(\frac{{\partial}^2u(x,\,t)}{{\partial x_{1}}^2}+\frac{{\partial}^2u(x,\,t)}{{\partial x_{2}}^2}\right)+f(x,\, t_{1})
+\end{equation}
+\begin{equation}\label{2}
+u|_{\sum_{xt_1}}=0,
+\end{equation}
+\begin{equation}\label{3}
+u|_{t_{1}=0}=u_{0}(x).
+\end{equation}
+We also require the matching condition: $u_{0}(0)=0$.
+
+By bijective change of variables [3]
+$$
+x_{i}=\frac{t_{0}}{1-t_{0}t}\cdot y_{i};\,i=1,2;\, t_{1}=\frac{t_{0}^{2}t}{1-t_{0}t},
+$$
+BVP (\ref{1})--(\ref{3}) is transformed into a particular case of the problem investigated above in the theorem 1. 
+There is a correspondence of function spaces in terms of independent variables $(y,t)\in Q_{yt}$ and $(x,\,t_{1})\in Q_{xt_{1}}$:
+\begin{equation}\label{1-10}
+\begin{cases}
+\tilde{f}(y,t)\in L_{2}(0,T;H^{-1}(\Omega))\Leftrightarrow f(x,t_{1})\in L_{2}(0,T_{1};H^{-1}(\Omega_{t_{1}})), \\
+\tilde{u}_{0}(y)\in L_{2}(\Omega)\Leftrightarrow u_{0}(x)\in L_{2}(\Omega_{t_{1}}), \\
+\tilde{W}(0,T)\Leftrightarrow \\ \Leftrightarrow W(0,T_{1})=\{\psi(x,t_{1})|\,
+\psi(x,t_{1})\in L_{2}(0,T_{1};H_{0}^{1}(\Omega_{t_{1}})), \\
+\varphi_{t_{1}}(x,t_{1})\in L_{2}(0,T_{1};H^{-1}(\Omega_{t_{1}}))\}.
+\end{cases}
+\end{equation}
+\paragraph{Theorem~2.}
+{\it
+For all $f(x,t_{1})$ and $u_{0}(x)$ belonging to classes (\ref{1-10}) there exist the solution $u(x, t_{1})\in W(0, T_{1})$ to BVP (\ref{1}) --- (\ref{3}).
+}
+
+Let
+$$
+n\in N^{*}=\left\{n\in N \,\Big|\,\, n\geq n_{1};\,\frac{1}{n_{1}}<T_{1}\right\}; \quad x=(x_{1}, x_{2})\in R^{2}. $$
+Consider the family of truncated cones
+$$
+Q_{xt_{1}}^{n}=\left\{(x,t_{1})\,\Big|\, \,|x|\leq t_{1}; t_{1}\in \left(\frac{1}{n}; T_{1}\right),\,T_{1}<\infty \right\}.
+$$
+
+We use the notation:
+$$
+\Omega_{t_{1}}^{n}=\left\{x\in R^{2} \,\Big|\, |x|\leq t_{1}\right\}
+$$
+is the section of the cone for a given $t_{1}\in \left(\dfrac{1}{n}; T_{1}\right)$;
+
+$\sum_{xt_{1}}^{n}$ is the lateral surface of $Q_{xt_{1}}^{n}$.
+
+The following inclusions take place
+$$
+Q_{xt_{1}}^{n}\subset Q_{xt_{1}}^{n+1}\subset...\subset Q_{xt_{1}},
+$$
+i.e.
+$$
+\lim_{n\rightarrow \infty} Q_{xt_{1}}^{n}=Q_{xt_{1}}.
+$$
+
+In a non-degenerating domain $Q_{xt_{1}}^{n}$ (for every final value $n\in N^{*}$) we consider the BVP:
+\begin{equation}\label{32}
+\frac{\partial u_{n}}{\partial t_1}=a^{2}\triangle_x u_{n}+f_{n}(x,t_{1}),
+\quad f_{n}\in L_{2}\left(\dfrac{1}{n},T_{1};\,H^{-1}(\Omega_{t_{1}}^{n})\right)
+\end{equation}
+\begin{equation}\label{33}
+u_{n}|_{\sum_{xt_{1}}^{n}}=0,
+\end{equation}
+\begin{equation}\label{34}
+u_{n}|_{t_{1}=\frac{1}{n}}=0;\, x\in\Omega_{t_{1}}^{n}.
+\end{equation}
+
+Let us introduce the class of functions $v(x, t_1)$:
+\begin{equation}\label{W_n}
+W_n = \left\{ v\in L_{2}\left(\dfrac{1}{n},T_{1};\,H_0^{1}(\Omega_{t_{1}}^{n})\right); \;
+\frac{\partial v}{\partial t_1} \in
+ L_{2}\left(\dfrac{1}{n},T_{1};\,H^{-1}
+(\Omega_{t_{1}}^{n})\right) \right \}.
+\end{equation}
+
+The solution to problem (\ref{32}) -- (\ref{34}) is sought in the class of functions (\ref{W_n}).
+By virtue of the statement of the theorem 2 each problem (\ref{32}) -- (\ref{34})
+has a solution  $u_{n}(x,t_{1})$.
+
+For these solutions, a priori estimates are established that are uniform with respect to $n$.
+Based on these a priori estimates, the following theorem is proved.
+
+\paragraph{Theorem~3.}
+{\it
+BVP (\ref{32}) -- (\ref{34})  has the only solution $u_{n}(x, t_{1})$ from (\ref{W_n}) for all $f_{n}(x,t_{1})\in L_{2}\left(\dfrac{1}{n},T_{1};\,H^{-1}(\Omega_{t_{1}}^{n})\right)$, and the solution $u_{n}(x, t_{1})$ continuously depends on  $f_{n}(x,t_{1})$.
+}
+
+\paragraph{Theorem~4.}
+{\it In the cone
+$Q_{xt_{1}}$
+BVP (\ref{32-1}) -- (\ref{34-1}) is
+uniquely solvable in the space
+$$W = \left\{v\,\big|\, v\in L_{2}\left(0,T_{1};\,H_0^{1}(\Omega_{t_{1}})\right); \;
+\frac{\partial v}{\partial t_1} \in
+ L_{2}\left(0,T_{1};\,H^{-1}
+(\Omega_{t_{1}})\right) \right \}.$$
+for all $f(x,t_{1})\in L_{2}\left(0,T_{1};\,H^{-1}(\Omega_{t_{1}})\right)$
+}
+
+For the proof, consider a sequence of functions on $Q_{xt_{1}}, n\in N^*:$
+\begin{equation}\label{42}
+\tilde{u}_{n}(x,t_{1})=
+\begin{cases}
+u_{n}(x,t_{1}),\,\text{if}\,\, (x,t_{1})\in Q_{xt_{1}}^{n},\\
+0,\,\,   \text{if}\,\, x,t_{1}\in Q_{xt_{1}}\setminus Q_{xt_{1}}^{n},
+\end{cases}
+\end{equation}
+where $u_{n}(x,t_{1})$ are respectively the only solutions to problems (\ref{32})
+-- (\ref{34}).
+Similarly, we introduce the sequence $\tilde{f}_{n}(x,t_{1})$.
+
+The sequence (\ref{42}) $\tilde{u}_{n}(x,t_{1})$ satisfies the proved a priori estimates.
+
+It is shown that the sequence  $\{\tilde{u}_{n}(x,\,t_{1})\}_{n=1}^{\infty}$ is bounded.
+Then we can extract from it the sequence $\{\tilde{u}_{m}\}_{m\in N^{*}}$:
+\begin{equation*}
+\tilde{u}_{m}\rightarrow z \quad \text{weakly in}  \quad H_{0}^{1}(\Omega_{t_{1}}).
+\end{equation*}
+$z(x,\,t_{1})$ is a unique solution to BVP (\ref{32-1}) -- (\ref{34-1}) in $W$.
+
+\litlist
+
+1. {\it Y. Benia, and B.K. Sadallah} Existence of solutions to Burgers equations in domains that can be transformed into rectangles // Electron. J. Diff. Equ. -- 2016. -- Vol. 157. -- P. 1-13.
+
+2. {\it 	O.A. Ladyzhenskaya; V.A. Solonnikov; N.N. Uraltseva}
+ Linear and quasilinear equations of parabolic type. New York: AMS, 1968.
+
+3. {\it J.L. Lions, E. Magenes} Non-Homogeneous Boundary Value Problems and Applications. Berlin: Springer, 1972.
+
+\end{document}
+
+1. {\it O.A. Ladyzhenskaya}
+ The Boundary Value Problems of Mathematical Physics. New York: Springer-Verlag, 1985.

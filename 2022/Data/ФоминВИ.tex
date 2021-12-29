@@ -1,0 +1,107 @@
+\documentclass{vzmsthesis}
+
+\begin{document}
+
+\vzmstitle[
+]{
+	Об интеграле Римана операторной функции операторного переменного
+}
+\vzmsauthor{Фомин}{В.\,И.}
+\vzmsinfo{Тамбов, ТГУ им. Г.Р.Державина; {\it vasiliyfomin@bk.ru}}
+
+\vzmscaption
+
+Пусть $E$ -- вещественное банахово пространство; $L(E)$-- полная 
+нормированная алгебра ограниченных линейных операторов, действующих в 
+пространстве $E$; $A,B \in L(E)$; $A \ne B$. Рассмотрим операторный отрезок 
+${\left[ {A,B} \right]} =$ \\ ${\left\{ {\Lambda = (1 - t)A + tB:0 \le t \le 1} 
+\right\}}$. Элементы отрезка ${\left[ {A,B} \right]}$ условимся называть 
+операторными точками. Оператор из ${\left[ {A,B} \right]}$, получаемый при 
+$t = t_{\ast}  $, будем обозначать через $\Lambda _{\ast}  $. Введём на 
+${\left[ {A,B} \right]}$ отношение порядка: $\Lambda _{\ast}  \preceq \Lambda 
+_{\ast \ast}  $, если $t_{\ast}  \le t_{\ast \ast}  $ (выполнимость свойств 
+рефлективности, транзитивности и антисимметричности очевидна). Заметим, что 
+$A \preceq \Lambda \preceq B$ для любого $\Lambda \in {\left[ {A,B} \right]}$. 
+Если $AB = BA$, то $\Lambda _{1} \Lambda _{2} = \Lambda _{2} \Lambda _{1} $ 
+для любых $\Lambda _{1} ,\Lambda _{2} \in {\left[ {A,B} \right]}$. Если 
+$\Lambda _{\ast}  ,\Lambda _{\ast \ast}   \in {\left[ {A,B} \right]}$, 
+$\Lambda _{\ast}  \prec \Lambda _{\ast \ast}  $, то ${\left[ {\Lambda _{\ast 
+} ,\Lambda _{\ast \ast}}   \right]} \subseteq {\left[ {A,B} \right]}$. Пусть 
+задана функция $Y = \Phi (\Lambda )$, $\Lambda \in D(\Phi )$, $D(\Phi ) 
+\subseteq L(E)$; $R(\Phi ) \subseteq L(E)$ и существуют такие $A,B \in 
+D(\Phi )$, что ${\left[ {A,B} \right]} \subseteq D(\Phi )$ . Рассмотрим 
+произвольное разбиение отрезка ${\left[ {0,1} \right]}$ на $n$ частей: 
+${\left[ {0,1} \right]} = {\bigcup\limits_{i = 1}^{n} {{\left[ {t_{i - 1} 
+,t_{i}}  \right]}}} $, где $t_{0} = 0$, $t_{n} = 1$, $t_{i - 1} < t_{i} $, 
+$i = \overline {1,n} $. Это разбиение порождает разбиение отрезка ${\left[ 
+{A,B} \right]}$ на $n$ частей: ${\left[ {A,B} \right]} = {\bigcup\limits_{i 
+= 1}^{n} {{\left[ {\Lambda _{i - 1} ,\Lambda _{i}}  \right]}}} $, где 
+$\Lambda _{0} = A$, $\Lambda _{n} = B$, $\Lambda _{i - 1} \prec \Lambda _{i} 
+$, $i = \overline {1,n} $. Рассмотрим диаметры полученных разбиений $\mu = 
+{\mathop {\max} \limits_{1 \le i \le n}} \delta t_{i} $, $\nu = {\mathop 
+{\max} \limits_{1 \le i \le n}} {\left\| {\Delta \Lambda _{i}}  \right\|}$, 
+где $\delta t_{i} = t_{i} - t_{i - 1} $, $\Delta \Lambda _{i} = \Lambda _{i} 
+- \Lambda _{i - 1} $, $i = \overline {1,n} $. Заметим, что $\nu = {\left\| 
+{B - A} \right\|}\mu $, следовательно, $\nu \to 0 \Leftrightarrow \mu \to 
+0$. Выберем на каждой части разбиения отрезка ${\left[ {0,1} \right]}$ 
+произвольным образом по одной точке: $\psi _{i} \in {\left[ {t_{i - 1} 
+,t_{i}}  \right]}$, $i = \overline {1,n} $. Это индуцирует выбор на каждой 
+части разбиения отрезка ${\left[ {A,B} \right]}$ по одной операторной точке: 
+$\Psi _{i} \in {\left[ {\Lambda _{i - 1} ,\Lambda _{i}}  \right]}$, $i = 
+\overline {1,n} $, где $\Psi _{i} = \left( {1 - \psi _{i}}  \right)A + \psi 
+_{i} B$. Соответствующая интегральная сумма функции $Y = \Phi (\Lambda )$ 
+имеет вид
+\begin{equation}
+\label{eq1}
+S_{n} \left( {\Lambda _{i} ,\Psi _{i}}  \right) = {\sum\limits_{i = 1}^{n} 
+{\Phi (\Psi _{i} )\Delta \Lambda _{i}}}  .
+\end{equation}
+
+Определение 1. Оператор $H \in L(E)$ называется пределом интегральных сумм 
+(\ref{eq1}) при $\nu \to 0$, если для $\forall \varepsilon > 0 \quad \exists \delta = 
+\delta (\varepsilon ) > 0:\forall \nu < \delta $ и любом выборе 
+операторных точек $\Psi _{i} $ выполняется неравенство ${\left\| {S_{n} 
+\left( {\Lambda _{i} ,\Psi _{i}}  \right) - H} \right\|} < \varepsilon $. 
+Обозначение:
+
+\begin{equation}
+\label{eq2}
+H = {\mathop {\lim} \limits_{\nu \to 0}} S_{n} \left( {\Lambda _{i} ,\Psi 
+_{i}}  \right).
+\end{equation}
+
+Определение 2. Операторная функция $Y = \Phi (\Lambda )$ называется 
+интегрируемой по Риману на отрезке ${\left[ {A,B} \right]}$, если существует 
+предел вида (\ref{eq2}), при этом оператор $H$ называется интегралом Римана от 
+функции $Y = \Phi (\Lambda )$ на отрезке ${\left[ {A,B} \right]}$ и 
+обозначается символом ${\int\limits_{A}^{B} {\Phi (\Lambda )d\Lambda}}  $. 
+Таким образом, по определению,
+
+\begin{equation}
+\label{eq3}
+{\int\limits_{A}^{B} {\Phi (\Lambda )d\Lambda}}   = {\mathop {\lim 
+}\limits_{\nu \to 0}} S_{n} \left( {\Lambda _{i} ,\Psi _{i}}  \right){\rm 
+.}
+\end{equation}
+
+Некоторые свойства интеграла Римана вещественной функции переносятся на 
+интеграл вида (\ref{eq3}). В частности, ${\int\limits_{A}^{B} {{\rm I}d\Lambda}}   = 
+B - A$; ${\int\limits_{A}^{B} {\Phi (\Lambda )d\Lambda}}   = - 
+{\int\limits_{B}^{A} {\Phi (\Lambda )d\Lambda}}  $; если $\Phi _{1} (\Lambda 
+)$, $\Phi _{2} (\Lambda )$ интегрируемы на ${\left[ {A,B} \right]}$, то 
+$\Phi _{1} (\Lambda ) + \Phi _{2} (\Lambda )$ интегрируема на ${\left[ {A,B} 
+\right]}$ и ${\int\limits_{A}^{B} {{\left[ {\Phi _{1} (\Lambda ) + \Phi _{2} 
+(\Lambda )} \right]}d\Lambda}}   =  \quad {\int\limits_{A}^{B} {\Phi _{1} 
+(\Lambda )d\Lambda}}   + {\int\limits_{A}^{B} {\Phi _{2} (\Lambda )d\Lambda 
+}} $; если $\Phi (\Lambda )$ интегрируема на ${\left[ {A,B} \right]}$, то 
+для любого $\alpha \in \mathbb{R}$  функция $\alpha \Phi (\Lambda )$ интегрируема на 
+${\left[ {A,B} \right]}$ и ${\int\limits_{A}^{B} {\alpha \Phi (\Lambda 
+)d\Lambda}}   = \alpha {\int\limits_{A}^{B} {\Phi (\Lambda )d\Lambda}}  $.
+
+Построение интегральных сумм (\ref{eq1}) оказалось возможным в силу наличия операции 
+умножения элементов алгебры $L(E)$. Следовательно, предложенная выше 
+конструкция интеграла Римана пригодна для векторных функций векторного 
+переменного, действующих в вещественном нормированном пространстве, 
+снабжённом дополнительной операцией умножения элементов. 
+
+\end{document}
