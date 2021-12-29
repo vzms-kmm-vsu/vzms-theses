@@ -8,7 +8,7 @@ for file in `ls Data/*.tex`; do
 	mv $file.1.tmp $file;
 
 	touch $file; # That's magic. Just don't touch it, otherwise grep will delete all files.
-	cat $file | grep -v '\\end{document}' | grep -v '\\begin{document}' | grep -v '\\documentclass{vzmsthesis}'> $file.2.tmp;
+	cat $file | grep -v '\\end{document}' | grep -v '\\begin{document}' | grep -v '\\documentclass{vzmsthesis}' | grep -v '\\inputencoding{cp1251}'> $file.2.tmp;
 	mv $file.2.tmp $file;
 
 	# Remove blank lines from begin and end of a file
