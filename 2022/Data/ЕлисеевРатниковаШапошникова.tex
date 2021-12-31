@@ -1,6 +1,3 @@
-
-
-
 \vzmstitle[
 ]{
 	Развитие метода регуляризации для сингулярно возмущённой задачи Коши с <<простой>> рациональной точкой поворота для параболического уравнения
@@ -84,8 +81,8 @@ $$
 \displaystyle{+\frac{\partial}{\partial x}\left(k(x)\frac{\partial W_{k-1}(x,t)}{\partial x}\right)-
 \sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{k-1}(x,t)+\delta_0^k h(x,t),}\\
 X_k(x,0)+W_k(x,0)=\delta_k^0 f(x), \ \ k=\overline{-1,\infty}; \\
-\text{если индекс} \ (k-1)\le -2, \ \text{то слагаемые по определению}\\
-\ \ \text{ равны 0}.\\
+\text{если индекс} \ (k-1)\le -2, \ \text{то слагаемые}\\
+\ \ \text{по определению равны 0}.\\
 \end{array} \right.
 \eqno(5)
 $$
@@ -170,7 +167,7 @@ $$
 \frac{\partial Z^i_{0}(x,t)}{\partial t} =\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{0}(x,t)}{\partial x}\right), \ \ i=\overline{0,p-1};
 $$
 
-в) \ $\displaystyle{W_0(x,t)=\frac{h(x,t)-\sum\limits_{j=0}^{\left[\frac{m}n\right]} t^j Z_{-1}^{n(j+1)-1}(x,t)}{t^{m/n}a(t)}=t^{1-\left\{\frac{m}{n}\right\}}\widetilde{h}_0(x,t),}$
+в) $\displaystyle{W_0(x,t)=\frac{\!h(x,t)-\!\sum\limits_{j=0}^{\left[\frac{m}n\right]} t^j Z_{-1}^{n(j+1)-1}(x,t)\!}{t^{m/n}a(t)}=t^{1-\left\{\frac{m}{n}\right\}}\widetilde{h}_0(x,t),}$
 где $\widetilde{h}_0(x,t)$ "--- гладкая функция.
 
 Для определения начальных условий $Z_0^i(x,0)$ рассмотрим итерационную
@@ -290,8 +287,12 @@ R_N(x,0,\varepsilon)=0, \ \ -\infty<x<+\infty,\\
 \end{array} \right.
 \eqno(16)
 $$
-где $\displaystyle{
-H(x,t)=-\frac{\partial W_N(x,t)}{\partial t} +\frac{\partial}{\partial x} \left( k(x)\frac{\partial W_{N}(x,t)}{\partial x}\right) -\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z_N^i(x,t)=}$ $=-q(t)W_{N+1}(x,t),$
+где
+\begin{multline*}
+H(x,t)=-\frac{\partial W_N(x,t)}{\partial t} +\frac{\partial}{\partial x} \left( k(x)\frac{\partial W_{N}(x,t)}{\partial x}\right) -
+\\-
+\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z_N^i(x,t)=-q(t)W_{N+1}(x,t),
+\end{multline*}
 
 \textbf{Теорема} (оценка остаточного члена). {\it Пусть выполнены условия:}
 

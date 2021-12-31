@@ -68,7 +68,11 @@ S_i^T(X) & 0 & -\ell_i(X)
 \end{equation}
 
 where:
-$$J(i)=X_iA^T(i)+A(i)X_i+B(i)Y_i+Y_i^TB^T+\lambda_{ij}X_i+A(i)(1-\tau^+)^{-1}UA^T(i)$$
+\begin{multline*}
+	J(i)=X_iA^T(i)+A(i)X_i+B(i)Y_i+Y_i^TB^T+
+	\\+
+	\lambda_{ij}X_i+A(i)(1-\tau^+)^{-1}UA^T(i)
+\end{multline*}
 $$S_i(X)=[\sqrt{\lambda_{i1}}X_i,\cdots,\sqrt{\lambda_{iN}}X_i]$$
 $$\ell_i(X)=diag[X_1,X_2,\cdots,X_N]$$
 
@@ -90,9 +94,12 @@ where $\overline A(\theta(t))=A(\theta(t))+B(\theta(t))K(\theta(t))$,  and from 
 \end{equation}
 
 Putting  $X_i=P^{-1}(i), U+H^{-1}, Y_i=K(i)X_i$  , and multiply (9) by $X_i$  we find:
-\begin{equation}
-X_iA^T+AX_i+X_iHX_i+AH_\tau ^{-1} A^T+Y_i^TB^T+SY_i+\lambda_{ij}X_i+S_i\ell_i^{-1}S_i<0
-\end{equation}
+\begin{multline}
+X_iA^T+AX_i+X_iHX_i+AH_\tau ^{-1} A^T+
+\\+
+Y_i^TB^T+SY_i+\lambda_{ij}X_i+S_i\ell_i^{-1}S_i<0
+.
+\end{multline}
 Using Schur complement for $\ell_i , S_i , Y_i$ we obtain the inequality (6).
 
 Conclusion:
