@@ -1,6 +1,3 @@
-
-
-
 \vzmstitle[
 ]{
 	О регуляризованной асимптотике задачи Коши при наличии слабой точки поворота у предельного оператора
@@ -51,7 +48,7 @@ $$
 Решения системы (3) порождают серию функций, описывающих сингулярности задачи (1):
 $$
 \begin{array}{l}
-\varphi_{i}(t)=\frac{1}{\varepsilon}\int\limits_0^t \lambda_i(s)ds,\ \ \sigma_{i,0}(t,\varepsilon)=e^{\varphi_{i}(t)}, \ \  i=1,2,\\
+\varphi_{i}(t)=\frac{1}{\varepsilon}\int\limits_0^t \lambda_i(s)ds,\ \ \sigma_{i,0}(t,\varepsilon)=e^{\varphi_{i}(t)}, \ \ i=1,2,\\
 \sigma_{1,1}^{(j_1,i_1)}(t,\varepsilon)=e^{\varphi_{1}(t)}\int\limits_0^t
 e^{\Delta\varphi}(s_1)K_{j_1,i_1}(s_1)ds_1,\\ \sigma_{2,1}^{(j_1,i_1)}(t,\varepsilon)=e^{\varphi_{2}(t)}\int\limits_0^t e^{-\Delta\varphi}(s_1)K_{j_1,i_1}(s_1)ds_1,\\
 ..................................................................\\
@@ -100,10 +97,10 @@ $$
 \hat{z}=\!\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty}\sum\limits_{j_1,\ldots,j_p =0}^{m}
 \sum\limits_{i_1,\ldots,i_p =0}^{k_1-1,\ldots,k_p-1}\!\! z_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}\bigotimes \{\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}\}+w,
 $$
-где $z_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)},w \in E $. Здесь  $\bigotimes$ "--- символ тензорного произведения.
+где $z_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)},w \in E $. Здесь $\bigotimes$ "--- символ тензорного произведения.
 
 
-Задача (7) является регулярной по $\varepsilon$.  Поэтому решение будем определять в виде регулярного ряда по степеням $\varepsilon$, т.е.
+Задача (7) является регулярной по $\varepsilon$. Поэтому решение будем определять в виде регулярного ряда по степеням $\varepsilon$, т.е.
 $$
 \hat{z}=\sum\limits_{k=0}^{\infty}\varepsilon^k \hat{z_k}
 $$
@@ -137,7 +134,7 @@ $$
 \left \{\begin{array}{l}
 \hat{z_0}=\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty}\sum\limits_{j_1,\ldots,j_p=0}^{m} \sum\limits_{i_1,\ldots,i_p =0}^{k_1-1,\ldots,k_p-1}P_s(t) z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t) \bigotimes\\
 \hfill \bigotimes \{\sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}\} -A^{-1}(t)h(t),\\
-P_s(0) z_{s,0,0}(0)= P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)},  \ \ s=1,2.
+P_s(0) z_{s,0,0}(0)= P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)}, \ \ s=1,2.
 \end{array}\right.
 \eqno(10)
 $$
@@ -155,7 +152,7 @@ $$
 \begin{array}{c}
 \mathcal{L}_1\hat{z_0}+\dot{\hat{z_0}}=\\
 =\sum\limits_{s=1}^{2}\sum\limits_{p=0}^{\infty} \sum\limits_{j_1,\ldots,j_p=0}^{m} \sum\limits_{i_1,\ldots,i_p=0}^{k_0-1,\ldots,k_p-1} \bigl[ \frac{d}{dt}(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))+\\
-+\sum\limits_{j_{p+1} =0}^{m}\sum\limits_{i_{p+1}=0}^{k_{p+1}-1}  K_{j_{p+1},i_{p+1}}(t)z_{3-s,p+1,0}^{(j_1,i_1,\ldots,j_{p+1},i_{p+1})}(t)\bigl] \bigotimes \\
++\sum\limits_{j_{p+1} =0}^{m}\sum\limits_{i_{p+1}=0}^{k_{p+1}-1} K_{j_{p+1},i_{p+1}}(t)z_{3-s,p+1,0}^{(j_1,i_1,\ldots,j_{p+1},i_{p+1})}(t)\bigl] \bigotimes \\
 \bigotimes \sigma_{s,p}^{(j_1,i_1,\ldots,j_p,i_p)}-\frac{d}{dt}A^{-1}(t)h(t).
 \end{array}
 \eqno(12)
@@ -176,7 +173,7 @@ $$
 \left\{\begin{array}{l}
 \text{при } p=0 \\
 \frac{d}{dt}(P_s(t)z_{s,0,0}(t))= \dot{P}_s(t)(P_s(t)z_{s,0,0}(t)),\\
-P_s(0)z_{s,0,0}(0)=P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)},  \ \ s=1,2; \\
+P_s(0)z_{s,0,0}(0)=P_s(0)u^0+\frac{P_s(0)h(0)}{\lambda_s(0)}, \ \ s=1,2; \\
 \text{при } p\geq 1\\
 \frac{d}{dt}(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t))= \dot{P}_s(t)(P_s(t)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(t)),\\
 P_s(0)z_{s,p,0}^{(j_1,i_1,\ldots,j_p,i_p)}(0)=? \text{ (на данный момент}\\
@@ -224,7 +221,7 @@ s=1,2,\ \ p=\overline{0,\infty},\ \ j_p=\overline{0,m},\ \ i_p=\overline{0,k_{j_
 \end{array}\right.
 \eqno(16)
 $$
-Таким образом,  главный член асимптотики решения после сужения запишется в виде
+Таким образом, главный член асимптотики решения после сужения запишется в виде
 $$
 \begin{array}{c}
 u_{gl}(t,\varepsilon)=\sum\limits_{s=1}^{2}U_s(t,0)(P_s(0)u^0+ \frac{P_s(0)h(0)}{\lambda_s(0)})e^{\frac{1}{\varepsilon}\varphi_s(t)}+\\
@@ -278,4 +275,3 @@ $$
 5. {\it Елисеев А.Г.} Регуляризованное решение сингулярно возмущённой задачи Коши при наличии иррациональной <<простой>> точки поворота~/ А.Г.~Елисеев~// Дифференциальные уравнения и процессы управления.~--- 2020.~--- №~2.~--- С.~15--32.
 
 6. {\it Елисеев А.Г.} Решение сингулярно возмущённой задачи Коши при наличии <<слабой>> точки поворота у предельного оператора~/ А.Г.~Елисеев, П.В.~Кириченко~// Сибирские электронные математические известия.~--- 2020.~--- №~17.~--- С.~51--60.
-
