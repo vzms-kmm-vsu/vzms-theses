@@ -78,8 +78,8 @@ $$
 \displaystyle{\frac{\partial X_k(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial X_{k}(x,t)}{\partial x}\right),}\\
 \displaystyle{\frac{\partial Z_k^i(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^i_{k}(x,t)}{\partial x}\right), \ \ i=\overline{0,(p-1)},}\\
 \displaystyle{t^{m/n}a(t)W_k(x,t)=-\frac{\partial W_{k-1}(x,t)}{\partial t} }+\\
-\displaystyle{+\frac{\partial}{\partial x}\left(k(x)\frac{\partial W_{k-1}(x,t)}{\partial x}\right)-
-\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{k-1}(x,t)+\delta_0^k h(x,t),}\\
+\displaystyle{+\frac{\partial}{\partial x}\left(k(x)\frac{\partial W_{k-1}(x,t)}{\partial x}\right)-}\\
+\displaystyle{-\sum\limits_{i=0}^{p-1} t^{\frac{i+1}{n}-1} Z^i_{k-1}(x,t)+\delta_0^k h(x,t),}\\
 X_k(x,0)+W_k(x,0)=\delta_k^0 f(x), \ \ k=\overline{-1,\infty}; \\
 \text{если индекс} \ (k-1)\le -2, \ \text{то слагаемые}\\
 \ \ \text{по определению равны 0}.\\
@@ -140,7 +140,8 @@ $$
 Таким образом, функции $Z_{-1}(x,t)$ являются решениями задач Коши
 $$
 \left\{\begin{array}{l}
-\displaystyle{\frac{\partial Z_{-1}^{^{n(j+1)-1}}(x,t)}{\partial t}=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^{^{n(j+1)-1}}_{-1}(x,t)}{\partial x}\right), \ \ j=\overline{0,\left[\frac{m}n\right]},}\\
+\displaystyle{\frac{\partial Z_{-1}^{^{n(j+1)-1}}(x,t)}{\partial t}=}\\
+\displaystyle{=\frac{\partial}{\partial x}\left( k(x)\frac{\partial Z^{^{n(j+1)-1}}_{-1}(x,t)}{\partial x}\right), \ \ j=\overline{0,\left[\frac{m}n\right]},}\\
 \displaystyle{Z_{-1}^{n(j+1)-1}(x,0)=\frac{1}{j!}\, \frac{\partial^j h(x,0)}{\partial t^j}}.
 \end{array}\right.
 $$
