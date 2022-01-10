@@ -1,0 +1,94 @@
+\paragraph{УДК 517.977.56 }
+\vzmstitle[
+]{
+	Алгоритм определения приближенного решения уравнения переноса с распределенными параметрами на графе-звезда
+}
+\vzmsauthor{Тран}{З.}
+\vzmsinfo{Воронеж, ВГУ; {\it tranduysp94@gmail.com}}
+\vzmscaption
+\paragraph{Постановка задачи.}
+Пусть задан граф-звезда $\Gamma$ с узлом $\xi$ и ребрами $\gamma_k$ ($k=\overline{\rm 1,m}$): $\Gamma=\bigcup\limits_{k=1}^{m}{{{\gamma }_{k}}}$. Ориентация ребра $\gamma_1$ определяется направлением “к узлу $\xi$ ”, ребер $\gamma_k$ ($k=\overline{\rm 2,m}$)– “от узла ”; ребро $\gamma_1$ параметризовано отрезком $[0,\frac{\pi}{2}] $, а каждое ребро$\gamma_k$ ($k=\overline{\rm 2,m}$) – отрезком $[\frac{\pi}{2},\pi] $ ; узлу $\xi$ ставится в соответствие параметр $\frac{\pi}{2}$ .
+
+Процесс распределения тепла описывается уравнением:
+\begin{equation}\label{tran_eq1}
+	\frac{\partial u(x,t)}{\partial t}=\frac{\partial }{\partial x}\left( a(x)\frac{\partial u(x,t)}{\partial x} \right),\,\,\,\,~x,t\in \times (0,T),
+\end{equation}
+во внутренней части каждого ребра и соотношениями в узле $\xi $ (условия согласования):
+\begin{equation}\label{tran_eq2}
+	u{{\left( \frac{\pi }{2},t \right)}_{{{\gamma }_{1}}}}=u{{\left( \frac{\pi }{2},t \right)}_{{{\gamma }_{k}}}}(k=\overline{2,m}),
+\end{equation}
+\begin{equation}\label{tran_eq3}
+	{{\left. \frac{\partial u(x,t)}{\partial x} \right|}_{x=\frac{\pi }{2}\in {{\gamma }_{1}}}}={{\sum\limits_{k=2}^{m}{{{\alpha }_{k}}\left. \frac{\partial u(x,t)}{\partial x} \right|}}_{x=\frac{\pi }{2}\in {{\gamma }_{k}}}}
+\end{equation}
+Присоединяя к соотношениям (1) – (3) начальное 
+\begin{equation}\label{tran_eq4}
+u{{(x,0)}_{{{\gamma }_{k}}}}=\varphi (x), x\in \Gamma ,\,\,\,\,k=\overline{1,m},
+\end{equation}
+и граничные условия:
+\begin{equation}\label{tran_eq5}
+u{{(0,t)}_{{{\gamma }_{1}}}}=0,t\in \left[ 0,\text{T} \right],
+\end{equation}
+\begin{equation}\label{tran_eq6}
+u{{(\pi ,t)}_{{{\gamma }_{k}}}}=0,(k=\overline{2,m}), t\in \left[ 0,\text{T} \right],
+\end{equation}
+получаем начально-краевую задачу (1) – (6), определяющую математическую модель процесса переноса тепла по сетевому носителю[1].
+\paragraph{Алгоритм определения приближенного решения задачи (1) – (6).}
+
+Алгоритм решения сформулированной начально-краевой задачи можно представить следующим образом.
+
+	1. Разобьём ребро ${{\gamma }_{1}}$=$\left[ 0,\frac{\pi }{2} \right]$ точками деления $x_{i}^{1}\in {{\gamma }_{1}},\,\,\,\,i=0,1,...,N,\,\,\, $с шагом $h=\frac{\pi }{2n}$;каждое ребро ${{\gamma }_{k}}$=$ [ \frac{\pi }{2},\pi ]$ ($k=\overline{2,m}$) разбивается точками деления $x_{i}^{k}\in {{\gamma }_{k}},\,\,\,i=0,1,...,N,$с шагом $h=\frac{\pi }{2n}$; отрезок $\left[ 0,\text{T} \right]$ получает точки деления ${{t}_{j}}=j\tau ,$ $j=\overline{0,M}$ с шагом $\tau =\frac{T}{M}$. Область $\Gamma\times [0,T]=\left\{ (x,t)\in {{\gamma }_{k}}\times [0,T] \right\}$, $k=\overline{1,m}$ изменения переменных x,t заменим дискретным множеством точек, которое назовем сеточным множеством (или сеткой), соответствующей области $\Gamma\times [0,T]$:
+\[\Gamma_{T}^{h}=\left\{ \left( x_{i}^{k},{{t}_{j}} \right),\,\,\,x_{i}^{k}\in {{\gamma }_{k}},\,\,\,i=\overline{0,N};\,\,j=\overline{0,N};\,\,k=\overline{1,m} \right\},\]
+где $x_{i}^{1}=ih,$ $x_{i}^{k}=\frac{\pi }{2}+ih$, $h=\frac{\pi }{2N},$ $i=\overline{0,N},$ $k=\overline{2,m}$; ${{t}_{j}}=j\tau ,$ $\tau =\frac{T}{M},$$j=\overline{0,M}$.
+
+	2. Все функции в исходной граничной задаче (1) – (6) заменим сеточными функциями, определенными в узлах сетки $\Gamma_{T}^{h}$. Сеточную функцию, соответствующую функции $u(x,t)$, обозначим через ${{\left( u_{i}^{j} \right)}_{k}}={{u}_{k}}(ih,j\tau )$, $i=\overline{0,N},$ $j=\overline{0,M}$;$k=\overline{1,m}$. Аналогично строится сеточная функция, соответствующие функциям $\varphi (x)$, $a(x)$, которую обозначим следующим образом: ${{\left( \varphi _{i}^{j} \right)}_{k}}={{\varphi }_{k}}(ih,j\tau )$, ${{({{a}_{i}})}_{k}}={{a}^{k}}(ih)$. 
+
+	3. Заменим дифференциальные операторы в уравнении (1) на их конечно-разностные аналоги:
+$$\frac{\partial u{{(x,t)}_{{{\gamma }_{k}}}}}{\partial t}=\frac{{{\left( u_{i}^{j+1} \right)}_{k}}-{{\left( u_{i}^{j} \right)}_{k}}}{\tau }$$
+$$\frac{\partial }{\partial x}\left( a(x)\frac{\partial u{{(x,t)}_{{{\gamma }_{k}}}}}{\partial x} \right)=$$
+$$=\frac{{{({{a}_{i+1}})}_{k}}\frac{{{(u_{i+1}^{j+1})}_{k}}-{{(u_{i}^{j+1})}_{k}}}{h}-{{({{a}_{i}})}_{k}}\frac{{{(u_{i}^{j+1})}_{k}}-{{(u_{i-1}^{j+1})}_{k}}}{h}}{h}$$
+В результате получаем следующую систему линейных алгебраических уравнений:
+\begin{equation}\label{tran_eq7}
+\frac{{{\left( u_{i}^{j+1} \right)}_{k}}-{{\left( u_{i}^{j} \right)}_{k}}}{\tau }=\frac{{{({{a}_{i+1}})}_{k}}\frac{{{(u_{i+1}^{j+1})}_{k}}-{{(u_{i}^{j+1})}_{k}}}{h}-{{({{a}_{i}})}_{k}}\frac{{{(u_{i}^{j+1})}_{k}}-{{(u_{i-1}^{j+1})}_{k}}}{h}}{h}
+\end{equation}
+\begin{equation}\label{tran_eq8}
+{{\left( u_{N}^{j+1} \right)}_{1}}={{\left( u_{0}^{j+1} \right)}_{k}},(j=\overline{0,M-1};k=\overline{2,m})
+\end{equation}
+\begin{equation}\label{tran_eq9}
+\frac{{{\left( u_{N}^{j+1} \right)}_{1}}-{{\left( u_{N-1}^{j+1} \right)}_{1}}}{h}=\sum\limits_{k=2}^{m}{{{\alpha }_{k}}\frac{{{\left( u_{1}^{j+1} \right)}_{k}}-{{\left( u_{0}^{j+1} \right)}_{k}}}{h}},
+\end{equation}
+\begin{equation}\label{tran_eq10}
+{{\left( u_{i}^{0} \right)}_{k}}={{\left( \varphi _{i}^{0} \right)}_{k}}, (i=\overline{0,\text{N}};k=\overline{1,m})
+\end{equation}
+\begin{equation}\label{tran_eq11}
+{{\left( u_{0}^{j+1} \right)}_{1}}=0,(j=\overline{0,\text{M-1}}\text{)}\text{,}
+\end{equation}
+\begin{equation}\label{tran_eq12}
+{{\left( u_{N}^{j+1} \right)}_{k}}=0, (j=\overline{0,\text{M-1}}\text{;} k=\overline{2,m}),
+\end{equation}
+где соотношение (7) определяет неявную разностную схему для уравнения (1).
+
+4. Для решения полученной системы линейных алгебраических уравнений (7)-(12), используется классический метод прогонки [2]. 
+Заметим, что для анализа более общих систем вида (1) можно использовать другой подход. Cистему (7)-(12) можно привести к каноническому виду (см.[2]):
+\begin{equation}\label{tran_eq13}
+Au_{i+1}^{j+1}-Bu_{i}^{j+1}+Cu_{i-1}^{j+1}=F,
+\end{equation}
+где $A=\frac{\tau }{{{h}^{2}}}$, $B=\frac{2\tau }{{{h}^{2}}}+1$, $C=\frac{\tau }{{{h}^{2}}}$, $F=-u_{i}^{j}$. Соотношение (13) образует трехточечную разностную схему. Предположим, что существуют такие наборы чисел ${{\alpha }_{i}}$ и ${{\beta }_{i}}$ $\left( i=\overline{0,N-1} \right)$, при которых
+\begin{equation}\label{tran_eq14}
+u_{i}^{j+1}={{\alpha }_{i}}u_{i+1}^{j+1}+{{\beta }_{i}},
+\end{equation}
+т.е. трехточечное уравнение второго порядка (13) редуцируется к двухточечному уравнению первого порядка (14). 
+Уменьшим в соотношении (14) индекс на единицу и полученное выражение $u_{i-1}^{j+1}={{\alpha }_{i-1}}u_{i}^{j+1}+{{\beta }_{i-1}}$, подставим в уравнение (13):
+\[Au_{i+1}^{j+1}-Bu_{i}^{j+1}+C{{\alpha }_{i-1}}u_{i}^{j+1}+C{{\beta }_{i-1}}=F,\]
+откуда получаем
+\[u_{i}^{j+1}=\frac{A}{B-C{{\alpha }_{i-1}}}u_{i+1}^{j+1}+\frac{C{{\beta }_{i-1}}-F}{B-C{{\alpha }_{i-1}}}.\]
+Тогда последнее равенство примет вид (14), если при всех $i=\overline{1,N}$ выполняются соотношения:
+\[{{\alpha }_{i}}=\frac{A}{B-C{{\alpha }_{i-1}}},{{\beta }_{i}}=\frac{C{{\beta }_{i-1}}-F}{B-C{{\alpha }_{i-1}}},\]
+Для определения параметров ${{\alpha }_{i}}$ и ${{\beta }_{i}}$ необходимо знать ${{\alpha }_{0}}$ и ${{\beta }_{0}}$, которые находятся из граничных условий. Последовательное применение формул (14) дают искомые $u_{N-1}^{j+1},u_{N-2}^{j+1}$\\,...,$u_{1}^{j+1}$, при этом $u_{N}^{j+1}$ определяются из граничных условий.
+
+\litlist
+
+1. {\it Тран З. Провоторов В.В. }
+Метод конечных разностей для уравнения переноса с распределенными параметрами на сети // Моделирование, оптимизация и информационные технологии. 2021;9(3). 
+
+2. {\it Тихонов А.Н., Самарский А.А. }
+ Уравнения математической физики. Изд. 5-е. – М. Наука. 1977. – 736 с.
