@@ -1,6 +1,6 @@
 \vzmstitle[
 ]{
-Счетная устойчивость слабого решения дифференциально-разностной параболической системы на графе
+Счётная устойчивость слабого решения дифференциально"=разностной параболической системы на графе
 }
 \vzmsauthor{{Хоанг}}{В.\,Н.}
 \vzmsinfo{Воронеж, ВГУ; {\it fadded9x@mail.com}}
@@ -9,31 +9,31 @@
 
 Используются обозначения, принятые в работах [1].
 
-Ребра $ \gamma $ графа $ \Gamma $ имеют одинаковую длину и параметризованы отрезком $[0,1]$; $ \partial \Gamma $ -- множества граничных узлов графа; $ {{\Gamma }_{0}} $ -- объединение всех ребер, не содержащих концевых точек; $L_{2}(\Gamma)$ -- банахово пространство измеримых на $\Gamma_0$ функций, суммируемых с $p$-й степенью; $W_{\,2}^{1}(\Gamma)$ -- пространство функций из $L_{2}(\Gamma)$, имеющих обобщенную производную первого порядка также из $L_{2}(\Gamma)$; $ 0<T<\infty $ -- произвольная фиксированная константа.
+Ребра $ \gamma $ графа $ \Gamma $ имеют одинаковую длину и параметризованы отрезком $[0,1]$; $ \partial \Gamma $ "--- множества граничных узлов графа; $ {{\Gamma }_{0}} $ "--- объединение всех рёбер, не содержащих концевых точек; $L_{2}(\Gamma)$ "--- банахово пространство измеримых на $\Gamma_0$ функций, суммируемых с $p$-й степенью; $W_{\,2}^{1}(\Gamma)$ "--- пространство функций из $L_{2}(\Gamma)$, имеющих обобщённую производную первого порядка также из $L_{2}(\Gamma)$; $ 0<T<\infty $ "--- произвольная фиксированная константа.
 
-На протяжении всей работы используется интеграл Лебега по $\Gamma$: $\int\limits_{\Gamma}f(x)dx=\sum\limits_{\gamma}\int\limits_{\gamma}f(x)_\gamma dx$, $f(\cdot)_\gamma$ --- сужение функции $f(\cdot)$ на ребро $\gamma$.
+На протяжении всей работы используется интеграл Лебега по $\Gamma$: $\int\limits_{\Gamma}f(x)dx=\sum\limits_{\gamma}\int\limits_{\gamma}f(x)_\gamma dx$, $f(\cdot)_\gamma$ "--- сужение функции $f(\cdot)$ на ребро $\gamma$.
 
-Обозначим через $ {{\Omega }_{a}}(\Gamma ) $ множество непрерывных во всех внутренних узлах функций $ u(x) $ из класса $ W_{2}^{1}(\Gamma ) $, удовлетворяющих краевому условию $ u(x{{)|}_{\partial \Gamma }}=0 $ и соотношениям 
+Обозначим через $ {{\Omega }_{a}}(\Gamma ) $ множество непрерывных во всех внутренних узлах функций $ u(x) $ из класса $ W_{2}^{1}(\Gamma ) $, удовлетворяющих краевому условию $ u(x{{)|}_{\partial \Gamma }}=0 $ и соотношениям
 \begin{equation*}{
 \sum\limits_{\gamma \in R(\xi )}{}a{{(1)}_{\gamma }}\frac{du{{(1)}_{\gamma }}}{dx}=\sum\limits_{\gamma \in r(\xi )}{}a{{(0)}_{\gamma }}\frac{du{{(0)}_{\gamma }}}{dx},}
 \end{equation*}
-здесь $R(\xi)$ и $r(\xi)$ -- множества ребер $\gamma$, соответственно ориентированных к узлу $\xi$ и от узла $\xi$. Замыкание в норме $W^1_{\,2}(\Gamma)$ множества $\Omega_a(\Gamma)$ обозначим через $W^1_{\,0}(a,\Gamma)$.
+здесь $R(\xi)$ и $r(\xi)$ "--- множества рёбер $\gamma$, соответственно ориентированных к узлу $\xi$ и от узла $\xi$. Замыкание в норме $W^1_{\,2}(\Gamma)$ множества $\Omega_a(\Gamma)$ обозначим через $W^1_{\,0}(a,\Gamma)$.
 
-Рассмотрим дифференциально-разностное уравнение
+Рассмотрим дифференциально"=разностное уравнение
 \begin{equation}{
 	\frac{1}{\tau}(u(k)-u(k-1))+\Lambda u(k)=f(k),\quad k=1,\ldots,M,
 }
 \end{equation}
 с начальным и краевым условиями
 \begin{equation}{
-	u(0)=\varphi (x),\quad u(k){{|}_{x\in \partial \Gamma }}=0,\quad k=1,\ldots,M, 	
+	u(0)=\varphi (x),\quad u(k){{|}_{x\in \partial \Gamma }}=0,\quad k=1,\ldots,M,
 }
 \end{equation}
-где $ u(k)=u(x;k), f(k)=f(x;k) $, $ \tau>0 $ -- действительное число, $ \Lambda u(k)=-\frac{d}{dx}\left( a(x)\frac{du(k)}{dx} \right)+b(x)u(k) $, $f(k)\in L_2(\Gamma),\quad \\\varphi (x)\in L_2(\Gamma)$. Коэффициенты $ a(x),b(x) $ -- фиксированные, измеримые и ограниченные на $ {{\Gamma }_{0}} $ функции, суммируемые с квадратом
- 
-\begin{equation*}{0<{{a}_{*}}\leqslant a(x)\leqslant{{a}^{*}},\quad|b(x)|\leqslant \beta,\quad x\in {{\Gamma }_{0}}.}\end{equation*} 
+где $ u(k)=u(x;k), f(k)=f(x;k) $, $ \tau>0 $ "--- действительное число, $ \Lambda u(k)=-\frac{d}{dx}\left( a(x)\frac{du(k)}{dx} \right)+b(x)u(k) $, $f(k)\in L_2(\Gamma),\quad \\\varphi (x)\in L_2(\Gamma)$. Коэффициенты $ a(x),b(x) $ "--- фиксированные, измеримые и ограниченные на $ {{\Gamma }_{0}} $ функции, суммируемые с квадратом
 
-\paragraph{Определение~1.} {\it Слабым решением уравнения (1) с условиями (2) называются функции $ u(k)\in W_{0}^{1}(a,\Gamma ) $, $ k=\overline{1, M} $ удовлетворяющие интегральному тождеству} 
+\begin{equation*}{0<{{a}_{*}}\leqslant a(x)\leqslant{{a}^{*}},\quad|b(x)|\leqslant \beta,\quad x\in {{\Gamma }_{0}}.}\end{equation*}
+
+\paragraph{Определение~1.} {\it Слабым решением уравнения (1) с условиями (2) называются функции $ u(k)\in W_{0}^{1}(a,\Gamma ) $, $ k=\overline{1, M} $ удовлетворяющие интегральному тождеству}
 $$
 	\int\limits_{\Gamma}u(k)_{\tau}\,\eta(x)dx+\ell(u(k),\eta)=
 	\int\limits_{\Gamma}f(k)\,\eta(x) dx
@@ -45,17 +45,17 @@ $$\ell(u(k),\eta)=\int\limits_{\Gamma}\left(a(x)\frac{d u(k)}{d x}\frac{d \eta(x
 \paragraph{Теорема.}[2] {\it Для любых $k_0\geqslant0$ и любых $\varphi(x)\in L_2(\Gamma)$ слабое решение $u(k)$ однозначным образом определено при $k_0\leqslant k\leqslant M$, $k_0<M<\infty$}.
 \\
 
-Множество ортонормированных собственных функций \\$\left\lbrace {\phi }_{i}(x) \right\rbrace_{i \geqslant 1}$ краевой задачи $$\Lambda \phi(x) =\lambda \phi(x),\quad \phi(x){{|}_{x\in \partial \Gamma }}=0,$$ образует базис в $W_{0}^{1}(a,\Gamma )$ и ${{L}_{2}}(\Gamma )$ [3]. Обозначим через $\left\lbrace \lambda_{i}\right\rbrace_{i \geqslant 1}$ -- множество собственных значений.
-Введем следующие ряды Фурье по ортонормированной системе $\left\{\phi_{i}(x)\right\}_{i \geqslant 1}$:
+Множество ортонормированных собственных функций \\$\left\lbrace {\phi }_{i}(x) \right\rbrace_{i \geqslant 1}$ краевой задачи $$\Lambda \phi(x) =\lambda \phi(x),\quad \phi(x){{|}_{x\in \partial \Gamma }}=0,$$ образует базис в $W_{0}^{1}(a,\Gamma )$ и ${{L}_{2}}(\Gamma )$ [3]. Обозначим через $\left\lbrace \lambda_{i}\right\rbrace_{i \geqslant 1}$ множество собственных значений.
+Введём следующие ряды Фурье по ортонормированной системе $\left\{\phi_{i}(x)\right\}_{i \geqslant 1}$:
 \begin{equation}{
-u(k)=\sum_{i}\phi^{i}(k) \phi_{i}(x), f(k)=\sum_{i} f^{i}(k) \phi_{i}(x)},\end{equation} 
+u(k)=\sum_{i}\phi^{i}(k) \phi_{i}(x), f(k)=\sum_{i} f^{i}(k) \phi_{i}(x)},\end{equation}
 \begin{equation}{
 \varphi=\sum_{i} \varphi^{i} \phi_{i}(x),
 }
-\end{equation} 
+\end{equation}
 где $\phi^{i}(k)=\left(u(k), \phi_{i}\right), f^{i}(k)=\left(f(k), \phi_{i}\right), \varphi^{i}=\left(\varphi, \phi_{i}\right)$.
 
-\paragraph{Определение~2.}Дифференциально-разностная система (1), (2) называется счетной устойчивостью, если для каждого коэффициента $\phi^{i}(k) $ рядов Фурье (3),(4) выполняется неравенство
+\paragraph{Определение~2.}Дифференциально"=разностная система (1), (2) называется счётной устойчивостью, если для каждого коэффициента $\phi^{i}(k) $ рядов Фурье (3),(4) выполняется неравенство
 
 $$
 |\phi^{i}(k)| \leqslant C_{1i}\left|\varphi^{i}\right|+C_{2i}\left|f^{i}\right|,
@@ -83,11 +83,11 @@ $$
 	(k=1,2, \ldots, M) .
 \end{gathered}
 $$
-так как $0<r_{i}<1(i=1,2, \ldots)$ затем $\left|r_{i}\right|^{k}<1$ и $\tau\left|r_{i}\right| \frac{1-\left|r_{i}\right|^{k}}{1-\left|r_{i}\right|}<\\<\tau\left|r_{i}\right| \frac{1}{1-\left|r_{i}\right|}<T+\frac{1}{\lambda_{1}}$, это означает, что коэффициенты двух коэффициентов $\left|\varphi^{i}\right|$ и $\left|f^{i}\right|$ равномерно ограничены при любом значении $\tau>0$ и не зависят от $\tau, \varphi$ и $f$. Это означает, что выполняется спектральный критерий считающей устойчивости определения 2: дифференциально-разностная система (1), (2) абсолютно счетно устойчива.
+так как $0<r_{i}<1(i=1,2, \ldots)$ затем $\left|r_{i}\right|^{k}<1$ и $\tau\left|r_{i}\right| \frac{1-\left|r_{i}\right|^{k}}{1-\left|r_{i}\right|}<\\<\tau\left|r_{i}\right| \frac{1}{1-\left|r_{i}\right|}<T+\frac{1}{\lambda_{1}}$, это означает, что коэффициенты двух коэффициентов $\left|\varphi^{i}\right|$ и $\left|f^{i}\right|$ равномерно ограничены при любом значении $\tau>0$ и не зависят от $\tau, \varphi$ и $f$. Это означает, что выполняется спектральный критерий считающей устойчивости определения 2: дифференциально"=разностная система (1), (2) абсолютно счётно устойчива.
 
 \litlist
 
-1. {\it Хоанг В. Н.} Дифференциально-разностное уравнение с распределенными параметрами на графе // Процессы управления и устойчивость. – 2021. – Т. 8. – №. 1. – С. 155-160.
+1. {\it Хоанг В. Н.} Дифференциально"=разностное уравнение с распределёнными параметрами на графе // Процессы управления и устойчивость. – 2021. – Т. 8. – №. 1. – С. 155-160.
 
 2. {\it Provotorov V. V., Sergeev S. M., Hoang V. N.} Countable stability of a weak solution of a parabolic differential-difference system with distributed parameters on the graph // Vestnik of Saint Petersburg University. Applied Mathematics. Computer Science. Control Processes. – 2020. – Vol. 16. – No 4. – P. 402–414.
 
