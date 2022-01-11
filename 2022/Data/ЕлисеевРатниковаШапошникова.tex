@@ -1,5 +1,5 @@
 \vzmstitle[
-	\footnote{Результат Ратниковой Т.А. получен в рамках выполнения государственного задания Минобрнауки России (проект FSWF-2020-0022}
+	\footnote{Результат Ратниковой Т.А. получен в рамках выполнения государственного задания Минобрнауки России (проект FSWF-2020-0022)}
 ]{
 	Развитие метода регуляризации для сингулярно возмущённой задачи Коши с <<простой>> рациональной точкой поворота для параболического уравнения
 }
@@ -257,7 +257,7 @@ Z_1^i(x,t) \text{ --- общее решение уравнения теплоп�
 $$
 Отсюда следует, что если:
 
-1) $2\left\{\frac{m}{n}\right\}<>1$, то $W_1(x,0)=0$ и $X_1(x,0)=0$, следовательно $X_1(x,t)\equiv 0$;
+1) $2\left\{\frac{m}{n}\right\} \neq 1$, то $W_1(x,0)=0$ и $X_1(x,0)=0$, следовательно $X_1(x,t)\equiv 0$;
 
 \smallskip
 2) $2\left\{\frac{m}{n}\right\}=1$, то $W_1(x,0)=h_1(x,0)$ и $X_1(x,0)=-h_1(x,0)$, следовательно $X_1(x,t)$ "--- решение задачи Коши
@@ -283,7 +283,7 @@ $$
 Подставив (15) в (1) и учитывая, что $u_k(x,t,\varepsilon)$ являются решениями итерационных задач, получим задачу Коши для определения остатка $R_N(x,t,\varepsilon)$:
 $$
 \left\{ \begin{array}{l}
-\displaystyle{L(R)=\varepsilon\left(\frac{\partial R_N(x,t)}{\partial t}- \frac{\partial}{\partial x} \left( k(x)\frac{\partial R_N(x,t)}{\partial x}\right)\right) +}\\
+\displaystyle{L(R_N)=\varepsilon\left(\frac{\partial R_N(x,t)}{\partial t}- \frac{\partial}{\partial x} \left( k(x)\frac{\partial R_N(x,t)}{\partial x}\right)\right) +}\\
 \ \ \ +t^{m/n} a(t)R_N=H(x,t,\varepsilon),\\
 R_N(x,0,\varepsilon)=0, \ \ -\infty<x<+\infty,\\
 \end{array} \right.
@@ -300,12 +300,12 @@ H(x,t)=-\frac{\partial W_N(x,t)}{\partial t} +\frac{\partial}{\partial x} \left(
 
 {\it 1) условия $1)\div 5)$ задачи Коши $(1)$};
 
-{\it 2) $\exists M_1>0$ $\forall(x,t)\in(-\infty,+\infty)\times[0,T]$ $\forall\varepsilon\in(0,\varepsilon_0]$ \\
+{\it 2) $\exists M_1>0$, \ $\forall(x,t)\in(-\infty,+\infty)\times[0,T]$ $\forall\varepsilon\in(0,\varepsilon_0]$ \\
 $|H(x,t,\varepsilon)|\le M_1$;}
 
 {\it 3) $\exists M>0$ $0<k_0\leq k(x)<M(x^2+1),$ $|k'(x)|<M \sqrt{x^2+1}$.}
 
-\noindent {\it Тогда $\exists \mathbb{C}>0$ $\forall(x,t)\in(-\infty,+\infty)\times[0,T]$ $\forall\varepsilon\in(0,\varepsilon_0]$ $|R_n(x,t,\varepsilon)|\le \mathbb{C}.$ }
+\noindent {\it Тогда $\exists \mathbb{C}>0$ $\forall(x,t)\in(-\infty,+\infty)\times[0,T]$ $\forall\varepsilon\in(0,\varepsilon_0]$ $|R_N(x,t,\varepsilon)|\le \mathbb{C}.$ }
 
 % Оформление списка литературы
 \litlist
