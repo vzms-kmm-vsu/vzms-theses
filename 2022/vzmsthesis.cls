@@ -143,9 +143,9 @@
 	\ifthenelse{
 		\equal{\varvzmsauthortoc}{}
 	}{
-		\def\varvzmsauthortoc{#1~#2}
+		\def\varvzmsauthortoc{#1\,\,#2}
 	}{
-		\g@addto@macro\varvzmsauthortoc{, #1~#2}
+		\g@addto@macro\varvzmsauthortoc{,\hspace{0.7em}#1\,\,#2}
 	}
 	\def\varvzms@previous@author@item{author}
 }
