@@ -4,6 +4,7 @@
   "description": "Just a wrapper for NodeJS dependencies of VZMS scripts",
   "main": "format_autolang.js",
   "dependencies": {
+    "force-utf8-in-cyrtext": "0.0.2",
     "ls": "^0.2.1"
   },
   "devDependencies": {},
