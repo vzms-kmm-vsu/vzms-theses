@@ -72,6 +72,18 @@ litlist:
 	# don't hesitate to add them into the script!
 	node ./format_litlist.js
 
+litautolang: litlist
+	# Insert '\selectlanguage' into bibliography where necessary
+	# WARNING!
+	# Sometimes it can break the build,
+	# e.g. if Russian shortifications like 'С.' are used in an English reference
+	# (although they probably should not!)
+	# However, it turns to be extremely useful for hyphenation of non-Russian references
+	# WARNING!
+	# Sometimes it does not recognize English references, don't lean on the script
+	node ./format_autolang.js
+
+
 join:
 	# Mix all the theses to a single file
 	# Extremely useful for further runs of tex-lint
