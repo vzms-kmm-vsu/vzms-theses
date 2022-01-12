@@ -20,10 +20,19 @@ texFiles.map((file) => {
 		let row = rows[i];
 		if (row.trim() == '\\litlist') {
 			// Список литературы в файле уже оформлен как надо
+			if (rows[i+1] && rows[i+1].trim()) {
+				rows[i] += "\n";
+				changed = true;
+				break;
+			}
+			if (rows[i-1] && rows[i-1].trim()) {
+				rows[i] = "\n" + rows[i];
+				changed = true;
+				break;
+			}
 			return;
 		}
 		for (let possibleRow of possibleLitListHeadings) {
-			//console.log(row.trim(), possibleRow)
 			if (row.trim() == possibleRow){
 				rows[i] = '\\litlist';
 				changed = true;
