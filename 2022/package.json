@@ -1,0 +1,14 @@
+{
+  "name": "vzms-theses",
+  "version": "0.2022.1",
+  "description": "Just a wrapper for NodeJS dependencies of VZMS scripts",
+  "main": "format_autolang.js",
+  "dependencies": {
+    "ls": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}
