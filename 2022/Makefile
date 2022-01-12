@@ -63,6 +63,15 @@ peel:
 	# TODO: it DOES NOT renormalize line endings
 	./peel.sh
 
+litlist:
+	# List all the theses without well-written reference header
+	# and try to turn homemade header into standard `litlist`
+	# Does plenty of work, but the result is not guranteed :-(
+	# Sometimes you need to run it twice
+	# If you find another rows that should be replaced by `litlist`,
+	# don't hesitate to add them into the script!
+	node ./format_litlist.js
+
 join:
 	# Mix all the theses to a single file
 	# Extremely useful for further runs of tex-lint
