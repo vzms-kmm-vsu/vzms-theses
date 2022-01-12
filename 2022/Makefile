@@ -75,10 +75,10 @@ litlist:
 join:
 	# Mix all the theses to a single file
 	# Extremely useful for further runs of tex-lint
-	nodejs ~/git/node-text-split-join/text-join.js Data/joined.tex.tmp Data/*.tex
+	node node_modules/text-split-join/text-join.js Data/joined.tex.tmp Data/*.tex
 
 # (cast tex-lint here!)
 
 split:
 	# Revert the above :)
-	nodejs ~/git/node-text-split-join/text-split.js Data/joined.tex.tmp
+	node node_modules/text-split-join/text-split.js Data/joined.tex.tmp

@@ -5,7 +5,8 @@
   "main": "format_autolang.js",
   "dependencies": {
     "force-utf8-in-cyrtext": "0.0.2",
-    "ls": "^0.2.1"
+    "ls": "^0.2.1",
+    "text-split-join": "0.0.1"
   },
   "devDependencies": {},
   "scripts": {
