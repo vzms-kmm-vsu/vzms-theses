@@ -18,7 +18,7 @@ texFiles.map((file) => {
 
 	for(let i = 0; i < rows.length; i++){
 		let row = rows[i];
-		if (row.trim() == '\\litlist' || row.trim() == '\\reflist') {
+		if (row.trim() == '\\litlist') {
 			// Список литературы в файле уже оформлен как надо
 			return;
 		}
