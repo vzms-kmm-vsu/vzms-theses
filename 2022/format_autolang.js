@@ -26,8 +26,8 @@ function isParagraphEnglish(text){
 
 function fixParapraphLanguage(previous, current){
 
-	console.log(current);
-	console.log(isParagraphEnglish(current), isParagraphRussian(current));
+	//console.log(current);
+	//console.log(isParagraphEnglish(current), isParagraphRussian(current));
 
 	if(isParagraphEnglish(current) && isParagraphRussian(previous)) {
 		return "\n\\selectlanguage{english}\n";
@@ -44,7 +44,7 @@ function fixParapraphLanguage(previous, current){
 
 function splitTextIntoParagraphs(text){
 	let pos = text.search(/\n\r*\n[\n\r]*/);
-	console.log(pos);
+	//console.log(pos);
 	if (pos === -1) {
 		return [text];
 	}
@@ -54,17 +54,11 @@ function splitTextIntoParagraphs(text){
 
 texFiles.map((file) => {
 
-/*
-	if(file.full !== 'Data/Скворцов.tex'){
-		return;
-	}
-*/
-	//let rows = fs.readFileSync(file.full,'utf-8').split(/(\n(?=\n+))|(\n(?=(\n\r)*))/g);
 	let rows = splitTextIntoParagraphs(
 		fs.readFileSync(file.full,'utf-8')
 	);
 
-	console.log(rows);
+	//console.log(rows);
 
 
 	let litlistIndex;
