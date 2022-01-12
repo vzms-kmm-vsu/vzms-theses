@@ -5,11 +5,19 @@ const texFiles = ls('Data/**.tex');
 
 
 function isParagraphRussian(text){
+	if (text.trim()[0] === "%") {
+		// That's a comment!
+		return false;
+	}
 	let foundRussianLetters = text.match(/[а-яё]/gi);
 	return foundRussianLetters && foundRussianLetters.length > 32;
 }
 
 function isParagraphEnglish(text){
+	if (text.trim()[0] === "%") {
+		// That's a comment!
+		return false;
+	}
 	let foundRussianLetters = text.match(/[а-яё]/gi);
 	let foundEnglishLetters = text.match(/[a-z]/gi);
 	return !foundRussianLetters && foundEnglishLetters && foundEnglishLetters.length > 32;
