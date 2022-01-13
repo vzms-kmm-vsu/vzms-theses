@@ -1,0 +1,131 @@
+\vzmstitle[
+\footnote{Работа выполнена при поддержке гранта РНФ, проект 19-11-00197}
+]{
+	О подпространстве почти сходящихся последовательностей
+}
+\vzmsauthor{Зволинский}{Р.\,Е.}
+\vzmsinfo{Воронеж, ВГУ; {\it roman.zvolinskiy@gmail.com}}
+
+\vzmscaption
+
+
+
+Через $\ell_\infty$ обозначим пространство ограниченных последовательностей 
+$x = (x_1, x_2, \ldots)$ с нормой \\[-3mm]
+$$
+\|x\|_{\ell_\infty} = \sup_{n \in \mathbb N} |x_n|,
+$$ \\[-3mm]
+где $\mathbb N$ "--- множество натуральных чисел, и обычной полуупорядоченностью. 
+Линейный функционал $B \in \ell^*_\infty$ называется банаховым пределом, если
+
+	1. $B \geqslant 0$, т. е. $Bx \geqslant 0$ для всех $x \in \ell_\infty$,
+	$x \geqslant 0$,
+
+	2. $B\mathrm{1\negthickspace I} = 1$, где $\mathrm{1\negthickspace I} = (1, 1, \dots)$,
+
+	3. $Bx = BTx$ для всех $x \in \ell_\infty$, где $T$ "--- оператор сдвига, т. е.
+	$T(x_1, x_2, \dots) = (x_2, x_3, \dots)$.
+
+Последовательность $x = (x_1, x_2, \ldots) \in \ell_\infty$ называется почти
+сходящейся к $\lambda \in \mathbb R^1$, если $Bx = \lambda$ для любого банахова 
+предела $B \in \mathfrak B$, через $\mathfrak B$ мы обозначаем множество банаховых
+пределов, а через $ac$ "--- множество почти сходящихся последовательностей.
+В этом случае мы будем писать $\operatorname{Lim} x_n = \lambda$. Множество
+последовательностей, почти сходящихся к $\lambda$, обозначается через $ac_\lambda$.
+В [1] Г.~Лоренц доказал, что $x \in ac_\lambda$ тогда и только тогда, когда \\[-3mm]
+\begin{equation*}\label{Lorentz_theorem}
+\lim_{n \to \infty} \frac 1n \sum_{k = m + 1}^{m + n} x_k = \lambda
+\end{equation*} 
+равномерно по $m \in \mathbb N$.
+В работе [2] доказано, что $f(\sin nt) \in ac$ для любой непрерывной функции $f$
+и всех $t \in \mathbb R^1$. В частности, $\operatorname{Lim} \sin^m nt = 0$ для
+нечётных $m$. Для чётных $m$ найдено соответствующее выражение. Ниже проведём 
+аналогичные рассуждения для последовательности $\cos^m nt$, где $m \in \mathbb N$.
+
+\paragraph{Теорема~1.}
+{\it
+	1. Если $m$ нечётно, то \\[-3mm]
+	$$
+	\operatorname{Lim} \cos^m nt = \left\{
+	\begin{array}{l}
+		1, \ t = 0, \\[2mm]
+		{\displaystyle \frac 1{2^{m - 1}} \cdot \sum_{j \in Q_m} C^j_m}.
+	\end{array}
+	\right.
+	$$ 
+	2. Если $m$ чётно, то \\[-3mm]
+	$$
+	\operatorname{Lim} \cos^m nt = \left\{
+	\begin{array}{l}
+		1, \ t = 0, \pm\pi, \\[2mm]
+		{\displaystyle \frac{C^{m/2}_m}{2^m} +
+		\frac 1{2^{m - 1}} \cdot \sum_{j \in Q_m} C^j_m}.
+	\end{array}
+	\right.
+	$$
+	Здесь \\[-3mm]
+	$$
+	Q_m = \left\{j: 0 \leqslant j < \frac m2, \ \frac{(m - 2j) |t|}{2\pi}
+	\in \mathbb N\right\}.
+	$$
+}
+
+\paragraph{Доказательство теоремы~1.}
+1. Если $t = 0$, то равенство $\operatorname{Lim} \cos^m nt = 1$, 
+где $m$ нечётно, очевидно. Пусть $r \in \mathbb N$, $t \neq 0$ и $m$ нечётно, тогда \\[-4mm]
+\begin{multline*}
+	\operatorname{Lim} \cos^m nt = \lim_{n \to \infty} \frac 1n \cdot
+	\sum_{k = r + 1}^{r + n} \cos^m kt = \\
+	= \lim_{n \to \infty} \frac 1n \cdot \sum_{k = r + 1}^{r + n}
+	\left[\frac 1{2^{m - 1}} \cdot \sum_{j = 0}^{(m - 1)/2} C^j_m \cdot 
+	\cos (m - 2j) kt\right] = \\
+	= \frac 1{2^{m - 1}} \cdot \sum_{j = 0}^{(m - 1)/2} C^j_m \cdot 
+	\left[\lim_{n \to \infty} \frac 1n \cdot 
+	\sum_{k = r + 1}^{r + n} \cos (m - 2j) kt\right] = 
+\end{multline*}
+\begin{equation*}
+	= \frac 1{2^{m - 1}} \cdot \sum_{j = 0}^{(m - 1)/2}
+	C^j_m \cdot \operatorname{Lim} \cos (m - 2j) nt. 
+\end{equation*}
+где \\[-4mm]
+$$
+\operatorname{Lim} \cos (m - 2j) nt = \left\{
+\begin{array}{l}
+	1, \mbox{ если } {\displaystyle \frac{(m - 2j) |t|}{2\pi}} \in \mathbb N, \\[3mm]
+	0 \mbox{ для остальных } t \in [-\pi, \pi].
+\end{array}
+\right.  
+$$
+Введём в рассмотрение множество
+$$
+Q_m = \left\{j: 0 \leqslant j < \frac m2, \ \frac{(m - 2j) |t|}{2\pi} \in \mathbb N\right\},
+$$
+тогда
+$$
+\operatorname{Lim} \cos^m nt = \frac 1{2^{m - 1}} \cdot \sum_{j \in Q_m} C^j_m. 
+$$
+2. Если $t = 0, \pm\pi$, то равенство $\operatorname{Lim} \cos^m nt = 1$, 
+где $m$ чётно, очевидно. Пусть $r \in \mathbb N$, $t \neq 0, \pm\pi$ и $m$ чётно, тогда \\[-4mm]
+\begin{multline*}
+	\operatorname{Lim} \cos^m nt = \lim_{n \to \infty} \frac 1n \cdot
+	\sum_{k = r + 1}^{r + n} \cos^m kt = \\
+	= \lim_{n \to \infty} \frac 1n \cdot \sum_{k = r + 1}^{r + n} 
+	\left[\frac{C^{m/2}_m}{2^m} + \frac 1{2^{m - 1}} \cdot 
+	\sum_{j = 0}^{(m - 2)/2} C^j_m \cdot \cos (m - 2j) kt\right] = \\
+	= \frac{C^{m/2}_m}{2^m} + \frac 1{2^{m - 1}} \cdot 
+	\sum_{j = 0}^{(m - 2)/2} C^j_m \cdot
+	\left[\lim_{n \to \infty} \frac 1n \cdot \sum_{k = r + 1}^{r + n}
+	\cos (m - 2j) kt\right] = \\
+	= \frac{C^{m/2}_m}{2^m} + \frac 1{2^{m - 1}} \cdot 
+	\sum_{j = 0}^{(m - 2)/2} C^j_m \cdot
+	\operatorname{Lim} \cos (m - 2j) nt = \\
+	= \frac{C^{m/2}_m}{2^m} + \frac 1{2^{m - 1}} \cdot \sum_{j \in Q_m} C^j_m. 
+\end{multline*}
+
+\litlist
+
+1. {\it Lorentz G. G.} 
+A contribution to the theory of divergent sequences //Acta mathematica. – 1948. – Т. 80. – №. 1. – С. 167-190.
+
+2. {\it Зволинский Р. Е., Семёнов Е. М.} 
+Подпространство почти сходящихся последовательностей //Сибирский математический журнал. – 2021. – Т. 62. – №. 4. – С. 758-763.
