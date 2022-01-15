@@ -18,7 +18,7 @@ jobs:
 
       - name: install texlive
         run: |
-          sudo apt-get install \
+          sudo apt-get update && apt-get install \
             texlive-latex-extra \
             texlive-font-utils \
             texlive-lang-cyrillic \
