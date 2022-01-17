@@ -1,0 +1,178 @@
+\vzmstitle[
+	\footnote{Работа выполнена в Воронежском госуниверситете при поддержке РНФ, грант 19-11-00197.}
+]{
+	Обобщения предела и мультипликативные свойства носителя последовательности
+}
+\vzmsauthor{Авдеев}{Н.\,Н.}
+\vzmsinfo{Воронеж, ВГУ; {\it nickkolok@mail.ru; avdeev@math.vsu.ru}}
+
+\vzmscaption
+
+
+Обозначим пространство ограниченных последовательностей с обычными полуупорядоченностью и нормой
+\begin{equation*}
+	\|x\| = \sup_{k\in\mathbb{N}} |x_k|
+	,
+\end{equation*}
+где $\mathbb{N}$ "--- множество натуральных чисел, через $\ell_\infty$.
+Естественным обобщением предела с пространства сходящихся последовательностей $c$ на $\ell_\infty$
+является понятие банахова предела.
+
+
+\paragraph{Определение.}
+	Линейный функционал $B\in \ell_\infty^*$ называется банаховым пределом
+	(пишем: $B \in \mathfrak{B}$),
+	если
+	\begin{enumerate}
+		\item
+			$B\geq0$, т.~е. $Bx \geq 0$ для $x \geq 0$,
+		\item
+			$B\mathbb{I}=1$, где $\mathbb{I} =(1,1,\ldots)$,
+		\item
+			$B(x_1,x_2,\ldots)=B(x_2,x_3,\ldots)$.
+	\end{enumerate}
+
+Существование банаховых пределов было анонсировано С. Мазуром в~1929~г. и доказано С.~Банахом~\cite{banach1993theorie}.
+%
+Сачестон установил~\cite{sucheston1967banach}, что
+для любых $x\in \ell_\infty$ и $B\in\mathfrak{B}$
+\begin{equation}\label{Sucheston}
+	q(x) \leqslant Bx \leqslant p(x)
+	,
+	\quad\mbox{~~где}
+\end{equation}
+\begin{equation*}
+	q(x) = \lim_{n\to\infty} \inf_{m\in\mathbb{N}}  \frac{1}{n} \sum_{k=m+1}^{m+n} x_k
+	~~~~\mbox{и}~~~~
+	p(x) = \lim_{n\to\infty} \sup_{m\in\mathbb{N}}  \frac{1}{n} \sum_{k=m+1}^{m+n} x_k
+\end{equation*}
+суть нижний и верхний функционалы Сачестона соотв.
+Неравенства \eqref{Sucheston} точны:
+для данного $x$ для любого $r\in[q(x); p(x)]$ найдётся банахов предел
+$B\in\mathfrak{B}$ такой, что $Bx = r$.
+
+Множество таких $x\in\ell_\infty$, что $p(x)=q(x)$,
+образует~\cite{lorentz1948contribution} пространство почти сходящихся последовательностей $ac$.
+На каждом $x\in ac$ все $B\in \mathfrak{B}$ принимают одинаковые значения.
+
+
+
+
+Дальнейшим ослаблением понятия сходимости является сходимость по Чезаро (сходимость в среднем).
+Говорят, что последовательность $\{x_n\}\in\ell_\infty$ сходится по Чезаро к $t$, если
+\begin{equation*}
+	\lim_{n\to\infty}\frac1{n}\sum_{i=1}^n x_i = t
+	.
+\end{equation*}
+Для обобщений верхнего и нижнего пределов верно, что
+\begin{multline}
+	\label{eq:generalization_of_limits}
+	\liminf_{n\to\infty} x_n \leq q(x) \leq \liminf_{n\to\infty}\frac1{n}\sum_{i=1}^n x_i
+	\leq
+	\\ \leq
+	\limsup_{n\to\infty}\frac1{n}\sum_{i=1}^n x_i
+	\leq p(x)
+	\leq \limsup_{n\to\infty} x_n
+	.
+\end{multline}
+
+
+Каждый $x\in \{0;1\}^\mathbb{N}$ можно отождествить с подмножеством
+$\operatorname{supp} x \subset \mathbb{N}$.
+Обозначим
+\begin{equation*}
+	\mathscr{M}A = \{ka: k\in\mathbb{N}, a\in A\}
+	,
+\end{equation*}
+где $\chi A$ "--- характеристическая функция множества $A$.
+
+Возникает вопрос о взаимосвязи структуры множества $A$
+и значений, которые принимают обобщения верхнего и нижнего пределов~\eqref{eq:generalization_of_limits}
+на последовательности $\chi \mathscr{M}\!A$.
+Известно~\cite{davenport1951sequences}, что для любого
+$A=\{a_1,a_2,...\}\subset\mathbb{N}$
+выполнено
+\begin{equation*}
+	\liminf_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}A)_i =
+	\lim_{j\to\infty}\lim_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}\{a_1,a_2,...,a_j\})_i
+	.
+\end{equation*}
+Построено~\cite[\S 7]{besicovitch1935density} такое множество $A\subset\mathbb{N}$, что
+\begin{equation}
+	\liminf_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}A)_i \neq
+	\limsup_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}A)_i
+	.
+\end{equation}
+В~\cite{avdeev2021vmzprimes} получены аналогичные результаты для функционалов Сачестона,
+в частности,
+\begin{theorem}
+	Пусть $A\subset \mathbb{N}\setminus\{1\}$.
+	Тогда следующие условия эквивалентны:
+	\begin{enumerate}%[label=(\roman*)]
+		\item
+			Для любого $n\in\mathbb{N}$ найдётся набор попарно взаимно простых чисел
+			$
+				\{a_{n,1}, a_{n,2}, ..., a_{n,n}  \} \subset A
+				.
+			$
+		\item
+			В $A$ существует бесконечное подмножество попарно взаимно простых чисел.
+		\item
+			$p(\chi\mathscr{M}A)=1$.
+	\end{enumerate}
+\end{theorem}
+
+
+
+
+
+\vspace{-1.5em}
+\begin{thebibliography}{99}
+\vspace{-0.7em}
+{}
+\bibitem{banach1993theorie}
+\emph{Banach} \emph{S.} Théorie des opérations
+linéaires. — Sceaux : Éditions Jacques Gabay, 1993. —
+С. iv+128. — ISBN 2-87647-148-5. — Reprint of the
+1932 original.
+{}
+\bibitem{sucheston1967banach}
+\emph{Sucheston} \emph{L.} Banach limits // Amer.
+Math. Monthly. — 1967. — Т. 74. — С. 308—311. —
+ISSN 0002-9890.
+% — DOI: \href
+%{https://doi.org/10.2307/2316038} {\nolinkurl
+%{10.2307/2316038}}.
+{}
+\bibitem{lorentz1948contribution}
+\emph{Lorentz} \emph{G. G.} A contribution to the
+theory of divergent sequences // Acta Math. —
+1948. — Т. 80, No 1. — С. 167—190.
+%— ISSN 0001-5962. —
+%DOI: \href {https://doi.org/10.1007/BF02393648}
+%{\nolinkurl {10.1007/BF02393648}}.{}
+\bibitem{davenport1951sequences}
+\emph{Davenport} \emph{H.},
+\emph{Erdös} \emph{P.} On sequences of positive
+integers // J. Indian Math. Soc., New Series. — 1951. —
+Т. 15. — С. 19—24. — DOI: \href
+{https://doi.org/10.18311/JIMS/1951/17063}
+{\nolinkurl {10.18311/JIMS/1951/17063}}.
+{}
+\bibitem{besicovitch1935density}
+\emph{Besicovitch} \emph{A.} On the density of
+certain sequences of integers // Math.
+Annalen. — 1935. — Т. 110, No 1. — С. 336—341.
+ — DOI:
+\href {https://doi.org/10.1007/BF01448032}
+{\nolinkurl {10.1007/BF01448032}}.
+{}
+\bibitem{avdeev2021vmzprimes}
+\emph{Авдеев} \emph{Н. Н.} Почти сходящиеся
+последовательности из 0 и 1 и простые числа //
+Владикавказский математический журнал. — 2021. —
+Т. 23, No 4. — С. 5—14.
+% — DOI: \href
+%{https://doi.org/10.46698/p9825-1385-3019-c}
+%{\nolinkurl {10.46698/p9825-1385-3019-c}}.
+\end{thebibliography}
