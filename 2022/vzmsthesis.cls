@@ -100,6 +100,11 @@
 \patchcmd{\thebibliography}{\leftmargin\labelwidth}{\leftmargin\labelwidth{}\addtolength{\leftmargin}{\parindent}}{}{}
 \def\bibindent{-2\parindent}
 
+% Remove vertical spacing from the reference list
+% in case of `thebibliography` environment
+% https://tex.stackexchange.com/questions/93859/condense-the-space-between-bibliographic-entries
+\apptocmd{\thebibliography}{\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt plus 0.3ex}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Providing custom commands
