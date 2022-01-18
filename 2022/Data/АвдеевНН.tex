@@ -9,12 +9,12 @@
 \vzmscaption
 
 
-Обозначим пространство ограниченных последовательностей с обычными полуупорядоченностью и нормой
+Обозначим $\ell_\infty$ пространство ограниченных последовательностей с обычными полуупорядоченностью и нормой
 \begin{equation*}
 	\|x\| = \sup_{k\in\mathbb{N}} |x_k|
 	,
 \end{equation*}
-где $\mathbb{N}$ "--- множество натуральных чисел, через $\ell_\infty$.
+где $\mathbb{N}$ "--- множество натуральных чисел.
 Естественным обобщением предела с пространства сходящихся последовательностей $c$ на $\ell_\infty$
 является понятие банахова предела.
 
@@ -64,7 +64,7 @@ $B\in\mathfrak{B}$ такой, что $Bx = r$.
 	\lim_{n\to\infty}\frac1{n}\sum_{i=1}^n x_i = t
 	.
 \end{equation*}
-Для обобщений верхнего и нижнего пределов верно, что
+Для обобщений верхнего и нижнего пределов имеем:
 \begin{multline}
 	\label{eq:generalization_of_limits}
 	\liminf_{n\to\infty} x_n \leq q(x) \leq \liminf_{n\to\infty}\frac1{n}\sum_{i=1}^n x_i
@@ -84,7 +84,7 @@ $\operatorname{supp} x \subset \mathbb{N}$.
 	\mathscr{M}A = \{ka: k\in\mathbb{N}, a\in A\}
 	,
 \end{equation*}
-где $\chi A$ "--- характеристическая функция множества $A$.
+через $\chi A$ "--- характеристическую функцию множества $A$.
 
 Возникает вопрос о взаимосвязи структуры множества $A$
 и значений, которые принимают обобщения верхнего и нижнего пределов~\eqref{eq:generalization_of_limits}
@@ -97,14 +97,13 @@ $A=\{a_1,a_2,...\}\subset\mathbb{N}$
 	\lim_{j\to\infty}\lim_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}\{a_1,a_2,...,a_j\})_i
 	.
 \end{equation*}
-Построено~\cite[\S 7]{besicovitch1935density} такое множество $A\subset\mathbb{N}$, что
+В~\cite[\S 7]{besicovitch1935density} построено такое множество $A\subset\mathbb{N}$, что
 \begin{equation}
 	\liminf_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}A)_i \neq
 	\limsup_{n\to\infty}\frac1{n}\sum_{i=1}^n (\chi\mathscr{M}A)_i
 	.
 \end{equation}
-В~\cite{avdeev2021vmzprimes} получены аналогичные результаты для функционалов Сачестона,
-в частности,
+В~\cite{avdeev2021vmzprimes} получены аналогичные результаты для функционалов Сачестона.
 \begin{theorem}
 	Пусть $A\subset \mathbb{N}\setminus\{1\}$.
 	Тогда следующие условия эквивалентны:
