@@ -1,0 +1,120 @@
+\vzmstitle[
+    % \footnote{Работа выполнена при поддержки гранта}
+    ]{
+    НЕОБХОДИМЫЕ УСЛОВИЯ НЕПРЕРЫВНОСТИ ОТОБРАЖЕНИЙ С ($s$,$k$) - УСРЕДНЕННОЙ ХАРАКТЕРИСТИКОЙ
+}
+\vzmsauthor{Малютина}{А.\,Н.}
+\vzmsinfo{Томск, Национальный исследовательский Томский государственный университет; {\it nmd@math.tsu.ru}}
+\vzmscaption
+
+По известной теореме вложения С. Л. Соболева [1], если $G$ ограниченная область евклидова пространства $R^{n}$ и функция $f:G\to R^{1}$,
+$f\in W_{p,loc}^{1} \left(G\right),p>n$, то она непрерывна в $G$. Если $1<p\le n$ этого свойства, вообще говоря, может и не быть. В настоящей работе мы обобщаем результаты,
+полученные в [2] и находим необходимые условия, при которых подкласс отображений с s($s$, $k$) - усредненной характеристикой [3] $1<s\le n$ и функция $k\left(t\right)$ определена при $t>0$,
+положительна, не возрастает и ${\mathop{\lim}\limits_{t\to 0+}} k\left(t\right)=+\infty$ функция будет непрерывными. Примеры подклассов таких отображений, с указанными выше свойствами приведены в [3,4]. 
+
+\textbf{Определение.} Пусть область $G\subset R^{n}$, $f:G\to R^{n}$, $f\in W_{n}^{1} \left(G\right)$, $1<s\le n$, пусть для любого $y\in G$ выполняется неравенства 
+\begin{equation} \label{GrindEQ__1_} 
+    \int_{G}\left(\lambda (x,f)\right)^{s} k\left(\left|x-y\right|\right)d\sigma _{x} < M,
+\end{equation} 
+и
+\begin{equation} \label{GrindEQ__2_} 
+    \int _{G}\left(\lambda ^{*} (x,f)\right)^{s^{*} }  k\left(\left|x-y\right|\right)d\sigma _{x} <M^{*},
+\end{equation} 
+В случае \ref{GrindEQ__1_} будем говорить, что отображение с ($s$,$k$) - усредненной характеристикой,
+а в случае \ref{GrindEQ__2_} -- отображение с ($s^{*} ,k$) - усредненной характеристикой, где функция\linebreak$f\in W_{n}^{1} \left(G,k,M\right)$, $1<s<n$ [3].
+
+\textbf{Теорема.} Пусть $f$ -- отображение с ($s^{*} ,k$)- усредненной характеристикой и выполнено неравенство 
+\begin{equation} \label{GrindEQ__3_} 
+    \int_{0}^{0}k^{\frac{1}{s^{*} } } \left(t\right) t^{\frac{n}{s^{*} } } dt<+\infty, \ a>n-p.
+\end{equation}
+Если $f\in W_{n,loc}^{1} \left(G\right),f^{-1} \in W_{n,loc}^{1} \left(G\right)$ и для $1<s\le n$ и любой точки $y\in G$выполняется неравенство 
+\begin{equation} \label{GrindEQ__4_}
+    I\left(\int _{G}\left(\frac{\left|\Delta f\right|^{n} }{J\left(x,f\right)} \right)^{s} \left\| x-y\right\| ^{-\alpha } d\sigma _{x} \right)<M,
+\end{equation}
+если $\alpha >n-s$, то на любом компакте $A$ из области $G$ функция $f$ эквивалентна некоторой непрерывной функции.
+
+\textit{Доказательство}. Доказательство теоремы следует из\linebreakтеоремы Арцела. Для этого построим равностепенно непрерывную и равномерно ограниченную на $K$ последовательность функций,
+сходящуюся к функции $f$ почти везде в $G$. Рассмотрим последовательность $\varepsilon$ - усредненний функции $f$ по С.Л. Соболеву при достаточно малых $\varepsilon$ [1] называется функция 
+$$f_{\varepsilon } =\varepsilon ^{-n} \int _{R^{n} }\varphi \left(\frac{x-u}{\varepsilon } \right) f\left(u\right)du=$$
+$$=\varepsilon ^{-n} \int _{B\left(0,\varepsilon \right)}\varphi \left(\frac{u}{\varepsilon } \right) f\left(x-u\right)du.$$
+Из [1] следует, что вне области $G$ функция $f_{\varepsilon }=0$ и функция $f_{\varepsilon }$ бесконечно дифференцируема в
+${\mathcal{R}}^n$ и ${\left\|f_{\varepsilon }-f\right\|}_p,{\mathcal{R}}^n\rightarrow0\ \ \mathrm{\textrm{п}\textrm{р}\textrm{и}}\mathrm{\ \ }\varepsilon \rightarrow0$ и что
+$\frac{\partial f_{\varepsilon } }{\partial x_{i} } =\left(\frac{\partial f}{\partial x_{i} } \right)_{\varepsilon } $.
+Существуют открытые множества $G_1\ \textrm{и}\ G_2$ такие, что компакт $K\subset G_1\subset G_2$, ${\overline{G}}_1\subset G_2,\ {\overline{G}}_2\subset G$,
+где $\bar{G}_{i} $ замыкание множества $G_i,\ i=1,2.$ Покажем, что для достаточно малых $\varepsilon$
+$$I\left(\int _{G}\frac{\left|\Delta f\right|^{n} }{J\left(x,f\right)} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right)<M,y\in G_{2}.$$
+Используя обобщенное неравенство Минковского [1] и условие \ref{GrindEQ__1_} получим 
+\begin{equation}\label{GrindEQ__5_} 
+    \begin{gathered}
+        I\left(\int _{G_{2} }\frac{\left|\Delta f\right|^{n} }{J\left(x,f\right)} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right) \\
+        =\left[\int _{G_{2} }\varepsilon ^{-n} \int _{B\left(0,\varepsilon \right)}\varphi \left(\frac{u}{\varepsilon } \right)
+        \frac{\left|\Delta f\left(x-u\right)\right|^{n} }{J\left(x,f\right)} du\left\| x-y\right\| ^{\alpha } d\sigma _{x}  \right]^{\frac{1}{s} } \le \\
+        \le \varepsilon ^{-n}\!\!\int _{B\left(0,\varepsilon \right)}\left[\int _{G_{2} }\varphi \left(\frac{u}{\varepsilon } \right)
+        \left(\frac{\left|\Delta f\left(x-u\right)\right|^{n} }{J\left(x,f\right)} \right)^{s} \left\| x-y\right\| ^{\alpha } d\sigma _{x} \right]^{\frac{1}{s}}\!du\!\le \\
+        \le \varepsilon ^{-n} M\int _{B\left(0,\varepsilon \right)}\varphi \left(\frac{u}{\varepsilon } \right) =M,
+    \end{gathered}
+\end{equation}
+если $\left(y-u\right)\in G$ , т.е. при $\varepsilon <{\varepsilon }_0$ , где ${\varepsilon }_0$ меньше расстояния от границы множества $G_2$ до границы $G$.
+Из неравенства \ref{GrindEQ__5_} следует, что $\forall y\in G_2$ выполнено неравенство:
+$$\left(\int _{G}\frac{\left|\Delta f\right|^{n} }{J\left(x,f\right)} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right)^{s} <n^{\frac{n}{2} } M,$$
+если $\mathcal{B}(y,r)\subset G_2$.
+
+Из \ref{GrindEQ__3_} следует, что непрерывные функции $f_{\varepsilon }$ при $\varepsilon <{\varepsilon }_0$ удовлетворяет условию леммы Ч.~Морри [3],
+поэтому для любых точек $x$, $y$ таких, что шар $B\left(\frac{x+y}{2}, \ \frac{3}{2} \left|x-y\right|\right)\subset G_{2};$ $\left|f_{\varepsilon } \left(x\right)-f_{\varepsilon } \left(y\right)\right|<N\left|x-y\right|^{\beta } $,
+где $\beta =\frac{\alpha -n+s}{s}$, $N$ зависит от $M$, $n, s$, $\alpha$.
+
+Таким образом, семейство функций $f_{\varepsilon }$ при $\varepsilon <{\varepsilon }_0$ на $K$ равностепенно непрерывно. Покажем, что функции $f_{\varepsilon }$ при $\varepsilon <{\varepsilon }_0$ на $K$ ограничены одним числом.
+Существует функция $\eta \in D$ такая, что ее носитель лежит в $G_2$ и $\eta \left(x\right)=1$ для $x\in G_1$ [3].
+
+Функция $f\eta \in W^1_p({\mathcal{R}}^n)$. Доопределим $f\equiv 0$ вне области G. Для $\varphi \in D$ имеем
+\begin{equation} \label{GrindEQ__6_}
+    \begin{gathered}
+    \int_{R^{n} }\left(\frac{\partial \eta }{\partial x_{i} } f+\eta \frac{\partial f}{\partial x_{i} } \right) \varphi dx
+    = \int _{G}\left(\frac{\partial \eta }{\partial x_{i} } f+\eta \frac{\partial f}{\partial x_{i} } \right) \varphi dx= \\
+    = \int _{G}\left(\frac{\partial \eta }{\partial x_{i} } f\varphi dx+\int _{G}\eta \varphi \frac{\partial f}{\partial x_{i} } dx \right) = \\
+    = \int _{G}\left(\frac{\partial \eta }{\partial x_{i} } f\varphi dx-\int _{G}f\eta \varphi \frac{\partial \left(\eta \varphi \right)}{\partial x_{i} } dx \right)
+    = -\int _{G}f\eta \varphi \frac{\partial \left(\varphi \right)}{\partial x_{i}}dx.
+    \end{gathered}
+\end{equation}
+Из \ref{GrindEQ__6_} следует, что обобщенная производная 
+\begin{equation} \label{GrindEQ__7_}
+    \begin{gathered}
+        \frac{\partial \left(\eta ,f\right)}{\partial x_i}=\frac{\partial \eta }{\partial x_i}f+\eta \frac{\partial f}{\partial x_i}
+    \end{gathered}
+\end{equation}
+Покажем, что для функции $\eta f$ следует
+$$I\left(\int _{G}\left|\frac{\left|\Delta \eta f\right|^{n} }{J\left(x,f\right)} \right|^{s} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right)<M\, \, \, \, \forall y\in K.$$
+Из \ref{GrindEQ__7_} следует, что
+\begin{equation} \label{GrindEQ__8_}
+    \begin{gathered}
+        I\left(\int _{G}\left|\frac{\left|\Delta \eta f\right|^{n} }{J\left(x,\eta f\right)} \right|^{s} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right) \le \\
+        \le I\left(\int _{G}\left|\frac{\left|\Delta \eta \right|^{n} }{J\left(x,\eta f\right)} f\right|^{s} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right)+ \\
+        + I\left(\int _{G}\left|\eta \frac{\left|\Delta f\right|^{n} }{J\left(x,\eta f\right)} \right|^{s} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right)\le \\
+        \le I\left(\int _{G}\left|\frac{\left|\Delta \eta \right|^{n} }{J\left(x,\eta f\right)} f\right|^{s} \left\| x-y\right\| ^{-\alpha } d\sigma _{x} \right)_{y\in G_{2} } + \\
+        + I\left(\int _{G}\left|\eta \frac{\left|\Delta f\right|^{n} }{J\left(x,f\right)} \right|^{s} \left\| x-y\right\| ^{-\alpha }  d\sigma _{x} \right)_{y\in G_{2} } \le \\
+        \le Ad^{\frac{-\alpha }{s} } B+CM=M_{1} ,
+    \end{gathered}
+\end{equation}
+где $A=max\frac{\partial \eta }{\partial x_{i} }$ $x\in G_{2}$, $C=max\eta \left(x\right)$ $x\in G_{2} $, $d$ -- расстояние между границами
+$G_1\ \mathrm{\textrm{и}}\ G_2$; $=\left\| f\right\| _{p,G} $. Известно [6], что функция $\varphi \in D$ удовлетворяет условиям теоремы и, применяя условие Гельдера и оценки \ref{GrindEQ__6_} получаем.
+$$\left|\eta \left(x\right)f_{\varepsilon } \left(x\right)\right|=\left|\frac{1}{\omega _{n-1} } \sum _{i=1}^{n}\int _{R^{n} }\frac{\partial \left(\eta f_{\varepsilon } \right)}{\partial x_{i} } \left(x-y\right)\frac{y_{i} }{\left|y\right|^{n} } dy\sigma _{y}   \right|\le$$
+$$\le\frac{1}{\omega _{n-1} } \sum _{i=1}^{n}\int _{G_{2} }\frac{\partial \left(\eta f_{\varepsilon } \right)}{\partial y_{i} } \left(y\right)\frac{\partial \sigma _{y} }{\left|y-x\right|^{n-1} }\le$$
+$$\le \frac{1}{\omega _{n-1} } \sum _{i=1}^{n}\left(\int _{R^{n} }\left|\frac{\partial \left(\eta f_{\varepsilon } \right)}{\partial y_{i} } \left(y\right)\right|^{p} \left|y-x\right|^{-\alpha } d\sigma _{y}  \right) ^{\frac{1}{p} } \times$$
+$$\times\left(\int _{G_{2} }\left|y-x\right|^{m} d\sigma _{y}  \right)^{\frac{p-1}{p} } \le M_{2},$$
+
+\noindent где $m=\frac{np-p-a}{p-1}$, $m+n>0$, $M_2$ завасит от $M_1$, $n$ и диаметра области $G_2$.
+
+Для $x\in K$ $\eta (x)\nabla f_{\varepsilon } (x)=f_{\varepsilon } (x)$ и $|f_{\varepsilon } |\le M_{2} $, следовательно равномерно ограничена.
+Таким образом, на $K$ семейство функций $f_{\varepsilon } ,<\varepsilon _{0} $ равностепенно непрерывно, равномерно ограниченно,
+поэтому по теореме Арцеля из семейства можно выделить подпоследовательность функций $\left|f_n(x)\ \right|$ равномерно сходящуюся на $K$ к некоторой непрерывной функций $\Psi $.
+Таким образом, получившиеся функции $f$и $\Psi $ эквивалентны.
+
+\textbf{Замечание.} Построенные примеры показывают, что в рассматриваемых подмножествах функций класса $W^1_p(G)$ с $p=n$
+существуют функции не принадлежащие ни одному из классов $W^1_l\left(G\right)$ при $l>n$.
+
+
+\litlist
+
+1. {\it Работнов Ю.Н.} Элементы наследственной механики твердых тел / Ю.Н. Работнов. – М.: Наука, – 1977. – 384 с.
+
+2. {\it Бырдин А.П.} Метод рядов Вольтерра в динамических задачах  нелинейной наследственной упругости /  А.П. Бырдин, М.И. Розовский // Изв. АН Арм. ССР – 1985. Т. 38. №5. – С. 49 – 56. 
