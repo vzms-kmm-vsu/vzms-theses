@@ -1,5 +1,7 @@
 \documentclass{vzmsthesis}
 
+\usepackage{pdfpages}
+
 \graphicspath{{Data/pic/}}
 
 
@@ -170,11 +172,13 @@
 
 
 
-\input{auxpages/title}
+\thispagestyle{empty}
+\includegraphics[width=0.95\linewidth]{vzms_2022_title.png}
 
-\setcounter{page}{2}
 
-\input{auxpages/begin}
+\setcounter{page}{1}
+
+\includepdf{second_page.pdf}
 
 % Тезисы отсортированы по алфавиту и хранятся в файле theses.tex. Подключаем их оттуда.
 % Команда \thesis делает много хорошего
