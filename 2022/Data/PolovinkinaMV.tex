@@ -1,0 +1,399 @@
+\vzmstitle[
+    \footnote{}
+]{
+    К вопросу об устойчивости стационарного решения в одной модели
+    распространения эпидемии ВИЧ с учетом миграций
+}
+\vzmsauthor{Шашкин}{А.\,И.}
+\vzmsinfo{Воронеж, ВГУ; {\it dean@amm.vsu.ru}}
+\vzmsauthor{Половинкина}{М.\,В.}
+\vzmsinfo{Воронеж, ВГУИТ; {\it polovinkina-marina@yandex.ru}}
+\vzmsauthor{Половинкин}{И.\,П.}
+\vzmsinfo{Воронеж, ВГУ, БелГУ; {\it polovinkin@yandex.ru}}
+
+\vzmscaption
+
+Пусть $\Omega\subset\mathbb{R}^n$ --- ограниченная область с
+кусочно гладкой границей. Рассматривается начально-краевая задача
+$$
+\frac{\partial S}{\partial t}=\mu \rho -
+\left(\beta_1-\frac{\beta_2 I}{m+I}\right)SI-c\beta bJS-\mu
+S+\vartheta_1\Delta S,\eqno(1)
+$$
+$$
+\frac{\partial I}{\partial t}= \left(\beta_1-\frac{\beta_2
+I}{m+I}\right)SI+c\beta bJS-(\mu+k_1)I+\delta J+\vartheta_2\Delta
+I,\eqno(2)
+$$
+$$
+\frac{\partial J}{\partial t}=k_1
+I-(\mu+k_2+\delta)J+\vartheta_3\Delta J,\ x=(x_1,x_2)\in\Omega,\
+t>0,\eqno(3)
+$$
+$$
+\left.\left(\mu_1 S+\eta_1\frac{\partial S}{\partial
+\overrightarrow{\nu}}\right)\right|_{\partial\Omega}=B_1,\
+%$$
+%$$
+\left.\left(\mu_2 I+\eta_2\frac{\partial
+I}{\partial\overrightarrow{\nu}}\right)\right|_{\partial\Omega}=B_2,\
+$$
+$$
+\left.\left(\mu_3 J+\eta_3\frac{\partial
+J}{\partial\overrightarrow{\nu}}\right)\right|_{\partial\Omega}=B_3,
+\ t\geqslant 0;\eqno(4)
+$$
+$$
+S\mid_{t=0}=S_0,\  I\mid_{t=0}=I_0,\ J\mid_{t=0}=J_0,\
+x\in\overline{\Omega}.\eqno(5)
+$$
+Здесь искомыми функциями являются $S=S(x_1,x_2,t)$ --- численность
+группы индивидуумов, восприимчивых к инфекции, $I=I(x_1,x_2,t)$
+--- численность группы бессимптомных носителей инфекции,
+$J=J(x_1,x_2,t)$ --- численность симптоматической группы.
+Параметры, входящие в систему (1)-(5), имеют следующий смысл: $k$
+--- общая численность населения;   $\mu$ --- уровень смертности
+населения; $c$ --- уровень контактности;   $\beta$ --- вероятность
+передачи заболевания при каждом контакте с инфицированным в
+бессимптомной стадии;  $b$ --- вероятность передачи заболевания
+при каждом контакте с инфицированным в симптоматической стадии;
+$k_1$ --- скорость перехода от бессимптомной стадии к
+симптоматической; $k_2$ --- скорость перехода от симптоматической
+стадии к полномасштабному СПИДу; $\delta$ --- скорость лечения от
+симптоматической до бессимптомной стадии; $d$ --- уровень
+смертности от СПИДа; $m > 0$ --- константа полунасыщения, которая
+отражает влияние освещения в средствах массовой информации на
+передачу контактов;  $\beta$ ---  частота контактов до оповещения
+в средствах массовой информации; $\beta_1\geqslant\beta_2>0$;
+отношение $\beta_2I/(m+I)$ отражает эффект снижения частоты
+контактов, когда инфицированные предупреждаются через средства
+массовой информации. Функция $I/(m+I)$ представляет собой
+непрерывную ограниченную функцию, которая учитывает насыщенность
+болезнями или психологические эффекты [1]. Мы включаем эффект СМИ
+только на этапе $I$,  потому что он относится к инфицированным
+людям без симптомов: роль средств массовой информации здесь
+заключается в том, чтобы предупредить этих людей о возможности
+заражения и повысить их осведомленность. Модель (1)--(3) является
+результатом нескольких этапов модификации классической модели
+Кермака --- Маккендрика [2] распространения эпидемии [3--6]. Наш
+вклад в эту модификацию состоит в добавлении последних
+"диффузионных"\ слагаемых, получаемых действием оператора
+$\vartheta_\kappa\Delta$ на искомые функции $S, I, J$,
+$\kappa=1,2,3$, учитывающих миграционные процессы, которые мы
+полагаем подчиняющимися закону Фурье. Здесь
+$\Delta=\partial^2/\partial x_1^2+\partial^2/\partial x_2^2$ ---
+оператор Лаплласа в $\mathbb{R}^2$. В краевых условиях (4)
+полагается, что $\mu_\kappa^2+\eta_\kappa^2>0$, $\mu_\kappa
+\eta_\kappa\geqslant 0$, $\kappa=1,2,3$.
+
+Пусть  $w(x)=(w_1(x_1,x_2),w_2(x_1,x_2),w_3(x_1,x_2))$ ---
+регулярное стационарное решение системы (1)--(3), удовлетворяющее
+краевым условиям (4). Пусть  $H$ --- диаметр области $\Omega$.
+Далее положим
+$$
+A_{11}=- c\beta\left(\beta_1-\frac{\beta_2 }{m+I}\right)I-c\beta b
+J-\mu - \frac{\vartheta_1}{H^2},
+$$
+$$
+A_{22}=c\beta\beta_1S-\frac{c\beta\beta_2mS}{(m+I)^2}-\mu-k_1-\frac{\vartheta_2}{H^2},
+$$
+$$
+A_{33}=-\mu-k_2-\delta-\frac{\vartheta_3}{H^2},
+$$
+$$
+A_{12}=A_{21}=\frac{1}{2}\left(-c\beta\beta_1S+\frac{c\beta\beta_2mS}{(m+I)^2}+c\beta\beta_1I-
+\frac{c\beta\beta_2I}{m+I}+c\beta b J\right),
+$$
+$$
+A_{13}=A_{31}=-\frac{1}{2}c\beta b S,\
+A_{23}=A_{32}=\frac{1}{2}(c\beta b S+\delta+k_1).
+$$
+Доказано, что если при $S=w_1$, $I=w_2$, $J=w_3$ квадратичная
+форма
+$$
+Q(w_1,w_2,w_3;z_1,z_2,z_3)=\sum\limits_{\kappa=1}^3
+\sum\limits_{\iota=1}^3\, A_{\kappa\iota}z_\kappa z_\iota \eqno(7)
+$$
+отрицательно определена, то стационарное решение
+$w=(w_1(x_1,x_2),w_2(x_1,x_2),w_3(x_1,x_2))$  системы (1)--(3),
+удовлетворяющее краевым условиям (4), устойчиво по отношению к
+малым отклонениям
+$w=(w_1(x_1,x_2,t),w_2(x_1,x_2,t),w_3(x_1,x_2,t))$. Заметим, что
+если диаметр области достаточно мал, а $w_\kappa=const$,   то
+квадратичная форма (7) будет отрицательно определенной, так что
+постоянное стационарное решение в малой области заведомо будет
+устойчивым в малой области. Следует также отметить, что всякое
+постоянное (стационарное) решение системы (1)-(3) без учета
+миграций, то есть при  $\vartheta_1=\vartheta_2=\vartheta_3=0$,
+когда она является системой ОДУ, будет и стационарным решением
+этой системы (УЧП) при условии учета миграции, то есть при
+$\vartheta_1^2+\vartheta_2^2+\vartheta_3^2>0$, конечно, при
+соответствующих краевых условиях. При этом может оказаться, что
+это постоянное решение является неустойчивым в модели без учета
+миграций, но устойчивым в малой области, если миграционные
+процессы будут учтены. Это можно продемонстрировать на простом
+примере. Постоянная точка (стационарное состояние) $(k,0,0)$
+является решением системы (1)--(3) при любом наборе коэффициентов
+диффузии. В случае $\vartheta_1=\vartheta_2=\vartheta_3=0$ это
+решение устойчиво при
+$$
+\mu<k_1-\frac{(k_1+\delta)^2}{4(k_2+\mu)}
+$$
+и только при этом условии. Если же
+$\vartheta_1^2+\vartheta_2^2+\vartheta_3^2>0$, решение $(k,0,0)$
+при достаточно малом значении $H$ будет устойчиво и без этого
+требования. Методы исследования, примененные для доказательства
+основного результата этой работы, применялись ранее в работах
+[7--11]. В работе [12] техника исследования скорректирована в
+связи с тем, что уравнение содержит оператор Бесселя (см. в связи
+с этим [13-17]).
+
+
+\litlist
+
+%1. {\it Semenov E. M., Sukochev F. A.}
+% Invariant Banach limits and applications //Journal of Functional Analysis. - 2010. - Т. 259. - №. 6. - С. 1517-1541.
+1. {\it  Capasso V.} A generalization of the Kermack - McKendrick
+deterministic epidemic model / V. Capasso, G. Serio // Math.
+Biosci. - 42 (1978). - P. 43-62.
+http://dx.doi.org/10.1016/0025-5564(78)90006-8 .
+
+2. {\it  Kermack W.O.,  McKendrick A.G.} A Contribution to the
+Mathematical Theory of  // Proceedings of the Royal Society of
+London. Series A, Containing Papers of a Mathematical and Physical
+Character. --- 1927. --- Vol. 115, No. 772 (Aug. 1). --- pp.
+700--721.
+
+3. {\it   Cai L.} Stability analysis of an HIV/AIDS epidemic model
+with treatment / L. Cai, X. Li, M. Ghoshc, B. Guod // J. Comput.
+Appl. Math. --- 229 (2009), l. --- P. 313--323. DOI:
+10.1016/j.cam.2008.10.067 .
+
+4.  {\it Tchuenche J.M.} The impact of media coverage on the
+transmission dynamics of human influenza / J.M. Tchuenche, N.
+Dube, C.P Bhunu, R.J. Smith, C.T. Bauch // BMC Public Health. ---
+2011. -- Feb 25;11 Suppl 1(Suppl 1):S5. DOI:
+10.1186/1471-2458-11-S1-S5 .
+
+5. {\it Zhao H.} Global Hopf bifurcation analysis of an
+susceptible-infective-removed epidemic model incorporating media
+coverage with time delay / H. Zhao, M. Zhao // J. Bio. Dyn. 11(1)
+(2017). --- P. 8--24. DOI: 10.1080/17513758.2016.1229050 .
+
+6. {\it Sanaa Moussa Salman} Memory and media coverage effect on
+an HIV/AIDS epidemic model with treatment/ Sanaa Moussa Salman //
+Journal of Computational and Applied Mathematics. --- Volume 385.
+--- 2021. 113203, ISSN 0377-0427,
+https://doi.org/10.1016/j.cam.2020.113203.
+(https://www.sciencedirect.com/science/article/pii/S0377042720304945).
+
+7. {\it  Мешков В.З.} Об устойчивости стационарного решения
+уравнения Хотеллинга / В.З.  Мешков, И.П. Половинкин, М.Е. Семенов
+// Обозрение прикладной и промышленной математики. --- 2002. --- Т. 9,
+вып. 1. --- С. 226--227.
+
+8. {\it  Gogoleva T.N.} On stability of a stationary solution to
+the Hotelling migration equation / T.N. Gogoleva, I.N. Shchepina,
+M.V. Polovinkina, S.A. Rabeeakh // J. Phys.: Conf. Ser. --- 2019.
+--- 1203 012041. DOI: 10.1088/1742-6596/1203/1/012041 .
+
+9. {\it Половинкин И.П.} К вопросу об устойчивости стационарного
+решения в миграционной модели / И.П. Половинкин, М. В.
+Половинкина, С. А. Рабееах // Актуальные проблемы прикладной
+математики, информатики и механики. --- 2019. --- С. 889--892.
+
+10. {\it Половинкина М.В.} Об изменении характера устойчивости
+тривиального решения при переходе от модели с сосредоточенными
+параметрами к модели с распределенными параметрами / М.В.
+Половинкина, И.П. Половинкин // Прикладная математика $\&$ Физика.
+- 2020. -  Т. 52, № 4. - С. 255-261. DOI:
+10.18413/2687-0959-2020-52-4-255-261
+http://pmph.bsu.edu.ru/index.php/journal/article/view/40к письму .
+
+
+11. {\it Debbouche A.} On the stability of stationary solutions in
+diffusion models of oncological processes / A. Debbouche, M. V.
+Polovinkina, I. P. Polovinkin, C. A. Valentim, S. A. David, // The
+European Physical Journal Plus. (2021). --- 136(1). --- P. 1--18.
+https://doi.org/10.1140/epjp/s13360-020-01070-8 .
+
+12. {\it  Polovinkina M. V.} Stability of stationary solutions for
+the glioma growth equations with radial or axial symmetries / M.V.
+Polovinkina, A. Debbouche, I.P. Polovinkin, S.A. David //
+Mathematical Methods in the Applied Sciences 44(15):12021-12034.
+DOI: 10.1002/mma.7194 .
+
+13. {\it Катрахов В. В.} Метод преобразования и краевые задачи для
+сингулярных эллиптических уравнений / В.В. Катрахов, С.М. Ситник
+// Совр. мат. Фундам. напр. - 2018. - 64, № 2. --- С. 211--426.
+https://doi.org/10.22363/2413-3639-2018-64-2-211-426 .
+
+14. {\it Киприянов И. А.} Преобразование Фурье --- Бесселя и
+теоремы вложения для весовых классов / И.А. Киприянов // Тр. Мат.
+ин-та им. В. А. Стеклова. --- 1967. --- 89. --- С. 130--213.
+
+15. {\it Киприянов И. А.} Сингулярные эллиптические краевые задачи
+/ И.А. Киприянов --- М.: Наука, 1997. --- 208 с/. --- ISBN
+5-02-014799-0.
+
+16.0 {\it Ляхов Л. Н.} Весовые сферические функции и потенциалы
+Рисса, порожденные обобщенным сдвигом / Л. Н. Ляхов --- Воронеж:
+ВГТА, 1997. --- 143 с. --- ISBN 5-89448-037-X.
+
+17. {\it Ситник С. М.} Метод операторов преобразования для
+дифференциальных уравнений с операторами Бесселя / С. М. Ситник,
+Э. Л. Шишкина. --- Москва: Физматлит, 2019. --- 221 с. --- ISBN
+978-5-9221-1819-4.
+
+
+
+\end{document}
+
+
+
+\paragraph{Теорема~1.}
+{\it
+    Не существует такого $\gamma < 1$,
+    что для любого $x\in A$ выполнена мультипликативная оценка
+    $$
+        \alpha(Cx) \leqslant \gamma \cdot \alpha(x)
+    ,
+    $$
+или, что то же самое, не существует такого $p\in \mathbb{N}$,
+    что для любого $x\in A$ выполнено неравенство
+    $
+        \alpha(Cx) \leqslant (1-2^{-p+1})\cdot \alpha(x).
+    $
+}
+
+Для доказательства теоремы~1 потребуются вспомогательные
+построения.
+\begin{equation}\label{AvdSem_summa_drobey}
+    \sum_{i=0}^{p-1} \frac{i \cdot 2^i}{p} = \frac{2^p(p-2) + 2}{p}
+\end{equation}
+Введём вспомогательный оператор $S:l_\infty \to l_\infty$:
+\begin{equation*}\label{operator_S}
+    (Sy)_k = y_{i+2}, \mbox{ где } 2^i < k \leqslant 2^i+1
+\end{equation*}
+Нам потребуются следующие свойства оператора $S$.
+\begin{equation}\label{AvdSem_alpha_S}
+    \alpha(Sx) = \varlimsup_{k\to\infty} |x_{k+1} - x_{k}|
+\end{equation}
+\begin{equation}\label{AvdSem_summa_S_less}
+    \sum_{k=2}^{2^p} (Sy)_k =
+    \sum_{i=0}^{p-1} 2^i y_{i+2}
+\end{equation}
+Здесь и далее $(Tx)_n = x_{n+1}$.
+\begin{equation}\label{AvdSem_summa_S}
+    \sum_{k=2^i+1}^{2^{i+j+1}} (Sx)_k =
+    2^i\sum_{k=2}^{2^{j+1}} (ST^ix)_k
+\end{equation}
+Введём вспомогательную функцию
+%\vspace{-2.28em}
+\begin{equation*}\label{def_k_b}
+    k_b(x) = (2b)^{-1} \left|
+        \sum\nolimits_{k=1}^{b}x_k - \sum\nolimits_{k=b+1}^{2b}x_k
+    \right|
+\end{equation*}
+Тогда
+\begin{equation}\label{AvdSem_alpha_greater_k_b}
+    \alpha (Cx) \geqslant \varlimsup_{i\to \infty} k_i(x)
+\end{equation}
+
+\paragraph{Схема доказательства теоремы~1.}
+Зафиксируем $p$ и построим $y\in l_\infty$:
+\begin{equation*}\label{y_construction}
+    y = \left\{
+        0, 0, \frac{1}{p}, \frac{2}{p}, %\frac{3}{p},
+        ...,
+        \frac{p-1}{p}, 1, \frac{p-1}{p},
+        ...,
+        \frac{1}{p},
+        0, ..., 0,
+        \frac{1}{p}, ...
+    \right\}
+\end{equation*}
+так, что
+\begin{equation}\label{AvdSem_T_y}
+    T^{5p}y = y
+\end{equation}
+Положим $x = Sy$, тогда с учётом (\ref{AvdSem_alpha_S}) $
+    \alpha (x) = \alpha (Sy) = \frac{1}{p}
+$.
+
+Оценим $\alpha(Cx)$, принимая во внимание
+(\ref{AvdSem_summa_drobey}) и (\ref{AvdSem_summa_S_less}) ---
+(\ref{AvdSem_alpha_greater_k_b}):
+\begin{multline*}
+    \alpha (Cx) \mathop{\geqslant}^{(\ref{AvdSem_alpha_greater_k_b})}
+    \varlimsup_{b\to \infty} k_b(x) \geqslant
+    \!\!\!
+    \varlimsup_{
+        i\to \infty,~
+        b=2^i~
+    }\frac{1}{2^{i+1}}\left|
+        \sum_{k=1}^{2^i}(Sy)_k -
+        \!\!\!\!\!
+        \sum_{k=2^i+1}^{2^{i+1}}(Sy)_k
+    \right|
+    \!
+    \geqslant
+    \\ \geqslant
+    \varlimsup_{
+        m\to \infty,~
+        i=5pm+p~
+    }\left|
+        \frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm+p}}(Sy)_k - \frac{y_{5pm+p+2}}{2}
+    \right| =
+    \\=
+    \varlimsup_{m\to \infty}\left|
+        \frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+        +
+        \frac{1}{2^{5pm+p+1}}\sum_{k=2^{5pm}+1}^{2^{5pm+p}}(Sy)_k
+        - \frac{1}{2}
+    \right|
+    \mathop{=}^{(\ref{AvdSem_summa_S})}
+    \\=
+    \varlimsup_{m\to \infty}\left|
+        \frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+        +
+        \frac{2^{5pm}}{2^{5pm+p+1}} \sum_{k=2}^{2^p}(ST^{5pm}y)_k
+        - \frac{1}{2}
+    \right|
+    \mathop{=}^{(\ref{AvdSem_T_y})}
+    \\=
+    \varlimsup_{m\to \infty}\left|
+        \frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+        +
+        \frac{1}{2^{p+1}} \sum_{k=2}^{2^p}(Sy)_k
+        - \frac{1}{2}
+    \right|
+    \mathop{=}^{(\ref{AvdSem_summa_S_less})}
+    \\=
+    \varlimsup_{m\to \infty}\left|
+        \frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm}}(Sy)_k
+        +
+        \frac{1}{2^{p+1}} \sum_{i=0}^{p-1}2^i \cdot \frac{i}{p}
+        - \frac{1}{2}
+    \right|
+    \mathop{=}^{(\ref{AvdSem_summa_drobey})}
+%\end{multline*}
+%\begin{multline*}
+    \\=
+    \varlimsup_{m\to \infty}\left|
+        \frac{1}{2^{5pm+p+1}}\sum_{k=1}^{2^{5pm-2p}}(Sy)_k
+        -\frac{1}{p} + \frac{1}{p 2^p}
+    \right| \geqslant
+    \\ \geqslant
+    \varlimsup_{m\to \infty} \left(
+        \frac{1}{p} (1-2^{-p})
+        - \frac{1}{2^{3p+1}}
+    \right) >
+    \frac{1}{p} (1-2^{-p+1})
+\end{multline*}
+
+
+Таким образом, $
+    \alpha(Cx) >
+    (1-2^{-p+1}) \cdot \alpha(x)
+$.
