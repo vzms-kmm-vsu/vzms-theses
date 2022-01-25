@@ -26,6 +26,10 @@ jobs:
             texlive-humanities \
             texlive-lang-chinese \
             texlive-lang-cyrillic \
+            texlive-lang-all \
+            texlive-pstricks \
+            texlive-publishers \
+            texlive-science \
             zip
 
       - name: build
