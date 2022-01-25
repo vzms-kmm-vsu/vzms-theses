@@ -19,17 +19,16 @@ jobs:
       - name: install texlive
         run: |
           sudo apt-get update && sudo apt-get install \
+            texlive-latex-recommended \
             texlive-latex-extra \
             texlive-font-utils \
+            texlive-lang-cyrillic \
+            texlive-fonts-recommended \
+            texlive-pictures \
+            texlive-music \
             texlive-fonts-extra \
             texlive-formats-extra \
-            texlive-humanities \
-            texlive-lang-chinese \
-            texlive-lang-cyrillic \
-            texlive-lang-all \
-            texlive-pstricks \
-            texlive-publishers \
-            texlive-science \
+            texlive-bin \
             zip
 
       - name: build
