@@ -28,7 +28,7 @@ jobs:
             texlive-music \
             texlive-fonts-extra \
             texlive-formats-extra \
-            texlive-bin \
+            texlive-binaries \
             zip
 
       - name: build
