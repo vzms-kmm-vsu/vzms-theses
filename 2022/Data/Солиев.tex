@@ -1,0 +1,126 @@
+\vzmstitle[
+	% \footnote{Работа выполнена за счёт гранта РНФ, проект 17-11-01303}
+]{
+	ОБ АППРОКСИМАЦИИ ПРЕОБРАЗОВАНИЯ ГИЛЬБЕРТА
+}
+\vzmsauthor{Солиев}{Ю.\,С.}
+\vzmsinfo{Москва; {\it su1951@mail.ru}}
+
+\vzmscaption
+
+Рассмотрим понимаемый в смысле главного значения по Коши  сингулярный интеграл (преобразование Гильберта)
+$$
+Kf=K(f;x)=\frac{1}{\pi}\int_{-\infty}^{+\infty}\frac{f(t)}{t-x}dt, \eqno (1)
+$$
+где $f(x)$ - плотность интеграла, ограниченная на вещественной оси $R$ функция.
+
+Пусть $L_p (R)$ - пространство всех измеримых на $R$ функций $f$ с обычной нормой, $\omega_k (f,t)_p=\omega_k (f,t)_{L_p}$ - модуль гладкости $k$-го порядка $f$  в $L_p (R)$, $L^r_p (R)$  - подпространство функций $f \in L_p (R)$, для которых производная $f^{(r-1)}$ абсолютно непрерывна на $R$ и $\|f^{(r)}\|_p = \|f^{(r)} \|_{L_p} < \infty $, $B_{p, \sigma}$  - множество целых функций экспоненциального типа $\leq \sigma$  , принадлежащих $L_p (R)$.
+
+Для $f \in B_{p, \sigma}$ введем [1], [2] интерполяционный оператор
+$$L_{\sigma}f=L_{\sigma}(f;x)=\sum_{k=-\infty}^{+\infty} f \left( \frac{k\pi}{\sigma} \right) \sin{c\sigma ( x-\frac{k\pi}{\sigma}}),$$
+$$\sin{c x} = \frac{\sin{x}}{x}, \sigma > 0. \eqno (2)$$
+
+Аппроксимируя плотность интеграла выражением (2), получим квадратурную формулу (ср. с [3],[4])
+$$ Kf=K(L_{\sigma}f;x)+R_{\sigma}f=$$
+$$\frac{1}{2}\sum_{k=-\infty}^{+\infty}f\left(\frac{k\pi}{\sigma}\right)\left(k\pi - \sigma x\right) \sin{c^2} \frac{\sigma x - k\pi}{2}+R_{\sigma}f, \eqno (3)$$
+где $R_{\sigma}f = R_{\sigma} (f;x)$ - остаточный член.
+
+\textbf{Теорема 1.} {\it Пусть $f \in L_p^r (R)$, $r$ = 1, 2, ..., $1 < p < \infty$, $\sigma > 1$. Если $f(x) = O\left((\mid x \mid +1)^{-d}\right)$, $dp > 1$, $x \in R$, то}
+\begin{displaymath}
+\|R_\sigma f \|_p \leq C_{r,p}\sigma^{-r}\omega_1 \left(f^{(r)},\frac{1}{\sigma}\right)_{p},
+\end{displaymath}
+\textit{где $C_{r,p}$ - постоянная, зависящая только от $r$ и $p$.}
+
+\textbf{Следствие.} Пусть в условиях теоремы 1 $\omega_1 (f, \delta)_p = 0(\delta^\alpha)$, $0 < \alpha < 1$. Тогда для $R_\sigma f$ справедлива равномерная оценка
+\begin{displaymath}
+{\|R_\sigma f \|}_{C} = O\left(\sigma^{-r-\alpha+\frac{1}{p}}\right), p(r+\alpha) > 1.
+\end{displaymath}
+
+Заметим, что если $f \in B_{p, \sigma}$ и 2$\pi$ - периодична, то квадратурная формула (3) точна для любого тригонометрического полинома вида $\sum_{k=-n}^{n} c_k e^{i k x}$, $n \leq [\sigma]$ $([\sigma]$ - целая часть $\sigma$ ) (см. [5]).
+
+Рассмотрим квадратурную формулу с кратными узлами для интеграла (1).
+
+По аналогии с [6] для $f \in B_{p,\sigma}$ введем интерполяционный оператор $H_\sigma f = H_\sigma (f;x)$, удовлетворяющий условиям $H_{\sigma} ^{(v)} \left(f ; \frac{k \pi}{\sigma}\right) = f^{(v)} \left(\frac{k\pi}{\sigma}\right)$ $(v = \overline{0, m-1})$:
+$$ H_\sigma f = H_\sigma \left(f;x\right) = $$
+$$\sum_{k=-\infty}^{+\infty} \sin{c^m \sigma} \left( x - \frac{k \pi}{\sigma} \right) \sum_{v=0}^{m-1} \frac{1}{v!} \left(x - \frac{k\pi}{\sigma} \right)^v f^{(v)} \left( \frac{k \pi}{\sigma}\right). $$
+
+Тогда $$ Kf = K \left(H_\sigma f;x \right) + R_{\sigma m}f =$$
+$$ \frac{1}{2^{2n-1}\sigma^{2n}} \sum_{k=-\infty}^{+\infty} \sum_{v=0}^{2n-1} \frac{1}{v!} f^{(v)} \left(\frac{k \pi}{\sigma}\right) \sum_{s=0}^{n-1} \left(-1 \right)^{n-s+1} C_{2n}^s $$
+$$\left( \frac{\sin{2\sigma}(n-s) \left(x-\frac{k \pi}{\sigma}
+\right)}{\left(x-\frac{k \pi}{\sigma}\right)^{2n-v}}
+- \sum_{\mu = 1}^{2n-v} \frac{\left(2 \sigma (n-s) \right)^{\mu-1} \cos{\frac{\mu \pi }{2}}}{(\mu - 1)! \left(x - \frac{k \pi}{\sigma}\right)^{2n-v-\mu+1}} \right) + $$
+$$ + R_{\sigma m} f, m = 2n;$$
+
+$$ Kf = K \left(H_\sigma f;x \right) + R_{\sigma m}f = $$
+$$ \frac{1}{2^{2n-2}\sigma^{2n-1}} \sum_{k=-\infty}^{+\infty} \sum_{v=0}^{2n-2} \frac{1}{v!} f^{(v)} \left(\frac{k \pi}{\sigma}\right) \sum_{s=0}^{n-1} \left(-1 \right)^{n-s+1} C_{2n-1}^s  $$
+
+\begin{equation*}
+    \begin{gathered}
+        \bigg( \frac{\cos{\sigma}(2n-2s-1) \left(x-\frac{k \pi}{\sigma}\right)}{\left(x-\frac{k \pi}{\sigma}\right)^{2n-v-1}} - \\
+        - \sum_{\mu = 1}^{2n-v-1} \frac{\left(\sigma (2n-2s-1) \right)^{\mu-1} \sin{\frac{\mu \pi }{2}}}{(\mu - 1)! \left(x - \frac{k \pi}{\sigma}\right)^{2n-v-\mu}} \bigg)
+    \end{gathered}
+\end{equation*}
+$$ + R_{\sigma m} f, m = 2n-1;$$
+где $C_n^k$ - биноминальные коэффициенты, а $R_{\sigma m} f = R_{\sigma m}(f;x)$ - остаточный член.
+
+\textbf{Теорема 2.} \textit{Пусть $f \in L_p^r (R)$, $r =1, 2, ....$, $1 < p < \infty$, $\sigma > 1$, $\omega_k (f, \delta)_p = 0(\delta^{\alpha})$, $0 < \alpha < 1$ и $f^{(v)}(x) = O\left((\mid x \mid +1)^{-d_v}\right)$, $d_v p > 1$, $v = \overline{0, m-1}$, $x \in R$. Тогда}
+$$ {\|R_{\sigma m} f \|}_{p} = O\left(\sigma^{-r-\alpha+m-1}\right), r+\alpha > m-1. $$
+
+Ниже будем предполагать, что $f(x)$ - непрерывная 2$\pi$ - периодическая функция. Положим $\frac{p}{q} = N > 1$ и рассмотрим интерполяционную формулу [7]
+$$ P_{n} f = P_n (f;x) = \sum_{k=-\infty}^{+\infty}\sin{c p \left(x - x_k \right)} \sin{c q \left(x - x_k\right)} f\left(x_k\right),$$
+$$x_k = \frac{k\pi}{p}, n = p +q.$$
+
+Аппроксимируя плотность интеграла (1) выражением $P_n f$, получим квадратурную формулу
+$$ Kf=K(P_n f;x) + R_{n1} f = $$
+$$=\frac{1}{p q} \sum_{ k = - \infty}^{+ \infty}\frac{ \sin{q (x-x_k)} \cos{p (x-x_k)}-q(x-x_k)}{(x-x_k)^2}f(x_k)+R_{n1} f, $$
+где $R_{n1} f = R_{n1}(f;x)$ - остаточный член.
+
+Пусть $H_{\alpha}^{(r)}$ $(r=0, 1, 2, ..., 0 < \alpha < 1)$ - класс 2$\pi$ - периодических функций $f(x)$, $r$-е производные которые удовлетворяют условию Гельдера $H_{\alpha}$.
+
+\textbf{Теорема 3.} {\it Пусть $p=m q$, $m > 1$ ($m$ - целое) и $f(x) \in H_{\alpha}^{(r)}$ ($r \geq 0$, $0 < \alpha \leq 1$). Тогда}
+\begin{displaymath}
+\|R_{n1}(f;x)\|_C = O\left(\frac{\ln{m}}{(q(m-1))^{r+\alpha}}\right).
+\end{displaymath}
+
+Пусть [8] $Q_n f = Q_n (f;x)$ - тригонометрический полином порядка $n=m+p$, $p \leq m$, интерполирующий $f(x)$ по узлам $x_k = \frac{2 k \pi}{2m+1}$ $\left(k=\overline{0,2m}\right)$:
+$$Q_n f = Q_n (f;x) =$$
+$$\frac{1}{(2m+1)(2p+1)} \sum_{k=0}^{2m} \frac{\sin{\frac{2m+1}{2}}(x-x_k) \sin{\frac{2p+1}{2}}(x-x_k)}{\sin^2{\frac{x-x_k}{2}}}f(x_k).$$
+
+Аппроксимируя плотность интеграла (1) полиномом $Q_n f$, получим квадратурную формулу
+$$ Kf=K(Q_n f;x) + R_{n2} f = \frac{2}{2m+1} \sum_{k=0}^{2m}(a_{m,p} (x-x_k)+$$
+$$ + \frac{n+1}{2p+1}b_{m,p,n} (x-x_k)-\frac{1}{2p+1} {c_{m,p,n}(x-x_k))f(x_k)}+R_{n2} f, $$
+где
+\begin{displaymath}
+a_{m,p}(x) = \sin{\frac{m-p+1}{2}}x\sin{\frac{m-p}{2}}x\csc{\frac{x}{2}},
+\end{displaymath}
+\begin{displaymath}
+b_{m,p,n}(x)=\sin{\frac{n-m+p-1}{2}}x\sin{\frac{n+m-p+1}{2}}x\csc{\frac{x}{2}},
+\end{displaymath}
+$$c_{m,p,n}(x)=((m-p)\sin{\frac{n-m+p}{2}}x\sin{\frac{n+m-p+1}{2}}x-$$
+$$ - \frac{n-m+p-3}{2}\cos{\frac{2n-1}{2}}x+ \frac{1}{2}\sin{\frac{n-m+p-1}{2}}x$$
+$$\cos{\frac{n+m-p+1}{2}} x\csc{\frac{x}{2}})\csc{\frac{x}{2}},$$
+а $R_{n2}f$ - остаточный член.
+
+\textbf{Теорема 4.} {\it Пусть $\frac{2m+1}{2p+1}=q$, $q > 1$ ($q$ - целое) и $f(x) \in H_{\alpha}^{(r)}$ ($r \geq 0$, $0< \alpha \leq 1$). Тогда}
+$$ \|R_{n2}(f;x)\|_C = O\left(\frac{\ln{q}}{(p(q-1)^{r+\alpha}}\right)$$
+
+
+\litlist
+
+1. {\it Rahman Q.I., Vertesi P.} On the $L^p$ convergence of  Lagrange interpolating entire functions of exponential type // J. Approx. Theory. 1992. Vol. 69. P. 302-317.
+
+2. {\it Gensun F.} Whittaker-Kotelnikov-Shannon sampling theorem and aliasing error // J.Approx.Theory. 1996. Vol. 85. P. 115-131.
+
+3. {\it Stenger F.} Approximation via Whittakers cardinal function // J. Approx. Theory. 1976. Vol. 17. P. 222-240.
+
+\selectlanguage{russian}
+
+4. {\it Солиев Ю.С.} О синк-аппроксимации особых интегралов по действительной оси // Труды математического центра им. Н.И.Лобачевского, том 57. Теория функций, ее приложения и смежные вопросы. Казань. Изд-во Казанского математического общества. 2019. С. 312-315.
+
+5. {\it Ахиезер Н.И.} Лекции по теории аппроксимации. М.: Наука.1965. 408 с.
+
+6. {\it Хургин Я.И., Яковлев В.П.} Методы теории целых функций в радиофизике, теории связи и оптике. М.: ГИФМЛ. 1962. 220 с.
+
+7. {\it Бернштейн С.Н.} Перенесение свойств тригонометрических полиномов на целые функции конечной степени // Собрание сочинений, том 2. M., Изд-во АН СССР. 1954. С. 446-467.
+
+8. {\it Бернштейн С.Н.} Об одном классе интерполяционных полиномов // Собрание сочинений, том 2. M., Изд-во АН СССР. 1954. С. 146-454.
