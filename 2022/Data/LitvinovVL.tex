@@ -1,0 +1,147 @@
+﻿\vzmstitle[
+	\footnote{Vladislav L. Litvinov, Head of Dept., Dept. of General–Theoretical Disciplines, Syzran’ Branch of Samara State Technical University
+    (45, Sovetskaya str., Syzran’, Samara region, 446001, Russian Federation); doctoral student, Moscow State University (GSP-1, Leninskie Gory, Moscow, 119991, Russian Federation),
+    Ph.D. (Technical), Associate Professor., ORCID: http://orcid.org/0000-0002-6108-803X}
+    \footnote{KristinaV. Litvinova, student, Moscow State University (GSP-1, Leninskie Gory, Moscow, 119991, Russian Federation)}
+]{
+	MATHEMATICAL MODELING OF NONLINEAR VIBRATIONS OF A ROPE WITH A MOVING BOUNDARY
+}
+\vzmsauthor{Litvinov}{V.\,L.}
+\vzmsinfo{Moscow; {\it vladlitvinov@rambler.ru}}
+\vzmsauthor{Litvinova}{K.\,V.}
+\vzmsinfo{Moscow; {\it kristinalitvinova900@rambler.ru}}
+
+
+\vzmscaption
+
+\noindent \textbf{Abstract:} Until now, the problems of longitudinal - transverse vibrations of objects with moving boundaries were solved mainly in a linear setting,
+the energy exchange through the moving boundary and the interaction between longitudinal and transverse vibrations were not taken into account.
+The paper presents a new nonlinear mathematical model of transverse vibrations of an unbounded rope with a moving boundary, in which geometric nonlinearity is taken into account.
+The obtained mathematical model allows one to describe high-intensity vibrations of a rope with a moving boundary. The solution was made in the Matlab environment of dimensionless variables,
+which allows one to use the obtained results to calculate oscillations of a wide range of technical objects
+
+\noindent \textbf{Keywords:} nonlinear mathematical model, vibrations of a rope, moving boundaries
+
+
+
+Until now, the problems of longitudinal - transverse vibrations of objects with moving boundaries were solved mainly in a linear setting, the energy exchange through the moving boundary and the interaction between longitudinal and transverse vibrations were not taken into account [1--5, 7--10]. In rare cases, the action of the forces of resistance of the external environment was taken into account [6]. Real technical objects are much more complicated, for example, with an increase in the intensity of oscillations, the geometric nonlinearities of the object have a great influence on the oscillatory process.
+
+In connection with the intensive development of numerical methods, it became possible to more accurately describe complex mathematical models of longitudinal-transverse oscillations of objects with moving boundaries, taking into account a large number of factors influencing the oscillatory process.
+
+The paper presents a new nonlinear mathematical model of longitudinal-transverse vibrations of a rope with a moving boundary, which takes into account geometric nonlinearity, energy exchange across the boundary. The boundary conditions are obtained in the case of interaction between the parts of the object to the left and to the right of the moving boundary.
+
+The system of differential equations is obtained
+
+\begin{equation*}
+    \begin{cases}
+        \rho Su_{1,tt}\! - \!S\frac{\partial }{\partial x} \left(\left(\!E\left(\sqrt{u_{j,x} u_{j,x} }\! - \!1\right) \! + \! \mu \frac{u_{j,x} u_{j,xt} }{\sqrt{u_{j,x} u_{j,x} } } \right)\frac{u_{1,x} }{\sqrt{u_{j,x} u_{j,x} } } \right)\! = \! 0; \\
+        \rho Su_{2,tt}\! - \!S\frac{\partial }{\partial x} \left(\left(\!E\left(\sqrt{u_{j,x} u_{j,x} }\! - \!1\right) \! + \! \mu \frac{u_{j,x} u_{j,xt} }{\sqrt{u_{j,x} u_{j,x} } } \right)\frac{u_{2,x} }{\sqrt{u_{j,x} u_{j,x} } } \right)+ \\
+        +I\left(Eu_{2,xxxx} +\mu u_{2,xxxxt} \right)+\lambda u_{2,t} +k_{0} u_{2} -f(x,t)=0.
+    \end{cases}
+\end{equation*}
+
+
+Border conditions
+$$u_{2} (0,t)=0; \ u_{2,xx} (0,t)=0;   u_{2} (L_{0} ,t)=0; \ u_{2,x} (L_{0} ,t)=0;$$
+$$m_{1} \frac{d^{2} }{dt^{2} } u_{1} \left(L(t),t\right)+\rho S\bigg(u_{1,t} \left(L(t)-0,t\right)-$$
+$$-u_{1,t} \left(L(t)+0,t\right)\bigg)L'(t)+$$
+$$+\bigg(ES\left(\sqrt{u_{j,x} \left(L(t)-0,t\right)u_{j,x} \left(L(t)-0,t\right)} -1\right)+$$
+$$+\mu S\frac{u_{j,x} \left(L(t)-0,t\right)u_{j,xt} \left(L(t)-0,t\right)}{\sqrt{u_{j,x} \left(L(t)-0,t\right)u_{j,x} \left(L(t)-0,t\right)}} \bigg)\cdot$$
+$$\cdot\frac{u_{1,x} \left(L(t)-0,t\right)}{\sqrt{u_{j,x} \left(L(t)-0,t\right)u_{j,x} \left(L(t)-0,t\right)} } -$$
+$$-\bigg(ES\left(\sqrt{u_{j,x} \left(L(t)+0,t\right)u_{j,x} \left(L(t)+0,t\right)} -1\right) +$$
+$$+\mu S\frac{u_{j,x} \left(L(t)+0,t\right)u_{j,xt} \left(L(t)+0,t\right)}{\sqrt{u_{j,x}\left(L(t)+0,t\right)u_{j,x} \left(L(t)+0,t\right)} } \bigg)\cdot$$
+$$\cdot\frac{u_{1,x} \left(L(t)+0,t\right)}{\sqrt{u_{j,x} \left(L(t)+0,t\right)u_{j,x} \left(L(t)+0,t\right)} } -F_{1} (t)=0;$$
+$$m_{2} \frac{d^{2} }{dt^{2} } u_{2} \left(L(t),t\right)+EIu_{2,xxx} \left(L(t)+0,t\right)+$$
+$$+\mu Iu_{2,xxxt} \left(L(t)+0,t\right)-EIu_{2,xxx} \left(L(t)-0,t\right)-$$
+$$-\mu Iu_{2,xxxt} \left(L(t)-0,t\right)+k_{2} u_{2} \left(L(t),t\right)-F_{2} (t)=0;$$
+$$u_{2} \left(L(t)-0,t\right)=u_{2} \left(L(t)+0,t\right);$$
+$$u_{2,x} \left(L(t)-0,t\right)=0; \ u_{2,x} \left(L(t)+0,t\right)=0.$$
+
+Initial conditions
+$$u_{2} (x,0)=\varphi _{3} (x); \ u_{2,t} (x,0)=\varphi _{4} (x).$$ 
+
+Let us linearize the system of differential equations.
+\begin{equation} \label{GrindEQ__1_}
+    \begin{gathered}
+        \rho Su_{2,tt} -ES\varepsilon _{0} u_{2,xx} +EIu_{2,xxxx} +\mu Iu_{2,xxxxt}+ \\
+        +\lambda u_{2,t} +k_{0} u_{2} -f(x,t)=0;
+    \end{gathered}
+\end{equation} 
+\begin{equation} \label{GrindEQ__2_}
+    \begin{gathered}
+        u_{2} (0,t)=0; \ u_{2,xx} (0,t)=0; \\
+        u_{2} (L_{0} ,t)=0; \ u_{2,x} (L_{0} ,t)=0;
+    \end{gathered}
+\end{equation} 
+\begin{equation} \label{GrindEQ__3_}
+    \begin{gathered}
+        m_{2} \frac{d^{2} }{dt^{2} } u_{2} \left(L(t),t\right)+EI(u_{2,xxx} \left(L(t)+0,t\right)- \\
+        -u_{2,xxx} \left(L(t)-0,t\right))+\mu I(u_{2,xxxt} \left(L(t)+0,t\right)- \\
+        -u_{2,xxxt} \left(L(t)-0,t\right))+k_{2} u_{2} \left(L(t),t\right)-F_{2} (t)=0;
+    \end{gathered}
+\end{equation} 
+\begin{equation} \label{GrindEQ__4_}
+    \begin{gathered}
+        u_{2} \left(L(t)+0,t\right)=u_{2} \left(L(t)-0,t\right); \\
+        u_{2,x} \left(L(t)+0,t\right)=0; \ u_{2,x} \left(L(t)-0,t\right)=0;
+    \end{gathered}
+\end{equation} 
+\begin{equation} \label{GrindEQ__5_}
+    \begin{gathered}
+        u_{2} (x,0)=\varphi _{3} (x); \ u_{2,t} (x,0)=\varphi _{4} (x).
+    \end{gathered}
+\end{equation} 
+
+In problem \eqref{GrindEQ__1_} - \eqref{GrindEQ__5_} we take
+$$I=0, \lambda =0, \mu =0, k_{0} =0, f(x,t)=0, F_{2} (t)=0.$$
+
+In this case, the vibrations of the rope will be described by the wave equation:
+\begin{equation} \label{GrindEQ__6_} 
+\rho u_{2,tt} -E\varepsilon _{0} u_{2,xx} =0; \ x\in \left(-\infty ;\; \infty \right).                                             
+\end{equation} 
+
+The initial conditions are
+\begin{equation} \label{GrindEQ__7_} 
+u_{2} (x,0)=\varphi _{3} (x); \ u_{2,t} (x,0)=\varphi _{4} (x). 
+\end{equation} 
+
+From [3] we obtain the boundary conditions:
+\begin{equation} \label{GrindEQ__8_}
+    \begin{gathered}
+        m\frac{d^{2} }{dt^{2} } u_{2} \left(L(t),t\right)-\rho S(u_{2,t} \left(L(t)+0,t\right)- \\
+        -u_{2,t} \left(L(t)-0,t\right))L'(t)-ES\varepsilon _{0} (u_{2,x} \left(L(t)+0,t\right)-\\
+        -u_{2,x} \left(L(t)-0,t\right))+k_{2} u_{2} \left(L(t),t\right)=0;
+    \end{gathered}
+\end{equation} 
+$$u_{2} \left(L(t)+0,t\right)=u_{2} \left(L(t)-0,t\right).$$ 
+
+Thus, a new nonlinear mathematical model of transverse vibrations of an unrestricted rope with a moving boundary has been put forward, which is solved numerically in the Matlab environment.
+The boundary conditions are obtained in the case of occurrence between the parts of the object to the left and to the right of the boundary.
+The obtained model is linearized, while the principle of homogeneity is observed: in the particular case of small fluctuations,
+the obtained model coincides with the classical one, which indicates the correctness of the results obtained.
+The obtained mathematical models make it possible to describe high-power oscillations with moving boundaries.
+
+
+\litlist
+
+\selectlanguage{english}
+
+1. {\it Savin G.N., Goroshko O.A.} Dynamics of a variable length thread // Nauk. dumka, Kiev, 1962, 332 p.
+
+2. {\it Samarin Yu.P.} On a nonlinear problem for the wave equation in one-dimensional space // Applied Mathematics and Mechanics. - 1964. - T. 26, V. 3. - P. 77--80.
+
+3. {\it Vesnitsky A.I.} Waves in systems with moving boundaries and loads // Fizmatlit, Moscow, 2001, 320 p.
+
+4. {\it Lezhneva A.A.} Bending vibrations of a beam of variable length // Izv. Academy of Sciences of the USSR. Rigid Body Mechanics. - 1970. - No. 1. - P. 159-161.
+
+5. {\it Litvinov V.L.} Solution of boundary value problems with moving boundaries using an approximate method for constructing solutions of integro-differential equations // Tr. Institute of Mathematics and Mechanics, Ural Branch of the Russian Academy of Sciences. 2020.Vol. 26, No. 2. P. 188-199.
+
+6. {\it Anisimov V.N., Litvinov V.L.} Mathematical models of longitudinal-transverse vibrations of objects with moving boundaries // Vestn. Himself. tech. un-t. Ser. Phys and mat. science, 2015. Vol. 19, No. 2. P. 382-397.
+
+7. {\it Anisimov V.N., Litvinov V.L.} Mathematical modeling and study of the resonance properties of mechanical objects with a changing boundary: monograph / V. L. Litvinov, V. N. Anisimov - Samara: Samar. state tech. un -- t, 2020. - 100 p.
+
+8. {\it Litvinov V.L., Anisimov V.N.} Application of the Kantorovich - Galerkin method for solving boundary value problems with conditions on moving boundaries // Bulletin of the Russian Academy of Sciences. Rigid Body Mechanics. 2018. No. 2. P. 70--77.
+
+9. {\it Litvinov V.L., Anisimov V.N.} Transverse vibrations of a rope moving in a longitudinal direction // Bulletin of the Samara Scientific Center of the Russian Academy of Sciences. 2017. T. 19. No. 4. -- P.161--165.
+
+10. {\it Litvinov V.L., Anisimov V.N.} Mathematical modeling and research of oscillations of one--dimensional mechanical systems with moving boundaries: monograph / V. L. Litvinov, V. N. Anisimov -- Samara: Samar. state tech. un--t, 2017 .-- 149 p.
