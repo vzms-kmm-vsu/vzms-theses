@@ -181,7 +181,7 @@
 	%\needspace{5em}
 	%}
 	%\end{minipage}
-	\addcontentsline{toc}{section}{\varvzmsauthortoc}
+	\addcontentsline{toc}{section}{\varvzmsauthortoc\dotfill}
 	%\needspace{20em}
 
 
