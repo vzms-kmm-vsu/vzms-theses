@@ -94,3 +94,16 @@ join:
 split:
 	# Revert the above :)
 	node node_modules/text-split-join/text-split.js Data/joined.tex.tmp
+
+
+###########################################################
+##    Preparation the theses for the publishing house    ##
+###########################################################
+
+# These are plain bash + LaTeX + LibreOffice + pdftk
+
+publishing: all
+	lowriter --convert-to pdf docs/title_page.docx
+	lowriter --convert-to pdf docs/second_page.docx
+	pdftk main.pdf cat 3-end output merge_main.pdf
+	pdftk title_page.pdf second_page.pdf merge_main.pdf cat output main.pdf
