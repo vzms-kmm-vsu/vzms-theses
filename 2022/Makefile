@@ -105,5 +105,6 @@ split:
 publishing: all
 	lowriter --convert-to pdf docs/title_page.docx
 	lowriter --convert-to pdf docs/second_page.docx
+	lowriter --convert-to pdf docs/last_page.docx
 	pdftk main.pdf cat 3-end output merge_main.pdf
-	pdftk title_page.pdf second_page.pdf merge_main.pdf cat output main.pdf
+	pdftk title_page.pdf second_page.pdf merge_main.pdf last_page.pdf cat output main.pdf
