@@ -1,0 +1,200 @@
+\documentclass{vzmsthesis}
+
+\graphicspath{{Data/pic/}}
+
+
+
+
+
+%\topmargin -1.0cm \setlength{\textheight}{23,7cm}
+%\setlength{\textwidth}{15cm} \hoffset=-10mm \voffset=-0mm
+
+\newtheorem{theor}{Теорема}
+\newtheorem{teo}{\bf Теорема}
+\newtheorem{rem}{\bf Замечание}
+%\newtheorem{proposition}{Предложение}
+\newtheorem{col}{\bf Следствие}
+%\newtheorem{theorem}{Теорема}
+
+
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator*{\M}{M}
+
+
+\newcommand{\ImUn}{\mathfrak{i}}
+
+
+\newcommand{\WpX}[2]{W_{#1,\omega}^{1}(\mathbb{R},#2)}
+\newcommand{\WpR}[1]{W_{#1,\omega}^{1}(\mathbb{R})}
+\newcommand\Lpw[2]{L_{\omega}^{#1}(\mathbb{R},#2)}
+\newcommand{\Fw}[1]{\mathcal{F}_{\omega}(\mathbb{R},#1)}
+\newcommand{\Cw}[1]{C_{\omega}(\mathbb{R},#1)}
+\def\LU{{\mathcal{L}_{\mathcal{U}}}}
+\renewcommand{\U}[2]{\mathcal{U}(#1,#2)}
+\newcommand{\z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Bf}{\boldsymbol}
+\newcommand{\bR}{{\mathbb R}}
+\newcommand{\bC}{{\mathbb C}}
+\newcommand\dom{\operatorname{dom}}
+\newcommand{\arr}{\rightarrow}
+\newcommand{\bd}{\partial}
+\newcommand{\img}{\mathrm{Im}\ }
+\newcommand{\Doms}{{\cal D}\left({\Omega}_{s}\right)}
+\newcommand{\Dpoms}{{\cal D}_+\left({\Omega}_{s}\right)}
+\newcommand{\Dpsoms}{{\cal D}'_+\left({\Omega}_{s}\right)}
+\newcommand{\il}{\int\limits}
+\newcommand{\lb}{\linebreak}
+\newcommand{\eqdef}{\stackrel{\rm def}{=}}
+\newcommand{\Dp}{{\cal D}_+}
+\newcommand{\Dxsas}{D_{x'}^{\alpha'}}
+\newcommand{\DB}{D_{x'}^{\alpha'}B_{x_n}^{\alpha_n}}
+\newcommand{\PDB}{P\left(D_{x'},B_{x_n}\right)}
+\newcommand{\nequiv}{\not\equiv}
+\newcommand{\po}{P_1}
+\newcommand{\Dps}{{\cal D}'_+}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\Dsoms}{{\cal D}'\left({\Omega}_{s}\right)}
+\newcommand{\oms}{{\Omega_s}}
+\newcommand{\omsb}{\left(\Omega_s\right)}
+
+
+\def\Z{{\mathbb{Z}}}
+\def\T{{\mathbb{T}}}
+
+\def\a{\alpha}
+\def\Nat{\mathfrak{N}}
+\def\C{\mathbb{C}}
+\def\PP{\mathcal{P}}
+\def\P{\mathfrak{H}}
+\def\N{\mathfrak{N}}
+\def\J{\mathfrak{J}}
+\def\K{\mathcal{K}}
+\def\NN{\mathcal{N}}
+\def\M{\mathfrak{M}}
+\def\al{\mathfrak A}
+\def\E{{\cal E}}
+\def\cW{{\cal W}}
+\def\cA{{\cal A}}
+\def\cD{{\cal D}}
+\def\R{{\Bbb R}}
+
+\newcommand{\adto}{{\stackrel{\mathcal P^\alpha}{\longrightarrow}}}
+\newcommand{\dto}{{\stackrel{\mathcal P}{\longrightarrow}}}
+\newcommand{\dPPto}{{\stackrel{\mathcal P \mathcal P}{\longrightarrow}}}
+\newcommand{\fg}{{\mathfrak{g}}}
+\newcommand{\dd}{\operatorname{d}}
+
+
+
+
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{corollary}{Следствие}
+\newtheorem{lemma}{Лемма}
+\newtheorem{proposition}{Предложение}
+\newtheorem{definition}{Определение}
+\newtheorem{remark}{Замечание}
+\newtheorem{fact}{Утверждение}
+\newtheorem{example}{Пример}
+\newtheorem{lem}{Лемма}
+\newtheorem{defintion}{Определение}
+\newtheorem{Th}{Теорема}
+\newtheorem{ths}{Теорема}
+\newtheorem{state}{Утверждение}
+\newtheorem{ass}{Утверждение}
+\newtheorem{cor}{Следствие}
+\newtheorem{thm}{Теорема}
+\newtheorem{opr}{Определение}
+\newtheorem{Thm}{Теорема}
+\newtheorem{rk}[thm]{Замечание}
+\newtheorem{agree}[thm]{Соглашение}
+
+
+\makeatletter
+\renewcommand{\@makecaption}[2]{%
+{\begin{center}#1. #2\end{center}}%
+} \makeatother
+
+
+
+
+\def\cz{{\Bbb C}}
+\def\rz{{\Bbb R}}
+\def\gz{{\Bbb Z}}
+\def\nz{{\Bbb N}}
+\def\Exp{{\Bbb E}}
+\def\Pro{{\Bbb P}}
+
+
+\newcommand{\prepareforthesis}{
+	\setcounter{equation}{0}
+	\setcounter{figure}{0}
+	\setcounter{table}{0}
+	\setcounter{footnote}{0}
+	\setcounter{section}{0}
+	\setcounter{subsection}{0}
+	\setcounter{subsubsection}{0}
+	\renewcommand{\theenumi}{\arabic{enumi}}
+	\renewcommand{\labelenumi}{\theenumi)} % Не правда ли, Виктор Григорьевич?
+	\selectlanguage{russian} % Дабы невозбранно переключаться на английский в конце библиографии, если очень надо
+}
+
+\newcommand{\thesis}[1]{
+	\prepareforthesis
+	\typeout{*}
+	\typeout{******* Processing thesis #1 *******}
+	\typeout{*}
+	\input{Data/#1}
+	\typeout{*}
+	\typeout{******* End of thesis #1 *******}
+	\typeout{*}
+	\prepareforthesis
+}
+
+%To avoid having author-defined subsections in the ToC
+\setcounter{tocdepth}{1}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\arabic{subsection}.\arabic{subsubsection}.}
+
+%\flushbottom
+
+
+\begin{document}
+
+\pagestyle{fancy}
+
+
+
+\input{auxpages/title}
+
+\setcounter{page}{2}
+
+\input{auxpages/begin}
+
+% Тезисы отсортированы по алфавиту и хранятся в файле theses.tex. Подключаем их оттуда.
+% Команда \thesis делает много хорошего
+% Или, по крайней мере, должна
+
+\sloppy
+
+\input{theses.tex}
+
+
+
+\newpage
+
+
+{
+	\hyphenpenalty=10000
+	\exhyphenpenalty=10000
+	\normalsize
+	\tableofcontents
+}
+
+
+\end{document}
