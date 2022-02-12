@@ -19,6 +19,12 @@ overfull:
 	pdflatex main.tex | grep -va Underfull | grep  -a . | grep -aC 12 Overfull
 	pdflatex main.tex | grep -c Overfull
 
+wrongrefs:
+	# Search for wrong (duplicate or undefined) references
+	# That's useful whe many authors use \label{eq1}
+	pdflatex main.tex | grep -va Underfull | grep  -a . | grep -aC 12 undefined
+	pdflatex main.tex | grep -va Underfull | grep  -a . | grep -aC 12 'multiply defined'
+
 clean:
 	# Remove all the temporary files
 	# Be careful if some images are in PDF
