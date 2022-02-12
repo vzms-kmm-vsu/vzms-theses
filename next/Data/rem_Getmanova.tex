@@ -1,0 +1,135 @@
+\vzmstitle{ON PERIODIC SOLUTIONS OF RANDOM FUNCTIONAL DIFFERENTIAL INCLUSIONS}
+\vzmsauthor{Getmanova}{E.\,N.}
+\vzmsinfo{Voronezh; {\it ekaterina$\_$getmanova@bk.ru}}
+\vzmscaption
+
+\selectlanguage{english}
+
+Let us mention that the method of guiding functions was developed by Krasnoselskii and Perov (see, e.g., [14]) for the investigation of periodic oscillations in dynamical systems go\-ver\-ned by differential equations. The notion of guiding function was generalized in several directions (see, e.g., [1, 2, 4-13]).
+
+Based on the approach given in [1] we present the notion of nonsmooth random generalized integral guiding functions and use those to prove some existence results of random solutions to periodic problem of random functional differential inclusion.
+
+In what follows we will use some known notions and notati\-ons from the theory of multimaps (see, e.g., [2, 4]).
+
+Let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces. By the symbols $P(Y),$ $C(Y)$ and $K(Y)$ we denote the collections of all nonemp\-ty, closed and, respectively, compact subsets of the space $Y.$ If $Y$ is a normed space, $Kv(Y)$ denote the collections of all nonempty convex compact subsets of $Y.$
+
+\textbf{Definition~1.}
+A multimap $F:X \to P(Y)$ is called {\it upper semicontinuous (u.s.c.)} at the point $x\in X$ if for each open set $V \subset Y$ such that $F(x) \subset V$ there exists $\delta >0$ such that $d_X(x,x^\prime)<\delta$ implies $F(x^\prime)\subset V.$ A multimap $F:X \to P(Y)$ is called u.s.c. if it is u.s.c. at each point $x\in X.$
+
+Let $I$ be a closed subset of $\mathbb{R}$ with the Lebesgue measure.
+
+\textbf{Definition~2.}
+A multifunction $F:I \to K(Y)$ is called {\it measurable} if, for each open subset $W \subset Y,$ its pre-image \linebreak
+$F^{-1}(W)=\{t\in I:F(t)\subset W\}$ is the measurable subset of$I.$
+
+Let $(\Omega,\Sigma,\mu)$ be a complete probability space and $I=[0,T]$.
+
+\textbf{Definition~3.} (see [1]). Multimap $\mathcal{F}\colon\Omega\times X\to C(Y)$ is called a {\it random multioperator} if it is product-measurable, i.e. measurable w.r.t. $\Sigma\otimes\mathbb{B}(X)$, where $\Sigma\otimes\mathbb{B}(X)$ is the smallest
+$\sigma$-algebra on $\Omega\times X$ which contains all the sets $A\times B$, where $A\in\Sigma$ and $B\in\mathbb{B}(X)$ and
+$\mathbb{B}(X)$ denotes the Borel $\sigma$-algebra on $X$. If, moreover, $\mathcal{F}(\omega,\cdot)\colon X\to C(Y)$ is u.s.c. for all
+$\omega\in\Omega$, then $\mathcal{F}$ is called a {\it random $u$-multioperator}.
+
+For ~$\tau>0$~ we denote by the symbol ~$\mathcal{C}$~ the space \linebreak $C([-\tau, 0]; \mathbb{R}^n)$ of continuous functions $x:[-\tau,0] \to\mathbb{R}^n$ with norm $\|x\| = \sup_{t\in[-\tau,0]} \|x(t)\|.$
+For $x(\cdot) \in C([-\tau, T]; \mathbb{R}^n)$, the symbol $x_t \in\mathcal{C}$ denotes the function defined as $x_t(\theta ) = x(t + \theta),$ $\theta\in[-\tau,0].$
+
+We consider the periodic problem for a random functional differential inclusion of the following form:
+$$
+x'(\omega,t)\in \mathcal{F} \bigr (\omega, t, x_t \bigr), \eqno{(1)}
+$$
+$$
+x(\omega, 0) = x(\omega,T), \eqno{(2)}
+$$
+
+\noindent where the multimap $\mathcal{F}\colon\Omega \times \mathbb{R} \times \mathcal{C} \multimap \mathbb{R}^{n}$ satisfies conditions:
+
+$(\mathcal{F}_t)$ multifunction $\mathcal{F}$ is a $T$-periodic in the second argument;
+
+$(\mathcal{F}1)$ $\mathcal{F}\colon \Omega \times I \times \mathcal{C} \to Kv(\mathbb{R}^n)$ is a random $u$-multioperator;
+
+$(\mathcal{F}2)$ there exists a function $c:\Omega\times I \to \mathbb{R}$ such that
+$(i)$ for each $\omega\in\Omega$ a function $c(\cdot,t)$ is measurable,
+$(ii)$ a function $c(\omega,\cdot)$ is locally integrable,
+and we have for each $\omega\in\Omega$\linebreak
+$
+\|\mathcal{F}(\omega,t,\phi)\|:=\sup\{|z|\colon z\in \mathcal{F}(\omega,t,\phi)\} \leq c(\omega,t) (1+|\phi|).
+$
+
+\noindent
+From $(\mathcal{F}1)$-$(\mathcal{F}2)$ it follows that the superposition multioperator
+$\mathcal{P}_\mathcal{F}\colon\Omega\times C(I,\mathbb{R}^{n})\to P(L^{2}(I,\mathbb{R}^{n})),$
+	$\mathcal{P}_\mathcal{F}(\omega, x) = \{f\in L^{2}(I,\mathbb{R}^{n})\colon $ $f(s)\in \mathcal{F}(\omega, s, x(s)),\mbox{for a.e.} \, s\in I\}$
+is well defined.
+
+By a \emph{random solution} of problem (1), (2) we mean a function $\xi \colon \Omega \times I \to \mathbb{R}^{n}$ such that
+
+(i) the map $\omega \in \Omega \to \xi(\omega, \cdot) \in C([-\tau,T]; \mathbb{R}^n)$ is measurable;
+
+(ii) for each $\omega \in \Omega$ absolutely continuous function $\xi(\omega,\cdot) \in C([-\tau,T]; \mathbb{R}^n)$ satisfies (1), (2) for a.e. $t\in [-\tau,T].$
+
+Let us recall some notions of nonsmooth analysis (see [3]).
+
+Let $V$ be a locally Lipschitz function on the space $\mathbb{R}^{n}.$ For $x_{0} \in \mathbb{R}^{n}$ and $\nu \in \mathbb{R}^{n}$ {\it the Clarke generalized derivative} $V^{0}(x_{0} ;\nu )$ at $x_{0} $ along the direction $\nu $ is given by the formula
+$
+V^{0}(x_{0} ;\nu ) = \mathop{\overline {\lim}}\limits_{{x \to x_{0},}{t \to 0+}}\frac{{V(x + t\nu ) - V(x)}}{{t}},
+$
+where $x \in \mathbb{R}^{n}.$ Then {\it the Clarke genera\-li\-zed gradient} $\partial V(x)$ of the function $V$ at the point $x_{0}$ is defined as
+$
+\partial V(x_{0} ) = \left\{ {x \in \mathbb{R}^{n}: \langle {x,\nu } \rangle \le V^{0}(x_{0} ;\nu )\,\mbox{for all}\,\nu \in \mathbb{R}^{n}} \right\}.
+$
+Recall that a locally Lipschitz function $V:\mathbb{R}^n\to \mathbb{R}$ is called {\it regular} if for each $x\in \mathbb{R}^{n}$ and $\nu \in \mathbb{R}^{n}$ there exists the derivative along the direction $V'(x,\nu)$ and it coincides with $V^0(x,\nu).$
+
+\textbf{Definition~4.}
+A map $V\colon\Omega\times\mathbb{R}^{n}\to\mathbb{R}$ is called a {\it random nonsmooth potential} if the following two conditions are satisfied:
+$(i)$ $V(\cdot,x)\colon\Omega\to\mathbb{R}$ is measurable for every $x\in\mathbb{R}^{n}$; \linebreak
+$(ii)$ $V(\omega,\cdot)\colon\mathbb{R}^{n}\to\mathbb{R}$ is a locally Lipschitz for every $\omega\in\Omega$.
+
+\textbf{Definition~5.}
+            A random nonsmooth potential $V\colon\Omega\times\mathbb{R}^{n}\to\mathbb{R}$ is said to be a {\it random nonsmooth generalized integral guiding function} for inclusion (1) if the following conditions hold:
+            $(i)$ there exists $R_0>0$ such that
+$
+	0\notin\partial V(\omega,x)
+$
+for all $(\omega,z)\in\Omega\times\mathbb{R}^{n}\colon |z|\geq R_0;$
+						$(ii)$ the function $V(\omega,\cdot)$ is regular for every $\omega\in\Omega$;
+$(iii)$ there exists $N>0$ such that for all $\omega\in\Omega$ from $x\in C(I,\mathbb{R}^{n})$ with
+						${\|x\|}_{2}\geq N$, it follows that
+            $
+                \int_{0}^{T} \bigl<\upsilon(t),f(t)\bigr> dt \geq 0
+            $
+            for all $\upsilon\in\mathcal{P}_{\partial V}(\omega,x)$ and for all
+						$f\in \mathcal{P}_{F}(\omega,x)$.
+
+\textbf{Theorem~1.}
+                Let conditions $(\mathcal{F}_t), (\mathcal{F}1), (\mathcal{F}2)$ hold. If there exists a regular random nonsmooth generalized integral guiding function for inclusion
+                (1) such that $\lim_{\|x\|\to +\infty} V(\omega,x) = +\infty$, then problem (1), (2) has a random solution.
+
+% Оформление списка литературы
+\litlist
+
+1. {\it Andres J., G\'orniewicz L.} Random topological degree and random differential inclusions. Topol. Meth. Nonl. Anal. 40 (2012), 337--358.
+
+2. {\it Borisovich Yu.G., Gel'man B.D., Myshkis A.D., Obukho\-vskii V.V.} Introduction to the Theory of Multivalued Maps and Dif\-fe\-ren\-tial Inclusions - 2nd ed. Moscow: Librokom, 2011.
+
+3. {\it Clarke F.H.} Optimization and Nonsmooth Analysis - 2nd ed. Classics in Applied Mathematics, 5. Society for Industrial and Applied Mathematics (SIAM). Philadelphia: PA, 1990.
+
+4. {\it G\'orniewicz L.} Topological Fixed Point Theory of Multi\-valued Mappings - 2nd ed. Berlin: Springer, 2006.
+
+5. {\it Kornev S.V.} On the method of multivalent guiding functions to the periodic problem of differential inclusions. Autom. Remote Control. 64 (2003), 409--419.
+
+6. {\it Kornev S.V., Obukhovskii V.V.} On nonsmooth multiva\-lent guiding functions. Differ. Equ. 39 (2003), 1578--1584.
+
+7. {\it Kornev S.V., Obukhovskii V.V.} On some developments of the method of integral guiding functions. Funct. Differ. Equ. 12 (2005), 303--310.
+
+8. {\it Kornev S.V., Obukhovskii V.V.} Non-smooth guiding po\-tentials in problems on forced oscillations. Autom. Remote Con\-trol. 68 (2007), 1--8.
+
+9. {\it Kornev S.V., Obukhovskii V.V.} On localization of the guiding function method in the periodic problem of differential inclusions. Russian Mathematics (Iz. VUZ). 5 (2009), 23--32.
+
+10. {\it Kornev S.V.} Nonsmooth integral directing functions in the problems of forced oscillations. Autom. Remote Control. 76 (2015), 1541--1550.
+
+11. {\it Kornev S.V.} Multivalent guiding function in a problem on existence of periodic solutions of some classes of differential inclusions. Russian Mathematics (Iz. VUZ). 11 (2016), 14--26.
+
+12. {\it Kornev S.V., Obukhovskii V.V., Zecca P.} \,On the \linebreak method of generalized integral guiding functions in the periodic problem of functional differential inclusions. Differ. Uravn. 52 (2016), no. 10, 1335–-1344.
+
+13. {\it Kornev S.V., Obukhovskii V.V., Zecca P.} Guiding func\-ti\-ons and periodic solutions for inclusions with causal multiope\-rators. Appl. Anal. 96 (2017), issue 3, 418--428.
+
+14. {\it Krasnosel'skii M.A.} The Operator of Translation Along the Trajectories of Differential Equations. Translations of Ma\-the\-ma\-tical Monographs - Vol. 19. Providence, R.I.: American Ma\-the\-matical Society, 1968.
