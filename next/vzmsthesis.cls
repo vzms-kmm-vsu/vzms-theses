@@ -17,12 +17,20 @@
 \DeclareUnicodeCharacter{FEFF}{}
 
 
+% Some packages may be absent
+% We should not fail if the packages are not vital
+
+\newcommand*\RequirePackageIfAvailable[3][]{%
+	\IfFileExists{#2.sty}{\usepackage[#1]{#2} {#3}}{}%
+}
+
+
 % Graphics and related tricks
 
 \RequirePackage{graphics}
-\RequirePackage[dvips]{graphicx}
-\RequirePackage{wrapfig}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\RequirePackageIfAvailable[dvips]{graphicx}{}
+\RequirePackageIfAvailable{wrapfig}{}
 
 
 % Page geometry
