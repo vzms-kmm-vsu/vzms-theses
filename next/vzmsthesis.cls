@@ -21,7 +21,7 @@
 % We should not fail if the packages are not vital
 
 \newcommand*\RequirePackageIfAvailable[3][]{%
-	\IfFileExists{#2.sty}{\usepackage[#1]{#2} {#3}}{}%
+	\IfFileExists{#2.sty}{\usepackage[#1]{#2} #3}{}%
 }
 
 
