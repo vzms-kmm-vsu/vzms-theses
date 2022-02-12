@@ -27,8 +27,9 @@
 
 % Graphics and related tricks
 
-\RequirePackage{graphics}
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\RequirePackageIfAvailable{graphics}{
+	\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+}
 \RequirePackageIfAvailable[dvips]{graphicx}{}
 \RequirePackageIfAvailable{wrapfig}{}
 
@@ -38,7 +39,7 @@
 \RequirePackageIfAvailable{geometry}{
 	\geometry{verbose,a5paper,tmargin=1.75cm,bmargin=2.1cm,lmargin=1.75cm,rmargin=1.75cm}
 }
-\RequirePackage{lscape}
+\RequirePackageIfAvailable{lscape}{}
 
 % ... and "fancy" headers
 % (indeed, it looks like default headers are removed)
@@ -58,23 +59,23 @@
 
 % {ams*} packages are a gold standart in LaTeX
 
-\RequirePackage{amsmath}
-\RequirePackage{amsfonts}
-\RequirePackage{amssymb}
+\RequirePackageIfAvailable{amsmath}{}
+\RequirePackageIfAvailable{amsfonts}{}
+\RequirePackageIfAvailable{amssymb}{}
 
 % ... but, obviously, sometimes we need some others!
 
-\RequirePackage{enumerate}
-\RequirePackage{euscript}
-\RequirePackage[shortcuts]{extdash}
-\RequirePackage{hhline}
-\RequirePackage{latexsym}
-\RequirePackage{mathrsfs}
-\RequirePackage{multirow}
-\RequirePackage{needspace}
-\RequirePackage[overload]{textcase}
-\RequirePackage{textcomp}
-\RequirePackage[colorlinks=true, linktocpage=true, allcolors=black]{hyperref}
+\RequirePackageIfAvailable{enumerate}{}
+\RequirePackageIfAvailable{euscript}{}
+\RequirePackageIfAvailable[shortcuts]{extdash}{}
+\RequirePackageIfAvailable{hhline}{}
+\RequirePackageIfAvailable{latexsym}{}
+\RequirePackageIfAvailable{mathrsfs}{}
+\RequirePackageIfAvailable{multirow}{}
+\RequirePackageIfAvailable{needspace}{}
+\RequirePackageIfAvailable[overload]{textcase}{}
+\RequirePackageIfAvailable{textcomp}{}
+\RequirePackageIfAvailable[colorlinks=true, linktocpage=true, allcolors=black]{hyperref}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
