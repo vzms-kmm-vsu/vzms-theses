@@ -13,6 +13,8 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T2A,T1]{fontenc}
 \RequirePackage[english,russian]{babel}
+% And support BOM!
+\DeclareUnicodeCharacter{FEFF}{}
 
 
 % Graphics and related tricks
