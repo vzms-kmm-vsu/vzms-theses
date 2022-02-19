@@ -22,7 +22,8 @@ jobs:
             texlive-latex-extra \
             texlive-font-utils \
             texlive-lang-cyrillic \
-            zip
+            zip \
+            unoconv
 
       - name: build
         run: |
