@@ -286,3 +286,6 @@ theses.tex
 
 # Файлы NodeJS
 node_modules
+
+# Папка для публикации
+publishing
