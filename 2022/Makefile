@@ -29,6 +29,7 @@ clean:
 	rm -f *.aux *.log *.toc *.pdf
 	rm -f Data/pic/*.pdf
 	rm -f theses.tex
+	rm -f publishing/*
 
 include_theses:
 	# Build the list of the theses in alphabetical order of filenames, Russian first
@@ -103,11 +104,10 @@ split:
 ##    Preparation the theses for the publishing house    ##
 ###########################################################
 
-# These are plain bash + LaTeX + LibreOffice + pdftk
+# These are plain bash + LaTeX + unoconv
 
 publishing: all
-	lowriter --convert-to pdf docs/title_page.docx
-	lowriter --convert-to pdf docs/second_page.docx
-	lowriter --convert-to pdf docs/last_page.docx
-	pdftk main.pdf cat 3-end output merge_main.pdf
-	pdftk title_page.pdf second_page.pdf merge_main.pdf last_page.pdf cat output main.pdf
+	unoconv -f docx -o publishing/title_page.docx docs/title_page.fodt
+	unoconv -f docx -o publishing/second_page.docx docs/second_page.fodt
+	unoconv -f docx -o publishing/last_page.docx docs/last_page.fodt
+	cp main.pdf publishing/
