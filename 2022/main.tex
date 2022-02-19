@@ -1,5 +1,7 @@
 \documentclass{vzmsthesis}
 
+\usepackage{pdfpages}
+
 \graphicspath{{Data/pic/}}
 
 
@@ -170,11 +172,13 @@
 
 
 
-\input{auxpages/title}
+% \input{auxpages/title}
+\includepdf{title_page.pdf}
 
 \setcounter{page}{2}
 
-\input{auxpages/begin}
+% \input{auxpages/begin}
+\includepdf{second_page.pdf}
 
 % Тезисы отсортированы по алфавиту и хранятся в файле theses.tex. Подключаем их оттуда.
 % Команда \thesis делает много хорошего
@@ -194,6 +198,7 @@
 	\exhyphenpenalty=10000
 	\normalsize
 	\tableofcontents
+	\includepdf{last_page.pdf}
 }
 
 

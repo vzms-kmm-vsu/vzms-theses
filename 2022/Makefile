@@ -2,13 +2,16 @@
 ##                      Making the entire book                        ##
 ########################################################################
 
-# These are plain bash + LaTeX, and you shouldn't need to install smth else like NodeJS
+# These are plain bash + LaTeX + unoconv, and you shouldn't need to install smth else like NodeJS
 
 # (for preparational scripts, see below)
 
 all: include_theses
 	# The default target to be run
 	# Rebuilds the list of the theses and tries to build the PDF file
+	unoconv -f pdf -o title_page.pdf docs/title_page.fodt
+	unoconv -f pdf -o second_page.pdf docs/second_page.fodt
+	unoconv -f pdf -o last_page.pdf docs/last_page.fodt
 	pdflatex main.tex
 	pdflatex main.tex
 
