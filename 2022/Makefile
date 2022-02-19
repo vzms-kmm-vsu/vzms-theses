@@ -110,4 +110,4 @@ publishing: all
 	unoconv -f docx -o publishing/title_page.docx docs/title_page.fodt
 	unoconv -f docx -o publishing/second_page.docx docs/second_page.fodt
 	unoconv -f docx -o publishing/last_page.docx docs/last_page.fodt
-	cp main.pdf publishing/
+	cp main.pdf publishing/vzmh2022_`date +"%Y%m%d_%H%M"`.pdf
